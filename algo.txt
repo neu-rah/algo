@@ -1,0 +1,95 @@
+BUGS:
++ cos(a+b) => cos(a,b)
+
+TODO:
+
+monadic (evid x)
+simplify resolution
+
+this things need to have consistent results
+> º"(a<2)&(a>1)">~>toRange>~>simplify -- a<2 ∧ a>1 ⇔ a ∈ ]-∞;2[ ∧ a ∈ ]1;+∞[ ⇔ (a>-∞ ∧ a<2) ∧ (a>1 ∧ a<+∞)
+> º"(a<2)&(a>1)"~>toRange>~>simplify -- a ∈ ]-∞;2[ ∧ a ∈ ]1;+∞[ ⇔ a ∈ ]-∞;2[ ∩ ]1;+∞[
+simplify is not processing resolution ?
+
+> º"(a<2)&(a>1)">~>toRange>~>calc
+  → Just a<2 ∧ a>1 ⇔ a ∈ ]-∞;2[ ∧ a ∈ ]1;+∞[ ⇔ (a>-∞ ∧ a<2) ∧ (a>1 ∧ a<+∞) ⇔ (True ∧ a<2) ∧ (a>1 ∧ True)
+> º"(True & (a<2)) & ((a>1) & True)">~>calc
+  → Just True ∧ a<2 ∧ a>1 ∧ True ⇔ a<2 ∧ a>1
+
+About infinitesimals.
+I need to sort this things out to clean up the resolution
+
+  i>1 => 1+i>2 => i+i > 1+i
+
+therefor:
+  a>3
+  b>4
+  3*b < 4*a
+
+4a-3b= (>·) One infinitesimal positive unit... well not a unit because infinit is not a number
+
+seeking for infinitesimals work (not neighborwoods)
+
+this is rather strange because it will end up on an infinitesimal algebra and bring
+the concept of infinitesimal unit fractions, which is contrary to the infinitesimal concept.
+
+Therefor we will consider the operations on signal and value to be separate and avoid infinitesimal algebra
+guess that makes i+i=i ... nah
+
+we can also see hyper-real numbers
+https://en.wikipedia.org/wiki/Hyperreal_number
+
+infinitesimals are the real way!
+wish i could have this as a plug-in.
+
+variable values x=a&b ------------------------------------------------------------------
+a ∈ [0;1[ ∧ a+b=12 ⇔
+
+(a≥0 ∧ a<1) ∧ a+b=12 ⇔ (a≥0 ∧ a<1) ∧ 0+b≤12 ⇔ (a≥0 ∧ a<1) ∧ b≤12 ⇔ a≥0 ∧ a<1 ∧ b≤12
+(a≥0 ∧ a<1) ∧ a+b=12 ⇔ (a≥0 ∧ a<1) ∧ 1+b>12 ⇔ (a≥0 ∧ a<1) ∧ b>12-1 ⇔ (a≥0 ∧ a<1) ∧ b>12-1 ⇔ (a≥0 ∧ a<1) ∧ b>12-1 ⇔ (a≥0 ∧ a<1) ∧ b>11 ⇔ a≥0 ∧ a<1 ∧ b>11
+
+this two resolutions are done with a>=0 and a<1 respectivelly, they show different result but both valid
+although partials.
+the final solution would involve solving with all alternative values of a variable in the same expression.
+
+a>=0 ∧ a<1  ∧ 0+b<=12 ∧ 1+b>12
+
+this can be done at equation level return an And expression whenever the variable value is and And
+
+this means that chkAssign MUST treat And expressions accordingly and collect the different variable values
+
+=> useCtx with variables like x=a|b must take special care when target is also and OR operator... and similar cases
+
+x=a|b : x>p | x<q <=> a>p | b<p | a>q | b<q
+x=a|b : x>p & x<q <=> (a>p | b>p) & (a>q | b>q)
+x=a&b : x>p | x<q <=> (a>p & b>p) | (a>q & b>q)
+x=a&b : x>p & x<q <=> a>p & b>p & a>q & b>q
+
+this allows direct translations of intervals like [0;1[ into variable a>=0&a<1
+
+variable collection (chkAssign)
+can generate Or when
+  - assignments are inside Or, ex: x=a | x=b
+  - assignment to Or value, ex: x=a|b
+can generate And when
+  - whenever an assignment occurs (this is the default)
+
+this can be done by forking the chkAssign at Op Or and combine the results
+
+
+Reformulations -----------------------------------------------------------
+
+- apply processing to members and self
+- processing should step with IO for result output?
+  this can be achieved with a list of steps to be outputted
+
+- processes can be wrapped with step links (=,=>,<=>) to form a chain
+  this should happen externally and only if required
+
+- step composition can occur inside or outside some elements
+  usually outside, but some (as documents) step on the inner elements
+
+Books ---------------------
+implement books a a bookshelf where static books can be loaded
+this bookshelf is the assignments list base for document processing
+but does not appear in the document directly

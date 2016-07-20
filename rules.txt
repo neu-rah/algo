@@ -1,0 +1,79 @@
+valid rules
+
+- rules must be either equations or resolutions
+
+- rules can be circular, system should step off circular conclusions
+  => must have a conclusion sequence and therefor out of the rules system!
+
+- rules should not remove neutrals, neutral removal was moved to calc because the rules systems needs to insert neutrals
+  => rule match should not calc, ex: a+0=Bad ⇔ a=Bad
+
+considering unified operators
+
+operators are organized in level groups of 3 (?) operators each... maybe
+
+  neutrals:
+  a-a=0
+  a/a=1
+  log a a=1
+
+because this operations define the neutral element for the operator group they will be considered the operator group root
+
+  levels:
+  0 - Numeric (point)
+  1 - Arithmetic (line)
+  2 - Geometric (area)
+  3 . Exponential (volume)
+  4 - ...
+
+step-ups:
+  þ⁰(a,a)=þ¹(a,2)=a+2 <-- ???? this is consistent with the following, but still has no meaning...
+    þ⁰(1,1)=þ¹(1,2)=1+2=3
+    þ⁰(1,1,1,1)=þ¹(1,4)=1+4=5
+    þ⁰(0)=1 ????
+  a+a=a*2
+  a*a=a²
+  a^a=þ⁴(a,2)
+
+  => þⁿ(a,a)=þⁿ⁺¹(a,2)
+
+  þ²(3,2)=þ¹(3,3)=þ⁰(þ⁰(3,3),3)
+  3*2=3+3=(3⊕3)⊕3
+  þ³(3,2)=þ²(3,3)=þ¹(þ¹(3,3),3)=
+  3²=3*3=(3+3)+3=þ⁰(þ⁰(3,3),3)
+
+  <on>
+  <on+>
+  <on->
+  <on/>
+
+notation
+
+  þ⁰(a)=b ⇒ þ⁻⁰(a)=-a ⇒ þ0/0(a)=1/a ⇒ þ-0/0(a)=-1/a
+  þ¹(a,b)=c ⇔ þ⁻¹(b,c)=a ⇔ p1/1(a,c)=b
+  a-b=c     ⇔ b+c=a      ⇔ a-c=b
+  þ²(a,b)=c ⇔ þ⁻²(b,c)=a ⇔ þ½(a,c)=b
+  a/b=c     ⇔ b*c=a      ⇔ a/c=b
+  þ³(a,b)=c ⇔ þ⁻³(b,c)=a ⇔ þ⅓(a,c)=b
+  log a b=c ⇔ root(b,c)=a⇔a^c=b
+  þ²(a,a) = þ³(a,2)
+  þ³(a,a) = þ⁴(a,2)
+  þ⁵(a,a) = þ⁶(a,2)
+
+
+id, inverse, symmetric, reverse(=inverse+symmetric)
+
+the representation of math structures on these groups make rule matching easier.
+
+a-(a²)=0 is a quadratic with strong match difficulties with a*x²+b*x+c=0
+
+a*x²+b*x+c=0 ⇔ þ⁻¹(þ⁻²(þ⁰(a),þ⅓(þ⁰(x),þ⁰(2))),þ⁻²(þ⁰(b),þ⁰(x)),þ⁰(c))=0
+
+a-(a²)=0 ⇔ þ¹(þ⁰(a),þ⅓(þ⁰(a),þ⁰(2)))=0
+
+therefor:
+þ¹(þ⁻²(þ⁰(1),þ⁰(a)),þ⁻²(þ⁰(1),þ⅓(þ⁰(a),þ⁰(2))),þ⁰(0))=0 ⇔ 1a-1a²-a=0
+would match easier with
+þ⁻¹(þ⁻²(þ⁰(a),þ⅓(þ⁰(x),þ⁰(2))),þ⁻²(þ⁰(b),þ⁰(x)),þ⁰(c))=0 ⇔ a*x²+b*x+c=0
+
+ainda desconfortavel com a negação ser um operador unário e binário simultaneamente

@@ -1,0 +1,42 @@
+
+-- solving equations ---------------
+a=2+2 <=> a=4
+5=3+a <=> -a=3-5 <=> a=5-3 <=> a=2
+
+-- solving system --------------
+    | a=2+2
+    | a=6
+    
+<=> | a=4
+    | a=6
+    
+<=> | 6=4
+    | a=6
+    
+<=> | False
+    | a=6
+    
+<=> False
+
+-- exchanging variables ----------------
+a+b=12 & a-b=4
+a=12-b & (12-b)-b=4   -> a=12-b
+a=12-b & 12-2b=4      -> a=12-b
+a=12-b & b=(4-12)/-2  -> a=12-b, b=(4-12)/-2
+a=12-b & b=-8/-2      -> a=12-b, b=-8/-2
+a=12-b & b=4          -> a=12-b, b=4
+a=12-4 & b=4          -> a=12-4, b=4
+a=8 & b=4             -> a=8, b=4
+
+
+What if every equation is a variable definition... and they are. 
+Then we can index on them as vars... hmmm
+
+vars have solving level scope
+
+we still need the ranges thing to condense the variable value!
+
+so, for now we keep filtering just the direct definitions (single variable name = expression)
+
+
+
