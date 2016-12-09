@@ -31,12 +31,9 @@ Computer Algebra Experiments
 
     5.0V/50.0mA=100.0Ω
 
-
     |f(x)=2·x ⇔ |f(x)=2·x ⇔ |f(x)=2·x ⇔ |f(x)=2·x
-
     |f(y)=98    |2·y=98     |y=98/2     |y=49
 
 
     |f(n)=2·n   ⇔ |n·2=2·n ⇔ |True ⇔ True
-
     |f⁻¹(x)=x/2   |x/2=x/2   |True
