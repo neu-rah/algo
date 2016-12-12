@@ -62,7 +62,7 @@ sample op qa@(Quant (a, as@(Scale am _ _ fa _ ba))) qb@(Quant (b, bs@(Scale bm _
   | s==1 && op == Div = Just$Op op [a,b]
   | am==bm && op==Div=(D_UNITS,"same dimension => unitless")←(Just$Op op [toBase qa,toBase qb])
   | am==bm = (D_UNITS,"same dimension result:")←(fitScale<$> (\o->Quant (o, ba))<$>sub)
-  | ok u && prior op == Geometric = (D_UNITS,"composed result:")←(fitScale <$> (\o->(Quant (o, fromJust u )))<$>sub)
+  | prior op == Geometric && ok u = (D_UNITS,"composed result:")←(fitScale <$> (\o->(Quant (o, fromJust u )))<$>sub)
   | otherwise=Nothing
   where
     sub=(D_UNITS,"values to base:")←sample op (toBase qa) (toBase qb)

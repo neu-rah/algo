@@ -48,6 +48,7 @@ strTest = putStr$ (intercalate "\n" $map (\(t,(e:r:[]))->tester t (_algo e) r)
     (solveM emptyCtx,["root(16,2) ∈ ℕ ","root(16,2) ∈ ℕ  ⇔ 4 ∈ ℕ  ⇔ True"]),
     (solveM emptyCtx,["10ºC+1ºC","10.0ºC+1.0ºC=557.3K"]),
     (solveM emptyCtx,["(a=x)&(a=1)","a=x ∧ a=1 ⇔ 1=x ∧ a=1 ⇔ x=1 ∧ a=1"]),
+    (solveM emptyCtx,["(1+inf)+b<2","1+\949+b<2 \8660 b>2-1-\949 \8660 b>2-1-\949 \8660 b>2-1-\949 \8660 b>1-\949 \8660 b\8805\&1"]),
     (solveM emptyCtx,["x·(2|3)","x·(2 ∨ 3)=(x·2 ∨ x·3)"]),
     (((aresume 500 )<$>) . solveM emptyCtx,["(a ∈ [0;1[) & (a+b=12)","a ∈ [0;1[ ∧ a+b=12 ⇔ a≥0 ∧ a<1 ∧ b≤12 ∧ b>11"]),
     (solveM emptyCtx,["x=2+1","x=2+1 ⇔ x=3"]),
