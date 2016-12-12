@@ -1,0 +1,1375 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-12 00:14:22.253971 UTC
+
+interface main@main:Lib.Debug [hpc] 8001
+  interface hash: cce4a64c7d4af65cbdccbda09d566cfc
+  ABI hash: c5ad911a598d38e4e2cba45a09de710b
+  export-list hash: e68806ff5497d096232692f266395170
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 015811c99c5d86e2b1efeeae707035da
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.Debug.algTrace
+  Lib.Debug.dInfo
+  Lib.Debug.debugSections
+  Lib.Debug.←
+  Lib.Debug.DebugSections{Lib.Debug.D_ANY Lib.Debug.D_ASSIGN Lib.Debug.D_CALC Lib.Debug.D_CONT Lib.Debug.D_CTX Lib.Debug.D_EVID Lib.Debug.D_FILE Lib.Debug.D_GROUP Lib.Debug.D_MORPH Lib.Debug.D_NEIGH Lib.Debug.D_NOMS Lib.Debug.D_PARSER Lib.Debug.D_PLD Lib.Debug.D_RANGES Lib.Debug.D_RULES Lib.Debug.D_SAMPLE Lib.Debug.D_SETS Lib.Debug.D_SOLVER Lib.Debug.D_STEPS Lib.Debug.D_UNITS}
+module dependencies: Lib.Colors
+package dependencies: base-4.9.0.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Debug.Trace ea8cb00328fe92825c831d5e7694bf0a
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Enum fdf7ac3e1b0be0a4a37257601bddad14
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+import  -/  Lib.Colors 661ee66eb71335da3fd90f984f3e9e14
+  exports: dd28f8f849d9531d0a7956c1d1cf94af
+  nColor 4bd84a1dc203c67fed29a061b7b43901
+  redColor 2b8a185942907075284787817c41c834
+addDependentFile "/home/azevedo/.stack/programs/x86_64-linux/ghc-8.0.1/lib/ghc-8.0.1/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections :: GHC.Enum.Enum Lib.Debug.DebugSections
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Debug.DebugSections
+                  Lib.Debug.$fEnumDebugSections_$csucc
+                  Lib.Debug.$fEnumDebugSections_$cpred
+                  Lib.Debug.$fEnumDebugSections_$ctoEnum
+                  Lib.Debug.$fEnumDebugSections_$cfromEnum
+                  Lib.Debug.$fEnumDebugSections_$cenumFrom
+                  Lib.Debug.$fEnumDebugSections_$cenumFromThen
+                  Lib.Debug.$fEnumDebugSections_$cenumFromTo
+                  Lib.Debug.$fEnumDebugSections_$cenumFromThenTo -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections1 :: GHC.Prim.Int# -> Lib.Debug.DebugSections
+  {- Arity: 1, Strictness: <L,U>x -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections2 :: Lib.Debug.DebugSections
+  {- Strictness: x -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections3 :: Lib.Debug.DebugSections
+  {- Strictness: x -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections_$cenumFrom ::
+    Lib.Debug.DebugSections -> [Lib.Debug.DebugSections]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.enumFrom} True True} let {
+                                                                    x0 :: GHC.Prim.Int#
+                                                                    = GHC.Prim.dataToTag#
+                                                                        @ Lib.Debug.DebugSections
+                                                                        a
+                                                                  } in
+                                                                  case GHC.Prim.tagToEnum#
+                                                                         @ GHC.Types.Bool
+                                                                         (GHC.Prim.>#
+                                                                            x0
+                                                                            19#) of wild {
+                                                                    GHC.Types.False
+                                                                    -> Lib.Debug.$fEnumDebugSections_go
+                                                                         x0
+                                                                    GHC.Types.True
+                                                                    -> GHC.Types.[]
+                                                                         @ Lib.Debug.DebugSections }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections_$cenumFromThen ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections -> [Lib.Debug.DebugSections]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Lib.Debug.DebugSections)
+                   (b :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.enumFromThen} True True} let {
+                                                                        a# :: GHC.Prim.Int#
+                                                                        = GHC.Prim.dataToTag#
+                                                                            @ Lib.Debug.DebugSections
+                                                                            a
+                                                                      } in
+                                                                      let {
+                                                                        b# :: GHC.Prim.Int#
+                                                                        = GHC.Prim.dataToTag#
+                                                                            @ Lib.Debug.DebugSections
+                                                                            b
+                                                                      } in
+                                                                      let {
+                                                                        $j :: GHC.Prim.Int#
+                                                                              -> [Lib.Debug.DebugSections]
+                                                                          {- Arity: 1,
+                                                                             Strictness: <S,U> -}
+                                                                        = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                                                                          case GHC.Prim.tagToEnum#
+                                                                                 @ GHC.Types.Bool
+                                                                                 (GHC.Prim.>=#
+                                                                                    b#
+                                                                                    a#) of wild {
+                                                                            GHC.Types.False
+                                                                            -> GHC.Enum.efdtIntDnFB
+                                                                                 @ [Lib.Debug.DebugSections]
+                                                                                 Lib.Debug.$fEnumDebugSections_c1
+                                                                                 (GHC.Types.[]
+                                                                                    @ Lib.Debug.DebugSections)
+                                                                                 a#
+                                                                                 b#
+                                                                                 y
+                                                                            GHC.Types.True
+                                                                            -> GHC.Enum.efdtIntUpFB
+                                                                                 @ [Lib.Debug.DebugSections]
+                                                                                 Lib.Debug.$fEnumDebugSections_c1
+                                                                                 (GHC.Types.[]
+                                                                                    @ Lib.Debug.DebugSections)
+                                                                                 a#
+                                                                                 b#
+                                                                                 y }
+                                                                      } in
+                                                                      case GHC.Prim.tagToEnum#
+                                                                             @ GHC.Types.Bool
+                                                                             (GHC.Prim.>#
+                                                                                a#
+                                                                                b#) of wild {
+                                                                        GHC.Types.False -> $j 19#
+                                                                        GHC.Types.True
+                                                                        -> $j 0# }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections_$cenumFromThenTo ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections
+    -> [Lib.Debug.DebugSections]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U>,
+     Unfolding: (\ (x1 :: Lib.Debug.DebugSections)
+                   (x2 :: Lib.Debug.DebugSections)
+                   (y :: Lib.Debug.DebugSections) ->
+                 let {
+                   x4 :: GHC.Prim.Int#
+                   = {__scc {main@main:Lib.Debug.fromEnum} False True} GHC.Prim.dataToTag#
+                                                                         @ Lib.Debug.DebugSections
+                                                                         x1
+                 } in
+                 let {
+                   x5 :: GHC.Prim.Int#
+                   = {__scc {main@main:Lib.Debug.fromEnum} False True} GHC.Prim.dataToTag#
+                                                                         @ Lib.Debug.DebugSections
+                                                                         x2
+                 } in
+                 {__scc {main@main:Lib.Debug.fromEnum} True False} {__scc {main@main:Lib.Debug.fromEnum} True False} {__scc {main@main:Lib.Debug.fromEnum} True False} case GHC.Prim.tagToEnum#
+                                                                                                                                                                              @ GHC.Types.Bool
+                                                                                                                                                                              (GHC.Prim.>=#
+                                                                                                                                                                                 x5
+                                                                                                                                                                                 x4) of wild {
+                                                                                                                                                                         GHC.Types.False
+                                                                                                                                                                         -> GHC.Enum.efdtIntDnFB
+                                                                                                                                                                              @ [Lib.Debug.DebugSections]
+                                                                                                                                                                              Lib.Debug.$fEnumDebugSections_c
+                                                                                                                                                                              (GHC.Types.[]
+                                                                                                                                                                                 @ Lib.Debug.DebugSections)
+                                                                                                                                                                              x4
+                                                                                                                                                                              x5
+                                                                                                                                                                              ({__scc {main@main:Lib.Debug.fromEnum} False True} GHC.Prim.dataToTag#
+                                                                                                                                                                                                                                   @ Lib.Debug.DebugSections
+                                                                                                                                                                                                                                   y)
+                                                                                                                                                                         GHC.Types.True
+                                                                                                                                                                         -> GHC.Enum.efdtIntUpFB
+                                                                                                                                                                              @ [Lib.Debug.DebugSections]
+                                                                                                                                                                              Lib.Debug.$fEnumDebugSections_c
+                                                                                                                                                                              (GHC.Types.[]
+                                                                                                                                                                                 @ Lib.Debug.DebugSections)
+                                                                                                                                                                              x4
+                                                                                                                                                                              x5
+                                                                                                                                                                              ({__scc {main@main:Lib.Debug.fromEnum} False True} GHC.Prim.dataToTag#
+                                                                                                                                                                                                                                   @ Lib.Debug.DebugSections
+                                                                                                                                                                                                                                   y) }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections_$cenumFromTo ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections -> [Lib.Debug.DebugSections]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Lib.Debug.DebugSections)
+                   (y :: Lib.Debug.DebugSections) ->
+                 let {
+                   x0 :: GHC.Prim.Int#
+                   = {__scc {main@main:Lib.Debug.fromEnum} False True} GHC.Prim.dataToTag#
+                                                                         @ Lib.Debug.DebugSections
+                                                                         x
+                 } in
+                 let {
+                   y1 :: GHC.Prim.Int#
+                   = {__scc {main@main:Lib.Debug.fromEnum} False True} GHC.Prim.dataToTag#
+                                                                         @ Lib.Debug.DebugSections
+                                                                         y
+                 } in
+                 {__scc {main@main:Lib.Debug.fromEnum} True False} {__scc {main@main:Lib.Debug.fromEnum} True False} case GHC.Prim.tagToEnum#
+                                                                                                                            @ GHC.Types.Bool
+                                                                                                                            (GHC.Prim.>#
+                                                                                                                               x0
+                                                                                                                               y1) of wild {
+                                                                                                                       GHC.Types.False
+                                                                                                                       -> letrec {
+                                                                                                                            go :: GHC.Prim.Int#
+                                                                                                                                  -> [Lib.Debug.DebugSections]
+                                                                                                                              {- Arity: 1,
+                                                                                                                                 Strictness: <L,U> -}
+                                                                                                                            = \ (x1 :: GHC.Prim.Int#) ->
+                                                                                                                              GHC.Types.:
+                                                                                                                                @ Lib.Debug.DebugSections
+                                                                                                                                ({__scc {main@main:Lib.Debug.toEnum} True True} case GHC.Prim.tagToEnum#
+                                                                                                                                                                                       @ GHC.Types.Bool
+                                                                                                                                                                                       (GHC.Prim.>=#
+                                                                                                                                                                                          x1
+                                                                                                                                                                                          0#) of wild1 {
+                                                                                                                                                                                  GHC.Types.False
+                                                                                                                                                                                  -> Lib.Debug.$fEnumDebugSections1
+                                                                                                                                                                                       x1
+                                                                                                                                                                                  GHC.Types.True
+                                                                                                                                                                                  -> case GHC.Prim.tagToEnum#
+                                                                                                                                                                                            @ GHC.Types.Bool
+                                                                                                                                                                                            (GHC.Prim.<=#
+                                                                                                                                                                                               x1
+                                                                                                                                                                                               19#) of wild2 {
+                                                                                                                                                                                       GHC.Types.False
+                                                                                                                                                                                       -> Lib.Debug.$fEnumDebugSections1
+                                                                                                                                                                                            x1
+                                                                                                                                                                                       GHC.Types.True
+                                                                                                                                                                                       -> GHC.Prim.tagToEnum#
+                                                                                                                                                                                            @ Lib.Debug.DebugSections
+                                                                                                                                                                                            x1 } })
+                                                                                                                                (case GHC.Prim.tagToEnum#
+                                                                                                                                        @ GHC.Types.Bool
+                                                                                                                                        (GHC.Prim.==#
+                                                                                                                                           x1
+                                                                                                                                           y1) of wild1 {
+                                                                                                                                   GHC.Types.False
+                                                                                                                                   -> go
+                                                                                                                                        (GHC.Prim.+#
+                                                                                                                                           x1
+                                                                                                                                           1#)
+                                                                                                                                   GHC.Types.True
+                                                                                                                                   -> GHC.Types.[]
+                                                                                                                                        @ Lib.Debug.DebugSections })
+                                                                                                                          } in
+                                                                                                                          go
+                                                                                                                            x0
+                                                                                                                       GHC.Types.True
+                                                                                                                       -> GHC.Types.[]
+                                                                                                                            @ Lib.Debug.DebugSections }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections_$cfromEnum ::
+    Lib.Debug.DebugSections -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.fromEnum} True True} case a of x1 { DEFAULT ->
+                                                                  GHC.Types.I#
+                                                                    (GHC.Prim.dataToTag#
+                                                                       @ Lib.Debug.DebugSections
+                                                                       x1) }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections_$cpred ::
+    Lib.Debug.DebugSections -> Lib.Debug.DebugSections
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.pred} True True} case a of x1 { DEFAULT ->
+                                                              case GHC.Prim.dataToTag#
+                                                                     @ Lib.Debug.DebugSections
+                                                                     x1 of wild {
+                                                                DEFAULT
+                                                                -> GHC.Prim.tagToEnum#
+                                                                     @ Lib.Debug.DebugSections
+                                                                     (GHC.Prim.+# wild -1#)
+                                                                0#
+                                                                -> Lib.Debug.$fEnumDebugSections2 } }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections_$csucc ::
+    Lib.Debug.DebugSections -> Lib.Debug.DebugSections
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.succ} True True} case a of x1 { DEFAULT ->
+                                                              case GHC.Prim.dataToTag#
+                                                                     @ Lib.Debug.DebugSections
+                                                                     x1 of wild {
+                                                                DEFAULT
+                                                                -> GHC.Prim.tagToEnum#
+                                                                     @ Lib.Debug.DebugSections
+                                                                     (GHC.Prim.+# wild 1#)
+                                                                19#
+                                                                -> Lib.Debug.$fEnumDebugSections3 } }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections_$ctoEnum ::
+    GHC.Types.Int -> Lib.Debug.DebugSections
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Lib.Debug.$w$ctoEnum ww1 }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections_c ::
+    GHC.Types.Int
+    -> [Lib.Debug.DebugSections] -> [Lib.Debug.DebugSections]
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Types.Int) (ys :: [Lib.Debug.DebugSections]) ->
+                 GHC.Types.:
+                   @ Lib.Debug.DebugSections
+                   (Lib.Debug.$fEnumDebugSections_$ctoEnum x)
+                   ys) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections_c1 ::
+    GHC.Types.Int
+    -> [Lib.Debug.DebugSections] -> [Lib.Debug.DebugSections]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Types.Int) (ys :: [Lib.Debug.DebugSections]) ->
+                 GHC.Types.:
+                   @ Lib.Debug.DebugSections
+                   (case x of wild { GHC.Types.I# a ->
+                    GHC.Prim.tagToEnum# @ Lib.Debug.DebugSections a })
+                   ys) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEnumDebugSections_go ::
+    GHC.Prim.Int# -> [Lib.Debug.DebugSections]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEqDebugSections :: GHC.Classes.Eq Lib.Debug.DebugSections
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Debug.DebugSections
+                  Lib.Debug.$fEqDebugSections_$c==
+                  Lib.Debug.$fEqDebugSections_$c/= -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEqDebugSections_$c/= ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Lib.Debug.DebugSections) (b :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug./=} True True} {__scc {main@main:Lib.Debug.==} True False} case a of x1 { DEFAULT ->
+                                                                                                        case b of x2 { DEFAULT ->
+                                                                                                        case {__scc {main@main:Lib.Debug.==} False True} GHC.Prim.tagToEnum#
+                                                                                                                                                           @ GHC.Types.Bool
+                                                                                                                                                           (GHC.Prim.==#
+                                                                                                                                                              (GHC.Prim.dataToTag#
+                                                                                                                                                                 @ Lib.Debug.DebugSections
+                                                                                                                                                                 x1)
+                                                                                                                                                              (GHC.Prim.dataToTag#
+                                                                                                                                                                 @ Lib.Debug.DebugSections
+                                                                                                                                                                 x2)) of wild {
+                                                                                                          GHC.Types.False
+                                                                                                          -> GHC.Types.True
+                                                                                                          GHC.Types.True
+                                                                                                          -> GHC.Types.False } } }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fEqDebugSections_$c== ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Lib.Debug.DebugSections) (b :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.==} True True} case a of x1 { DEFAULT ->
+                                                            case b of x2 { DEFAULT ->
+                                                            GHC.Prim.tagToEnum#
+                                                              @ GHC.Types.Bool
+                                                              (GHC.Prim.==#
+                                                                 (GHC.Prim.dataToTag#
+                                                                    @ Lib.Debug.DebugSections
+                                                                    x1)
+                                                                 (GHC.Prim.dataToTag#
+                                                                    @ Lib.Debug.DebugSections
+                                                                    x2)) } }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fOrdDebugSections :: GHC.Classes.Ord Lib.Debug.DebugSections
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Debug.DebugSections
+                  Lib.Debug.$fEqDebugSections
+                  Lib.Debug.$fOrdDebugSections_$ccompare
+                  Lib.Debug.$fOrdDebugSections_$c<
+                  Lib.Debug.$fOrdDebugSections_$c<=
+                  Lib.Debug.$fOrdDebugSections_$c>
+                  Lib.Debug.$fOrdDebugSections_$c>=
+                  Lib.Debug.$fOrdDebugSections_$cmax
+                  Lib.Debug.$fOrdDebugSections_$cmin -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fOrdDebugSections_$c< ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Lib.Debug.DebugSections) (b :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.<} True True} case a of x1 { DEFAULT ->
+                                                           case b of x2 { DEFAULT ->
+                                                           GHC.Prim.tagToEnum#
+                                                             @ GHC.Types.Bool
+                                                             (GHC.Prim.<#
+                                                                (GHC.Prim.dataToTag#
+                                                                   @ Lib.Debug.DebugSections
+                                                                   x1)
+                                                                (GHC.Prim.dataToTag#
+                                                                   @ Lib.Debug.DebugSections
+                                                                   x2)) } }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fOrdDebugSections_$c<= ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Lib.Debug.DebugSections) (b :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.<=} True True} case a of x1 { DEFAULT ->
+                                                            case b of x2 { DEFAULT ->
+                                                            GHC.Prim.tagToEnum#
+                                                              @ GHC.Types.Bool
+                                                              (GHC.Prim.<=#
+                                                                 (GHC.Prim.dataToTag#
+                                                                    @ Lib.Debug.DebugSections
+                                                                    x1)
+                                                                 (GHC.Prim.dataToTag#
+                                                                    @ Lib.Debug.DebugSections
+                                                                    x2)) } }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fOrdDebugSections_$c> ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Lib.Debug.DebugSections) (b :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.>} True True} case a of x1 { DEFAULT ->
+                                                           case b of x2 { DEFAULT ->
+                                                           GHC.Prim.tagToEnum#
+                                                             @ GHC.Types.Bool
+                                                             (GHC.Prim.>#
+                                                                (GHC.Prim.dataToTag#
+                                                                   @ Lib.Debug.DebugSections
+                                                                   x1)
+                                                                (GHC.Prim.dataToTag#
+                                                                   @ Lib.Debug.DebugSections
+                                                                   x2)) } }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fOrdDebugSections_$c>= ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Lib.Debug.DebugSections) (b :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.>=} True True} case a of x1 { DEFAULT ->
+                                                            case b of x2 { DEFAULT ->
+                                                            GHC.Prim.tagToEnum#
+                                                              @ GHC.Types.Bool
+                                                              (GHC.Prim.>=#
+                                                                 (GHC.Prim.dataToTag#
+                                                                    @ Lib.Debug.DebugSections
+                                                                    x1)
+                                                                 (GHC.Prim.dataToTag#
+                                                                    @ Lib.Debug.DebugSections
+                                                                    x2)) } }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fOrdDebugSections_$ccompare ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Lib.Debug.DebugSections) (b :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.compare} True True} case a of x1 { DEFAULT ->
+                                                                 case b of x2 { DEFAULT ->
+                                                                 let {
+                                                                   b# :: GHC.Prim.Int#
+                                                                   = GHC.Prim.dataToTag#
+                                                                       @ Lib.Debug.DebugSections
+                                                                       x2
+                                                                 } in
+                                                                 let {
+                                                                   a# :: GHC.Prim.Int#
+                                                                   = GHC.Prim.dataToTag#
+                                                                       @ Lib.Debug.DebugSections
+                                                                       x1
+                                                                 } in
+                                                                 case GHC.Prim.tagToEnum#
+                                                                        @ GHC.Types.Bool
+                                                                        (GHC.Prim.<#
+                                                                           a#
+                                                                           b#) of wild {
+                                                                   GHC.Types.False
+                                                                   -> case GHC.Prim.tagToEnum#
+                                                                             @ GHC.Types.Bool
+                                                                             (GHC.Prim.==#
+                                                                                a#
+                                                                                b#) of wild1 {
+                                                                        GHC.Types.False
+                                                                        -> GHC.Types.GT
+                                                                        GHC.Types.True
+                                                                        -> GHC.Types.EQ }
+                                                                   GHC.Types.True
+                                                                   -> GHC.Types.LT } } }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fOrdDebugSections_$cmax ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections -> Lib.Debug.DebugSections
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Lib.Debug.DebugSections) (y :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.<=} True False} case x of x1 { DEFAULT ->
+                                                             case y of x2 { DEFAULT ->
+                                                             case {__scc {main@main:Lib.Debug.<=} False True} GHC.Prim.tagToEnum#
+                                                                                                                @ GHC.Types.Bool
+                                                                                                                (GHC.Prim.<=#
+                                                                                                                   (GHC.Prim.dataToTag#
+                                                                                                                      @ Lib.Debug.DebugSections
+                                                                                                                      x1)
+                                                                                                                   (GHC.Prim.dataToTag#
+                                                                                                                      @ Lib.Debug.DebugSections
+                                                                                                                      x2)) of wild {
+                                                               GHC.Types.False -> x1
+                                                               GHC.Types.True -> x2 } } }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fOrdDebugSections_$cmin ::
+    Lib.Debug.DebugSections
+    -> Lib.Debug.DebugSections -> Lib.Debug.DebugSections
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Lib.Debug.DebugSections) (y :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.<=} True False} case x of x1 { DEFAULT ->
+                                                             case y of x2 { DEFAULT ->
+                                                             case {__scc {main@main:Lib.Debug.<=} False True} GHC.Prim.tagToEnum#
+                                                                                                                @ GHC.Types.Bool
+                                                                                                                (GHC.Prim.<=#
+                                                                                                                   (GHC.Prim.dataToTag#
+                                                                                                                      @ Lib.Debug.DebugSections
+                                                                                                                      x1)
+                                                                                                                   (GHC.Prim.dataToTag#
+                                                                                                                      @ Lib.Debug.DebugSections
+                                                                                                                      x2)) of wild {
+                                                               GHC.Types.False -> x2
+                                                               GHC.Types.True -> x1 } } }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fShowDebugSections :: GHC.Show.Show Lib.Debug.DebugSections
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Debug.DebugSections
+                  Lib.Debug.$fShowDebugSections_$cshowsPrec
+                  Lib.Debug.$fShowDebugSections_$cshow
+                  Lib.Debug.$fShowDebugSections_$cshowList -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fShowDebugSections1 :: Lib.Debug.DebugSections -> GHC.Show.ShowS
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showList} False True} Lib.Debug.$w$cshowsPrec) -}
+eff18aa094600fbcbea2636097f2b1d6
+  $fShowDebugSections10 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections11) -}
+682c944f0af324e911e43cddf980e7ca
+  $fShowDebugSections11 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_RANGES"#) -}
+dee30437475a451100e85af34626dc42
+  $fShowDebugSections12 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections13) -}
+d3fb56462ce7996e56a37bebf90093f6
+  $fShowDebugSections13 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_SETS"#) -}
+b10121a525fccadf8f5dcc8621d69ea7
+  $fShowDebugSections14 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections15) -}
+75ead082583d067c30c4aec402a08642
+  $fShowDebugSections15 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_SOLVER"#) -}
+1bb0e3c9c7fcc63a46e4e0510e10dd70
+  $fShowDebugSections16 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections17) -}
+dd70fff6edf1a998e9b854d802245007
+  $fShowDebugSections17 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_ASSIGN"#) -}
+52f363d8e5f7899b01b54304b961d3b0
+  $fShowDebugSections18 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections19) -}
+5938ecfdfbf80caddf6ff896f0b408c0
+  $fShowDebugSections19 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_EVID"#) -}
+4b674c00f532592a075a10508fb92023
+  $fShowDebugSections2 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections3) -}
+5b09346b073ed016f497a44e81235be3
+  $fShowDebugSections20 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections21) -}
+d8ee6dbf991d043fa6963ca2fcfd2b9e
+  $fShowDebugSections21 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_MORPH"#) -}
+b59652e248c63e46a3e2629b99359b08
+  $fShowDebugSections22 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections23) -}
+6cac618320dad518c5e306203e0e0e74
+  $fShowDebugSections23 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_GROUP"#) -}
+7eb54ab2caed77ee28ea5b5e9542d587
+  $fShowDebugSections24 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections25) -}
+71677544112c6421b161e8272ddff90b
+  $fShowDebugSections25 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_RULES"#) -}
+8a21d0ae5f0edf09e4a06d0a23d2b0f6
+  $fShowDebugSections26 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections27) -}
+df94aa003aafecb927bf28bc1c8406bd
+  $fShowDebugSections27 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_UNITS"#) -}
+206bc22b146c5c8c74ce5b1d4924b738
+  $fShowDebugSections28 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections29) -}
+c2ffca02bbb6752becf4900f3aaebd8e
+  $fShowDebugSections29 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_CTX"#) -}
+83fb2215ecb8bff094ef519b9932d9cd
+  $fShowDebugSections3 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_FILE"#) -}
+32c13ba56432bf1f451f9921440b97a9
+  $fShowDebugSections30 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections31) -}
+40df2bbddaa34e0f410f736175f7f269
+  $fShowDebugSections31 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_NOMS"#) -}
+b2cea577ef85b073a80fadaf3e85d6b6
+  $fShowDebugSections32 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections33) -}
+9d61a6ffbfffc140671be7f6b19d8d73
+  $fShowDebugSections33 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_CALC"#) -}
+23d629fbfed5ec971046548138f4a451
+  $fShowDebugSections34 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections35) -}
+77fd12268077d1511ff2515af0215e06
+  $fShowDebugSections35 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_SAMPLE"#) -}
+d6f9a56ddf17592be4c9ae228b2a4197
+  $fShowDebugSections36 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections37) -}
+09a40fc2b6c2ee817d6c7e4756739230
+  $fShowDebugSections37 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_PARSER"#) -}
+fb214bd50077bced66a4a6c7131db139
+  $fShowDebugSections38 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections39) -}
+9fbe80dff375fffe4d2f544e91cc4c97
+  $fShowDebugSections39 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_PLD"#) -}
+adf1cb2b5d3bf8feef0ce47d8b0803a6
+  $fShowDebugSections4 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections5) -}
+7adfc60715fc38a6aba71acb71df1cb6
+  $fShowDebugSections40 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections41) -}
+136d57d5e4e2ddd3a2f423dfed211ad3
+  $fShowDebugSections41 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_ANY"#) -}
+9513dd44811e24c0ca9661745b9a8634
+  $fShowDebugSections5 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_CONT"#) -}
+a2ef27da1a0426da09f1b71280bef16f
+  $fShowDebugSections6 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections7) -}
+3ead46ecb52d4c68f086616990950e29
+  $fShowDebugSections7 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_NEIGH"#) -}
+ce05a2667b1424ba814116f4dfbb5374
+  $fShowDebugSections8 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Debug.$fShowDebugSections9) -}
+7ce34560184d9bf5c267b94a57eaf5a1
+  $fShowDebugSections9 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showsPrec} False True} GHC.CString.unpackCString#
+                                                                      "D_STEPS"#) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fShowDebugSections_$cshow ::
+    Lib.Debug.DebugSections -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Lib.Debug.DebugSections) ->
+                 ({__scc {main@main:Lib.Debug.showsPrec} True True} case x of wild {
+                                                                      Lib.Debug.D_ANY
+                                                                      -> Lib.Debug.$fShowDebugSections40
+                                                                      Lib.Debug.D_PLD
+                                                                      -> Lib.Debug.$fShowDebugSections38
+                                                                      Lib.Debug.D_PARSER
+                                                                      -> Lib.Debug.$fShowDebugSections36
+                                                                      Lib.Debug.D_SAMPLE
+                                                                      -> Lib.Debug.$fShowDebugSections34
+                                                                      Lib.Debug.D_CALC
+                                                                      -> Lib.Debug.$fShowDebugSections32
+                                                                      Lib.Debug.D_NOMS
+                                                                      -> Lib.Debug.$fShowDebugSections30
+                                                                      Lib.Debug.D_CTX
+                                                                      -> Lib.Debug.$fShowDebugSections28
+                                                                      Lib.Debug.D_UNITS
+                                                                      -> Lib.Debug.$fShowDebugSections26
+                                                                      Lib.Debug.D_RULES
+                                                                      -> Lib.Debug.$fShowDebugSections24
+                                                                      Lib.Debug.D_GROUP
+                                                                      -> Lib.Debug.$fShowDebugSections22
+                                                                      Lib.Debug.D_MORPH
+                                                                      -> Lib.Debug.$fShowDebugSections20
+                                                                      Lib.Debug.D_EVID
+                                                                      -> Lib.Debug.$fShowDebugSections18
+                                                                      Lib.Debug.D_ASSIGN
+                                                                      -> Lib.Debug.$fShowDebugSections16
+                                                                      Lib.Debug.D_SOLVER
+                                                                      -> Lib.Debug.$fShowDebugSections14
+                                                                      Lib.Debug.D_SETS
+                                                                      -> Lib.Debug.$fShowDebugSections12
+                                                                      Lib.Debug.D_RANGES
+                                                                      -> Lib.Debug.$fShowDebugSections10
+                                                                      Lib.Debug.D_STEPS
+                                                                      -> Lib.Debug.$fShowDebugSections8
+                                                                      Lib.Debug.D_NEIGH
+                                                                      -> Lib.Debug.$fShowDebugSections6
+                                                                      Lib.Debug.D_CONT
+                                                                      -> Lib.Debug.$fShowDebugSections4
+                                                                      Lib.Debug.D_FILE
+                                                                      -> Lib.Debug.$fShowDebugSections2 })
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fShowDebugSections_$cshowList ::
+    [Lib.Debug.DebugSections] -> GHC.Show.ShowS
+  {- Unfolding: ({__scc {main@main:Lib.Debug.showList} True True} GHC.Show.showList__
+                                                                    @ Lib.Debug.DebugSections
+                                                                    Lib.Debug.$fShowDebugSections1) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $fShowDebugSections_$cshowsPrec ::
+    GHC.Types.Int -> Lib.Debug.DebugSections -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,A><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: Lib.Debug.DebugSections) ->
+                 Lib.Debug.$w$cshowsPrec w1) -}
+66b4e5e98ac41392256a5ac4c214e734
+  $tc'D_ANY :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7367483105040720738##
+                   940544067900872401##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_ANY1) -}
+3bdcc57a5a0287bd68a31289fabed35f
+  $tc'D_ANY1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_ANY"#) -}
+1984c370f15245445e711fa0a3a66373
+  $tc'D_ASSIGN :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1260717806711313388##
+                   4800185242187707727##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_ASSIGN1) -}
+435afc13f1de6126413bf401f3ec0a11
+  $tc'D_ASSIGN1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_ASSIGN"#) -}
+24810c4963073b1ab198f559529c80cc
+  $tc'D_CALC :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11649890832453326531##
+                   1557977826302736365##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_CALC1) -}
+5ca14135ed2857011187e6dee5ae27af
+  $tc'D_CALC1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_CALC"#) -}
+7676c24634836b5e6b6c53fdeda4723a
+  $tc'D_CONT :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15915591343584434299##
+                   5323581768921101451##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_CONT1) -}
+6f94ed364e83a1f27ecde16cdc0b396c
+  $tc'D_CONT1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_CONT"#) -}
+d40ecdaf36269afed83ebd9aa52e40c0
+  $tc'D_CTX :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14977930961171630419##
+                   8330097061672282042##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_CTX1) -}
+4b0ac8993a93403e0b3f549229e885d2
+  $tc'D_CTX1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_CTX"#) -}
+c218a1b350cbbc306dc6a15839ec6f7e
+  $tc'D_EVID :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8480163195922200542##
+                   13760199708481530520##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_EVID1) -}
+47f7b20461245d8482f9b18524cbb184
+  $tc'D_EVID1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_EVID"#) -}
+bf2c3669519c4027248fe81c8d441026
+  $tc'D_FILE :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12753158574025975633##
+                   11087182644663025570##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_FILE1) -}
+a9a7009bc593540304f7fcabb70560c0
+  $tc'D_FILE1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_FILE"#) -}
+a88d7c86d2cf82bcd5dc700285294682
+  $tc'D_GROUP :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4222617430955760169##
+                   307696280372955983##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_GROUP1) -}
+74ca1b380bba9b4847cf1e7c75fd0e8f
+  $tc'D_GROUP1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_GROUP"#) -}
+a6d5cac2644c31a96b0c887c18b9be1d
+  $tc'D_MORPH :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11976537095567415822##
+                   12962542711079122817##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_MORPH1) -}
+91a27b884b14b4edf19cef89017b8619
+  $tc'D_MORPH1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_MORPH"#) -}
+6625cb02df2e370ed81b5fcda23789a2
+  $tc'D_NEIGH :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6964109336897373880##
+                   1456659434745851957##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_NEIGH1) -}
+6ec7c8d746873a34eec50da8e727598d
+  $tc'D_NEIGH1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_NEIGH"#) -}
+e75132dbaa4efd64aaa9621f2d9cbb7d
+  $tc'D_NOMS :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   415957746961367875##
+                   12928724171633246484##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_NOMS1) -}
+2eac34f5473057b15d7b4428103ed12d
+  $tc'D_NOMS1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_NOMS"#) -}
+d3f47d7973031e31d37ad73a872ea1e0
+  $tc'D_PARSER :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13905334089186458535##
+                   6697131328432772938##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_PARSER1) -}
+9b589a9f395477d44bb23598f230f753
+  $tc'D_PARSER1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_PARSER"#) -}
+c4282dcbad2fd9de0645754e17aed0a7
+  $tc'D_PLD :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7173989253493420223##
+                   16865568635083046648##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_PLD1) -}
+3dd6afcd68956cc8967ba7750b780158
+  $tc'D_PLD1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_PLD"#) -}
+4b6bd5e30cb029d050a83b00040f2b09
+  $tc'D_RANGES :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4387414092248703088##
+                   5303991471960890106##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_RANGES1) -}
+6ac123e27c9598c2ff4f266239db96ec
+  $tc'D_RANGES1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_RANGES"#) -}
+0f0d6844b99358b2480e57f239429d37
+  $tc'D_RULES :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   423935335875788256##
+                   12008682851635162698##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_RULES1) -}
+2f5295260febee84698d45619839f308
+  $tc'D_RULES1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_RULES"#) -}
+580c358b0b9563d24b21e5d27e39d0b9
+  $tc'D_SAMPLE :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10015250972395679633##
+                   2337159085598634430##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_SAMPLE1) -}
+9055e12de4622cd323fa508768a959f0
+  $tc'D_SAMPLE1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_SAMPLE"#) -}
+0576b314a2eeaa3e4f00cbc2db7356fc
+  $tc'D_SETS :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17179019982236234885##
+                   4199956122370013808##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_SETS1) -}
+d86bc9725a483f50635cd9a2ee496ec2
+  $tc'D_SETS1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_SETS"#) -}
+efc42a84f05582079e1a19c93c768879
+  $tc'D_SOLVER :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4114477485005817150##
+                   5230617888946140942##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_SOLVER1) -}
+124c19cf182ffb0630561c450343069a
+  $tc'D_SOLVER1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_SOLVER"#) -}
+fcee6caef836d1df1850458e6d68b9c9
+  $tc'D_STEPS :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14906008737502069921##
+                   7744972672773947711##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_STEPS1) -}
+b08afe8bda4446e2abde02463f35374a
+  $tc'D_STEPS1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_STEPS"#) -}
+ddb42c32af0b43510da6c419d553ab5d
+  $tc'D_UNITS :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3834080126017445791##
+                   11714496919026741070##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tc'D_UNITS1) -}
+eb1d3e625ca25256acd65db5976beb2b
+  $tc'D_UNITS1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'D_UNITS"#) -}
+252aed936df29450cf3321c53e29ab44
+  $tcDebugSections :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6730599115631549842##
+                   7243380835781164119##
+                   Lib.Debug.$trModule
+                   Lib.Debug.$tcDebugSections1) -}
+fcdc43b31ba1bfc760157b31d5e4d1ee
+  $tcDebugSections1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "DebugSections"#) -}
+c80a9a735177573c9a8ae69bfac0b072
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Lib.Debug.$trModule2
+                   Lib.Debug.$trModule1) -}
+310482561cf4e64b21a209728e754659
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib.Debug"#) -}
+ff0ccaacb5a4a446d0a5b61eb8f55e29
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $w$cshowsPrec :: Lib.Debug.DebugSections -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Lib.Debug.DebugSections) ->
+                 {__scc {main@main:Lib.Debug.showsPrec} True True} case w of wild {
+                                                                     Lib.Debug.D_ANY
+                                                                     -> Lib.Debug.$fShowDebugSections40
+                                                                     Lib.Debug.D_PLD
+                                                                     -> Lib.Debug.$fShowDebugSections38
+                                                                     Lib.Debug.D_PARSER
+                                                                     -> Lib.Debug.$fShowDebugSections36
+                                                                     Lib.Debug.D_SAMPLE
+                                                                     -> Lib.Debug.$fShowDebugSections34
+                                                                     Lib.Debug.D_CALC
+                                                                     -> Lib.Debug.$fShowDebugSections32
+                                                                     Lib.Debug.D_NOMS
+                                                                     -> Lib.Debug.$fShowDebugSections30
+                                                                     Lib.Debug.D_CTX
+                                                                     -> Lib.Debug.$fShowDebugSections28
+                                                                     Lib.Debug.D_UNITS
+                                                                     -> Lib.Debug.$fShowDebugSections26
+                                                                     Lib.Debug.D_RULES
+                                                                     -> Lib.Debug.$fShowDebugSections24
+                                                                     Lib.Debug.D_GROUP
+                                                                     -> Lib.Debug.$fShowDebugSections22
+                                                                     Lib.Debug.D_MORPH
+                                                                     -> Lib.Debug.$fShowDebugSections20
+                                                                     Lib.Debug.D_EVID
+                                                                     -> Lib.Debug.$fShowDebugSections18
+                                                                     Lib.Debug.D_ASSIGN
+                                                                     -> Lib.Debug.$fShowDebugSections16
+                                                                     Lib.Debug.D_SOLVER
+                                                                     -> Lib.Debug.$fShowDebugSections14
+                                                                     Lib.Debug.D_SETS
+                                                                     -> Lib.Debug.$fShowDebugSections12
+                                                                     Lib.Debug.D_RANGES
+                                                                     -> Lib.Debug.$fShowDebugSections10
+                                                                     Lib.Debug.D_STEPS
+                                                                     -> Lib.Debug.$fShowDebugSections8
+                                                                     Lib.Debug.D_NEIGH
+                                                                     -> Lib.Debug.$fShowDebugSections6
+                                                                     Lib.Debug.D_CONT
+                                                                     -> Lib.Debug.$fShowDebugSections4
+                                                                     Lib.Debug.D_FILE
+                                                                     -> Lib.Debug.$fShowDebugSections2 }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  $w$ctoEnum :: GHC.Prim.Int# -> Lib.Debug.DebugSections
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 {__scc {main@main:Lib.Debug.toEnum} True True} case GHC.Prim.tagToEnum#
+                                                                       @ GHC.Types.Bool
+                                                                       (GHC.Prim.>=#
+                                                                          ww
+                                                                          0#) of wild {
+                                                                  GHC.Types.False
+                                                                  -> Lib.Debug.$fEnumDebugSections1
+                                                                       ww
+                                                                  GHC.Types.True
+                                                                  -> case GHC.Prim.tagToEnum#
+                                                                            @ GHC.Types.Bool
+                                                                            (GHC.Prim.<=#
+                                                                               ww
+                                                                               19#) of wild1 {
+                                                                       GHC.Types.False
+                                                                       -> Lib.Debug.$fEnumDebugSections1
+                                                                            ww
+                                                                       GHC.Types.True
+                                                                       -> GHC.Prim.tagToEnum#
+                                                                            @ Lib.Debug.DebugSections
+                                                                            ww } }) -}
+bc82f74a3eb94ec09f260cccc33edc35
+  $wdInfo ::
+    Lib.Debug.DebugSections -> GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Lib.Debug.DebugSections)
+                   (ww1 :: GHC.Base.String) ->
+                 {__scc {main@main:Lib.Debug.dInfo} True True} case GHC.List.elem
+                                                                      @ Lib.Debug.DebugSections
+                                                                      Lib.Debug.$fEqDebugSections
+                                                                      ww
+                                                                      Lib.Debug.debugSections of wild {
+                                                                 GHC.Types.False -> GHC.Types.False
+                                                                 GHC.Types.True
+                                                                 -> Debug.Trace.trace
+                                                                      @ GHC.Types.Bool
+                                                                      (GHC.CString.unpackAppendCString#
+                                                                         "==>"#
+                                                                         (GHC.Base.++
+                                                                            @ GHC.Types.Char
+                                                                            Lib.Colors.redColor
+                                                                            (GHC.Base.++
+                                                                               @ GHC.Types.Char
+                                                                               (Lib.Debug.$fShowDebugSections_$cshow
+                                                                                  ww)
+                                                                               (GHC.Base.++
+                                                                                  @ GHC.Types.Char
+                                                                                  Lib.Debug.dInfo2
+                                                                                  (GHC.Base.++
+                                                                                     @ GHC.Types.Char
+                                                                                     Lib.Colors.nColor
+                                                                                     (GHC.Base.++
+                                                                                        @ GHC.Types.Char
+                                                                                        ww1
+                                                                                        Lib.Debug.dInfo1))))))
+                                                                      GHC.Types.False }) -}
+c3bfd2aa5ca2037c5ac5652db6b324bd
+  $w← ::
+    GHC.Show.Show a =>
+    Lib.Debug.DebugSections -> [GHC.Types.Char] -> a -> a
+  {- Arity: 4, Strictness: <L,1*U(A,1*C1(U),A)><L,U><L,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: Lib.Debug.DebugSections)
+                   (ww1 :: [GHC.Types.Char])
+                   (w1 :: a) ->
+                 {__scc {main@main:Lib.Debug.←} True True} case GHC.List.elem
+                                                                  @ Lib.Debug.DebugSections
+                                                                  Lib.Debug.$fEqDebugSections
+                                                                  ww
+                                                                  Lib.Debug.debugSections of wild {
+                                                             GHC.Types.False -> w1
+                                                             GHC.Types.True
+                                                             -> Debug.Trace.trace
+                                                                  @ a
+                                                                  (GHC.Base.++
+                                                                     @ GHC.Types.Char
+                                                                     Lib.Colors.redColor
+                                                                     (GHC.Base.++
+                                                                        @ GHC.Types.Char
+                                                                        (Lib.Debug.$fShowDebugSections_$cshow
+                                                                           ww)
+                                                                        (GHC.Base.++
+                                                                           @ GHC.Types.Char
+                                                                           Lib.Debug.←2
+                                                                           (GHC.Base.++
+                                                                              @ GHC.Types.Char
+                                                                              Lib.Colors.nColor
+                                                                              (GHC.Base.++
+                                                                                 @ GHC.Types.Char
+                                                                                 ww1
+                                                                                 (GHC.Base.++
+                                                                                    @ GHC.Types.Char
+                                                                                    (GHC.Show.show
+                                                                                       @ a
+                                                                                       w
+                                                                                       w1)
+                                                                                    Lib.Debug.←1))))))
+                                                                  w1 }) -}
+2b64b7ece67fd3d7cb8bb65c9134f5bd
+  data DebugSections
+    = D_ANY
+    | D_PLD
+    | D_PARSER
+    | D_SAMPLE
+    | D_CALC
+    | D_NOMS
+    | D_CTX
+    | D_UNITS
+    | D_RULES
+    | D_GROUP
+    | D_MORPH
+    | D_EVID
+    | D_ASSIGN
+    | D_SOLVER
+    | D_SETS
+    | D_RANGES
+    | D_STEPS
+    | D_NEIGH
+    | D_CONT
+    | D_FILE
+0c8795b85673ae57a2fafc4c8716ecc8
+  algTrace :: (Lib.Debug.DebugSections, GHC.Base.String) -> a -> a
+  {- Arity: 2, Strictness: <S,1*U(U,1*U)><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   (ds :: (Lib.Debug.DebugSections, GHC.Base.String))
+                   (value :: a) ->
+                 case ds of wild { (,) sec msg ->
+                 case GHC.List.elem
+                        @ Lib.Debug.DebugSections
+                        Lib.Debug.$fEqDebugSections
+                        sec
+                        Lib.Debug.debugSections of wild1 {
+                   GHC.Types.False -> value
+                   GHC.Types.True
+                   -> Debug.Trace.trace
+                        @ a
+                        (GHC.Base.build
+                           @ GHC.Types.Char
+                           (\ @ b
+                              (c :: GHC.Types.Char -> b -> b)[OneShot]
+                              (n :: b)[OneShot] ->
+                            GHC.Base.foldr
+                              @ GHC.Types.Char
+                              @ b
+                              c
+                              (GHC.Base.foldr
+                                 @ GHC.Types.Char
+                                 @ b
+                                 c
+                                 (GHC.Base.foldr
+                                    @ GHC.Types.Char
+                                    @ b
+                                    c
+                                    (GHC.Base.foldr
+                                       @ GHC.Types.Char
+                                       @ b
+                                       c
+                                       (GHC.Base.foldr
+                                          @ GHC.Types.Char
+                                          @ b
+                                          c
+                                          (GHC.CString.unpackFoldrCString# @ b " "# c n)
+                                          msg)
+                                       Lib.Colors.nColor)
+                                    (GHC.CString.unpackCStringUtf8# "  \\194\\187"#))
+                                 (Lib.Debug.$fShowDebugSections_$cshow sec))
+                              Lib.Colors.redColor))
+                        value } }) -}
+b92a087152f8e08b1fbae947a3f5da6f
+  dInfo ::
+    (Lib.Debug.DebugSections, GHC.Base.String) -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U(U,1*U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: (Lib.Debug.DebugSections, GHC.Base.String)) ->
+                 case w of ww { (,) ww1 ww2 -> Lib.Debug.$wdInfo ww1 ww2 }) -}
+a77bab71ceabe0bd32e7e83e89222271
+  dInfo1 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.dInfo} False True} GHC.CString.unpackCString#
+                                                                  " "#) -}
+8fa87077a8bb3f0fd79d2018150ada38
+  dInfo2 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.dInfo} False True} GHC.CString.unpackCStringUtf8#
+                                                                  "  \\194\\187"#) -}
+4032bb6f2e855ecbd337de3822a1bec9
+  debugSections :: [Lib.Debug.DebugSections]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.debugSections} True False} GHC.Types.:
+                                                                          @ Lib.Debug.DebugSections
+                                                                          Lib.Debug.D_ANY
+                                                                          (GHC.Types.[]
+                                                                             @ Lib.Debug.DebugSections)) -}
+1be09bfd6d4e400c5809b6c36a0fe02b
+  (←) ::
+    GHC.Show.Show a =>
+    (Lib.Debug.DebugSections, [GHC.Types.Char]) -> a -> a
+  {- Arity: 3, Strictness: <L,1*U(A,1*C1(U),A)><S,1*U(U,1*U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: (Lib.Debug.DebugSections, [GHC.Types.Char]))
+                   (w2 :: a) ->
+                 case w1 of ww { (,) ww1 ww2 -> Lib.Debug.$w← @ a w ww1 ww2 w2 }) -}
+8d71c1c6a646064c087f4d58aadf95f4
+  ←1 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.←} False True} GHC.CString.unpackCString#
+                                                              "  "#) -}
+a837a42bc208e1da92ed0e20f81afa33
+  ←2 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Debug.←} False True} GHC.CString.unpackCStringUtf8#
+                                                              "  \\194\\187"#) -}
+instance GHC.Enum.Enum [Lib.Debug.DebugSections]
+  = Lib.Debug.$fEnumDebugSections
+instance GHC.Classes.Eq [Lib.Debug.DebugSections]
+  = Lib.Debug.$fEqDebugSections
+instance GHC.Classes.Ord [Lib.Debug.DebugSections]
+  = Lib.Debug.$fOrdDebugSections
+instance GHC.Show.Show [Lib.Debug.DebugSections]
+  = Lib.Debug.$fShowDebugSections
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

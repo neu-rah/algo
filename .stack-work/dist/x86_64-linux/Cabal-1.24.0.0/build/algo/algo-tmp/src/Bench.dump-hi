@@ -1,0 +1,94 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-12 00:15:05.514029 UTC
+
+interface main@main:Bench [hpc] 8001
+  interface hash: 6043479ecda7cee10a16f8fa3c686968
+  ABI hash: 4067c1c60878f2b2bf6c8a7d888c7d55
+  export-list hash: 82fa3368fc6f45f5a7c3da7cf57a3fe0
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c25c71772aae7ac07670edcd14020fd8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+module dependencies: AlgAux AlgData AlgFile [boot] AlgNum AlgParser
+                     AlgSets [boot] AlgShow Calc Context Derive Evid [boot] Intervals
+                     Lib.Colors Lib.Debug Lib.ISUnits Lib.Noms Neighbor Rules Sample
+                     Solver [boot] Utils
+package dependencies: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-ordlist-0.4.7.0@data-ordlist-0.4.7.0-KWzW5aSYDm3KUQkWjneBW4
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM
+                      numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj
+                      parsec-3.1.11@parsec-3.1.11-BCos4GEVCuDB8dnOCBHO6X
+                      primes-0.2.1.0@primes-0.2.1.0-K0eIDQpwpli2u6M20VlfZn
+                      regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH
+                      regex-compat-0.95.1@regex-compat-0.95.1-JPDhOGKcrkD8S1t3VsLLUt
+                      regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR
+                      split-0.2.3.1@split-0.2.3.1-IJKK4pOCYGKud0jZImZke
+                      text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         base-4.9.0.0:Text.Show.Functions
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         main@main:AlgNum main@main:AlgParser main@main:AlgParser
+         main@main:AlgShow
+         regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH:Text.Regex.Base.Context
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.String
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH:Data.Boolean
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 24b19ef74cea78e4c18332bed9f0491d
+import  -/  AlgData 307fffe4f0712a2d16396958905f20d6
+  exports: 429708355c7b5468a518bfa47675e12b
+import  -/  Lib.Debug c5ad911a598d38e4e2cba45a09de710b
+  exports: e68806ff5497d096232692f266395170
+import  -/  Rules 74470094acc99b8481373ebd8cc3be83
+  exports: d7450c0b10c7c04ae0e8f801289b432b
+8fda93f0d95d176297abaf849fdc768c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Bench.$trModule2 Bench.$trModule1) -}
+237802f7f87b761520c30daa02d280c4
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Bench"#) -}
+fcf9dab2cf4ff645e2d251fa6d16420d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

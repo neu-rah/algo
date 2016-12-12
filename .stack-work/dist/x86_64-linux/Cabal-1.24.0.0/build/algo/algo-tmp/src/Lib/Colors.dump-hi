@@ -1,0 +1,125 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-11 23:56:02.542941 UTC
+
+interface main@main:Lib.Colors 8001
+  interface hash: 1d54ae4fcee921ff0bfec43eb5ff1ba2
+  ABI hash: 587e28cb8dcdf2f6481678041195a457
+  export-list hash: dd28f8f849d9531d0a7956c1d1cf94af
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 62c6c7d391e8226c498c19461fde30cb
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.Colors.ansiEsc
+  Lib.Colors.blueColor
+  Lib.Colors.boldStyle
+  Lib.Colors.greenColor
+  Lib.Colors.nColor
+  Lib.Colors.noStyle
+  Lib.Colors.redColor
+  Lib.Colors.whiteColor
+  Lib.Colors.yellowColor
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+0d9c53a3872ebaa6ecf1bb61e9686e09
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Lib.Colors.$trModule2
+                   Lib.Colors.$trModule1) -}
+2350b25b2e74a785f4fb64380da8e110
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib.Colors"#) -}
+65b0040fe9451b5e92da7145e009e9af
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+b65ee88c92f511b766b68d03cb8216ef
+  ansiEsc :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "\ESC["#) -}
+881814fc9f0c475c4ce8e7bfedfa52c4
+  blueColor :: GHC.Base.String
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Colors.ansiEsc
+                   Lib.Colors.blueColor1) -}
+321c4634795f0bbb394fd261094b7cf1
+  blueColor1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "96m"#) -}
+4632280fcec37b5a1dc43b52e0a6475f
+  boldStyle :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Colors.ansiEsc
+                   Lib.Colors.boldStyle1) -}
+66440f5ad48880277f0ac6023b685af1
+  boldStyle1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1m"#) -}
+803a4bfbd69a3930e2fbd943001c98fe
+  greenColor :: GHC.Base.String
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Colors.ansiEsc
+                   Lib.Colors.greenColor1) -}
+fc8c4919be610e1a726469728268c40f
+  greenColor1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "92m"#) -}
+9a0460a5d6a9b371dddaca2ef8859ed3
+  nColor :: GHC.Base.String
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Colors.ansiEsc
+                   Lib.Colors.nColor1) -}
+9c15e405b9b6221c2661501be1b59293
+  nColor1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "0m"#) -}
+6057638dda8c595b82777771cbf4131d
+  noStyle :: [GHC.Types.Char]
+  {- Unfolding: (Lib.Colors.nColor) -}
+3ec6c870c0445f7b067abc0ecaedefc9
+  redColor :: GHC.Base.String
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Colors.ansiEsc
+                   Lib.Colors.redColor1) -}
+b90d2170b0bbb9143ba3a875e23d85bb
+  redColor1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "31m"#) -}
+fc279835d679b00663870c21ac805982
+  whiteColor :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Colors.ansiEsc
+                   Lib.Colors.whiteColor1) -}
+da370284f1ec56a0a7e0f2a2860e89a3
+  whiteColor1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "37m"#) -}
+e9303524f6c987b3d52c27702ec0388a
+  yellowColor :: GHC.Base.String
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Lib.Colors.ansiEsc
+                   Lib.Colors.yellowColor1) -}
+4a91c67385e2af3aaa5c4fd7578e3a95
+  yellowColor1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "93m"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

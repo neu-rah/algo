@@ -1,0 +1,447 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-12 00:14:41.504422 UTC
+
+interface main@main:Steps [hpc] 8001
+  interface hash: 184a0b08d7ca6796a271c4764c0f3bf3
+  ABI hash: 2e9d4395db6d890d36f4a675f606a0bf
+  export-list hash: 448d5d65f66e603cb964d699f4923265
+  orphan hash: 662619653cf4dce795141fea9873f7fe
+  flag hash: e6829fda7f2ea1e7a13a24d30776ffcd
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Steps.<=>
+  Steps._step
+  Steps.defStep
+  Steps.resStepOp
+  Steps.step
+  Steps.stepOp
+  Steps.steps
+module dependencies: AlgAux AlgData AlgShow Context [boot]
+                     Evid [boot] Lib.Colors Lib.Debug Lib.Noms Utils
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-ordlist-0.4.7.0@data-ordlist-0.4.7.0-KWzW5aSYDm3KUQkWjneBW4
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj
+                      primes-0.2.1.0@primes-0.2.1.0-K0eIDQpwpli2u6M20VlfZn
+                      regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH
+                      regex-compat-0.95.1@regex-compat-0.95.1-JPDhOGKcrkD8S1t3VsLLUt
+                      regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         main@main:AlgShow main@main:AlgShow
+         regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH:Text.Regex.Base.Context
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.String
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.0.0:Control.Applicative 7728b33d6969dce59e89474349eb1397
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.Maybe 5f2ba364cbe65c060bc5436bc0b9d049
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  AlgAux 11857fb5eafb79b4e497e9d216a2ba5d
+  exports: a5bbe99cfa73a20385453c450cf73119
+  <+ 74ac64e61861c5e35547bffdfaf82e5b
+import  -/  AlgData 307fffe4f0712a2d16396958905f20d6
+  exports: 429708355c7b5468a518bfa47675e12b
+  Algo 4d637072ad901205bf793a262f526c33
+  And 5d24d8c844bd2a97c85e63b7abcbb24f
+  Document 300b94279054e268cbaddbf88cd55282
+  Equals 9500932a4069a75b430a3a44c9f0f2e7
+  Equation 551a1d9fee8c2cb8da0f9aaca286e438
+  Equiv bcbca3b57cace3058342528cd8f68537
+  Implic 18c8a8ece3f5a0292f53fe1c3ea73ae8
+  Op 15ebbb24b6785911f3ab55036df6fa5d
+  Resol 8effdfb668f5cb607c4bd51445f565fb
+  Simpl c2dd23a8d56a67aeb71c59f26e43b05d
+  System dff1e0e43983d65f96ab9b0cc376b202
+  equatOps 24149df67c5148a043074cf3bc329ffd
+  resolOps 49f9ad76dde5565786296bd40c13af37
+  resolSteps e6d89533f628878f7da1e0f17dbec795
+import  -/  AlgShow fcfeb78e77c98c4f4ab51d6062a0e40d
+  exports: 5fdcc8d88371b431351310f3bb37bf3d
+import  -/  Lib.Debug c5ad911a598d38e4e2cba45a09de710b
+  exports: e68806ff5497d096232692f266395170
+  D_STEPS d50ceee011f35049f4a117009a77b624
+  ← 1be09bfd6d4e400c5809b6c36a0fe02b
+import  -/  Utils e3ec9e04ed6635229273d876ecf1c4f6
+  exports: edc5a96c02c5468ab823d3bed5331cb6
+  hasOp 920b2c24d840d28b30b54ea7f731106e
+addDependentFile "/home/azevedo/.stack/programs/x86_64-linux/ghc-8.0.1/lib/ghc-8.0.1/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+73c359465d8e7124adf803b1d67d7cd9
+  $s$fShowMaybe :: GHC.Show.Show (GHC.Base.Maybe AlgData.Algo)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe AlgData.Algo)
+                  (GHC.Show.$fShowMaybe_$cshowsPrec
+                     @ AlgData.Algo
+                     AlgShow.$fShowAlgo)
+                  (GHC.Show.$fShowMaybe_$cshow @ AlgData.Algo AlgShow.$fShowAlgo)
+                  Steps.$s$fShowMaybe_$s$fShowMaybe_$cshowList -}
+06259d132e0cfef5212174cc6719e8c0
+  $s$fShowMaybe_$s$fShowMaybe_$cshowList ::
+    [GHC.Base.Maybe AlgData.Algo] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [GHC.Base.Maybe AlgData.Algo])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe AlgData.Algo)
+                   (GHC.Show.$fShowMaybe_$cshowsPrec
+                      @ AlgData.Algo
+                      AlgShow.$fShowAlgo
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+e7960c9ee9863c6572f5faebf3e9dda9
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Steps.$trModule2 Steps.$trModule1) -}
+cbcf8d46b871538e76da7e5b3f3f8c89
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Steps"#) -}
+1160b9fcd729e8c665d2267c4e1c50e3
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+1a531c9f4643c51f0018dcd68b0bcb44
+  $wresStepOp :: AlgData.Algo -> AlgData.Algo -> (# AlgData.Algo #)
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: AlgData.Algo) (w1 :: AlgData.Algo) ->
+                 {__scc {main@main:Steps.resStepOp} True False} case w1 of wild {
+                                                                  DEFAULT
+                                                                  -> (# {__scc {main@main:Steps.resStepOp} False True} Lib.Debug.$w←
+                                                                                                                         @ AlgData.Algo
+                                                                                                                         AlgShow.$fShowAlgo
+                                                                                                                         Lib.Debug.D_STEPS
+                                                                                                                         (GHC.Base.++
+                                                                                                                            @ GHC.Types.Char
+                                                                                                                            (AlgShow.$fShowAlgSets_$cshow1
+                                                                                                                               w)
+                                                                                                                            (GHC.CString.unpackAppendCString#
+                                                                                                                               " -> "#
+                                                                                                                               (GHC.Base.++
+                                                                                                                                  @ GHC.Types.Char
+                                                                                                                                  (AlgShow.$fShowAlgSets_$cshow1
+                                                                                                                                     wild)
+                                                                                                                                  Steps.resStepOp1)))
+                                                                                                                         (AlgData.Op
+                                                                                                                            AlgData.Resol
+                                                                                                                            (GHC.Types.:
+                                                                                                                               @ AlgData.Algo
+                                                                                                                               w
+                                                                                                                               (GHC.Types.:
+                                                                                                                                  @ AlgData.Algo
+                                                                                                                                  (AlgData.Op
+                                                                                                                                     AlgData.Equiv
+                                                                                                                                     (GHC.Types.:
+                                                                                                                                        @ AlgData.Algo
+                                                                                                                                        wild
+                                                                                                                                        (GHC.Types.[]
+                                                                                                                                           @ AlgData.Algo)))
+                                                                                                                                  (GHC.Types.[]
+                                                                                                                                     @ AlgData.Algo)))) #)
+                                                                  AlgData.Op op ds
+                                                                  -> case {__scc {main@main:Steps.resStepOp} False True} GHC.List.elem
+                                                                                                                           @ AlgData.Ops
+                                                                                                                           AlgData.$fEqOps
+                                                                                                                           op
+                                                                                                                           AlgData.resolSteps of wild1 {
+                                                                       GHC.Types.False
+                                                                       -> (# {__scc {main@main:Steps.resStepOp} False True} Lib.Debug.$w←
+                                                                                                                              @ AlgData.Algo
+                                                                                                                              AlgShow.$fShowAlgo
+                                                                                                                              Lib.Debug.D_STEPS
+                                                                                                                              (GHC.Base.++
+                                                                                                                                 @ GHC.Types.Char
+                                                                                                                                 (AlgShow.$fShowAlgSets_$cshow1
+                                                                                                                                    w)
+                                                                                                                                 (GHC.CString.unpackAppendCString#
+                                                                                                                                    " -> "#
+                                                                                                                                    (GHC.Base.++
+                                                                                                                                       @ GHC.Types.Char
+                                                                                                                                       (AlgShow.$fShowAlgSets_$cshow1
+                                                                                                                                          wild)
+                                                                                                                                       Steps.resStepOp1)))
+                                                                                                                              (AlgData.Op
+                                                                                                                                 AlgData.Resol
+                                                                                                                                 (GHC.Types.:
+                                                                                                                                    @ AlgData.Algo
+                                                                                                                                    w
+                                                                                                                                    (GHC.Types.:
+                                                                                                                                       @ AlgData.Algo
+                                                                                                                                       (AlgData.Op
+                                                                                                                                          AlgData.Equiv
+                                                                                                                                          (GHC.Types.:
+                                                                                                                                             @ AlgData.Algo
+                                                                                                                                             wild
+                                                                                                                                             (GHC.Types.[]
+                                                                                                                                                @ AlgData.Algo)))
+                                                                                                                                       (GHC.Types.[]
+                                                                                                                                          @ AlgData.Algo)))) #)
+                                                                       GHC.Types.True
+                                                                       -> (# {__scc {main@main:Steps.resStepOp} False True} Lib.Debug.$w←
+                                                                                                                              @ AlgData.Algo
+                                                                                                                              AlgShow.$fShowAlgo
+                                                                                                                              Lib.Debug.D_STEPS
+                                                                                                                              (GHC.Base.++
+                                                                                                                                 @ GHC.Types.Char
+                                                                                                                                 (AlgShow.$fShowAlgSets_$cshow1
+                                                                                                                                    w)
+                                                                                                                                 (GHC.CString.unpackAppendCString#
+                                                                                                                                    " -> "#
+                                                                                                                                    (GHC.Base.++
+                                                                                                                                       @ GHC.Types.Char
+                                                                                                                                       (AlgShow.$fShowAlgSets_$cshow1
+                                                                                                                                          wild)
+                                                                                                                                       Steps.resStepOp1)))
+                                                                                                                              (AlgData.Op
+                                                                                                                                 AlgData.Resol
+                                                                                                                                 (GHC.Types.:
+                                                                                                                                    @ AlgData.Algo
+                                                                                                                                    w
+                                                                                                                                    (GHC.Types.:
+                                                                                                                                       @ AlgData.Algo
+                                                                                                                                       wild
+                                                                                                                                       (GHC.Types.[]
+                                                                                                                                          @ AlgData.Algo)))) #) } }) -}
+697700a613d212918f27ce5f9ac740e9
+  (<=>) ::
+    AlgData.Algo
+    -> GHC.Base.Maybe AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: AlgData.Algo) (ds :: GHC.Base.Maybe AlgData.Algo) ->
+                 {__scc {main@main:Steps.<=>} True True} case ds of wild {
+                                                           GHC.Base.Nothing
+                                                           -> GHC.Base.Nothing @ AlgData.Algo
+                                                           GHC.Base.Just b -> Steps.step a b }) -}
+92817535411c5db24c77db3ab33846f8
+  _step ::
+    AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,U><S,U> -}
+78b4c5406db2049331cfa6d2f1973dd9
+  defStep ::
+    AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><L,U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: AlgData.Algo) (w1 :: AlgData.Algo) ->
+                 {__scc {main@main:Steps.defStep} True False} GHC.Base.Just
+                                                                @ AlgData.Algo
+                                                                ({__scc {main@main:Steps.defStep} False True} Lib.Debug.$w←
+                                                                                                                @ AlgData.Algo
+                                                                                                                AlgShow.$fShowAlgo
+                                                                                                                Lib.Debug.D_STEPS
+                                                                                                                Steps.defStep1
+                                                                                                                (AlgData.Op
+                                                                                                                   AlgData.Simpl
+                                                                                                                   (GHC.Types.:
+                                                                                                                      @ AlgData.Algo
+                                                                                                                      w
+                                                                                                                      (GHC.Types.:
+                                                                                                                         @ AlgData.Algo
+                                                                                                                         (AlgData.Op
+                                                                                                                            AlgData.Equals
+                                                                                                                            (GHC.Types.:
+                                                                                                                               @ AlgData.Algo
+                                                                                                                               w1
+                                                                                                                               (GHC.Types.[]
+                                                                                                                                  @ AlgData.Algo)))
+                                                                                                                         (GHC.Types.[]
+                                                                                                                            @ AlgData.Algo)))))) -}
+8ad35506c0d325d73a12eff9baf9a4b8
+  defStep1 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Steps.defStep} False True} GHC.CString.unpackCString#
+                                                                "default _step:"#) -}
+b18fa0a4fee28b902c3b5715649ffc28
+  resStepOp ::
+    AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: AlgData.Algo) (w1 :: AlgData.Algo) ->
+                 case Steps.$wresStepOp w w1 of ww { Unit# ww1 ->
+                 GHC.Base.Just @ AlgData.Algo ww1 }) -}
+102d6de517210e8492ab9d4af9f1da3d
+  resStepOp1 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Steps.resStepOp} False True} GHC.CString.unpackCString#
+                                                                  " stepResOp:"#) -}
+4cfa98535089faa6d6ab8f06e66589d1
+  step :: AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (e :: AlgData.Algo) (r :: AlgData.Algo) ->
+                 {__scc {main@main:Steps.step} True True} case {__scc {main@main:Steps.step.r'} True True} Steps._step
+                                                                                                             e
+                                                                                                             r of wild {
+                                                            GHC.Base.Nothing
+                                                            -> GHC.Base.Nothing @ AlgData.Algo
+                                                            GHC.Base.Just ds
+                                                            -> case ds of wild1 {
+                                                                 DEFAULT -> wild
+                                                                 AlgData.Op ds1 ds2
+                                                                 -> case ds1 of wild2 {
+                                                                      DEFAULT -> wild
+                                                                      AlgData.Resol
+                                                                      -> case ds2 of wild3 {
+                                                                           [] -> wild
+                                                                           : ds3 ds4
+                                                                           -> case ds3 of wild4 {
+                                                                                DEFAULT -> wild
+                                                                                AlgData.Op ds5 ds6
+                                                                                -> case ds5 of wild5 {
+                                                                                     DEFAULT -> wild
+                                                                                     AlgData.Resol
+                                                                                     -> Steps.step1
+                                                                                          r
+                                                                                          e } } } } } }) -}
+d75f099138dd1e46f21894b59bac7616
+  step1 ::
+    AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><L,U>x -}
+b13a3329ea53c94a2091134958eafeef
+  stepOp ::
+    AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (a :: AlgData.Algo) (b :: AlgData.Algo) ->
+                 {__scc {main@main:Steps.stepOp} True True} case b of wild {
+                                                              DEFAULT -> Steps.stepOp3
+                                                              AlgData.Op op ds
+                                                              -> case GHC.List.elem
+                                                                        @ AlgData.Ops
+                                                                        AlgData.$fEqOps
+                                                                        op
+                                                                        AlgData.equatOps of wild1 {
+                                                                   GHC.Types.False
+                                                                   -> Lib.Debug.$w←
+                                                                        @ (GHC.Base.Maybe
+                                                                             AlgData.Algo)
+                                                                        Steps.$s$fShowMaybe
+                                                                        Lib.Debug.D_STEPS
+                                                                        (GHC.Base.++
+                                                                           @ GHC.Types.Char
+                                                                           (AlgShow.$fShowAlgSets_$cshow1
+                                                                              a)
+                                                                           (GHC.CString.unpackAppendCString#
+                                                                              " -> "#
+                                                                              (GHC.Base.++
+                                                                                 @ GHC.Types.Char
+                                                                                 (AlgShow.$fShowAlgSets_$cshow1
+                                                                                    wild)
+                                                                                 Steps.stepOp2)))
+                                                                        ({__scc {main@main:Steps.defStep} True False} GHC.Base.Just
+                                                                                                                        @ AlgData.Algo
+                                                                                                                        ({__scc {main@main:Steps.defStep} False True} Lib.Debug.$w←
+                                                                                                                                                                        @ AlgData.Algo
+                                                                                                                                                                        AlgShow.$fShowAlgo
+                                                                                                                                                                        Lib.Debug.D_STEPS
+                                                                                                                                                                        Steps.defStep1
+                                                                                                                                                                        (AlgData.Op
+                                                                                                                                                                           AlgData.Simpl
+                                                                                                                                                                           (GHC.Types.:
+                                                                                                                                                                              @ AlgData.Algo
+                                                                                                                                                                              a
+                                                                                                                                                                              (GHC.Types.:
+                                                                                                                                                                                 @ AlgData.Algo
+                                                                                                                                                                                 (AlgData.Op
+                                                                                                                                                                                    AlgData.Equals
+                                                                                                                                                                                    (GHC.Types.:
+                                                                                                                                                                                       @ AlgData.Algo
+                                                                                                                                                                                       wild
+                                                                                                                                                                                       (GHC.Types.[]
+                                                                                                                                                                                          @ AlgData.Algo)))
+                                                                                                                                                                                 (GHC.Types.[]
+                                                                                                                                                                                    @ AlgData.Algo))))))
+                                                                   GHC.Types.True
+                                                                   -> GHC.Base.Just
+                                                                        @ AlgData.Algo
+                                                                        (Lib.Debug.$w←
+                                                                           @ AlgData.Algo
+                                                                           AlgShow.$fShowAlgo
+                                                                           Lib.Debug.D_STEPS
+                                                                           (GHC.Base.++
+                                                                              @ GHC.Types.Char
+                                                                              (AlgShow.$fShowAlgSets_$cshow1
+                                                                                 a)
+                                                                              (GHC.CString.unpackAppendCString#
+                                                                                 " -> "#
+                                                                                 (GHC.Base.++
+                                                                                    @ GHC.Types.Char
+                                                                                    (AlgShow.$fShowAlgSets_$cshow1
+                                                                                       wild)
+                                                                                    Steps.stepOp1)))
+                                                                           (AlgData.Op
+                                                                              AlgData.Simpl
+                                                                              (GHC.Types.:
+                                                                                 @ AlgData.Algo
+                                                                                 a
+                                                                                 (GHC.Types.:
+                                                                                    @ AlgData.Algo
+                                                                                    wild
+                                                                                    (GHC.Types.[]
+                                                                                       @ AlgData.Algo))))) } }) -}
+7efc3fa01770aa1fd2203de685f18601
+  stepOp1 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Steps.stepOp} False True} GHC.CString.unpackCString#
+                                                               " stepping equatOps:"#) -}
+78a3d285a09f64e5126d51030d041846
+  stepOp2 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Steps.stepOp} False True} GHC.CString.unpackCString#
+                                                               " stepping op:"#) -}
+4cd56586467131cff44d39777b7b634a
+  stepOp3 :: GHC.Base.Maybe AlgData.Algo
+  {- Strictness: x -}
+6545fded28d70a6d9d04c93bc0ebfb05
+  steps ::
+    (AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+    -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (f :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+                   (o :: AlgData.Algo) ->
+                 {__scc {main@main:Steps.steps} True True} let {
+                                                             ds :: GHC.Base.Maybe AlgData.Algo
+                                                             = {__scc {main@main:Steps.steps.r} True True} f o
+                                                           } in
+                                                           {__scc {main@main:Steps.<=>} True True} case ds of wild {
+                                                                                                     GHC.Base.Nothing
+                                                                                                     -> GHC.Base.Nothing
+                                                                                                          @ AlgData.Algo
+                                                                                                     GHC.Base.Just b
+                                                                                                     -> Steps.step
+                                                                                                          o
+                                                                                                          b }) -}
+"SPEC/Steps $fShowMaybe @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                             AlgData.Algo)
+  GHC.Show.$fShowMaybe @ AlgData.Algo $dShow = Steps.$s$fShowMaybe
+"SPEC/Steps $fShowMaybe_$cshowList @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                        AlgData.Algo)
+  GHC.Show.$fShowMaybe_$cshowList @ AlgData.Algo $dShow
+  = Steps.$s$fShowMaybe_$s$fShowMaybe_$cshowList
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

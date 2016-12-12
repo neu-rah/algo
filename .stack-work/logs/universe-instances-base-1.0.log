@@ -1,0 +1,16 @@
+Configuring universe-instances-base-1.0...
+Building universe-instances-base-1.0...
+Preprocessing library universe-instances-base-1.0...
+[1 of 1] Compiling Data.Universe.Instances.Base ( Data/Universe/Instances/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Base.o )
+
+Data/Universe/Instances/Base.hs:3:1: warning: [-Wtabs]
+    Tab character found here, and in 19 further locations.
+    Please use spaces instead.
+[1 of 1] Compiling Data.Universe.Instances.Base ( Data/Universe/Instances/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Base.p_o )
+
+Data/Universe/Instances/Base.hs:3:1: warning: [-Wtabs]
+    Tab character found here, and in 19 further locations.
+    Please use spaces instead.
+Installing library in
+/home/azevedo/.stack/snapshots/x86_64-linux/lts-7.12/8.0.1/lib/x86_64-linux-ghc-8.0.1/universe-instances-base-1.0-E49NVHLQYsIE6WsKRGVEV7
+Registering universe-instances-base-1.0...

@@ -1,0 +1,22 @@
+Configuring regex-base-0.93.2...
+Building regex-base-0.93.2...
+Preprocessing library regex-base-0.93.2...
+[1 of 4] Compiling Text.Regex.Base.RegexLike ( Text/Regex/Base/RegexLike.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Text/Regex/Base/RegexLike.o )
+[2 of 4] Compiling Text.Regex.Base.Context ( Text/Regex/Base/Context.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Text/Regex/Base/Context.o )
+[3 of 4] Compiling Text.Regex.Base  ( Text/Regex/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Text/Regex/Base.o )
+
+Text/Regex/Base.hs:55:13: warning: [-Wdeprecations]
+    In the use of ‘versionTags’ (imported from Data.Version):
+    Deprecated: "See GHC ticket #2496"
+[4 of 4] Compiling Text.Regex.Base.Impl ( Text/Regex/Base/Impl.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Text/Regex/Base/Impl.o )
+[1 of 4] Compiling Text.Regex.Base.RegexLike ( Text/Regex/Base/RegexLike.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Text/Regex/Base/RegexLike.p_o )
+[2 of 4] Compiling Text.Regex.Base.Context ( Text/Regex/Base/Context.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Text/Regex/Base/Context.p_o )
+[3 of 4] Compiling Text.Regex.Base  ( Text/Regex/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Text/Regex/Base.p_o )
+
+Text/Regex/Base.hs:55:13: warning: [-Wdeprecations]
+    In the use of ‘versionTags’ (imported from Data.Version):
+    Deprecated: "See GHC ticket #2496"
+[4 of 4] Compiling Text.Regex.Base.Impl ( Text/Regex/Base/Impl.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Text/Regex/Base/Impl.p_o )
+Installing library in
+/home/azevedo/.stack/snapshots/x86_64-linux/lts-7.12/8.0.1/lib/x86_64-linux-ghc-8.0.1/regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH
+Registering regex-base-0.93.2...

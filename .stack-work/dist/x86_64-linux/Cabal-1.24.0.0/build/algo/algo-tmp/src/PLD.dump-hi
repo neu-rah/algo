@@ -1,0 +1,289 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-12 00:15:14.194123 UTC
+
+interface main@main:PLD [hpc] 8001
+  interface hash: 6ee89cf8f863207794ff2417d3e3e4ea
+  ABI hash: 9031d0d6d02a1ddb4df41de7dacfc1e7
+  export-list hash: 3e37441aec0742e8d7367b0dbfe504d6
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c25c71772aae7ac07670edcd14020fd8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  PLD._pld
+  PLD.canon
+  PLD.degree'
+  PLD.dominant
+  PLD.pld
+  PLD.pld'
+module dependencies: AlgAux AlgData AlgFile [boot] AlgNum AlgParser
+                     AlgSets [boot] AlgShow Calc Context Derive Evid Intervals
+                     Lib.Colors Lib.Debug Lib.ISUnits Lib.Noms Neighbor Rules Sample
+                     Solver Steps Utils
+package dependencies: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-ordlist-0.4.7.0@data-ordlist-0.4.7.0-KWzW5aSYDm3KUQkWjneBW4
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM
+                      numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj
+                      parsec-3.1.11@parsec-3.1.11-BCos4GEVCuDB8dnOCBHO6X
+                      primes-0.2.1.0@primes-0.2.1.0-K0eIDQpwpli2u6M20VlfZn
+                      regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH
+                      regex-compat-0.95.1@regex-compat-0.95.1-JPDhOGKcrkD8S1t3VsLLUt
+                      regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR
+                      split-0.2.3.1@split-0.2.3.1-IJKK4pOCYGKud0jZImZke
+                      text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         base-4.9.0.0:Text.Show.Functions
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         main@main:AlgNum main@main:AlgParser main@main:AlgShow
+         regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH:Text.Regex.Base.Context
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.String
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH:Data.Boolean
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+import  -/  base-4.9.0.0:Control.Applicative 7728b33d6969dce59e89474349eb1397
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.Functor 6fc476505db88d678632a4a838125f13
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
+import  -/  base-4.9.0.0:Data.Tuple acb0ed10307ed88df6c81b8589f4de16
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  data-ordlist-0.4.7.0@data-ordlist-0.4.7.0-KWzW5aSYDm3KUQkWjneBW4:Data.List.Ordered 3e1230034768a659b0b3e17e28a192a8
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  AlgAux 11857fb5eafb79b4e497e9d216a2ba5d
+  exports: a5bbe99cfa73a20385453c450cf73119
+  degree a59d1ec3baccfc447c8bd0cb8bf679e7
+import  -/  AlgData 307fffe4f0712a2d16396958905f20d6
+  exports: 429708355c7b5468a518bfa47675e12b
+  Div 775b00476d70cc8a25f3cca491cc087c
+  Lit 11c3a155764287bafe570d1de382257a
+  Mul 2f35706afddb4d148a595d106eedb7e6
+  Nom 95d978c8cc5eb26be29a90158f860ad8
+  Op 15ebbb24b6785911f3ab55036df6fa5d
+  canComut 9336e5ce1b06bb33ba2abdaf4a0173cb
+import  -/  AlgNum 5b7c5de40c42f77585a696c96b38c922
+  exports: b4484b02a40b185650dc3e00f3ff55dd
+import  -/  Lib.Colors 661ee66eb71335da3fd90f984f3e9e14
+  exports: dd28f8f849d9531d0a7956c1d1cf94af
+import  -/  Lib.Debug c5ad911a598d38e4e2cba45a09de710b
+  exports: e68806ff5497d096232692f266395170
+  D_ANY 8e65c7fcd431375d5184c87f41f469b9
+  dInfo b92a087152f8e08b1fbae947a3f5da6f
+import  -/  Solver 86999a48d8d4440cc196365ff996c4a9
+  exports: 4471d3a30a1204f3bf559c4f2aa5ef86
+  solved a323f315b069b0c85468256c5b8d5fe9
+import  -/  Utils e3ec9e04ed6635229273d876ecf1c4f6
+  exports: edc5a96c02c5468ab823d3bed5331cb6
+  literals b692d27f2ce06b9e3e12238f389bd76c
+  membersOf 5e4f26caffa4dc04d7b305bdbbd4f01e
+cbf48183b9bfc0b7326b244a23df0933
+  $smaximum1 :: AlgData.Algo
+  {- Strictness: x -}
+eef280e6791fcbf0e725e56e29c194bf
+  $smaximum_go :: [AlgData.Algo] -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><S,U> -}
+d091f41eb1e866ed98443ba074f84dd4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module PLD.$trModule2 PLD.$trModule1) -}
+ac61211f1bc8fadeb3b4c9739b981670
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "PLD"#) -}
+514b533e5866ac57971dc6d7fd8a1e4d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+c88b79739493123dc773be5520b9bd68
+  $w_pld ::
+    AlgData.Algo
+    -> AlgData.Algo -> AlgData.Algo -> t -> (# AlgData.Algo, t #)
+  {- Arity: 4, Strictness: <S,1*U><L,1*U><L,U><L,U>, Inline: [0] -}
+97b84f9c9d8b83cab28975b14e3c8699
+  _pld ::
+    AlgData.Algo
+    -> AlgData.Algo -> AlgData.Algo -> t -> (AlgData.Algo, t)
+  {- Arity: 4, Strictness: <S,1*U><L,1*U><L,U><L,U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ t
+                   (w :: AlgData.Algo)
+                   (w1 :: AlgData.Algo)
+                   (w2 :: AlgData.Algo)
+                   (w3 :: t) ->
+                 case PLD.$w_pld @ t w w1 w2 w3 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+ab92acc9edd1e8835de4911dc88e55f9
+  canon :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <S,1*U> -}
+883db92bc1c441b1e1c8b5fd31e6471a
+  degree' :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (o :: AlgData.Algo) ->
+                 {__scc {main@main:PLD.degree'} True True} case {__scc {main@main:PLD.degree'.lits} True True} Utils.literals
+                                                                                                                 o of wild {
+                                                             [] -> PLD.degree'1
+                                                             : ds1 ds2
+                                                             -> case GHC.Base.map
+                                                                       @ AlgData.Algo
+                                                                       @ AlgData.Algo
+                                                                       (\ (ds :: AlgData.Algo) ->
+                                                                        AlgAux.degree ds o)
+                                                                       wild of wild1 {
+                                                                  [] -> PLD.$smaximum1
+                                                                  : ipv ipv1
+                                                                  -> PLD.$smaximum_go
+                                                                       ipv1
+                                                                       ipv } }) -}
+47613e8a1062c20e1f38ba5d6849d8d5
+  degree'1 :: AlgData.Algo
+  {- Strictness: m3, Unfolding: (AlgData.Nom PLD.degree'2) -}
+c80f5682104c1101fd9a66aa6373e6cd
+  degree'2 :: Lib.Noms.Nr
+  {- Unfolding: ({__scc {main@main:PLD.degree'} False True} {__scc {main@main:Lib.Noms.fromInteger} True False} Lib.Noms.NrRatio
+                                                                                                                  PLD.degree'3) -}
+26dc3bb9dc301977e3893797adb1f8f0
+  degree'3 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   PLD.degree'4
+                   GHC.Real.$fEnumRatio1) -}
+0d476027fbb943a1a1d737f77fca2284
+  degree'4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+b91934ff84f222203a410bd9bcf4ea28
+  dominant :: AlgData.Algo -> (AlgData.Algo, AlgData.Algo)
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (e :: AlgData.Algo) ->
+                 {__scc {main@main:PLD.dominant} True True} case e of wild {
+                                                              DEFAULT -> (wild, PLD.dominant5)
+                                                              AlgData.Lit ds
+                                                              -> (wild, PLD.dominant1)
+                                                              AlgData.Op op o
+                                                              -> let {
+                                                                   lits :: [AlgData.Algo]
+                                                                   = {__scc {main@main:PLD.dominant.lits} True True} {__scc {main@main:Utils.literals} True True} Data.Map.Base.keys1
+                                                                                                                                                                    @ AlgData.Algo
+                                                                                                                                                                    @ AlgData.Algo
+                                                                                                                                                                    (GHC.Types.[]
+                                                                                                                                                                       @ AlgData.Algo)
+                                                                                                                                                                    (Utils.literals'
+                                                                                                                                                                       (Data.Map.Base.Tip
+                                                                                                                                                                          @ AlgData.Algo
+                                                                                                                                                                          @ AlgData.Algo)
+                                                                                                                                                                       wild)
+                                                                 } in
+                                                                 let {
+                                                                   eta :: [(AlgData.Algo,
+                                                                            AlgData.Algo)]
+                                                                   = GHC.List.zip
+                                                                       @ AlgData.Algo
+                                                                       @ AlgData.Algo
+                                                                       lits
+                                                                       (GHC.Base.map
+                                                                          @ AlgData.Algo
+                                                                          @ AlgData.Algo
+                                                                          (\ (ds :: AlgData.Algo) ->
+                                                                           AlgAux.degree ds wild)
+                                                                          lits)
+                                                                 } in
+                                                                 {__scc {main@main:PLD.dominant} False True} PLD.dominant_go
+                                                                                                               eta }) -}
+4f58a7f05b6768e62cbec090d0a450fa
+  dominant1 :: AlgData.Algo
+  {- Strictness: m3, Unfolding: (AlgData.Nom PLD.dominant2) -}
+65bfbd18725f0253d7823fd82e33e601
+  dominant2 :: Lib.Noms.Nr
+  {- Unfolding: ({__scc {main@main:PLD.dominant} False True} {__scc {main@main:Lib.Noms.fromInteger} True False} Lib.Noms.NrRatio
+                                                                                                                   PLD.dominant3) -}
+e520a1a1f66de6b2b5599943800c176b
+  dominant3 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   PLD.dominant4
+                   GHC.Real.$fEnumRatio1) -}
+74ab2af8adbb7c32fe23acd47a5b20fe
+  dominant4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+a58563ac61dc6aaa64001cee5aa342e1
+  dominant5 :: AlgData.Algo
+  {- Strictness: m3, Unfolding: (AlgData.Nom PLD.dominant6) -}
+331a8a76222d5bc3fa9b45b311fc02fa
+  dominant6 :: Lib.Noms.Nr
+  {- Unfolding: ({__scc {main@main:PLD.dominant} False True} {__scc {main@main:Lib.Noms.fromInteger} True False} Lib.Noms.NrRatio
+                                                                                                                   PLD.degree'3) -}
+74c7dddcd6870c26b8eda8219d0a7018
+  dominant_go ::
+    [(AlgData.Algo, AlgData.Algo)] -> (AlgData.Algo, AlgData.Algo)
+  {- Arity: 1, Strictness: <S,1*U> -}
+c88996ec4523edda8f3f4d27acd7dddf
+  pld :: AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (a :: AlgData.Algo) (b :: AlgData.Algo) ->
+                 {__scc {main@main:PLD.pld} True True} case AlgData.$fEqAlgSets_$c==2
+                                                              a
+                                                              b of wild {
+                                                         GHC.Types.False
+                                                         -> PLD.pld'
+                                                              ({__scc {main@main:PLD.pld.ca} True True} PLD.canon
+                                                                                                          a)
+                                                              ({__scc {main@main:PLD.pld.cb} True True} PLD.canon
+                                                                                                          b)
+                                                         GHC.Types.True -> PLD.pld1 }) -}
+5575d2671f245780d056bd59a3aa10fb
+  pld' :: AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,U><S,U> -}
+a2a916b5c0cbde326b9c6d3641778bae
+  pld1 :: GHC.Base.Maybe AlgData.Algo
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just @ AlgData.Algo PLD.pld2) -}
+8a7532ada6ec44a48772a394d206db1f
+  pld2 :: AlgData.Algo
+  {- Strictness: m3, Unfolding: (AlgData.Nom PLD.pld3) -}
+f6e41fca9a418e23139b9bc6cf4ba7e6
+  pld3 :: Lib.Noms.Nr
+  {- Unfolding: ({__scc {main@main:PLD.pld} False True} {__scc {main@main:Lib.Noms.fromInteger} True False} Lib.Noms.NrRatio
+                                                                                                              PLD.dominant3) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

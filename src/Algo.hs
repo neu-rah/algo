@@ -70,7 +70,8 @@ import System.IO
 
 rules=readAlgo("docs/SimplificationRules.algo")
 
-main=do
+
+docMain=do
   _<-clearScreen
   _<-setCursorPosition 0 0
   putStrLn ("Algo " ++ showVersion version)
@@ -80,6 +81,13 @@ main=do
   books<-loadAlgo (Op Document []) (Op Document []) electric
   -- let bookdefs=getAssigns
   repl books Und
+
+main
+  =putStrLn
+  $show
+  $ applyRule emptyCtx (Op Sum [Lit "a",Lit "a"]) (Op Equation [Op Sum [Lit "a",Lit "a"],Op Equals [Op Mul [Nom 2,Lit "a"]]]) False
+  -- $ applyRule emptyCtx "a+a" "a+a=2a" False
+  -- $solve "2+2"
 
 --prompt=redColor++"λ"++whiteColor++">"++nColor
 prompt=boldStyle++redColor++"α"++whiteColor++"·>"++noStyle++nColor

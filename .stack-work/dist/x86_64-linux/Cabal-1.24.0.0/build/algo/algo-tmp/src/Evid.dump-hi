@@ -1,0 +1,851 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-12 00:15:07.138328 UTC
+
+interface main@main:Evid [hpc] 8001
+  interface hash: 1f5b71caf32286fe62fa909cc3cba25f
+  ABI hash: 889f68b957a0523056b3402cf97ea356
+  export-list hash: 51672234b32e22efb58f3169751ef7f2
+  orphan hash: 569e52b6089a5a9b2b30431165aa2410
+  flag hash: c25c71772aae7ac07670edcd14020fd8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Evid.__evid
+  Evid._evid
+  Evid._evid'
+  Evid.debugEvid
+  Evid.evid
+  Evid.evidOn
+  Evid.evidRules
+  Evid.evidStrat
+  Evid.evided
+  Evid.↓
+module dependencies: AlgAux AlgData AlgFile [boot] AlgNum AlgParser
+                     AlgSets [boot] AlgShow Calc Context Derive Intervals Lib.Colors
+                     Lib.Debug Lib.ISUnits Lib.Noms Neighbor Rules Sample Solver [boot]
+                     Steps Utils
+package dependencies: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-ordlist-0.4.7.0@data-ordlist-0.4.7.0-KWzW5aSYDm3KUQkWjneBW4
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM
+                      numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj
+                      parsec-3.1.11@parsec-3.1.11-BCos4GEVCuDB8dnOCBHO6X
+                      primes-0.2.1.0@primes-0.2.1.0-K0eIDQpwpli2u6M20VlfZn
+                      regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH
+                      regex-compat-0.95.1@regex-compat-0.95.1-JPDhOGKcrkD8S1t3VsLLUt
+                      regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR
+                      split-0.2.3.1@split-0.2.3.1-IJKK4pOCYGKud0jZImZke
+                      text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         base-4.9.0.0:Text.Show.Functions
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         main@main:AlgNum main@main:AlgParser main@main:AlgParser
+         main@main:AlgShow main@main:AlgShow
+         regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH:Text.Regex.Base.Context
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.String
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH:Data.Boolean
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+import  -/  base-4.9.0.0:Control.Applicative 7728b33d6969dce59e89474349eb1397
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.Functor 6fc476505db88d678632a4a838125f13
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:Data.Maybe 5f2ba364cbe65c060bc5436bc0b9d049
+import  -/  base-4.9.0.0:Data.Monoid 1efae021212a10c79fd75960dc0a1d99
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
+import  -/  base-4.9.0.0:Data.Tuple acb0ed10307ed88df6c81b8589f4de16
+import  -/  base-4.9.0.0:Debug.Trace ea8cb00328fe92825c831d5e7694bf0a
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 24b19ef74cea78e4c18332bed9f0491d
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 1e8d61dcc59a1a983b27bab6fd6bdcaf
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  AlgAux 11857fb5eafb79b4e497e9d216a2ba5d
+  exports: a5bbe99cfa73a20385453c450cf73119
+  algRebuild 808c3f56acb9610937b91ddc50fd898c
+  conclusionStep 981dc8f651d76815017f077b3e3d6117
+  plexOn ca985bce692c9512a7bf3c42eb8f0f89
+  repVars b03047de44748ffa5694b823b9fe07fd
+  resolPrec 83e7051ce724b9221854f8af3a38b6aa
+import  -/  AlgData 307fffe4f0712a2d16396958905f20d6
+  exports: 429708355c7b5468a518bfa47675e12b
+  Algo 4d637072ad901205bf793a262f526c33
+  And 5d24d8c844bd2a97c85e63b7abcbb24f
+  Bool 67f527cfffcc3ad2fd344285e61c737a
+  Document 300b94279054e268cbaddbf88cd55282
+  ElementOf fcc71430e74c3899ad99c3301ba98051
+  Equals 9500932a4069a75b430a3a44c9f0f2e7
+  Equation 551a1d9fee8c2cb8da0f9aaca286e438
+  Equiv bcbca3b57cace3058342528cd8f68537
+  Exp e6844369b86b13f0dedad0ecd6de9184
+  Floor b793e78fac6a98cf0909d2a13675d4b5
+  Func 464633904860f7b8d151038b299768e1
+  Function f5ef883b1e59e2f0872a341e814ff77f
+  Geometric 4add4bc249ad1778779f77be6b48a32e
+  Identity 22255c417d22acd67f4bd8a171b8c890
+  Implic 18c8a8ece3f5a0292f53fe1c3ea73ae8
+  Intersect 1bd339fb9bda5755a1a75cc848589700
+  InvFunc a7eaef33d523c34ba66619488a5717e6
+  Log 4658a810e53021bb8194eae2310bf5d3
+  Neg 67362d85eaf7d8ee80f48cd9dd9d09b9
+  Neighbor d3872eb91e1fc48b3f5f63cf95ee82a5
+  Nom 95d978c8cc5eb26be29a90158f860ad8
+  NotEqual 60d0afbeee1e2fdbb3638c5c45b39a68
+  Op 15ebbb24b6785911f3ab55036df6fa5d
+  Params f043d598866a816d6d2bad93df3e2d5e
+  Pref 5bdc838a1ea7f62e685a4ad812e98018
+  Relational fb765e9d77f9519eb47718c4dfc5e2c7
+  Resol 8effdfb668f5cb607c4bd51445f565fb
+  Root c769dc3e9496719f922608bf2389ae38
+  Simpl c2dd23a8d56a67aeb71c59f26e43b05d
+  Sub aaf2da6bfff58a4523858f58c32df4b3
+  System dff1e0e43983d65f96ab9b0cc376b202
+  Und ae1870307e7dc3a94128d7dfda7cf0f8
+  Union 5234cda473491e1abeb9830deb516287
+  canComut 9336e5ce1b06bb33ba2abdaf4a0173cb
+  inverse b0b6d117b76fb60e22c041fcc08475fa
+  parallelOps c97e6d64c3814beedd910a1fd92173a9
+  prior 2a8a7c59b2ca4821612561d2d4131eae
+  resolSteps e6d89533f628878f7da1e0f17dbec795
+import  -/  AlgParser 92f3a827acb9a4c042748bb6c970a485
+  exports: 1e3c0e2ea45406ebe59e3da15707b465
+  _algo 0288fd993b3b01ec3ba73bf2f1567a07
+  algo 1033716463d32b95f496c2ef4b7bef9f
+import  -/  AlgShow fcfeb78e77c98c4f4ab51d6062a0e40d
+  exports: 5fdcc8d88371b431351310f3bb37bf3d
+  info cb6503d8925fe1baad5f0b25fc306f50
+import  -/  Calc 9118e33b3ee020f4d62b8161b6bc016d
+  exports: c22777f833144e9b6018d344cb957367
+import  -/  Context 83c9cf53459dd0cc32aa6da943957421
+  exports: 21153040397191ce6298f9ca97a37e24
+  useCtx b6666dd3ad77e2a4f7929f7a35fbc752
+import  -/  Lib.Colors 661ee66eb71335da3fd90f984f3e9e14
+  exports: dd28f8f849d9531d0a7956c1d1cf94af
+import  -/  Lib.Debug c5ad911a598d38e4e2cba45a09de710b
+  exports: e68806ff5497d096232692f266395170
+  D_EVID 3c240f9e64cfc80aece8db1e97152abb
+  algTrace 0c8795b85673ae57a2fafc4c8716ecc8
+  dInfo b92a087152f8e08b1fbae947a3f5da6f
+  ← 1be09bfd6d4e400c5809b6c36a0fe02b
+import  -/  Rules 74470094acc99b8481373ebd8cc3be83
+  exports: d7450c0b10c7c04ae0e8f801289b432b
+  applyRules 77a0ea0e97819ab0cbeb3ab049ab4433
+  simplify 2f4f3abbff0482690463471031834399
+import  -/  Solver e35bfc302554872ad4514c120d4f41cd
+  exports: 32eca56b2140e4152941d077dea19996
+  solved 95cf717e5879c2a58a3b5957d0649ab2
+import  -/  Steps 2e9d4395db6d890d36f4a675f606a0bf
+  exports: 448d5d65f66e603cb964d699f4923265
+  steps 6545fded28d70a6d9d04c93bc0ebfb05
+import  -/  Utils e3ec9e04ed6635229273d876ecf1c4f6
+  exports: edc5a96c02c5468ab823d3bed5331cb6
+  #= c726cdd588c1bab42d70cffbda697ac7
+  #> 58b8e1358c534cd698b1556cfbb95273
+  chkQuant 04ed86859b5bc3a9091e050fcd568c1d
+  getOp 20e4e90d60d9c0f7aaf3549675e6310d
+  has 2a0a1f8ee580eada0b2f6786e99f7314
+  isNom 9d9b9ee80a525288ce8dd1af739e668f
+  isOp 2220696462435708854d3dec225b0bdd
+  literals b692d27f2ce06b9e3e12238f389bd76c
+  memberOf 612fad1fe1a087cf3c55c9b2a97ace21
+  membersOf 5e4f26caffa4dc04d7b305bdbbd4f01e
+  ok 3861b4d7f0d7b7d312a010526a83efc5
+import  -/  split-0.2.3.1@split-0.2.3.1-IJKK4pOCYGKud0jZImZke:Data.List.Split 46e8ab9554123893f27696c65d88e63d
+5953c65859152aaf3a034bc090adde82
+  $s$fShow(,) ::
+    GHC.Show.Show (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)
+                  (GHC.Show.$fShow(,)_$cshowsPrec
+                     @ (GHC.Base.Maybe AlgData.Algo)
+                     @ AlgData.Algo
+                     Evid.$s$fShow(,)1
+                     AlgShow.$fShowAlgo)
+                  Evid.$s$fShow(,)_$s$fShow(,)_$cshow
+                  Evid.$s$fShow(,)_$s$fShow(,)_$cshowList -}
+ec7ce5debf714b8ad8136a9d6e42818c
+  $s$fShow(,)1 :: GHC.Show.Show (GHC.Base.Maybe AlgData.Algo)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Evid.$s$fShow(,)_$s$fShowMaybe -}
+d08d8d32cb7b03bb7d63872ccb2453c8
+  $s$fShow(,)2 ::
+    GHC.Show.Show
+      ([(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)],
+       [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)])
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ([(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)],
+                     [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)])
+                  (GHC.Show.$fShow(,)_$cshowsPrec
+                     @ [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+                     @ [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+                     Evid.$s$fShow(,)3
+                     Evid.$s$fShow(,)3)
+                  (GHC.Show.$fShow(,)_$cshow
+                     @ [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+                     @ [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+                     Evid.$s$fShow(,)3
+                     Evid.$s$fShow(,)3)
+                  (GHC.Show.$fShow(,)_$cshowList
+                     @ [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+                     @ [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+                     Evid.$s$fShow(,)3
+                     Evid.$s$fShow(,)3) -}
+9d9ec3f050569a7a9ff45a241c6a8c33
+  $s$fShow(,)3 ::
+    GHC.Show.Show [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Evid.$s$fShow(,)_$s$fShow[] -}
+8a77e509be30b58f710ed80b934a2581
+  $s$fShow(,)4 ::
+    GHC.Show.Show (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Evid.$s$fShow(,) -}
+f9073891c98b8a431d38b0b53b3e2cb2
+  $s$fShow(,)_$s$fShow(,)_$cshow ::
+    (GHC.Base.Maybe AlgData.Algo, AlgData.Algo) -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)) ->
+                 GHC.Show.$fShow(,)_$cshowsPrec
+                   @ (GHC.Base.Maybe AlgData.Algo)
+                   @ AlgData.Algo
+                   Evid.$s$fShow(,)1
+                   AlgShow.$fShowAlgo
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+1b1a8bc164a7ac50d8fbd55e6191f00f
+  $s$fShow(,)_$s$fShow(,)_$cshowList ::
+    [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)
+                   (GHC.Show.$fShow(,)_$cshowsPrec
+                      @ (GHC.Base.Maybe AlgData.Algo)
+                      @ AlgData.Algo
+                      Evid.$s$fShow(,)1
+                      AlgShow.$fShowAlgo
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+be8a4a06d03c2a812592fd6699492bd3
+  $s$fShow(,)_$s$fShowMaybe ::
+    GHC.Show.Show (GHC.Base.Maybe AlgData.Algo)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe AlgData.Algo)
+                  (GHC.Show.$fShowMaybe_$cshowsPrec
+                     @ AlgData.Algo
+                     AlgShow.$fShowAlgo)
+                  (GHC.Show.$fShowMaybe_$cshow @ AlgData.Algo AlgShow.$fShowAlgo)
+                  Evid.$s$fShow(,)_$s$fShowMaybe_$cshowList -}
+b5cd4ec6e7b3b639696ffd968e65cae3
+  $s$fShow(,)_$s$fShowMaybe_$cshowList ::
+    [GHC.Base.Maybe AlgData.Algo] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [GHC.Base.Maybe AlgData.Algo])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe AlgData.Algo)
+                   (GHC.Show.$fShowMaybe_$cshowsPrec
+                      @ AlgData.Algo
+                      AlgShow.$fShowAlgo
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+fd8ebfdcfbdd6d649fa0ba3ffe0438ac
+  $s$fShow(,)_$s$fShow[] ::
+    GHC.Show.Show [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+                  (GHC.Show.$fShow[]_$cshowsPrec
+                     @ (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)
+                     Evid.$s$fShow(,)4)
+                  (GHC.Show.$fShow[]_$cshow
+                     @ (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)
+                     Evid.$s$fShow(,)4)
+                  (GHC.Show.$fShow[]_$cshowList
+                     @ (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)
+                     Evid.$s$fShow(,)4) -}
+25bf1bb0aa89442ef79be933d921d147
+  $s$fShow[] :: GHC.Show.Show [AlgData.Algo]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [AlgData.Algo]
+                  Evid.$s$fShow[]_$s$fShow[]_$cshowsPrec
+                  Evid.$s$fShow[]_$s$fShow[]_$cshow
+                  Evid.$s$fShow[]_$s$fShow[]_$cshowList -}
+c4f2c1192439d785caf1aed4a816cc90
+  $s$fShow[]_$s$fShow[]_$cshow :: [AlgData.Algo] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [AlgData.Algo]) ->
+                 AlgShow.$fShowAlgo_$cshowList x (GHC.Types.[] @ GHC.Types.Char)) -}
+0c40f03b1b25db8c6e0aef8c31d797f1
+  $s$fShow[]_$s$fShow[]_$cshowList ::
+    [[AlgData.Algo]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[AlgData.Algo]]) (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [AlgData.Algo]
+                   AlgShow.$fShowAlgo_$cshowList
+                   eta
+                   eta1) -}
+1d95b5b0d05248cf95efb14672da0200
+  $s$fShow[]_$s$fShow[]_$cshowsPrec ::
+    GHC.Types.Int -> [AlgData.Algo] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds2 :: GHC.Types.Int)
+                   (eta :: [AlgData.Algo])
+                   (eta1 :: GHC.Base.String) ->
+                 AlgShow.$fShowAlgo_$cshowList eta eta1) -}
+edf0b1da91018f88ed1fc03912faca17
+  $sfromList ::
+    [(AlgData.Algo, a)] -> Data.Map.Base.Map AlgData.Algo a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds2 :: [(AlgData.Algo, a)]) ->
+                 case ds2 of wild {
+                   [] -> Data.Map.Base.Tip @ AlgData.Algo @ a
+                   : ds3 ds4
+                   -> case ds3 of wild1 { (,) kx x ->
+                      case ds4 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Base.Bin
+                             @ AlgData.Algo
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                             (Data.Map.Base.Tip @ AlgData.Algo @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds5 ->
+                           case AlgData.$fOrdAlgo_$ccompare kx ky of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                Evid.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ AlgData.Algo
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a))
+                                  wild2 }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                Evid.$wpoly_go10
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ AlgData.Algo
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a))
+                                  wild2 } } } } } }) -}
+e4a9e43ec8fe7ad21080c5630b1f439a
+  $sfromList1 ::
+    Data.Map.Base.Map AlgData.Algo a1
+    -> [(AlgData.Algo, a1)] -> Data.Map.Base.Map AlgData.Algo a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+f82115992ca35045e47553b30a0582df
+  $sinsert_$sgo10 ::
+    AlgData.Algo
+    -> a1
+    -> Data.Map.Base.Map AlgData.Algo a1
+    -> Data.Map.Base.Map AlgData.Algo a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+15e26019ccfa4184ceed3a457bf8208c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Evid.$trModule2 Evid.$trModule1) -}
+e4925b590ac5e058e05db1bdd872c7a5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Evid"#) -}
+faf52c873e172506cee43b775be32f7c
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+be2549561363d5b6825abb2fa7b4a4a9
+  $wevidOn ::
+    AlgData.Algo
+    -> GHC.Prim.Int# -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 3, Strictness: <L,U><S,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: AlgData.Algo)
+                   (ww :: GHC.Prim.Int#)
+                   (w1 :: AlgData.Algo) ->
+                 {__scc {main@main:Evid.evidOn} True True} case w1 of wild {
+                                                             DEFAULT -> Evid.evidOn1
+                                                             AlgData.Op op oo
+                                                             -> case GHC.List.$wlenAcc
+                                                                       @ AlgData.Algo
+                                                                       oo
+                                                                       0# of ww2 { DEFAULT ->
+                                                                case GHC.Prim.tagToEnum#
+                                                                       @ GHC.Types.Bool
+                                                                       (GHC.Prim.>=#
+                                                                          ww
+                                                                          ww2) of wild1 {
+                                                                  GHC.Types.False
+                                                                  -> case {__scc {main@main:Evid.evidOn.r} True True} Evid.evid
+                                                                                                                        w
+                                                                                                                        (GHC.List.$w!!
+                                                                                                                           @ AlgData.Algo
+                                                                                                                           oo
+                                                                                                                           ww) of wild2 {
+                                                                       GHC.Base.Nothing
+                                                                       -> GHC.Base.Nothing
+                                                                            @ AlgData.Algo
+                                                                       GHC.Base.Just ipv
+                                                                       -> GHC.Base.Just
+                                                                            @ AlgData.Algo
+                                                                            (AlgData.Op
+                                                                               op
+                                                                               (let {
+                                                                                  n :: [AlgData.Algo]
+                                                                                  = let {
+                                                                                      n1 :: GHC.Prim.Int#
+                                                                                      = GHC.Prim.+#
+                                                                                          ww
+                                                                                          1#
+                                                                                    } in
+                                                                                    case GHC.Prim.tagToEnum#
+                                                                                           @ GHC.Types.Bool
+                                                                                           (GHC.Prim.<=#
+                                                                                              n1
+                                                                                              0#) of wild3 {
+                                                                                      GHC.Types.False
+                                                                                      -> Evid.$wunsafeDrop
+                                                                                           @ AlgData.Algo
+                                                                                           n1
+                                                                                           oo
+                                                                                      GHC.Types.True
+                                                                                      -> oo }
+                                                                                } in
+                                                                                let {
+                                                                                  n1 :: [AlgData.Algo]
+                                                                                  = GHC.Types.:
+                                                                                      @ AlgData.Algo
+                                                                                      ipv
+                                                                                      n
+                                                                                } in
+                                                                                case GHC.Prim.tagToEnum#
+                                                                                       @ GHC.Types.Bool
+                                                                                       (GHC.Prim.<#
+                                                                                          0#
+                                                                                          ww) of wild3 {
+                                                                                  GHC.Types.False
+                                                                                  -> n1
+                                                                                  GHC.Types.True
+                                                                                  -> letrec {
+                                                                                       $wgo1 :: [AlgData.Algo]
+                                                                                                -> GHC.Prim.Int#
+                                                                                                -> [AlgData.Algo]
+                                                                                         {- Arity: 2,
+                                                                                            Strictness: <S,1*U><L,1*U>,
+                                                                                            Inline: [0] -}
+                                                                                       = \ (w2 :: [AlgData.Algo])
+                                                                                           (ww1 :: GHC.Prim.Int#) ->
+                                                                                         case w2 of wild4 {
+                                                                                           [] -> n1
+                                                                                           : y ys
+                                                                                           -> case ww1 of ds2 {
+                                                                                                DEFAULT
+                                                                                                -> GHC.Types.:
+                                                                                                     @ AlgData.Algo
+                                                                                                     y
+                                                                                                     ($wgo1
+                                                                                                        ys
+                                                                                                        (GHC.Prim.-#
+                                                                                                           ds2
+                                                                                                           1#))
+                                                                                                1#
+                                                                                                -> GHC.Types.:
+                                                                                                     @ AlgData.Algo
+                                                                                                     y
+                                                                                                     n1 } }
+                                                                                     } in
+                                                                                     $wgo1
+                                                                                       oo
+                                                                                       ww })) }
+                                                                  GHC.Types.True
+                                                                  -> GHC.Base.Nothing
+                                                                       @ AlgData.Algo } } }) -}
+2fae481c84e6d9601c773ee615da1afa
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map AlgData.Algo a
+    -> [(AlgData.Algo, a)]
+    -> Data.Map.Base.Map AlgData.Algo a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+4de60ab888092bdeff402e88d00cca13
+  $wunsafeDrop :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+def33156dda4b00c59ba5ed4058513ce
+  __evid ::
+    AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+b3989758aee9d4b43241032ee40eef4f
+  _evid ::
+    AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+b58faf7adfa4e16ff08bd8d59d7e4bef
+  _evid' ::
+    AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><L,U> -}
+b05e12afb879a6868b0e9663bea15e0b
+  debugEvid ::
+    AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ (pref :: AlgData.Algo) (e :: AlgData.Algo) ->
+                 {__scc {main@main:Evid.debugEvid} True True} Lib.Debug.$w←
+                                                                @ (GHC.Base.Maybe AlgData.Algo)
+                                                                Evid.$s$fShow(,)_$s$fShowMaybe
+                                                                Lib.Debug.D_EVID
+                                                                (GHC.CString.unpackAppendCString#
+                                                                   "evid "#
+                                                                   (GHC.Base.++
+                                                                      @ GHC.Types.Char
+                                                                      (AlgShow.$fShowAlgSets_$cshow1
+                                                                         pref)
+                                                                      (GHC.CString.unpackAppendCString#
+                                                                         " on "#
+                                                                         (GHC.Base.++
+                                                                            @ GHC.Types.Char
+                                                                            (AlgShow.$fShowAlgSets_$cshow1
+                                                                               e)
+                                                                            Evid.debugEvid1))))
+                                                                (Evid._evid pref e)) -}
+491b683e2e09b1859fca937608174458
+  debugEvid1 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Evid.debugEvid} False True} GHC.CString.unpackCString#
+                                                                 " to:"#) -}
+1c91259a3c9faee3742ff331617b207f
+  evid :: AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+0a6a5665ebd895935757a478c26380bf
+  evidOn ::
+    AlgData.Algo
+    -> GHC.Types.Int -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 3, Strictness: <L,U><S(S),1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: AlgData.Algo)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: AlgData.Algo) ->
+                 case w1 of ww { GHC.Types.I# ww1 -> Evid.$wevidOn w ww1 w2 }) -}
+c8bdc95a0a464d2354161f0e0d06b527
+  evidOn1 :: GHC.Base.Maybe AlgData.Algo
+  {- Strictness: x -}
+ee9b3f32a9acef5bcffd174e3661a127
+  evidRules :: [AlgData.Algo]
+  {- Unfolding: ({__scc {main@main:Evid.evidRules} True False} GHC.Types.:
+                                                                 @ AlgData.Algo
+                                                                 Evid.evidRules10
+                                                                 Evid.evidRules1) -}
+7a218cdf612185367c2bf6d28d7de16c
+  evidRules1 :: [AlgData.Algo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ AlgData.Algo
+                   Evid.evidRules8
+                   Evid.evidRules2) -}
+09d75f7437a12d805caa397400c19be9
+  evidRules10 :: AlgData.Algo
+  {- Unfolding: ({__scc {main@main:Evid.evidRules} False True} AlgParser._algo
+                                                                 Evid.evidRules11) -}
+c859eccdf149f2dcdfceab6f9eeb8e61
+  evidRules11 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Evid.evidRules} False True} {__scc {main@main:Evid.evidRules} False True} GHC.CString.unpackCString#
+                                                                                                               "a*?+b*?=(a+b)*?"#) -}
+5a090bf635eaad30fe0fdf36670a475b
+  evidRules2 :: [AlgData.Algo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ AlgData.Algo
+                   Evid.evidRules6
+                   Evid.evidRules3) -}
+9cf03002f8bc0b7061610a2ee01a7870
+  evidRules3 :: [AlgData.Algo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ AlgData.Algo
+                   Evid.evidRules4
+                   (GHC.Types.[] @ AlgData.Algo)) -}
+18f4317e9f44052543ef614292da7d0e
+  evidRules4 :: AlgData.Algo
+  {- Unfolding: ({__scc {main@main:Evid.evidRules} False True} AlgParser._algo
+                                                                 Evid.evidRules5) -}
+a018e1b49b074d6ade124bb692c252fc
+  evidRules5 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Evid.evidRules} False True} {__scc {main@main:Evid.evidRules} False True} GHC.CString.unpackCString#
+                                                                                                               "(a+?)/n=a/n+?/n"#) -}
+ea0901cf94e27976b60bede1622eb5c4
+  evidRules6 :: AlgData.Algo
+  {- Unfolding: ({__scc {main@main:Evid.evidRules} False True} AlgParser._algo
+                                                                 Evid.evidRules7) -}
+195e4c1bb8afcdcd49b4e6d5975515d2
+  evidRules7 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Evid.evidRules} False True} {__scc {main@main:Evid.evidRules} False True} GHC.CString.unpackCStringUtf8#
+                                                                                                               "(?+n)\\194\\178=?\\194\\178+2*?*n+n\\194\\178"#) -}
+6b3b0ee50dce644080a4caf479f5cb3d
+  evidRules8 :: AlgData.Algo
+  {- Unfolding: ({__scc {main@main:Evid.evidRules} False True} AlgParser._algo
+                                                                 Evid.evidRules9) -}
+2f80940fdf4f94858855325c6c38cef0
+  evidRules9 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Evid.evidRules} False True} {__scc {main@main:Evid.evidRules} False True} GHC.CString.unpackCString#
+                                                                                                               "a/?+b/n=(a+b)/?"#) -}
+20b4b0c8bd9fc10dc912487fe0a864d4
+  evidStrat ::
+    [AlgData.Algo] -> [[(AlgData.Algo, AlgData.Algo, GHC.Types.Int)]]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (e :: [AlgData.Algo]) ->
+                 {__scc {main@main:Evid.evidStrat} True True} let {
+                                                                eqs :: [AlgData.Algo]
+                                                                = {__scc {main@main:Evid.evidStrat.eqs} True True} GHC.List.filter
+                                                                                                                     @ AlgData.Algo
+                                                                                                                     Evid.evidStrat1
+                                                                                                                     e
+                                                              } in
+                                                              let {
+                                                                lits :: [AlgData.Algo]
+                                                                = {__scc {main@main:Evid.evidStrat.lits} True True} let {
+                                                                                                                      e1 :: AlgData.Algo
+                                                                                                                      = AlgData.Op
+                                                                                                                          AlgData.System
+                                                                                                                          eqs
+                                                                                                                    } in
+                                                                                                                    {__scc {main@main:Utils.literals} True True} Data.Map.Base.keys1
+                                                                                                                                                                   @ AlgData.Algo
+                                                                                                                                                                   @ AlgData.Algo
+                                                                                                                                                                   (GHC.Types.[]
+                                                                                                                                                                      @ AlgData.Algo)
+                                                                                                                                                                   (Utils.literals'
+                                                                                                                                                                      (Data.Map.Base.Tip
+                                                                                                                                                                         @ AlgData.Algo
+                                                                                                                                                                         @ AlgData.Algo)
+                                                                                                                                                                      e1)
+                                                              } in
+                                                              letrec {
+                                                                go7 :: [AlgData.Algo]
+                                                                       -> [[(AlgData.Algo,
+                                                                             AlgData.Algo,
+                                                                             GHC.Types.Int)]]
+                                                                  {- Arity: 1,
+                                                                     Strictness: <S,1*U> -}
+                                                                = \ (ds2 :: [AlgData.Algo]) ->
+                                                                  case ds2 of wild {
+                                                                    []
+                                                                    -> GHC.Types.[]
+                                                                         @ [(AlgData.Algo,
+                                                                             AlgData.Algo,
+                                                                             GHC.Types.Int)]
+                                                                    : y ys
+                                                                    -> GHC.Types.:
+                                                                         @ [(AlgData.Algo,
+                                                                             AlgData.Algo,
+                                                                             GHC.Types.Int)]
+                                                                         (letrec {
+                                                                            go8 :: [AlgData.Algo]
+                                                                                   -> [(AlgData.Algo,
+                                                                                        AlgData.Algo,
+                                                                                        GHC.Types.Int)]
+                                                                              {- Arity: 1,
+                                                                                 Strictness: <S,1*U> -}
+                                                                            = \ (ds3 :: [AlgData.Algo]) ->
+                                                                              case ds3 of wild1 {
+                                                                                []
+                                                                                -> GHC.Types.[]
+                                                                                     @ (AlgData.Algo,
+                                                                                        AlgData.Algo,
+                                                                                        GHC.Types.Int)
+                                                                                : y1 ys1
+                                                                                -> GHC.Types.:
+                                                                                     @ (AlgData.Algo,
+                                                                                        AlgData.Algo,
+                                                                                        GHC.Types.Int)
+                                                                                     (y, y1,
+                                                                                      AlgAux.plexOn
+                                                                                        y1
+                                                                                        y)
+                                                                                     (go8 ys1) }
+                                                                          } in
+                                                                          go8 lits)
+                                                                         (go7 ys) }
+                                                              } in
+                                                              go7 eqs) -}
+5e75aad38909373aa942a5b06fee1c81
+  evidStrat1 :: AlgData.Algo -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (Utils.isOp AlgData.Equation) -}
+f2b28f0898385815ed6d64adbf5dc8f8
+  evided ::
+    AlgData.Algo
+    -> AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 3, Strictness: <L,U><S,U><L,U>,
+     Unfolding: (\ (pref :: AlgData.Algo)
+                   (e :: AlgData.Algo)
+                   (o :: AlgData.Algo) ->
+                 {__scc {main@main:Evid.evided} True True} case Evid._evid
+                                                                  pref
+                                                                  e of wild {
+                                                             GHC.Base.Nothing
+                                                             -> GHC.Base.Nothing @ AlgData.Algo
+                                                             GHC.Base.Just x
+                                                             -> case Context.useCtx
+                                                                       (Evid.$sfromList
+                                                                          @ AlgData.Algo
+                                                                          (GHC.Types.:
+                                                                             @ (AlgData.Algo,
+                                                                                AlgData.Algo)
+                                                                             (AlgData.Pref, o)
+                                                                             (GHC.Types.[]
+                                                                                @ (AlgData.Algo,
+                                                                                   AlgData.Algo))))
+                                                                       x of wild1 {
+                                                                  GHC.Base.Nothing -> wild
+                                                                  GHC.Base.Just ipv -> wild1 } }) -}
+0156d145f9a35be09af06cd030bc1070
+  (↓) :: GHC.Base.Maybe GHC.Types.Bool -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds2 :: GHC.Base.Maybe GHC.Types.Bool) ->
+                 {__scc {main@main:Evid.↓} True True} case ds2 of wild {
+                                                        GHC.Base.Nothing -> GHC.Types.False
+                                                        GHC.Base.Just a -> a }) -}
+"SPEC/Evid $fShow(,) @ (Maybe Algo) @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                         (GHC.Base.Maybe
+                                                                            AlgData.Algo))
+                                                            ($dShow1 :: GHC.Show.Show AlgData.Algo)
+  GHC.Show.$fShow(,) @ (GHC.Base.Maybe AlgData.Algo)
+                     @ AlgData.Algo
+                     $dShow
+                     $dShow1
+  = Evid.$s$fShow(,)
+"SPEC/Evid $fShow(,) @ [(Maybe Algo, Algo)] @ [(Maybe Algo, Algo)]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                                 [(GHC.Base.Maybe
+                                                                                                     AlgData.Algo,
+                                                                                                   AlgData.Algo)])
+                                                                                    ($dShow1 :: GHC.Show.Show
+                                                                                                  [(GHC.Base.Maybe
+                                                                                                      AlgData.Algo,
+                                                                                                    AlgData.Algo)])
+  GHC.Show.$fShow(,) @ [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+                     @ [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+                     $dShow
+                     $dShow1
+  = Evid.$s$fShow(,)2
+"SPEC/Evid $fShow(,)_$cshow @ (Maybe Algo) @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                (GHC.Base.Maybe
+                                                                                   AlgData.Algo))
+                                                                   ($dShow1 :: GHC.Show.Show
+                                                                                 AlgData.Algo)
+  GHC.Show.$fShow(,)_$cshow @ (GHC.Base.Maybe AlgData.Algo)
+                            @ AlgData.Algo
+                            $dShow
+                            $dShow1
+  = Evid.$s$fShow(,)_$s$fShow(,)_$cshow
+"SPEC/Evid $fShow(,)_$cshowList @ (Maybe Algo) @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                    (GHC.Base.Maybe
+                                                                                       AlgData.Algo))
+                                                                       ($dShow1 :: GHC.Show.Show
+                                                                                     AlgData.Algo)
+  GHC.Show.$fShow(,)_$cshowList @ (GHC.Base.Maybe AlgData.Algo)
+                                @ AlgData.Algo
+                                $dShow
+                                $dShow1
+  = Evid.$s$fShow(,)_$s$fShow(,)_$cshowList
+"SPEC/Evid $fShowMaybe @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                            AlgData.Algo)
+  GHC.Show.$fShowMaybe @ AlgData.Algo $dShow
+  = Evid.$s$fShow(,)_$s$fShowMaybe
+"SPEC/Evid $fShowMaybe_$cshowList @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                       AlgData.Algo)
+  GHC.Show.$fShowMaybe_$cshowList @ AlgData.Algo $dShow
+  = Evid.$s$fShow(,)_$s$fShowMaybe_$cshowList
+"SPEC/Evid $fShow[] @ (Maybe Algo, Algo)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                       (GHC.Base.Maybe AlgData.Algo,
+                                                                        AlgData.Algo))
+  GHC.Show.$fShow[] @ (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)
+                    $dShow
+  = Evid.$s$fShow(,)_$s$fShow[]
+"SPEC/Evid $fShow[] @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                         AlgData.Algo)
+  GHC.Show.$fShow[] @ AlgData.Algo $dShow = Evid.$s$fShow[]
+"SPEC/Evid $fShow[]_$cshow @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                AlgData.Algo)
+  GHC.Show.$fShow[]_$cshow @ AlgData.Algo $dShow
+  = Evid.$s$fShow[]_$s$fShow[]_$cshow
+"SPEC/Evid $fShow[]_$cshowList @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                    AlgData.Algo)
+  GHC.Show.$fShow[]_$cshowList @ AlgData.Algo $dShow
+  = Evid.$s$fShow[]_$s$fShow[]_$cshowList
+"SPEC/Evid $fShow[]_$cshowsPrec @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                     AlgData.Algo)
+  GHC.Show.$fShow[]_$cshowsPrec @ AlgData.Algo $dShow
+  = Evid.$s$fShow[]_$s$fShow[]_$cshowsPrec
+"SPEC/Evid fromList @ Algo _" [ALWAYS] forall @ a
+                                              ($dOrd :: GHC.Classes.Ord AlgData.Algo)
+  Data.Map.Base.fromList @ AlgData.Algo @ a $dOrd
+  = Evid.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

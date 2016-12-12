@@ -1,0 +1,1344 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-12 00:15:09.508192 UTC
+
+interface main@main:Solver [hpc] 8001
+  interface hash: b423024e86a344ba835deeae872c15af
+  ABI hash: 86999a48d8d4440cc196365ff996c4a9
+  export-list hash: 4471d3a30a1204f3bf559c4f2aa5ef86
+  orphan hash: c3c7e6449b4bcf0b1c973a4ae8b644e8
+  flag hash: c25c71772aae7ac07670edcd14020fd8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Solver.<~<
+  Solver.<~~<
+  Solver.<·<
+  Solver.<·|·<
+  Solver.<··<
+  Solver.<··>
+  Solver.>//>
+  Solver.>~>
+  Solver.>~~>
+  Solver.>·>
+  Solver.>·|·>
+  Solver.>··>
+  Solver.__solve
+  Solver._solve
+  Solver._solveParallelOps
+  Solver._solveResolStep
+  Solver._solved
+  Solver.accumDiff
+  Solver.aresume
+  Solver.diff
+  Solver.enunciateOf
+  Solver.evids
+  Solver.exaustCalc
+  Solver.flatWalk
+  Solver.resume
+  Solver.shallowWalk
+  Solver.solve
+  Solver.solve'
+  Solver.solveM
+  Solver.solved
+  Solver.varSolved
+  Solver.verify
+module dependencies: AlgAux AlgData AlgFile [boot] AlgNum AlgParser
+                     AlgSets [boot] AlgShow Calc Context Derive Evid Intervals
+                     Lib.Colors Lib.Debug Lib.ISUnits Lib.Noms Neighbor Rules Sample
+                     Steps Utils
+package dependencies: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-ordlist-0.4.7.0@data-ordlist-0.4.7.0-KWzW5aSYDm3KUQkWjneBW4
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM
+                      numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj
+                      parsec-3.1.11@parsec-3.1.11-BCos4GEVCuDB8dnOCBHO6X
+                      primes-0.2.1.0@primes-0.2.1.0-K0eIDQpwpli2u6M20VlfZn
+                      regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH
+                      regex-compat-0.95.1@regex-compat-0.95.1-JPDhOGKcrkD8S1t3VsLLUt
+                      regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR
+                      split-0.2.3.1@split-0.2.3.1-IJKK4pOCYGKud0jZImZke
+                      text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         base-4.9.0.0:Text.Show.Functions
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         main@main:AlgNum main@main:AlgParser main@main:AlgParser
+         main@main:AlgShow
+         regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH:Text.Regex.Base.Context
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.String
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH:Data.Boolean
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+import  -/  base-4.9.0.0:Control.Applicative 7728b33d6969dce59e89474349eb1397
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.Functor 6fc476505db88d678632a4a838125f13
+import  -/  base-4.9.0.0:Data.Maybe 5f2ba364cbe65c060bc5436bc0b9d049
+import  -/  base-4.9.0.0:Data.Tuple acb0ed10307ed88df6c81b8589f4de16
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 24b19ef74cea78e4c18332bed9f0491d
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 1e8d61dcc59a1a983b27bab6fd6bdcaf
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  AlgAux 11857fb5eafb79b4e497e9d216a2ba5d
+  exports: a5bbe99cfa73a20385453c450cf73119
+  <++| 2925b650ba59254b8c753d7bf130cc90
+  algRebuild 808c3f56acb9610937b91ddc50fd898c
+  conclusion f9ca210ae6862448cf2e6b369282b471
+  plex 495a2b2a68969a340d4b001e6b96b602
+  rebuild 68c8e7921c08b0005008c267fd2f2452
+  repVars b03047de44748ffa5694b823b9fe07fd
+  resolPrec 83e7051ce724b9221854f8af3a38b6aa
+import  -/  AlgData 307fffe4f0712a2d16396958905f20d6
+  exports: 429708355c7b5468a518bfa47675e12b
+  Algo 4d637072ad901205bf793a262f526c33
+  And 5d24d8c844bd2a97c85e63b7abcbb24f
+  Bool 67f527cfffcc3ad2fd344285e61c737a
+  Ctx 4d637072ad901205bf793a262f526c33
+  Document 300b94279054e268cbaddbf88cd55282
+  Equation 551a1d9fee8c2cb8da0f9aaca286e438
+  Equiv bcbca3b57cace3058342528cd8f68537
+  Implic 18c8a8ece3f5a0292f53fe1c3ea73ae8
+  Lit 11c3a155764287bafe570d1de382257a
+  Op 15ebbb24b6785911f3ab55036df6fa5d
+  Resol 8effdfb668f5cb607c4bd51445f565fb
+  Simpl c2dd23a8d56a67aeb71c59f26e43b05d
+  System dff1e0e43983d65f96ab9b0cc376b202
+  resolSteps e6d89533f628878f7da1e0f17dbec795
+import  -/  AlgParser 92f3a827acb9a4c042748bb6c970a485
+  exports: 1e3c0e2ea45406ebe59e3da15707b465
+import  -/  Calc 9118e33b3ee020f4d62b8161b6bc016d
+  exports: c22777f833144e9b6018d344cb957367
+  calc a17ec7ad1200d77c09274ef812616b7d
+import  -/  Context 83c9cf53459dd0cc32aa6da943957421
+  exports: 21153040397191ce6298f9ca97a37e24
+  getVars 5dfaf95df4cd88c8e623057ee8277c3a
+  getVars' e69556303c8c090ccbab25a87ee3bdb2
+  useCtx b6666dd3ad77e2a4f7929f7a35fbc752
+import  -/  Evid 889f68b957a0523056b3402cf97ea356
+  exports: 51672234b32e22efb58f3169751ef7f2
+  _evid b3989758aee9d4b43241032ee40eef4f
+import  -/  Intervals 83095e626cdefe3b8e7a59fdec06f8e2
+  exports: ee5e6f4872d20f9fb1322ac95ef84fad
+import  -/  Lib.Debug c5ad911a598d38e4e2cba45a09de710b
+  exports: e68806ff5497d096232692f266395170
+  D_SOLVER 78e53ac948779022d064ea40079d7edb
+  ← 1be09bfd6d4e400c5809b6c36a0fe02b
+import  -/  Neighbor 82eae1a0f7675f417bf8e26a74afd49c
+  exports: 994967eb7d698b4c451938efbd586f00
+  neighbourMove 86324962139d5820569febc39b7aff54
+import  -/  Rules 74470094acc99b8481373ebd8cc3be83
+  exports: d7450c0b10c7c04ae0e8f801289b432b
+  simplify 2f4f3abbff0482690463471031834399
+import  -/  Steps 2e9d4395db6d890d36f4a675f606a0bf
+  exports: 448d5d65f66e603cb964d699f4923265
+  steps 6545fded28d70a6d9d04c93bc0ebfb05
+import  -/  Utils e3ec9e04ed6635229273d876ecf1c4f6
+  exports: edc5a96c02c5468ab823d3bed5331cb6
+  #= c726cdd588c1bab42d70cffbda697ac7
+  //> 7c616919b3724e44d5ac3979434459a0
+  emptyCtx 98a5740122b9b5d1bf005bd76eee3b56
+  literals b692d27f2ce06b9e3e12238f389bd76c
+  membersOf 5e4f26caffa4dc04d7b305bdbbd4f01e
+  ok 3861b4d7f0d7b7d312a010526a83efc5
+  proc df0b77f945f420b2e9082acb3ca31f4f
+  prods 177b8ebd5fdaf50691473a7772856aba
+  run 668f68ff5f3b460962aa48fcecacabee
+  ~> 67beaaa477d3a0f58367f5d7ec8c20d4
+  ~~> 61130e79476d4de40bb051f47efc429f
+  ·> 61faea27b71b2abcf0be3760475a5832
+  ··> b389679c5c9a52718d4577dd8557d114
+ba4ae739d25e9045a87426073be5d94a
+  $s$fEqMaybe :: GHC.Classes.Eq (GHC.Base.Maybe AlgData.Algo)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe AlgData.Algo)
+                  Solver.$s$fEqMaybe_$s$fEqMaybe_$c==
+                  (GHC.Base.$fEqMaybe_$c/= @ AlgData.Algo AlgData.$fEqAlgo) -}
+fea34eb03da541f785b5c3b035ff39a9
+  $s$fEqMaybe_$s$fEqMaybe_$c== ::
+    GHC.Base.Maybe AlgData.Algo
+    -> GHC.Base.Maybe AlgData.Algo -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Base.Maybe AlgData.Algo)
+                   (ds1 :: GHC.Base.Maybe AlgData.Algo) ->
+                 case ds of wild {
+                   GHC.Base.Nothing
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.True
+                        GHC.Base.Just ipv -> GHC.Types.False }
+                   GHC.Base.Just a1
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.False
+                        GHC.Base.Just b1 -> AlgData.$fEqAlgSets_$c==2 a1 b1 } }) -}
+295b3260bf7a59c2a8a78ae65bca4da5
+  $s$fShowMap ::
+    GHC.Show.Show (Data.Map.Base.Map AlgData.Algo AlgData.Algo)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Map.Base.Map AlgData.Algo AlgData.Algo)
+                  (Data.Map.Base.$fShowMap_$cshowsPrec
+                     @ AlgData.Algo
+                     @ AlgData.Algo
+                     AlgShow.$fShowAlgo
+                     AlgShow.$fShowAlgo)
+                  (Data.Map.Base.$fShowMap_$cshow
+                     @ AlgData.Algo
+                     @ AlgData.Algo
+                     AlgShow.$fShowAlgo
+                     AlgShow.$fShowAlgo)
+                  Solver.$s$fShowMap_$s$fShowMap_$cshowList -}
+80cb5f2a8dc0262efb6e8e2b830f6304
+  $s$fShowMap_$s$fShowMap_$cshowList ::
+    [Data.Map.Base.Map AlgData.Algo AlgData.Algo] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Data.Map.Base.Map AlgData.Algo AlgData.Algo])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Data.Map.Base.Map AlgData.Algo AlgData.Algo)
+                   (Data.Map.Base.$fShowMap_$cshowsPrec
+                      @ AlgData.Algo
+                      @ AlgData.Algo
+                      AlgShow.$fShowAlgo
+                      AlgShow.$fShowAlgo
+                      GHC.Show.shows22)
+                   ls
+                   s) -}
+dc79bf278890e084426c04855d293c4c
+  $s$fShowMaybe :: GHC.Show.Show (GHC.Base.Maybe AlgData.Algo)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe AlgData.Algo)
+                  (GHC.Show.$fShowMaybe_$cshowsPrec
+                     @ AlgData.Algo
+                     AlgShow.$fShowAlgo)
+                  (GHC.Show.$fShowMaybe_$cshow @ AlgData.Algo AlgShow.$fShowAlgo)
+                  Solver.$s$fShowMaybe_$s$fShowMaybe_$cshowList -}
+b9fa0b537440834b398083aec0c58839
+  $s$fShowMaybe_$s$fShowMaybe_$cshowList ::
+    [GHC.Base.Maybe AlgData.Algo] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [GHC.Base.Maybe AlgData.Algo])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe AlgData.Algo)
+                   (GHC.Show.$fShowMaybe_$cshowsPrec
+                      @ AlgData.Algo
+                      AlgShow.$fShowAlgo
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+6aff5f091a9bb17b66743f7555a0bcf9
+  $sfromList ::
+    [(AlgData.Algo, a)] -> Data.Map.Base.Map AlgData.Algo a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(AlgData.Algo, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ AlgData.Algo @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Base.Bin
+                             @ AlgData.Algo
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                             (Data.Map.Base.Tip @ AlgData.Algo @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case AlgData.$fOrdAlgo_$ccompare kx ky of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                Solver.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ AlgData.Algo
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a))
+                                  wild2 }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                Solver.$wpoly_go10
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ AlgData.Algo
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a))
+                                  wild2 } } } } } }) -}
+aa52dc74bf669f8068f7afb513f97bb4
+  $sfromList1 ::
+    Data.Map.Base.Map AlgData.Algo a1
+    -> [(AlgData.Algo, a1)] -> Data.Map.Base.Map AlgData.Algo a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+3b5135921ec44d5589d0ab4ef5bc388d
+  $sinsert_$sgo10 ::
+    AlgData.Algo
+    -> a1
+    -> Data.Map.Base.Map AlgData.Algo a1
+    -> Data.Map.Base.Map AlgData.Algo a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+fc34009f402ef05eda146bbf36a21bc2
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Solver.$trModule2
+                   Solver.$trModule1) -}
+7ef4fd75cf014e6e02299ae9ac4bbe99
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Solver"#) -}
+887e34e6b22165b38689c5715091335f
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+9a36bf57e3685e06e843743007790d67
+  $waresume ::
+    GHC.Types.Int -> AlgData.Algo -> (# AlgData.Ops, [AlgData.Algo] #)
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Int) (w1 :: AlgData.Algo) ->
+                 {__scc {main@main:Solver.aresume} True False} case w1 of wild {
+                                                                 DEFAULT
+                                                                 -> case Solver.aresume1
+                                                                    ret_ty (# AlgData.Ops,
+                                                                              [AlgData.Algo] #)
+                                                                    of {}
+                                                                 AlgData.Op op m
+                                                                 -> case m of wild1 {
+                                                                      []
+                                                                      -> case Solver.aresume1
+                                                                         ret_ty (# AlgData.Ops,
+                                                                                   [AlgData.Algo] #)
+                                                                         of {}
+                                                                      : o oo
+                                                                      -> (# op,
+                                                                            {__scc {main@main:Solver.aresume} False True} GHC.Base.++
+                                                                                                                            @ AlgData.Algo
+                                                                                                                            (GHC.Types.:
+                                                                                                                               @ AlgData.Algo
+                                                                                                                               o
+                                                                                                                               (case GHC.List.zip
+                                                                                                                                       @ GHC.Types.Int
+                                                                                                                                       @ AlgData.Algo
+                                                                                                                                       (Solver.accumDiff
+                                                                                                                                          w
+                                                                                                                                          (GHC.Base.map
+                                                                                                                                             @ AlgData.Algo
+                                                                                                                                             @ GHC.Types.Int
+                                                                                                                                             AlgAux.plex
+                                                                                                                                             wild1))
+                                                                                                                                       oo of wild2 {
+                                                                                                                                  []
+                                                                                                                                  -> case GHC.List.init2
+                                                                                                                                     ret_ty [AlgData.Algo]
+                                                                                                                                     of {}
+                                                                                                                                  : x xs
+                                                                                                                                  -> letrec {
+                                                                                                                                       go3 :: [(GHC.Types.Int,
+                                                                                                                                                AlgData.Algo)]
+                                                                                                                                              -> [AlgData.Algo]
+                                                                                                                                         {- Arity: 1,
+                                                                                                                                            Strictness: <S,1*U> -}
+                                                                                                                                       = \ (ds :: [(GHC.Types.Int,
+                                                                                                                                                    AlgData.Algo)]) ->
+                                                                                                                                         case ds of wild3 {
+                                                                                                                                           []
+                                                                                                                                           -> GHC.Types.[]
+                                                                                                                                                @ AlgData.Algo
+                                                                                                                                           : y ys
+                                                                                                                                           -> case y of wild4 { (,) x1 ds1 ->
+                                                                                                                                              case x1 of wild5 { GHC.Types.I# x2 ->
+                                                                                                                                              case w of wild6 { GHC.Types.I# y1 ->
+                                                                                                                                              case GHC.Prim.tagToEnum#
+                                                                                                                                                     @ GHC.Types.Bool
+                                                                                                                                                     (GHC.Prim.>=#
+                                                                                                                                                        x2
+                                                                                                                                                        y1) of wild7 {
+                                                                                                                                                GHC.Types.False
+                                                                                                                                                -> go3
+                                                                                                                                                     ys
+                                                                                                                                                GHC.Types.True
+                                                                                                                                                -> GHC.Types.:
+                                                                                                                                                     @ AlgData.Algo
+                                                                                                                                                     ds1
+                                                                                                                                                     (go3
+                                                                                                                                                        ys) } } } } }
+                                                                                                                                     } in
+                                                                                                                                     go3
+                                                                                                                                       (GHC.List.init1
+                                                                                                                                          @ (GHC.Types.Int,
+                                                                                                                                             AlgData.Algo)
+                                                                                                                                          x
+                                                                                                                                          xs) }))
+                                                                                                                            (GHC.Types.:
+                                                                                                                               @ AlgData.Algo
+                                                                                                                               (Solver.aresume_go
+                                                                                                                                  wild1
+                                                                                                                                  (GHC.List.lastError
+                                                                                                                                     @ AlgData.Algo))
+                                                                                                                               (GHC.Types.[]
+                                                                                                                                  @ AlgData.Algo)) #) } }) -}
+f9d2051448f89071bc9b35bfc2db40d4
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map AlgData.Algo a
+    -> [(AlgData.Algo, a)]
+    -> Data.Map.Base.Map AlgData.Algo a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+bd3a1246a7c9aafa1481723f171df4b7
+  $wresume ::
+    GHC.Types.Int -> AlgData.Algo -> (# AlgData.Ops, [AlgData.Algo] #)
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Int) (w1 :: AlgData.Algo) ->
+                 {__scc {main@main:Solver.resume} True False} case w1 of wild {
+                                                                DEFAULT
+                                                                -> case Solver.resume1
+                                                                   ret_ty (# AlgData.Ops,
+                                                                             [AlgData.Algo] #)
+                                                                   of {}
+                                                                AlgData.Op op m
+                                                                -> case m of wild1 {
+                                                                     []
+                                                                     -> case Solver.resume1
+                                                                        ret_ty (# AlgData.Ops,
+                                                                                  [AlgData.Algo] #)
+                                                                        of {}
+                                                                     : o oo
+                                                                     -> (# op,
+                                                                           {__scc {main@main:Solver.resume} False True} GHC.Base.++
+                                                                                                                          @ AlgData.Algo
+                                                                                                                          (GHC.Types.:
+                                                                                                                             @ AlgData.Algo
+                                                                                                                             o
+                                                                                                                             (case GHC.List.zip
+                                                                                                                                     @ GHC.Types.Int
+                                                                                                                                     @ AlgData.Algo
+                                                                                                                                     (Solver.diff
+                                                                                                                                        (GHC.Base.map
+                                                                                                                                           @ AlgData.Algo
+                                                                                                                                           @ GHC.Types.Int
+                                                                                                                                           AlgAux.plex
+                                                                                                                                           wild1))
+                                                                                                                                     oo of wild2 {
+                                                                                                                                []
+                                                                                                                                -> case GHC.List.init2
+                                                                                                                                   ret_ty [AlgData.Algo]
+                                                                                                                                   of {}
+                                                                                                                                : x xs
+                                                                                                                                -> letrec {
+                                                                                                                                     go3 :: [(GHC.Types.Int,
+                                                                                                                                              AlgData.Algo)]
+                                                                                                                                            -> [AlgData.Algo]
+                                                                                                                                       {- Arity: 1,
+                                                                                                                                          Strictness: <S,1*U> -}
+                                                                                                                                     = \ (ds :: [(GHC.Types.Int,
+                                                                                                                                                  AlgData.Algo)]) ->
+                                                                                                                                       case ds of wild3 {
+                                                                                                                                         []
+                                                                                                                                         -> GHC.Types.[]
+                                                                                                                                              @ AlgData.Algo
+                                                                                                                                         : y ys
+                                                                                                                                         -> case y of wild4 { (,) x1 ds1 ->
+                                                                                                                                            case x1 of wild5 { GHC.Types.I# x2 ->
+                                                                                                                                            case w of wild6 { GHC.Types.I# y1 ->
+                                                                                                                                            case GHC.Prim.tagToEnum#
+                                                                                                                                                   @ GHC.Types.Bool
+                                                                                                                                                   (GHC.Prim.>=#
+                                                                                                                                                      x2
+                                                                                                                                                      y1) of wild7 {
+                                                                                                                                              GHC.Types.False
+                                                                                                                                              -> go3
+                                                                                                                                                   ys
+                                                                                                                                              GHC.Types.True
+                                                                                                                                              -> GHC.Types.:
+                                                                                                                                                   @ AlgData.Algo
+                                                                                                                                                   ds1
+                                                                                                                                                   (go3
+                                                                                                                                                      ys) } } } } }
+                                                                                                                                   } in
+                                                                                                                                   go3
+                                                                                                                                     (GHC.List.init1
+                                                                                                                                        @ (GHC.Types.Int,
+                                                                                                                                           AlgData.Algo)
+                                                                                                                                        x
+                                                                                                                                        xs) }))
+                                                                                                                          (GHC.Types.:
+                                                                                                                             @ AlgData.Algo
+                                                                                                                             (Solver.resume_go
+                                                                                                                                wild1
+                                                                                                                                (GHC.List.lastError
+                                                                                                                                   @ AlgData.Algo))
+                                                                                                                             (GHC.Types.[]
+                                                                                                                                @ AlgData.Algo)) #) } }) -}
+cf9302a5b49b10cc6f4f7ae5cd18841c
+  (<~<) ::
+    (AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+    -> GHC.Base.Maybe AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+                   (b :: GHC.Base.Maybe AlgData.Algo) ->
+                 {__scc {main@main:Solver.<~<} True True} Solver.>~> b a) -}
+a662110c9f0b3429533360effda8977f
+  (<~~<) ::
+    [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo]
+    -> GHC.Base.Maybe AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo])
+                   (b :: GHC.Base.Maybe AlgData.Algo) ->
+                 {__scc {main@main:Solver.<~~<} True True} Solver.>~~> b a) -}
+c9e42dcd5af2ec7543fd76ca8d50e8a4
+  <·< ::
+    (AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+    -> GHC.Base.Maybe AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+                   (b :: GHC.Base.Maybe AlgData.Algo) ->
+                 {__scc {main@main:Solver.<·<} True True} Solver.>·> b a) -}
+4775f4e906bdb9c2508312473186a76f
+  <·|·< ::
+    [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo]
+    -> GHC.Base.Maybe AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,U><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo])
+                   (b :: GHC.Base.Maybe AlgData.Algo) ->
+                 {__scc {main@main:Solver.<·|·<} True True} Solver.>·|·> b a) -}
+0906ad9a93ca0ebeeec31d5ef5e37b36
+  <··< ::
+    [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo]
+    -> GHC.Base.Maybe AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo])
+                   (b :: GHC.Base.Maybe AlgData.Algo) ->
+                 {__scc {main@main:Solver.<··<} True True} Solver.>··> b a) -}
+7eeeb8415d158d4847d35d011d2689e0
+  <··> ::
+    AlgData.Algo
+    -> (AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+    -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><L,C(U)>,
+     Unfolding: (\ (o :: AlgData.Algo)
+                   (f :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo) ->
+                 {__scc {main@main:Solver.<··>} True True} case o of wild {
+                                                             DEFAULT -> Solver.<··>3
+                                                             AlgData.Op op m
+                                                             -> let {
+                                                                  s :: [GHC.Base.Maybe AlgData.Algo]
+                                                                  = {__scc {main@main:Solver.<··>.s} True True} GHC.Base.map
+                                                                                                                  @ AlgData.Algo
+                                                                                                                  @ (GHC.Base.Maybe
+                                                                                                                       AlgData.Algo)
+                                                                                                                  f
+                                                                                                                  m
+                                                                } in
+                                                                case {__scc {main@main:Solver.<··>.sok} True True} GHC.List.filter
+                                                                                                                     @ (GHC.Base.Maybe
+                                                                                                                          AlgData.Algo)
+                                                                                                                     (Data.Maybe.isJust
+                                                                                                                        @ AlgData.Algo)
+                                                                                                                     s of wild1 {
+                                                                  []
+                                                                  -> GHC.Base.Nothing @ AlgData.Algo
+                                                                  : ds1 ds2
+                                                                  -> GHC.Base.Just
+                                                                       @ AlgData.Algo
+                                                                       (let {
+                                                                          ds :: (AlgData.Ops,
+                                                                                 [AlgData.Algo])
+                                                                          = case {__scc {main@main:Solver.<··>.(...)} True True} Solver.<··>_go1
+                                                                                                                                   s
+                                                                                                                                   Solver.<··>2 of wild2 {
+                                                                              DEFAULT
+                                                                              -> Solver.<··>1
+                                                                              AlgData.Op rop rm
+                                                                              -> (rop, rm) }
+                                                                        } in
+                                                                        AlgData.Op
+                                                                          ({__scc {main@main:Solver.<··>.rop} True True} case ds of ds4 { (,) rop rm ->
+                                                                                                                         rop })
+                                                                          (GHC.Types.:
+                                                                             @ AlgData.Algo
+                                                                             (AlgData.Op
+                                                                                op
+                                                                                (Solver.<··>_go
+                                                                                   s
+                                                                                   m))
+                                                                             ({__scc {main@main:Solver.<··>.rm} True True} case ds of ds4 { (,) rop rm ->
+                                                                                                                           rm }))) } }) -}
+dce1e075d02f1d30c112acccbebf177b
+  <··>1 :: (AlgData.Ops, [AlgData.Algo])
+  {- Strictness: x -}
+efeb544ba247688615f9cbce90914b8c
+  <··>2 :: AlgData.Algo
+  {- HasNoCafRefs, Strictness: m6,
+     Unfolding: (AlgData.Op
+                   AlgData.Equiv
+                   (GHC.Types.[] @ AlgData.Algo)) -}
+4b9e88330c7e0d4ceffdb4c4a8d28b8c
+  <··>3 :: GHC.Base.Maybe AlgData.Algo
+  {- Strictness: x -}
+ad75d7bd2530f48aa67574ffb01aea2e
+  <··>_go ::
+    [GHC.Base.Maybe AlgData.Algo] -> [AlgData.Algo] -> [AlgData.Algo]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+7e26c50269eb825fbf278cdb7fbf0e00
+  <··>_go1 ::
+    [GHC.Base.Maybe AlgData.Algo] -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+b8f7603e6a84330b31859c80c928772d
+  (>//>) ::
+    AlgData.Algo
+    -> [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo]
+    -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (e :: AlgData.Algo)
+                   (l :: [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo]) ->
+                 {__scc {main@main:Solver.>//>} True True} {__scc {main@main:Steps.steps} True True} let {
+                                                                                                       ds :: GHC.Base.Maybe
+                                                                                                               AlgData.Algo
+                                                                                                       = {__scc {main@main:Steps.steps.r} True True} Utils.$w//>
+                                                                                                                                                       @ GHC.Base.Maybe
+                                                                                                                                                       @ AlgData.Algo
+                                                                                                                                                       GHC.Base.$fMonadMaybe
+                                                                                                                                                       GHC.Base.$fAlternativeMaybe
+                                                                                                                                                       (GHC.Base.Just
+                                                                                                                                                          @ AlgData.Algo
+                                                                                                                                                          e)
+                                                                                                                                                       l
+                                                                                                     } in
+                                                                                                     {__scc {main@main:Steps.<=>} True True} case ds of wild {
+                                                                                                                                               GHC.Base.Nothing
+                                                                                                                                               -> GHC.Base.Nothing
+                                                                                                                                                    @ AlgData.Algo
+                                                                                                                                               GHC.Base.Just b
+                                                                                                                                               -> Steps.step
+                                                                                                                                                    e
+                                                                                                                                                    b }) -}
+1f732ca53b8442ea355a242cbfbb0b4d
+  (>~>) ::
+    GHC.Base.Maybe AlgData.Algo
+    -> (AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+    -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><L,C(U)>,
+     Unfolding: (\ (e :: GHC.Base.Maybe AlgData.Algo)
+                   (o :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo) ->
+                 {__scc {main@main:Solver.>~>} True True} let {
+                                                            b :: AlgData.Algo
+                                                                 -> GHC.Base.Maybe AlgData.Algo
+                                                              {- Arity: 1 -}
+                                                            = Steps.steps o
+                                                          } in
+                                                          let {
+                                                            b1 :: AlgData.Algo
+                                                                  -> GHC.Base.Maybe AlgData.Algo
+                                                              {- Arity: 1 -}
+                                                            = Utils.proc
+                                                                @ GHC.Base.Maybe
+                                                                @ AlgData.Algo
+                                                                GHC.Base.$fMonadMaybe
+                                                                Solver.$s$fEqMaybe
+                                                                GHC.Base.$fAlternativeMaybe
+                                                                b
+                                                          } in
+                                                          {__scc {main@main:Utils.~>} True True} {__scc {main@main:Utils.·>} True False} case e of wild {
+                                                                                                                                           GHC.Base.Nothing
+                                                                                                                                           -> GHC.Base.Nothing
+                                                                                                                                                @ AlgData.Algo
+                                                                                                                                           GHC.Base.Just x
+                                                                                                                                           -> case {__scc {main@main:Utils.·>} False True} Utils.proc
+                                                                                                                                                                                             @ GHC.Base.Maybe
+                                                                                                                                                                                             @ AlgData.Algo
+                                                                                                                                                                                             GHC.Base.$fMonadMaybe
+                                                                                                                                                                                             Solver.$s$fEqMaybe
+                                                                                                                                                                                             GHC.Base.$fAlternativeMaybe
+                                                                                                                                                                                             b1
+                                                                                                                                                                                             x of wild1 {
+                                                                                                                                                GHC.Base.Nothing
+                                                                                                                                                -> wild
+                                                                                                                                                GHC.Base.Just ipv
+                                                                                                                                                -> wild1 } }) -}
+476f229354aa4805432de1d1c047220a
+  (>~~>) ::
+    GHC.Base.Maybe AlgData.Algo
+    -> [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo]
+    -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (e :: GHC.Base.Maybe AlgData.Algo)
+                   (o :: [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo]) ->
+                 {__scc {main@main:Solver.>~~>} True True} Utils.~~>
+                                                             @ GHC.Base.Maybe
+                                                             @ AlgData.Algo
+                                                             GHC.Base.$fMonadMaybe
+                                                             Solver.$s$fEqMaybe
+                                                             GHC.Base.$fAlternativeMaybe
+                                                             e
+                                                             (GHC.Base.build
+                                                                @ (AlgData.Algo
+                                                                   -> GHC.Base.Maybe AlgData.Algo)
+                                                                (\ @ b1
+                                                                   (c :: (AlgData.Algo
+                                                                          -> GHC.Base.Maybe
+                                                                               AlgData.Algo)
+                                                                         -> b1 -> b1)[OneShot]
+                                                                   (n :: b1)[OneShot] ->
+                                                                 GHC.Base.foldr
+                                                                   @ (AlgData.Algo
+                                                                      -> GHC.Base.Maybe
+                                                                           AlgData.Algo)
+                                                                   @ b1
+                                                                   (GHC.Base.mapFB
+                                                                      @ (AlgData.Algo
+                                                                         -> GHC.Base.Maybe
+                                                                              AlgData.Algo)
+                                                                      @ b1
+                                                                      @ (AlgData.Algo
+                                                                         -> GHC.Base.Maybe
+                                                                              AlgData.Algo)
+                                                                      c
+                                                                      Solver.>~~>1)
+                                                                   n
+                                                                   o))) -}
+585aaa60d5241c5d6ea8fd0c8678dd14
+  >~~>1 ::
+    (AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+    -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 1, Strictness: <L,C(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (i :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo) ->
+                 {__scc {main@main:Solver.>~~>.\} True True} Utils.proc
+                                                               @ GHC.Base.Maybe
+                                                               @ AlgData.Algo
+                                                               GHC.Base.$fMonadMaybe
+                                                               Solver.$s$fEqMaybe
+                                                               GHC.Base.$fAlternativeMaybe
+                                                               (Steps.steps i)) -}
+e1ce83ce1814b6d0b436b86bb5ca9219
+  >·> ::
+    GHC.Base.Maybe AlgData.Algo
+    -> (AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+    -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><L,C(U)>,
+     Unfolding: (\ (e :: GHC.Base.Maybe AlgData.Algo)
+                   (o :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo) ->
+                 {__scc {main@main:Solver.>·>} True True} let {
+                                                            f :: AlgData.Algo
+                                                                 -> GHC.Base.Maybe AlgData.Algo
+                                                              {- Arity: 1 -}
+                                                            = Steps.steps o
+                                                          } in
+                                                          let {
+                                                            f1 :: AlgData.Algo
+                                                                  -> GHC.Base.Maybe AlgData.Algo
+                                                              {- Arity: 1 -}
+                                                            = Utils.proc
+                                                                @ GHC.Base.Maybe
+                                                                @ AlgData.Algo
+                                                                GHC.Base.$fMonadMaybe
+                                                                Solver.$s$fEqMaybe
+                                                                GHC.Base.$fAlternativeMaybe
+                                                                f
+                                                          } in
+                                                          {__scc {main@main:Utils.·>} True True} case e of wild {
+                                                                                                   GHC.Base.Nothing
+                                                                                                   -> GHC.Base.Nothing
+                                                                                                        @ AlgData.Algo
+                                                                                                   GHC.Base.Just x
+                                                                                                   -> Utils.proc
+                                                                                                        @ GHC.Base.Maybe
+                                                                                                        @ AlgData.Algo
+                                                                                                        GHC.Base.$fMonadMaybe
+                                                                                                        Solver.$s$fEqMaybe
+                                                                                                        GHC.Base.$fAlternativeMaybe
+                                                                                                        f1
+                                                                                                        x }) -}
+3360e8821a3f5301fd9636638f531082
+  >·|·> ::
+    GHC.Base.Maybe AlgData.Algo
+    -> [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo]
+    -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (e :: GHC.Base.Maybe AlgData.Algo)
+                   (s :: [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo]) ->
+                 {__scc {main@main:Solver.>·|·>} True True} {__scc {main@main:Utils.run} True True} letrec {
+                                                                                                      xs :: [AlgData.Algo
+                                                                                                             -> GHC.Base.Maybe
+                                                                                                                  AlgData.Algo]
+                                                                                                      = GHC.Base.++
+                                                                                                          @ (AlgData.Algo
+                                                                                                             -> GHC.Base.Maybe
+                                                                                                                  AlgData.Algo)
+                                                                                                          s
+                                                                                                          xs
+                                                                                                    } in
+                                                                                                    {__scc {main@main:Solver.>··>} True True} Utils.··>
+                                                                                                                                                @ GHC.Base.Maybe
+                                                                                                                                                @ AlgData.Algo
+                                                                                                                                                GHC.Base.$fMonadMaybe
+                                                                                                                                                Solver.$s$fEqMaybe
+                                                                                                                                                GHC.Base.$fAlternativeMaybe
+                                                                                                                                                e
+                                                                                                                                                (GHC.Base.map
+                                                                                                                                                   @ (AlgData.Algo
+                                                                                                                                                      -> GHC.Base.Maybe
+                                                                                                                                                           AlgData.Algo)
+                                                                                                                                                   @ (AlgData.Algo
+                                                                                                                                                      -> GHC.Base.Maybe
+                                                                                                                                                           AlgData.Algo)
+                                                                                                                                                   Solver.>·|·>1
+                                                                                                                                                   xs)) -}
+fb0ca16edc91f661ace92f5664232b07
+  >·|·>1 ::
+    (AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+    -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 1, Strictness: <L,C(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (i :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo) ->
+                 {__scc {main@main:Solver.>··>.\} True True} Utils.proc
+                                                               @ GHC.Base.Maybe
+                                                               @ AlgData.Algo
+                                                               GHC.Base.$fMonadMaybe
+                                                               Solver.$s$fEqMaybe
+                                                               GHC.Base.$fAlternativeMaybe
+                                                               (Steps.steps i)) -}
+0e7e7cd870dfb3e4d8b62e749497b599
+  >··> ::
+    GHC.Base.Maybe AlgData.Algo
+    -> [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo]
+    -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (e :: GHC.Base.Maybe AlgData.Algo)
+                   (o :: [AlgData.Algo -> GHC.Base.Maybe AlgData.Algo]) ->
+                 {__scc {main@main:Solver.>··>} True True} Utils.··>
+                                                             @ GHC.Base.Maybe
+                                                             @ AlgData.Algo
+                                                             GHC.Base.$fMonadMaybe
+                                                             Solver.$s$fEqMaybe
+                                                             GHC.Base.$fAlternativeMaybe
+                                                             e
+                                                             (GHC.Base.build
+                                                                @ (AlgData.Algo
+                                                                   -> GHC.Base.Maybe AlgData.Algo)
+                                                                (\ @ b1
+                                                                   (c :: (AlgData.Algo
+                                                                          -> GHC.Base.Maybe
+                                                                               AlgData.Algo)
+                                                                         -> b1 -> b1)[OneShot]
+                                                                   (n :: b1)[OneShot] ->
+                                                                 GHC.Base.foldr
+                                                                   @ (AlgData.Algo
+                                                                      -> GHC.Base.Maybe
+                                                                           AlgData.Algo)
+                                                                   @ b1
+                                                                   (GHC.Base.mapFB
+                                                                      @ (AlgData.Algo
+                                                                         -> GHC.Base.Maybe
+                                                                              AlgData.Algo)
+                                                                      @ b1
+                                                                      @ (AlgData.Algo
+                                                                         -> GHC.Base.Maybe
+                                                                              AlgData.Algo)
+                                                                      c
+                                                                      Solver.>·|·>1)
+                                                                   n
+                                                                   o))) -}
+6eba01bd7eab43cc82fddbcd1ce37201
+  __solve ::
+    AlgData.Ctx -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+87605609218e90df32d2e8113388b43e
+  _solve ::
+    AlgData.Ctx -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+e275a1c0043e1c5956cbfd6ab5b9bf52
+  _solveParallelOps ::
+    AlgData.Ctx -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (vars :: AlgData.Ctx) (e :: AlgData.Algo) ->
+                 {__scc {main@main:Solver._solveParallelOps} True True} case Solver.<··>
+                                                                               e
+                                                                               (Solver._solve
+                                                                                  vars) of wild {
+                                                                          GHC.Base.Nothing
+                                                                          -> Utils.$w//>
+                                                                               @ GHC.Base.Maybe
+                                                                               @ AlgData.Algo
+                                                                               GHC.Base.$fMonadMaybe
+                                                                               GHC.Base.$fAlternativeMaybe
+                                                                               (GHC.Base.Just
+                                                                                  @ AlgData.Algo
+                                                                                  e)
+                                                                               (GHC.Types.:
+                                                                                  @ (AlgData.Algo
+                                                                                     -> GHC.Base.Maybe
+                                                                                          AlgData.Algo)
+                                                                                  Calc.calc
+                                                                                  (GHC.Types.:
+                                                                                     @ (AlgData.Algo
+                                                                                        -> GHC.Base.Maybe
+                                                                                             AlgData.Algo)
+                                                                                     Rules.simplify
+                                                                                     (GHC.Types.:
+                                                                                        @ (AlgData.Algo
+                                                                                           -> GHC.Base.Maybe
+                                                                                                AlgData.Algo)
+                                                                                        (Context.useCtx
+                                                                                           vars)
+                                                                                        (GHC.Types.[]
+                                                                                           @ (AlgData.Algo
+                                                                                              -> GHC.Base.Maybe
+                                                                                                   AlgData.Algo)))))
+                                                                          GHC.Base.Just ipv
+                                                                          -> wild }) -}
+c03db497cf62d5a009a0a970b3c09a84
+  _solveResolStep ::
+    AlgData.Ctx -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (vars :: AlgData.Ctx) (e :: AlgData.Algo) ->
+                 {__scc {main@main:Solver._solveResolStep} True True} case e of wild {
+                                                                        DEFAULT
+                                                                        -> Solver._solveResolStep2
+                                                                        AlgData.Op op ds
+                                                                        -> case ds of wild1 {
+                                                                             []
+                                                                             -> Solver._solveResolStep2
+                                                                             : o oo
+                                                                             -> let {
+                                                                                  res :: GHC.Base.Maybe
+                                                                                           AlgData.Algo
+                                                                                  = {__scc {main@main:Solver._solveResolStep.r} True True} Lib.Debug.$w←
+                                                                                                                                             @ (GHC.Base.Maybe
+                                                                                                                                                  AlgData.Algo)
+                                                                                                                                             Solver.$s$fShowMaybe
+                                                                                                                                             Lib.Debug.D_SOLVER
+                                                                                                                                             (GHC.Base.++
+                                                                                                                                                @ GHC.Types.Char
+                                                                                                                                                (AlgShow.$fShowAlgSets_$cshow1
+                                                                                                                                                   wild)
+                                                                                                                                                Solver._solveResolStep1)
+                                                                                                                                             (Solver._solve
+                                                                                                                                                vars
+                                                                                                                                                o)
+                                                                                } in
+                                                                                let {
+                                                                                  o1 :: GHC.Base.Maybe
+                                                                                          AlgData.Algo
+                                                                                  = {__scc {main@main:Solver._solveResolStep.mkRes} True True} case res of wild2 {
+                                                                                                                                                 GHC.Base.Nothing
+                                                                                                                                                 -> GHC.Base.Nothing
+                                                                                                                                                      @ AlgData.Algo
+                                                                                                                                                 GHC.Base.Just re
+                                                                                                                                                 -> case re of wild3 {
+                                                                                                                                                      DEFAULT
+                                                                                                                                                      -> GHC.Base.Just
+                                                                                                                                                           @ AlgData.Algo
+                                                                                                                                                           (AlgData.Op
+                                                                                                                                                              AlgData.Equiv
+                                                                                                                                                              (GHC.Types.:
+                                                                                                                                                                 @ AlgData.Algo
+                                                                                                                                                                 wild3
+                                                                                                                                                                 (GHC.Types.[]
+                                                                                                                                                                    @ AlgData.Algo)))
+                                                                                                                                                      AlgData.Op op1 m
+                                                                                                                                                      -> case GHC.List.elem
+                                                                                                                                                                @ AlgData.Ops
+                                                                                                                                                                AlgData.$fEqOps
+                                                                                                                                                                op1
+                                                                                                                                                                AlgData.resolSteps of wild4 {
+                                                                                                                                                           GHC.Types.False
+                                                                                                                                                           -> GHC.Base.Just
+                                                                                                                                                                @ AlgData.Algo
+                                                                                                                                                                (AlgData.Op
+                                                                                                                                                                   AlgData.Equiv
+                                                                                                                                                                   (GHC.Types.:
+                                                                                                                                                                      @ AlgData.Algo
+                                                                                                                                                                      wild3
+                                                                                                                                                                      (GHC.Types.[]
+                                                                                                                                                                         @ AlgData.Algo)))
+                                                                                                                                                           GHC.Types.True
+                                                                                                                                                           -> wild2 } } }
+                                                                                } in
+                                                                                {__scc {main@main:AlgAux.<++|} True True} case o1 of wild2 {
+                                                                                                                            GHC.Base.Nothing
+                                                                                                                            -> GHC.Base.Nothing
+                                                                                                                                 @ AlgData.Algo
+                                                                                                                            GHC.Base.Just x
+                                                                                                                            -> GHC.Base.Just
+                                                                                                                                 @ AlgData.Algo
+                                                                                                                                 (AlgAux.appendList
+                                                                                                                                    x
+                                                                                                                                    oo) } } }) -}
+fa90824224d928aaf110210bfdfb6243
+  _solveResolStep1 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Solver._solveResolStep} False True} {__scc {main@main:Solver._solveResolStep.r} False True} GHC.CString.unpackCString#
+                                                                                                                                 " _solveResolStep:"#) -}
+4ee83c8d3ef77e797e296dd489c7b892
+  _solveResolStep2 :: GHC.Base.Maybe AlgData.Algo
+  {- Strictness: x -}
+4498c2e718e91c6f29217b3af0b3999e
+  _solved ::
+    AlgData.Ctx -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (vars :: AlgData.Ctx) (a :: AlgData.Algo) ->
+                 {__scc {main@main:Solver._solved} True True} case {__scc {main@main:Solver._solved.d} True True} Solver._solve
+                                                                                                                    vars
+                                                                                                                    a of wild {
+                                                                GHC.Base.Nothing
+                                                                -> GHC.Base.Nothing @ AlgData.Algo
+                                                                GHC.Base.Just ipv
+                                                                -> GHC.Base.Just
+                                                                     @ AlgData.Algo
+                                                                     (case ipv of wild1 {
+                                                                        DEFAULT -> wild1
+                                                                        AlgData.Op ds1 m
+                                                                        -> case Solver._solved_go
+                                                                                  m
+                                                                                  (GHC.List.lastError
+                                                                                     @ AlgData.Algo) of wild2 {
+                                                                             DEFAULT -> wild2
+                                                                             AlgData.Op ds2 m1
+                                                                             -> GHC.List.head
+                                                                                  @ AlgData.Algo
+                                                                                  m1 } }) }) -}
+1621167f79fc2e61d0021110cf4a9050
+  _solved_go :: [AlgData.Algo] -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+5468270f5b16de0c6e01c6c6c9a8ce94
+  accumDiff :: GHC.Types.Int -> [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U>,
+     Unfolding: (\ (m :: GHC.Types.Int) (ds :: [GHC.Types.Int]) ->
+                 {__scc {main@main:Solver.accumDiff} True True} case ds of wild {
+                                                                  [] -> GHC.Types.[] @ GHC.Types.Int
+                                                                  : a o
+                                                                  -> case o of wild1 {
+                                                                       []
+                                                                       -> GHC.Types.[]
+                                                                            @ GHC.Types.Int
+                                                                       : b oo
+                                                                       -> GHC.Types.:
+                                                                            @ GHC.Types.Int
+                                                                            (case b of wild2 { GHC.Types.I# x ->
+                                                                             case a of wild3 { GHC.Types.I# y ->
+                                                                             let {
+                                                                               x1 :: GHC.Prim.Int#
+                                                                               = GHC.Prim.-# x y
+                                                                             } in
+                                                                             case GHC.Prim.tagToEnum#
+                                                                                    @ GHC.Types.Bool
+                                                                                    (GHC.Prim.>=#
+                                                                                       x1
+                                                                                       0#) of wild4 {
+                                                                               GHC.Types.False
+                                                                               -> GHC.Types.I#
+                                                                                    (GHC.Prim.negateInt#
+                                                                                       x1)
+                                                                               GHC.Types.True
+                                                                               -> GHC.Types.I#
+                                                                                    x1 } } })
+                                                                            (Solver.accumDiff__accumDiff
+                                                                               m
+                                                                               (case b of wild2 { GHC.Types.I# x ->
+                                                                                case a of wild3 { GHC.Types.I# y ->
+                                                                                let {
+                                                                                  x1 :: GHC.Prim.Int#
+                                                                                  = GHC.Prim.-# x y
+                                                                                } in
+                                                                                case GHC.Prim.tagToEnum#
+                                                                                       @ GHC.Types.Bool
+                                                                                       (GHC.Prim.>=#
+                                                                                          x1
+                                                                                          0#) of wild4 {
+                                                                                  GHC.Types.False
+                                                                                  -> GHC.Types.I#
+                                                                                       (GHC.Prim.negateInt#
+                                                                                          x1)
+                                                                                  GHC.Types.True
+                                                                                  -> GHC.Types.I#
+                                                                                       x1 } } })
+                                                                               wild1) } }) -}
+e1ac59a780581964d05d3935f3e86981
+  accumDiff__accumDiff ::
+    GHC.Types.Int
+    -> GHC.Types.Int -> [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(U)><L,1*U(U)><S,1*U> -}
+23daf664c9122ce4bf93cc33e53af829
+  aresume :: GHC.Types.Int -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U>m6, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: AlgData.Algo) ->
+                 case Solver.$waresume w w1 of ww { (#,#) ww1 ww2 ->
+                 AlgData.Op ww1 ww2 }) -}
+f543f5317fb5d4f6a7bb122e5d1fff50
+  aresume1 :: AlgData.Algo
+  {- Strictness: x -}
+9911f3014c098502b64d91a2ba2d248d
+  aresume_go :: [AlgData.Algo] -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+7e243441bca7ba02f56ce74d88d4ff12
+  diff :: [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+6434db4b31109c93fb8e9853a5eb96b0
+  enunciateOf :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+ef5530ce6a1f14ac2afebfdc4e9b9271
+  evids :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 1, Strictness: <S,1*U> -}
+74fabe713de6c3674452f5a0dc7fdc2b
+  exaustCalc :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (o :: AlgData.Algo) ->
+                 {__scc {main@main:Solver.exaustCalc} True True} case Solver.exaustCalc_go
+                                                                        (GHC.Base.Just
+                                                                           @ AlgData.Algo
+                                                                           o)
+                                                                        (GHC.List.lastError
+                                                                           @ (GHC.Base.Maybe
+                                                                                AlgData.Algo)) of wild {
+                                                                   GHC.Base.Nothing
+                                                                   -> Data.Maybe.fromJust1
+                                                                        @ AlgData.Algo
+                                                                   GHC.Base.Just x -> x }) -}
+08443561bcda6535ae98b52398638233
+  exaustCalc_go ::
+    GHC.Base.Maybe AlgData.Algo
+    -> GHC.Base.Maybe AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
+d7d841f635a2b67aaf5d06b7e18aed3e
+  flatWalk ::
+    (AlgData.Algo -> AlgData.Algo) -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),C(U)><S,1*U> -}
+8e79c86e81a1d4a7f700f27488444811
+  resume :: GHC.Types.Int -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U>m6, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: AlgData.Algo) ->
+                 case Solver.$wresume w w1 of ww { (#,#) ww1 ww2 ->
+                 AlgData.Op ww1 ww2 }) -}
+08982d915e3a3c989406b57c4c1dec38
+  resume1 :: AlgData.Algo
+  {- Strictness: x -}
+ab3747ce3c21da1eae0011b22ebe586c
+  resume_go :: [AlgData.Algo] -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+53e100761fb866d53949c8cd3de2d9e9
+  shallowWalk ::
+    (AlgData.Algo -> AlgData.Algo) -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),C(U)><S,1*U>,
+     Unfolding: (\ (f :: AlgData.Algo -> AlgData.Algo)
+                   (ds :: AlgData.Algo) ->
+                 {__scc {main@main:Solver.shallowWalk} True True} case ds of wild {
+                                                                    DEFAULT -> f wild
+                                                                    AlgData.Op op m
+                                                                    -> f (AlgData.Op
+                                                                            op
+                                                                            (GHC.Base.map
+                                                                               @ AlgData.Algo
+                                                                               @ AlgData.Algo
+                                                                               f
+                                                                               m)) }) -}
+8540d090a9014da29d6251b733805947
+  solve :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (o :: AlgData.Algo) ->
+                 {__scc {main@main:Solver.solve} True True} case Solver.solveM
+                                                                   (Data.Map.Base.Tip
+                                                                      @ AlgData.Algo
+                                                                      @ AlgData.Algo)
+                                                                   o of wild {
+                                                              GHC.Base.Nothing
+                                                              -> Data.Maybe.fromJust1 @ AlgData.Algo
+                                                              GHC.Base.Just x -> x }) -}
+525a254d113b7725e5e76e0619ebceb4
+  solve' ::
+    AlgData.Ctx -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ (vars :: AlgData.Ctx) (o :: AlgData.Algo) ->
+                 {__scc {main@main:Solver.solve'} True True} let {
+                                                               localVars :: AlgData.Ctx
+                                                               = {__scc {main@main:Solver.solve'.localVars} True True} Lib.Debug.$w←
+                                                                                                                         @ AlgData.Ctx
+                                                                                                                         Solver.$s$fShowMap
+                                                                                                                         Lib.Debug.D_SOLVER
+                                                                                                                         (GHC.Base.++
+                                                                                                                            @ GHC.Types.Char
+                                                                                                                            (AlgShow.$fShowAlgSets_$cshow1
+                                                                                                                               o)
+                                                                                                                            Solver.solve'3)
+                                                                                                                         ({__scc {main@main:Context.getVars'} True True} Context.getDefs'
+                                                                                                                                                                           vars
+                                                                                                                                                                           (AlgAux.conclusion
+                                                                                                                                                                              o))
+                                                             } in
+                                                             case Lib.Debug.$w←
+                                                                    @ (GHC.Base.Maybe AlgData.Algo)
+                                                                    Solver.$s$fShowMaybe
+                                                                    Lib.Debug.D_SOLVER
+                                                                    (GHC.Base.++
+                                                                       @ GHC.Types.Char
+                                                                       (AlgShow.$fShowAlgSets_$cshow1
+                                                                          o)
+                                                                       Solver.solve'2)
+                                                                    (Solver._solve
+                                                                       localVars
+                                                                       o) of wild {
+                                                               GHC.Base.Nothing
+                                                               -> Lib.Debug.$w←
+                                                                    @ (GHC.Base.Maybe AlgData.Algo)
+                                                                    Solver.$s$fShowMaybe
+                                                                    Lib.Debug.D_SOLVER
+                                                                    (GHC.Base.++
+                                                                       @ GHC.Types.Char
+                                                                       (AlgShow.$fShowAlgSets_$cshow1
+                                                                          o)
+                                                                       Solver.solve'1)
+                                                                    (case Context.useCtx
+                                                                            localVars
+                                                                            o of wild1 {
+                                                                       GHC.Base.Nothing
+                                                                       -> GHC.Base.Nothing
+                                                                            @ AlgData.Algo
+                                                                       GHC.Base.Just x
+                                                                       -> Neighbor.neighbourMove
+                                                                            x })
+                                                               GHC.Base.Just ipv -> wild }) -}
+32042219c585bb7c8cf3b4fe23df94b5
+  solve'1 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Solver.solve'} False True} GHC.CString.unpackCString#
+                                                                " repDefs:"#) -}
+e0c8d168b7ae446ae53d39ca6631bdad
+  solve'2 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Solver.solve'} False True} GHC.CString.unpackCString#
+                                                                " solving:"#) -}
+9fd7e8c57b867c54a96aa427e73ff3cb
+  solve'3 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Solver.solve'} False True} {__scc {main@main:Solver.solve'.localVars} False True} GHC.CString.unpackCString#
+                                                                                                                       " localVars:"#) -}
+aa3aca751dbd8df1736e4ecaf2095f9f
+  solveM ::
+    AlgData.Ctx -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+a323f315b069b0c85468256c5b8d5fe9
+  solved :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:Solver.solved} True True} AlgAux.conclusion
+                                                               (Solver.solve a)) -}
+a985b16c940fff51ad3cc516d4297827
+  varSolved :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (o :: AlgData.Algo) ->
+                 {__scc {main@main:Solver.varSolved} True True} case {__scc {main@main:Utils.·>} True True} Utils.proc
+                                                                                                              @ GHC.Base.Maybe
+                                                                                                              @ AlgData.Algo
+                                                                                                              GHC.Base.$fMonadMaybe
+                                                                                                              Solver.$s$fEqMaybe
+                                                                                                              GHC.Base.$fAlternativeMaybe
+                                                                                                              Solver.varSolved1
+                                                                                                              o of wild {
+                                                                  GHC.Base.Nothing -> o
+                                                                  GHC.Base.Just ipv -> ipv }) -}
+4455a21081d1d49e2e0c66e060033500
+  varSolved1 :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 1,
+     Unfolding: (Solver._solve
+                   (Data.Map.Base.Tip @ AlgData.Algo @ AlgData.Algo)) -}
+6dccb296f563473e367ee7a2dfae89c4
+  verify :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 1, Strictness: <S,1*U> -}
+"SPEC/Solver $fEqMaybe @ Algo" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                          AlgData.Algo)
+  GHC.Base.$fEqMaybe @ AlgData.Algo $dEq = Solver.$s$fEqMaybe
+"SPEC/Solver $fEqMaybe_$c== @ Algo" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                               AlgData.Algo)
+  GHC.Base.$fEqMaybe_$c== @ AlgData.Algo $dEq
+  = Solver.$s$fEqMaybe_$s$fEqMaybe_$c==
+"SPEC/Solver $fShowMap @ Algo @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                   AlgData.Algo)
+                                                      ($dShow1 :: GHC.Show.Show AlgData.Algo)
+  Data.Map.Base.$fShowMap @ AlgData.Algo
+                          @ AlgData.Algo
+                          $dShow
+                          $dShow1
+  = Solver.$s$fShowMap
+"SPEC/Solver $fShowMap_$cshowList @ Algo @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                              AlgData.Algo)
+                                                                 ($dShow1 :: GHC.Show.Show
+                                                                               AlgData.Algo)
+  Data.Map.Base.$fShowMap_$cshowList @ AlgData.Algo
+                                     @ AlgData.Algo
+                                     $dShow
+                                     $dShow1
+  = Solver.$s$fShowMap_$s$fShowMap_$cshowList
+"SPEC/Solver $fShowMaybe @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                              AlgData.Algo)
+  GHC.Show.$fShowMaybe @ AlgData.Algo $dShow = Solver.$s$fShowMaybe
+"SPEC/Solver $fShowMaybe_$cshowList @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                         AlgData.Algo)
+  GHC.Show.$fShowMaybe_$cshowList @ AlgData.Algo $dShow
+  = Solver.$s$fShowMaybe_$s$fShowMaybe_$cshowList
+"SPEC/Solver fromList @ Algo _" [ALWAYS] forall @ a
+                                                ($dOrd :: GHC.Classes.Ord AlgData.Algo)
+  Data.Map.Base.fromList @ AlgData.Algo @ a $dOrd
+  = Solver.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,259 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-12 00:14:49.795015 UTC
+
+interface main@main:Sample [hpc] 8001
+  interface hash: f1edbc9767429c65718cb20e412da763
+  ABI hash: 2763d59fbe38144852d6aa8e1dbbc2f7
+  export-list hash: a3daa5f6df08ebc04b10ca14b6275347
+  orphan hash: dabd243816fc30f2140c9a2a714adf39
+  flag hash: c25c71772aae7ac07670edcd14020fd8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Sample._sample
+  Sample.sample
+module dependencies: AlgAux AlgData AlgNum AlgParser AlgSets [boot]
+                     AlgShow Context [boot] Evid [boot] Intervals Lib.Colors Lib.Debug
+                     Lib.ISUnits Lib.Noms Rules [boot] Solver [boot] Utils
+package dependencies: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-ordlist-0.4.7.0@data-ordlist-0.4.7.0-KWzW5aSYDm3KUQkWjneBW4
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM
+                      numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj
+                      parsec-3.1.11@parsec-3.1.11-BCos4GEVCuDB8dnOCBHO6X
+                      primes-0.2.1.0@primes-0.2.1.0-K0eIDQpwpli2u6M20VlfZn
+                      regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH
+                      regex-compat-0.95.1@regex-compat-0.95.1-JPDhOGKcrkD8S1t3VsLLUt
+                      regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR
+                      split-0.2.3.1@split-0.2.3.1-IJKK4pOCYGKud0jZImZke
+                      text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         base-4.9.0.0:Text.Show.Functions
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         main@main:AlgNum main@main:AlgParser main@main:AlgShow
+         main@main:AlgShow
+         regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH:Text.Regex.Base.Context
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.String
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH:Data.Boolean
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.Functor 6fc476505db88d678632a4a838125f13
+import  -/  base-4.9.0.0:Data.Maybe 5f2ba364cbe65c060bc5436bc0b9d049
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.Float 469226b1bc53433e95d0167dec5d0312
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  AlgAux 11857fb5eafb79b4e497e9d216a2ba5d
+  exports: a5bbe99cfa73a20385453c450cf73119
+  dist b6a1ee433a1a431b139b140aa4fec332
+import  -/  AlgData 307fffe4f0712a2d16396958905f20d6
+  exports: 429708355c7b5468a518bfa47675e12b
+  Algo 4d637072ad901205bf793a262f526c33
+  And 5d24d8c844bd2a97c85e63b7abcbb24f
+  Bool 67f527cfffcc3ad2fd344285e61c737a
+  Dim 46bb4e21fb3a209e2abaaf7a8f792310
+  Div 775b00476d70cc8a25f3cca491cc087c
+  Document 300b94279054e268cbaddbf88cd55282
+  Ellipsis 7fe5995c2eeca68984dc2412317220d4
+  Equals 9500932a4069a75b430a3a44c9f0f2e7
+  Exp e6844369b86b13f0dedad0ecd6de9184
+  Geometric 4add4bc249ad1778779f77be6b48a32e
+  Greater 4512db64871fd047ef64dd8534debcb9
+  GreaterOrEqual a01ee902550a2703354b1a97ab6a3b2e
+  Index 5786e751a668fc11e3204e9faf0dcd1c
+  Infinit 9666a84f86ee6e9cdb8e02658a597d56
+  Intersect 1bd339fb9bda5755a1a75cc848589700
+  Less c36695b59b4e48329b7124d1706fa572
+  LessOrEqual dbdbaf734cfe4774f93497dc5d2af134
+  Lit 11c3a155764287bafe570d1de382257a
+  Log 4658a810e53021bb8194eae2310bf5d3
+  Mul 2f35706afddb4d148a595d106eedb7e6
+  Neg 67362d85eaf7d8ee80f48cd9dd9d09b9
+  Nom 95d978c8cc5eb26be29a90158f860ad8
+  NotEqual 60d0afbeee1e2fdbb3638c5c45b39a68
+  Op 15ebbb24b6785911f3ab55036df6fa5d
+  Ops 4d4ded7a73ed5a4c8b83cf0bae613d27
+  Or 202d2d148971979f168ac1edee2eb873
+  Pos b08290a384a9fff859e51e6e96d36be9
+  PosOrNeg b3f0c68bd9c71c66fe74c52951484dab
+  Quant d2fc267388e95b11912599d611536fcb
+  Range 8e438ad81c1a17806c0c52a93fe011d8
+  RangeWing 2115629cd83e25a0656a9efbb024a9bc
+  Root c769dc3e9496719f922608bf2389ae38
+  Scale 892e8e2f08266ea7522518f1720cec69
+  Set a6ae8efb481222e569393086741f0e5f
+  Sets ad18523b421d9287ca0aae16bff820d8
+  Sub aaf2da6bfff58a4523858f58c32df4b3
+  Sum d5f11b74783ac2a16ec6db1a10fe0ff0
+  System dff1e0e43983d65f96ab9b0cc376b202
+  Und ae1870307e7dc3a94128d7dfda7cf0f8
+  Union 5234cda473491e1abeb9830deb516287
+  Unit 54a8ab43ab3314954f3f50907655fbd2
+  canComut 9336e5ce1b06bb33ba2abdaf4a0173cb
+  equatOps 24149df67c5148a043074cf3bc329ffd
+  exprOps df5f2cd5059e49f6f212562d25cb4d78
+  neutral 8e35b78447bb2a8a3af74ba5718fb481
+  prior 2a8a7c59b2ca4821612561d2d4131eae
+  rawSequenceOps 91e520cdda65e7048db18f9eb4d72149
+import  -/  Intervals 83095e626cdefe3b8e7a59fdec06f8e2
+  exports: ee5e6f4872d20f9fb1322ac95ef84fad
+  rangeInters 4ee4fb99685bdc80e666ccf3994d68ec
+  rangeUnion ec2ad44cdbe060e1b40631b2e3ff77d8
+import  -/  Lib.Debug c5ad911a598d38e4e2cba45a09de710b
+  exports: e68806ff5497d096232692f266395170
+  D_SAMPLE 697b3ef9221ec56b1b0959d7fb3f49e6
+  D_UNITS 8081a3ebff63e1830340adddb71fb0ab
+  algTrace 0c8795b85673ae57a2fafc4c8716ecc8
+  dInfo b92a087152f8e08b1fbae947a3f5da6f
+  ← 1be09bfd6d4e400c5809b6c36a0fe02b
+import  -/  Lib.ISUnits 5202eab2140996d8423fa18491ea1ee9
+  exports: 25b531ebae09cc2b3e2bc89840df989a
+  base d74c11d548d234d1830d259a59d904a7
+  compo dcfcc335adfb9d35a256ba6b19f2e9cf
+  deriveDim 111f7553233ed5757d035ea9df79643c
+  deriveUnit 564541c715822ce43c71f80c749e393d
+  dim fb610e1c613a7927c6108f569368f627
+  fitScale f0ff6789b4c9c2ab183d75a744f87676
+  solvedAsLits 9f9223882cb039eebd78842eadac01a7
+  toBase 5622228ed16795a166c1727fe6c95b26
+import  -/  Lib.Noms 2d56e88a289ad37b00090ddb7a06fc81
+  exports: 8a9b0085f320a4deb44ddea66e85019e
+  NrRatio c5c6d48e6611c93db826c6f43b36a153
+  isInt b755498408d70426cefe2bce45d5797c
+import  -/  Solver e35bfc302554872ad4514c120d4f41cd
+  exports: 32eca56b2140e4152941d077dea19996
+  solved 95cf717e5879c2a58a3b5957d0649ab2
+import  -/  Utils e3ec9e04ed6635229273d876ecf1c4f6
+  exports: edc5a96c02c5468ab823d3bed5331cb6
+  #>= 1c9b2456bc03f69e7901584ae163fcc3
+  ok 3861b4d7f0d7b7d312a010526a83efc5
+b1abf5e096aceba0b09565ab4bc7106f
+  $s$fShowMaybe :: GHC.Show.Show (GHC.Base.Maybe AlgData.Scale)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe AlgData.Scale)
+                  (GHC.Show.$fShowMaybe_$cshowsPrec
+                     @ AlgData.Scale
+                     AlgShow.$fShowScale)
+                  (GHC.Show.$fShowMaybe_$cshow @ AlgData.Scale AlgShow.$fShowScale)
+                  Sample.$s$fShowMaybe_$s$fShowMaybe_$cshowList -}
+eb7430653b99a96fd94091542d2ee5f8
+  $s$fShowMaybe1 :: GHC.Show.Show (GHC.Base.Maybe AlgData.Algo)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe AlgData.Algo)
+                  (GHC.Show.$fShowMaybe_$cshowsPrec
+                     @ AlgData.Algo
+                     AlgShow.$fShowAlgo)
+                  (GHC.Show.$fShowMaybe_$cshow @ AlgData.Algo AlgShow.$fShowAlgo)
+                  Sample.$s$fShowMaybe_$s$fShowMaybe_$cshowList1 -}
+4a2752154e30727a3c1762cbdcad686d
+  $s$fShowMaybe_$s$fShowMaybe_$cshowList ::
+    [GHC.Base.Maybe AlgData.Scale] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [GHC.Base.Maybe AlgData.Scale])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe AlgData.Scale)
+                   (GHC.Show.$fShowMaybe_$cshowsPrec
+                      @ AlgData.Scale
+                      AlgShow.$fShowScale
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+12988e27ce3a600a143c8d6fa07de1ba
+  $s$fShowMaybe_$s$fShowMaybe_$cshowList1 ::
+    [GHC.Base.Maybe AlgData.Algo] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [GHC.Base.Maybe AlgData.Algo])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe AlgData.Algo)
+                   (GHC.Show.$fShowMaybe_$cshowsPrec
+                      @ AlgData.Algo
+                      AlgShow.$fShowAlgo
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+f23f8ebf2099d33373e918f136cdfbfa
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Sample.$trModule2
+                   Sample.$trModule1) -}
+1fe6d68c88e6248f663371500ef1166e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Sample"#) -}
+f7eb9184628be2abb1bf09ad99a46229
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+84dd1dbbb6df3089c2903ba7565ed6b9
+  _sample ::
+    AlgData.Ops
+    -> AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 3, Strictness: <L,U><S,1*U><L,1*U> -}
+87d293099c933d8c8444042ab63aad92
+  sample ::
+    AlgData.Ops
+    -> AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 3, Strictness: <S,U><S,U><S,U> -}
+"SPEC/Sample $fShowMaybe @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                              AlgData.Algo)
+  GHC.Show.$fShowMaybe @ AlgData.Algo $dShow = Sample.$s$fShowMaybe1
+"SPEC/Sample $fShowMaybe @ Scale" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                               AlgData.Scale)
+  GHC.Show.$fShowMaybe @ AlgData.Scale $dShow = Sample.$s$fShowMaybe
+"SPEC/Sample $fShowMaybe_$cshowList @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                         AlgData.Algo)
+  GHC.Show.$fShowMaybe_$cshowList @ AlgData.Algo $dShow
+  = Sample.$s$fShowMaybe_$s$fShowMaybe_$cshowList1
+"SPEC/Sample $fShowMaybe_$cshowList @ Scale" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                          AlgData.Scale)
+  GHC.Show.$fShowMaybe_$cshowList @ AlgData.Scale $dShow
+  = Sample.$s$fShowMaybe_$s$fShowMaybe_$cshowList
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

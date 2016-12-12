@@ -94,7 +94,11 @@ genSimplRules=[
   ,"a*x+x/b=(a*b*x+x)/b"
   ,"x*(a|b)=(x*a|x*b)"
   ,"0+(-x)=(-x)"
-  ,"cos⁻¹(-cos(x))=x+180"
+  ,"cos⁻(-cos(x))=x+180"
+  ,"x<n+inf<=>x<=n"
+  ,"x<=n-inf<=>x<n"
+  ,"x>n-inf<=>x>=n"
+  ,"x>=n-inf<=>x>n"
   ]
 
 combinations :: (Num a, Eq a) => a -> [t] -> [[t]]

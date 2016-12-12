@@ -1,0 +1,628 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-12 00:15:08.600203 UTC
+
+interface main@main:AlgSets [hpc] 8001
+  interface hash: 79ede2ced0b1edade273b07b48a92ad2
+  ABI hash: 8dee5e08219b7cd6b92feaf25b13a913
+  export-list hash: a10dd8fbd67d6c1d0e71fa88be4d3350
+  orphan hash: b10c5476e219ce51bc4aaa4724c21dbc
+  flag hash: c25c71772aae7ac07670edcd14020fd8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  AlgSets._N
+  AlgSets._Q
+  AlgSets._R
+  AlgSets.algSets
+  AlgSets.elemSet
+  AlgSets.isNatural
+  AlgSets.isRational
+  AlgSets.isReal
+  AlgSets.showSet
+module dependencies: AlgAux AlgData AlgFile [boot] AlgNum AlgParser
+                     AlgShow Calc Context Derive Evid Intervals Lib.Colors Lib.Debug
+                     Lib.ISUnits Lib.Noms Neighbor Rules Sample Solver [boot] Steps
+                     Utils
+package dependencies: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-ordlist-0.4.7.0@data-ordlist-0.4.7.0-KWzW5aSYDm3KUQkWjneBW4
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-6qsR1PHUy5lL47Hpoa4jCM
+                      numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj
+                      parsec-3.1.11@parsec-3.1.11-BCos4GEVCuDB8dnOCBHO6X
+                      primes-0.2.1.0@primes-0.2.1.0-K0eIDQpwpli2u6M20VlfZn
+                      regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH
+                      regex-compat-0.95.1@regex-compat-0.95.1-JPDhOGKcrkD8S1t3VsLLUt
+                      regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR
+                      split-0.2.3.1@split-0.2.3.1-IJKK4pOCYGKud0jZImZke
+                      text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         base-4.9.0.0:Text.Show.Functions
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         main@main:AlgNum main@main:AlgParser main@main:AlgParser
+         main@main:AlgShow main@main:AlgShow
+         regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH:Text.Regex.Base.Context
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.String
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH:Data.Boolean
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+import  -/  base-4.9.0.0:Control.Applicative 7728b33d6969dce59e89474349eb1397
+import  -/  base-4.9.0.0:Data.Functor 6fc476505db88d678632a4a838125f13
+import  -/  base-4.9.0.0:Data.Maybe 5f2ba364cbe65c060bc5436bc0b9d049
+import  -/  base-4.9.0.0:Data.Tuple acb0ed10307ed88df6c81b8589f4de16
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 24b19ef74cea78e4c18332bed9f0491d
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 1e8d61dcc59a1a983b27bab6fd6bdcaf
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  AlgAux 11857fb5eafb79b4e497e9d216a2ba5d
+  exports: a5bbe99cfa73a20385453c450cf73119
+  repVars b03047de44748ffa5694b823b9fe07fd
+import  -/  AlgData 307fffe4f0712a2d16396958905f20d6
+  exports: 429708355c7b5468a518bfa47675e12b
+  AlgSet c279f8ccf2534d6117c5ff3f5836fb90
+  Algo 4d637072ad901205bf793a262f526c33
+  Bool 67f527cfffcc3ad2fd344285e61c737a
+  Nom 95d978c8cc5eb26be29a90158f860ad8
+  Pref 5bdc838a1ea7f62e685a4ad812e98018
+  Sets ad18523b421d9287ca0aae16bff820d8
+  ordSet 4d637072ad901205bf793a262f526c33
+import  -/  Evid 889f68b957a0523056b3402cf97ea356
+  exports: 51672234b32e22efb58f3169751ef7f2
+  _evid b3989758aee9d4b43241032ee40eef4f
+import  -/  Lib.Colors 661ee66eb71335da3fd90f984f3e9e14
+  exports: dd28f8f849d9531d0a7956c1d1cf94af
+  blueColor 7d58be26bcf70b60c9f7d54adc53b927
+  nColor 4bd84a1dc203c67fed29a061b7b43901
+  yellowColor 2dfa4b9b5d05942d68367304a6092ef6
+import  -/  Lib.Debug c5ad911a598d38e4e2cba45a09de710b
+  exports: e68806ff5497d096232692f266395170
+  D_SETS 526a28b1d03d4591424abb8dafa3ebf6
+  dInfo b92a087152f8e08b1fbae947a3f5da6f
+  ← 1be09bfd6d4e400c5809b6c36a0fe02b
+import  -/  Lib.Noms 2d56e88a289ad37b00090ddb7a06fc81
+  exports: 8a9b0085f320a4deb44ddea66e85019e
+  NrRatio c5c6d48e6611c93db826c6f43b36a153
+  NrReal 05af66b1a6c879b20489fc53a8f8da62
+import  -/  Utils e3ec9e04ed6635229273d876ecf1c4f6
+  exports: edc5a96c02c5468ab823d3bed5331cb6
+  literals b692d27f2ce06b9e3e12238f389bd76c
+  ok 3861b4d7f0d7b7d312a010526a83efc5
+0b10e5fedca10cc1fda0e3ea5c591192
+  $s$fShowMaybe :: GHC.Show.Show (GHC.Base.Maybe AlgData.Algo)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe AlgData.Algo)
+                  (GHC.Show.$fShowMaybe_$cshowsPrec
+                     @ AlgData.Algo
+                     AlgShow.$fShowAlgo)
+                  (GHC.Show.$fShowMaybe_$cshow @ AlgData.Algo AlgShow.$fShowAlgo)
+                  AlgSets.$s$fShowMaybe_$s$fShowMaybe_$cshowList -}
+68014cc9b97f933aa46b52fa3479fa1f
+  $s$fShowMaybe_$s$fShowMaybe_$cshowList ::
+    [GHC.Base.Maybe AlgData.Algo] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [GHC.Base.Maybe AlgData.Algo])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe AlgData.Algo)
+                   (GHC.Show.$fShowMaybe_$cshowsPrec
+                      @ AlgData.Algo
+                      AlgShow.$fShowAlgo
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+c442398178ecd9e87d36a9f5fb301110
+  $sfromList ::
+    [(GHC.Base.String, a)] -> Data.Map.Base.Map GHC.Base.String a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Base.String, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Base.String @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Base.Bin
+                             @ GHC.Base.String
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.Base.String @ a)
+                             (Data.Map.Base.Tip @ GHC.Base.String @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case GHC.Classes.$fOrd[]_$s$ccompare1 kx ky of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                AlgSets.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Base.String
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Base.String @ a)
+                                     (Data.Map.Base.Tip @ GHC.Base.String @ a))
+                                  wild2 }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                AlgSets.$wpoly_go10
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Base.String
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Base.String @ a)
+                                     (Data.Map.Base.Tip @ GHC.Base.String @ a))
+                                  wild2 } } } } } }) -}
+8a6f0f7707f18a895c39c897ef4310f8
+  $sfromList1 ::
+    Data.Map.Base.Map GHC.Base.String a1
+    -> [(GHC.Base.String, a1)] -> Data.Map.Base.Map GHC.Base.String a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+324a1ed98cc36bc9d0cfff0e142b2fc1
+  $sfromList2 ::
+    [(AlgData.Algo, a)] -> Data.Map.Base.Map AlgData.Algo a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(AlgData.Algo, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ AlgData.Algo @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Base.Bin
+                             @ AlgData.Algo
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                             (Data.Map.Base.Tip @ AlgData.Algo @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case AlgData.$fOrdAlgo_$ccompare kx ky of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                AlgSets.$sfromList3
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ AlgData.Algo
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a))
+                                  wild2 }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                AlgSets.$wpoly_go1
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ AlgData.Algo
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a))
+                                  wild2 } } } } } }) -}
+0255cf18cc0e7a00cdac5604c94fcd54
+  $sfromList3 ::
+    Data.Map.Base.Map AlgData.Algo a1
+    -> [(AlgData.Algo, a1)] -> Data.Map.Base.Map AlgData.Algo a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+d16f4c1d5788d32fea3f1143192852a4
+  $sinsert_$sgo1 ::
+    AlgData.Algo
+    -> a1
+    -> Data.Map.Base.Map AlgData.Algo a1
+    -> Data.Map.Base.Map AlgData.Algo a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+63efef624363c64d305237d45fc8d795
+  $sinsert_$sgo10 ::
+    GHC.Base.String
+    -> a1
+    -> Data.Map.Base.Map GHC.Base.String a1
+    -> Data.Map.Base.Map GHC.Base.String a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+0f63c6d3bf7824cc19446db8470cb36f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   AlgSets.$trModule2
+                   AlgSets.$trModule1) -}
+8811732bf2ce83f2cc07b52fc96b0728
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "AlgSets"#) -}
+f3daa57a48ca08ea9e08e7a744cf8d8f
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+7d041fb7788da0549e8012a476ee5402
+  $wpoly_go1 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map AlgData.Algo a
+    -> [(AlgData.Algo, a)]
+    -> Data.Map.Base.Map AlgData.Algo a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+ca55ea6032c3b089f2b6d0690f3242fa
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Base.String a
+    -> [(GHC.Base.String, a)]
+    -> Data.Map.Base.Map GHC.Base.String a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+e3023ac513491a8c1d66eacff07a49cc
+  _N :: AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgSets._N} True False} AlgData.Sets
+                                                             AlgSets._N1) -}
+b0f5cdbe7cf7381a4642536cd4e00b8e
+  _N1 :: AlgData.AlgSets
+  {- Strictness: m1,
+     Unfolding: (AlgData.AlgSet
+                   AlgSets._N9
+                   AlgSets._N4
+                   AlgSets._N3
+                   AlgSets._N2) -}
+d01733b70baeadaecfd70952c844a0f9
+  _N2 :: AlgData.AlgSets -> AlgData.AlgSets -> GHC.Types.Ordering
+  {- Unfolding: ({__scc {main@main:AlgSets._N} False True} AlgData.ordSet) -}
+cd8882b54536b5812b50bd0beb9b41ab
+  _N3 :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgSets._N} False True} AlgSets.isNatural) -}
+5c9fa49ee2c110c0af1f83ec228a2a00
+  _N4 :: AlgData.AlgSets -> [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._N} False True} AlgSets._N5) -}
+0111f6a01e8ea019d2600209cb3b819a
+  _N5 :: AlgData.AlgSets -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: AlgData.AlgSets) ->
+                 {__scc {main@main:AlgSets._N.\} True False} AlgSets._N6) -}
+10f68b125be7df8be9af8b38c64b5d4e
+  _N6 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._N} False True} {__scc {main@main:AlgSets._N.\} False True} GHC.Base.++
+                                                                                                         @ GHC.Types.Char
+                                                                                                         Lib.Colors.yellowColor
+                                                                                                         AlgSets._N7) -}
+994645ccef64b5bc0563bf694233e60a
+  _N7 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._N} False True} {__scc {main@main:AlgSets._N.\} False True} GHC.Base.++
+                                                                                                         @ GHC.Types.Char
+                                                                                                         AlgSets._N8
+                                                                                                         Lib.Colors.nColor) -}
+d726f02ed91698ed0fe7d4880afa6974
+  _N8 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._N} False True} {__scc {main@main:AlgSets._N.\} False True} {__scc {main@main:AlgSets._N} False True} {__scc {main@main:AlgSets._N.\} False True} GHC.CString.unpackCStringUtf8#
+                                                                                                                                                                                               "\\226\\132\\149 "#) -}
+e17c1ce2003d04a16e1e361f004a07b7
+  _N9 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._N} False True} GHC.CString.unpackCString#
+                                                             "N"#) -}
+4ed9cd5d8630830c20c86ad268e53108
+  _Q :: AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgSets._Q} True False} AlgData.Sets
+                                                             AlgSets._Q1) -}
+304877cdc1f36f1f3d25f3a6d749a8e4
+  _Q1 :: AlgData.AlgSets
+  {- Strictness: m1,
+     Unfolding: (AlgData.AlgSet
+                   AlgSets._Q9
+                   AlgSets._Q4
+                   AlgSets._Q3
+                   AlgSets._Q2) -}
+ac79dcd8b774deff1a20d333e4d3db5d
+  _Q2 :: AlgData.AlgSets -> AlgData.AlgSets -> GHC.Types.Ordering
+  {- Unfolding: ({__scc {main@main:AlgSets._Q} False True} AlgData.ordSet) -}
+8a8b7d473e9a702c00cbdf51320d331a
+  _Q3 :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgSets._Q} False True} AlgSets.isRational) -}
+6d0443b7aed479e841b1b25d7070f4b6
+  _Q4 :: AlgData.AlgSets -> [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._Q} False True} AlgSets._Q5) -}
+433035bcf45c921e2fcd22e43c2c522f
+  _Q5 :: AlgData.AlgSets -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: AlgData.AlgSets) ->
+                 {__scc {main@main:AlgSets._Q.\} True False} AlgSets._Q6) -}
+6b64ee82f96dd1554b14171b6ce07124
+  _Q6 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._Q} False True} {__scc {main@main:AlgSets._Q.\} False True} GHC.Base.++
+                                                                                                         @ GHC.Types.Char
+                                                                                                         Lib.Colors.yellowColor
+                                                                                                         AlgSets._Q7) -}
+7de9b7c7bc46a5b29c6a6941549062a9
+  _Q7 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._Q} False True} {__scc {main@main:AlgSets._Q.\} False True} GHC.Base.++
+                                                                                                         @ GHC.Types.Char
+                                                                                                         AlgSets._Q8
+                                                                                                         Lib.Colors.nColor) -}
+b378dd41f7a5049f0fb20fce1f0380ab
+  _Q8 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._Q} False True} {__scc {main@main:AlgSets._Q.\} False True} {__scc {main@main:AlgSets._Q} False True} {__scc {main@main:AlgSets._Q.\} False True} GHC.CString.unpackCStringUtf8#
+                                                                                                                                                                                               "\\226\\132\\154 "#) -}
+d072838f8d83db4b4280de631e4974de
+  _Q9 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._Q} False True} GHC.CString.unpackCString#
+                                                             "Q"#) -}
+a6e2077226598aa4fffddaa7f19fa561
+  _R :: AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgSets._R} True False} AlgData.Sets
+                                                             AlgSets._R1) -}
+9844d09de74ddf25ebfd0d317f4f45c1
+  _R1 :: AlgData.AlgSets
+  {- Strictness: m1,
+     Unfolding: (AlgData.AlgSet
+                   AlgSets._R9
+                   AlgSets._R4
+                   AlgSets._R3
+                   AlgSets._R2) -}
+e75f1acb05e45fdb830b6b5bee1d5eee
+  _R2 :: AlgData.AlgSets -> AlgData.AlgSets -> GHC.Types.Ordering
+  {- Unfolding: ({__scc {main@main:AlgSets._R} False True} AlgData.ordSet) -}
+f4bdb327ee33b5a7b6e298938e357cd8
+  _R3 :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgSets._R} False True} AlgSets.isReal) -}
+329a317f0449398de9839b24e869124c
+  _R4 :: AlgData.AlgSets -> [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._R} False True} AlgSets._R5) -}
+a69eaf7b0d255fcdc191774f5f0084c6
+  _R5 :: AlgData.AlgSets -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: AlgData.AlgSets) ->
+                 {__scc {main@main:AlgSets._R.\} True False} AlgSets._R6) -}
+c498e4c1105733eb9f5907863c8100fb
+  _R6 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._R} False True} {__scc {main@main:AlgSets._R.\} False True} GHC.Base.++
+                                                                                                         @ GHC.Types.Char
+                                                                                                         Lib.Colors.yellowColor
+                                                                                                         AlgSets._R7) -}
+2e0d5bcd7451fb35245562a0997bb72d
+  _R7 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._R} False True} {__scc {main@main:AlgSets._R.\} False True} GHC.Base.++
+                                                                                                         @ GHC.Types.Char
+                                                                                                         AlgSets._R8
+                                                                                                         Lib.Colors.nColor) -}
+34430e7cec95a2e7236b15c600c80f47
+  _R8 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._R} False True} {__scc {main@main:AlgSets._R.\} False True} {__scc {main@main:AlgSets._R} False True} {__scc {main@main:AlgSets._R.\} False True} GHC.CString.unpackCStringUtf8#
+                                                                                                                                                                                               "\\226\\132\\157 "#) -}
+8368957b431b6a15cd708e2611ee38d7
+  _R9 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets._R} False True} GHC.CString.unpackCString#
+                                                             "R"#) -}
+eb4dc33db53804292d4822cdb785db14
+  algSets :: Data.Map.Base.Map [GHC.Types.Char] AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgSets.algSets} True True} AlgSets.$sfromList
+                                                                 @ AlgData.Algo
+                                                                 AlgSets.algSets1) -}
+d6dfba92b3546f049d55e34fc1dc646e
+  algSets1 :: [(GHC.Base.String, AlgData.Algo)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, AlgData.Algo)
+                   AlgSets.algSets6
+                   AlgSets.algSets2) -}
+2c5a945cc55159afdd22c3fa2afa7f47
+  algSets2 :: [(GHC.Base.String, AlgData.Algo)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, AlgData.Algo)
+                   AlgSets.algSets3
+                   (GHC.Types.[] @ (GHC.Base.String, AlgData.Algo))) -}
+65f1b74fc98659715ad31adaa93c3baa
+  algSets3 :: (GHC.Base.String, AlgData.Algo)
+  {- Unfolding: ({__scc {main@main:AlgSets.algSets} False True} AlgSets.algSets4
+                                                                  AlgSets._R) -}
+c6c7f15b0a1b5c9ecec8d89bc91a4de5
+  algSets4 :: AlgData.Algo -> (GHC.Base.String, AlgData.Algo)
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (o :: AlgData.Algo) ->
+                 case o of wild {
+                   DEFAULT -> AlgSets.algSets5
+                   AlgData.Sets ds
+                   -> case ds of wild1 {
+                        DEFAULT -> AlgSets.algSets5
+                        AlgData.AlgSet l ds1 ds2 ds3
+                        -> {__scc {main@main:AlgSets.algSets.\} True False} (l,
+                                                                             wild) } }) -}
+6251f43c27a14c5d4782678e24a9183d
+  algSets5 :: (GHC.Base.String, AlgData.Algo)
+  {- Strictness: x -}
+e4a6c294852af341d690675a2670903c
+  algSets6 :: (GHC.Base.String, AlgData.Algo)
+  {- Unfolding: ({__scc {main@main:AlgSets.algSets} False True} AlgSets.algSets4
+                                                                  AlgSets._N) -}
+7100715fd524e46e59a7ab764b6a3bf6
+  elemSet ::
+    AlgData.Algo
+    -> AlgData.Algo -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 3, Strictness: <L,U><L,U><L,U> -}
+abea0d9d9791bf0df72a68d5cc1f8175
+  isNatural :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: AlgData.Algo) ->
+                 {__scc {main@main:AlgSets.isNatural} True True} case ds of wild {
+                                                                   DEFAULT
+                                                                   -> GHC.Base.Nothing
+                                                                        @ AlgData.Algo
+                                                                   AlgData.Nom n
+                                                                   -> GHC.Base.Just
+                                                                        @ AlgData.Algo
+                                                                        (AlgData.Bool
+                                                                           (case Lib.Noms.$w$cproperFraction
+                                                                                   @ GHC.Integer.Type.Integer
+                                                                                   GHC.Real.$fIntegralInteger
+                                                                                   n of ww { (#,#) ww1 ww2 ->
+                                                                            case Lib.Noms.$fEqNr_$c==
+                                                                                   ww2
+                                                                                   AlgSets.isNatural1 of wild1 {
+                                                                              GHC.Types.False
+                                                                              -> GHC.Types.False
+                                                                              GHC.Types.True
+                                                                              -> Lib.Noms.$fOrdNr_$c>
+                                                                                   n
+                                                                                   AlgSets.isNatural1 } })) }) -}
+c13f797a99e1632a702f6cfa8a172e04
+  isNatural1 :: Lib.Noms.Nr
+  {- Unfolding: ({__scc {main@main:AlgSets.isNatural} False True} {__scc {main@main:Lib.Noms.fromInteger} True False} Lib.Noms.NrRatio
+                                                                                                                        AlgSets.isNatural2) -}
+ec4e6183a0f7e5ef4437c2ecf6d6209f
+  isNatural2 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   AlgSets.isNatural3
+                   GHC.Real.$fEnumRatio1) -}
+0f615f19e2897ba806bdc1c47db9de1e
+  isNatural3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+f1faafaedbacdf3f2489a2886cc80f2b
+  isRational :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: AlgData.Algo) ->
+                 {__scc {main@main:AlgSets.isRational} True True} case ds of wild {
+                                                                    DEFAULT
+                                                                    -> GHC.Base.Nothing
+                                                                         @ AlgData.Algo
+                                                                    AlgData.Nom ds1
+                                                                    -> case ds1 of wild1 {
+                                                                         Lib.Noms.NrRatio ds2
+                                                                         -> AlgSets.isRational3
+                                                                         Lib.Noms.NrReal ds2
+                                                                         -> AlgSets.isRational1 } }) -}
+5641b99cff0cc27b44be0cab727d11aa
+  isRational1 :: GHC.Base.Maybe AlgData.Algo
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just @ AlgData.Algo AlgSets.isRational2) -}
+8b1b8398eef2e07a54e47db88c6abdf4
+  isRational2 :: AlgData.Algo
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (AlgData.Bool GHC.Types.False) -}
+638bfbceeef8171035dffe1f187d9f2d
+  isRational3 :: GHC.Base.Maybe AlgData.Algo
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just @ AlgData.Algo AlgSets.isRational4) -}
+95c4b4e51e539331dc33bf38d04a018c
+  isRational4 :: AlgData.Algo
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (AlgData.Bool GHC.Types.True) -}
+eeae096b9da36da5c9476fe21fe16fe4
+  isReal :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m2,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: AlgData.Algo) ->
+                 {__scc {main@main:AlgSets.isReal} True False} AlgSets.isRational3) -}
+be04cd04ddad71c0048d163b59f658bf
+  showSet ::
+    (GHC.Show.Show a1, GHC.Show.Show a) => a -> a1 -> GHC.Base.String
+  {- Arity: 4,
+     Strictness: <L,1*U(A,1*C1(U),A)><L,1*U(A,1*C1(U),A)><L,U><L,U>,
+     Unfolding: (\ @ a1
+                   @ a
+                   ($dShow :: GHC.Show.Show a1)
+                   ($dShow1 :: GHC.Show.Show a)
+                   (e :: a)
+                   (d :: a1) ->
+                 {__scc {main@main:AlgSets.showSet} True True} GHC.Base.++
+                                                                 @ GHC.Types.Char
+                                                                 Lib.Colors.blueColor
+                                                                 (GHC.CString.unpackAppendCString#
+                                                                    "{"#
+                                                                    (GHC.Base.++
+                                                                       @ GHC.Types.Char
+                                                                       (GHC.Show.show @ a $dShow1 e)
+                                                                       (GHC.Base.++
+                                                                          @ GHC.Types.Char
+                                                                          Lib.Colors.blueColor
+                                                                          (GHC.CString.unpackAppendCString#
+                                                                             ":"#
+                                                                             (GHC.Base.++
+                                                                                @ GHC.Types.Char
+                                                                                (GHC.Show.show
+                                                                                   @ a1
+                                                                                   $dShow
+                                                                                   d)
+                                                                                AlgSets.showSet1)))))) -}
+8347dedfe86ce67eaf75b532aa7c8fed
+  showSet1 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets.showSet} False True} GHC.Base.++
+                                                                  @ GHC.Types.Char
+                                                                  Lib.Colors.blueColor
+                                                                  AlgSets.showSet2) -}
+2f927f8b65af8c5f41868960fd5585a0
+  showSet2 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgSets.showSet} False True} GHC.CString.unpackAppendCString#
+                                                                  "}"#
+                                                                  Lib.Colors.nColor) -}
+"SPEC/AlgSets $fShowMaybe @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                               AlgData.Algo)
+  GHC.Show.$fShowMaybe @ AlgData.Algo $dShow = AlgSets.$s$fShowMaybe
+"SPEC/AlgSets $fShowMaybe_$cshowList @ Algo" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                          AlgData.Algo)
+  GHC.Show.$fShowMaybe_$cshowList @ AlgData.Algo $dShow
+  = AlgSets.$s$fShowMaybe_$s$fShowMaybe_$cshowList
+"SPEC/AlgSets fromList @ Algo _" [ALWAYS] forall @ a
+                                                 ($dOrd :: GHC.Classes.Ord AlgData.Algo)
+  Data.Map.Base.fromList @ AlgData.Algo @ a $dOrd
+  = AlgSets.$sfromList2 @ a
+"SPEC/AlgSets fromList @ String _" [ALWAYS] forall @ a
+                                                   ($dOrd :: GHC.Classes.Ord GHC.Base.String)
+  Data.Map.Base.fromList @ [GHC.Types.Char] @ a $dOrd
+  = AlgSets.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

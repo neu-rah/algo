@@ -1,0 +1,26 @@
+Configuring universe-base-1.0.2.1...
+Building universe-base-1.0.2.1...
+Preprocessing library universe-base-1.0.2.1...
+[1 of 2] Compiling Data.Universe.Helpers ( Data/Universe/Helpers.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Helpers.o )
+
+Data/Universe/Helpers.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in 15 further locations.
+    Please use spaces instead.
+[2 of 2] Compiling Data.Universe.Class ( Data/Universe/Class.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Class.o )
+
+Data/Universe/Class.hs:6:1: warning: [-Wtabs]
+    Tab character found here, and in 8 further locations.
+    Please use spaces instead.
+[1 of 2] Compiling Data.Universe.Helpers ( Data/Universe/Helpers.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Helpers.p_o )
+
+Data/Universe/Helpers.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in 15 further locations.
+    Please use spaces instead.
+[2 of 2] Compiling Data.Universe.Class ( Data/Universe/Class.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Class.p_o )
+
+Data/Universe/Class.hs:6:1: warning: [-Wtabs]
+    Tab character found here, and in 8 further locations.
+    Please use spaces instead.
+Installing library in
+/home/azevedo/.stack/snapshots/x86_64-linux/lts-7.12/8.0.1/lib/x86_64-linux-ghc-8.0.1/universe-base-1.0.2.1-CNlPIeO8jYu5rCkfXmhZeC
+Registering universe-base-1.0.2.1...

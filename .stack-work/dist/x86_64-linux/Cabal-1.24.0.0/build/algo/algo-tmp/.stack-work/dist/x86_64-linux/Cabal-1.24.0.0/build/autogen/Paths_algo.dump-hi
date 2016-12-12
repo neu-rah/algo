@@ -1,0 +1,368 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-12 00:14:20.597927 UTC
+
+interface main@main:Paths_algo [hpc] 8001
+  interface hash: 6b2ef399c441abddf4b1ee06108a0d27
+  ABI hash: 37620f81f3e0b599d92d0fd99f2e87d3
+  export-list hash: f1f6d29966242de4eac8e348c8e51195
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1c174a7037aece3976418af1fe38e65d
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Paths_algo.getBinDir
+  Paths_algo.getDataDir
+  Paths_algo.getDataFileName
+  Paths_algo.getLibDir
+  Paths_algo.getLibexecDir
+  Paths_algo.getSysconfDir
+  Paths_algo.version
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Control.Exception 8762ca621bc15a8c1e8e34c703aba1aa
+import  -/  base-4.9.0.0:Control.Exception.Base 4e2b16a4aa23317e444a61cce8fedc63
+import  -/  base-4.9.0.0:Data.Version c62fdf293aee148a8ebca631ccff2037
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.IO 7ddc7086a7fc3b7d7043cc7bc59a04ba
+import  -/  base-4.9.0.0:GHC.IO.Exception 6616e78328d3d532254cd5e593c9c639
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  base-4.9.0.0:System.Environment ee0914a962f5508d0fd404c89ee4999b
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+addDependentFile "/home/azevedo/.stack/programs/x86_64-linux/ghc-8.0.1/lib/ghc-8.0.1/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+6b95cb0067a2550661c2945a22a78b02
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Paths_algo.$trModule2
+                   Paths_algo.$trModule1) -}
+5b846e28f2b67077ab6f6f541c08f77a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Paths_algo"#) -}
+011019d51f909600475169d7690a6edf
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+b5eef5dd1b65a87fe98fbaf718e996f6
+  catchIO ::
+    GHC.Types.IO a
+    -> (GHC.IO.Exception.IOException -> GHC.Types.IO a)
+    -> GHC.Types.IO a
+  {- Unfolding: (\ @ a ->
+                 {__scc {main@main:Paths_algo.catchIO} True True} Control.Exception.Base.catch
+                                                                    @ GHC.IO.Exception.IOException
+                                                                    @ a
+                                                                    GHC.IO.Exception.$fExceptionIOException) -}
+30d79d14748fc48d41a5b631dd8d64a4
+  getBinDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Unfolding: ({__scc {main@main:Paths_algo.getBinDir} True True} Paths_algo.catchIO
+                                                                      @ GHC.Base.String
+                                                                      Paths_algo.getBinDir4
+                                                                        `cast`
+                                                                      (Sym (GHC.Types.N:IO[0]
+                                                                                <GHC.Base.String>_R))
+                                                                      Paths_algo.getBinDir1
+                                                                        `cast`
+                                                                      (<GHC.IO.Exception.IOException>_R
+                                                                       ->_R Sym (GHC.Types.N:IO[0]
+                                                                                     <GHC.IO.FilePath>_R))) -}
+8e29f3cfb2fcee999a056c7dbdd8fb3c
+  getBinDir1 ::
+    GHC.IO.Exception.IOException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.IO.Exception.IOException) ->
+                 {__scc {main@main:Paths_algo.getBinDir.\} True True} Paths_algo.getBinDir2) -}
+0c04e10cf9503915d101fabe65f21998
+  getBinDir2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s,
+                    {__scc {main@main:Paths_algo.bindir} True False} Paths_algo.getBinDir3 #)) -}
+67368a7527fb682f2fc567ddd248fe3b
+  getBinDir3 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Paths_algo.bindir} False True} GHC.CString.unpackCString#
+                                                                    "/home/azevedo/code/haskell/algo/.stack-work/install/x86_64-linux/lts-7.12/8.0.1/bin"#) -}
+4f0907e9aaf65ac723bc408780d98c36
+  getBinDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1 Paths_algo.getBinDir5) -}
+6e3c98a0352a57046eb617eef670e61e
+  getBinDir5 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Paths_algo.getBinDir} False True} GHC.CString.unpackCString#
+                                                                       "algo_bindir"#) -}
+66aff767b174f113bbe5eb0f3090908f
+  getDataDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Unfolding: ({__scc {main@main:Paths_algo.getDataDir} True True} Paths_algo.catchIO
+                                                                       @ GHC.Base.String
+                                                                       Paths_algo.getDataDir4
+                                                                         `cast`
+                                                                       (Sym (GHC.Types.N:IO[0]
+                                                                                 <GHC.Base.String>_R))
+                                                                       Paths_algo.getDataDir1
+                                                                         `cast`
+                                                                       (<GHC.IO.Exception.IOException>_R
+                                                                        ->_R Sym (GHC.Types.N:IO[0]
+                                                                                      <GHC.IO.FilePath>_R))) -}
+f6d9f67f51be20542de46c5553933a45
+  getDataDir1 ::
+    GHC.IO.Exception.IOException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.IO.Exception.IOException) ->
+                 {__scc {main@main:Paths_algo.getDataDir.\} True True} Paths_algo.getDataDir2) -}
+6e2b1a6826cd9b6efc1d506e73deb566
+  getDataDir2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s,
+                    {__scc {main@main:Paths_algo.datadir} True False} Paths_algo.getDataDir3 #)) -}
+bd82c53d13f7b3cd06749c864bb82d78
+  getDataDir3 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Paths_algo.datadir} False True} GHC.CString.unpackCString#
+                                                                     "/home/azevedo/code/haskell/algo/.stack-work/install/x86_64-linux/lts-7.12/8.0.1/share/x86_64-linux-ghc-8.0.1/algo-0.1.0.2"#) -}
+26ab4387c667d3115456940c7c7a22e9
+  getDataDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1 Paths_algo.getDataDir5) -}
+629b3279b7b6dd77ba17ff1618a23019
+  getDataDir5 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Paths_algo.getDataDir} False True} GHC.CString.unpackCString#
+                                                                        "algo_datadir"#) -}
+30d1331b06eff74d9a582d466a36bd5c
+  getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_algo.getDataFileName1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
+3373c727bf9acc57d4aa3648a6da833a
+  getDataFileName1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (name :: GHC.IO.FilePath) ->
+                 {__scc {main@main:Paths_algo.getDataFileName} True False} \ (s :: GHC.Prim.State#
+                                                                                     GHC.Prim.RealWorld)[OneShot] ->
+                                                                           {__scc {main@main:Paths_algo.getDataFileName} False True} case Paths_algo.getDataDir
+                                                                                                                                            `cast`
+                                                                                                                                          (GHC.Types.N:IO[0]
+                                                                                                                                               <GHC.IO.FilePath>_R)
+                                                                                                                                            s of ds1 { (#,#) ipv ipv1 ->
+                                                                                                                                     (# ipv,
+                                                                                                                                        GHC.Base.++
+                                                                                                                                          @ GHC.Types.Char
+                                                                                                                                          ipv1
+                                                                                                                                          (GHC.CString.unpackAppendCString#
+                                                                                                                                             "/"#
+                                                                                                                                             name) #) }) -}
+371af5101f457ba6252b950cf018a6bf
+  getLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Unfolding: ({__scc {main@main:Paths_algo.getLibDir} True True} Paths_algo.catchIO
+                                                                      @ GHC.Base.String
+                                                                      Paths_algo.getLibDir4
+                                                                        `cast`
+                                                                      (Sym (GHC.Types.N:IO[0]
+                                                                                <GHC.Base.String>_R))
+                                                                      Paths_algo.getLibDir1
+                                                                        `cast`
+                                                                      (<GHC.IO.Exception.IOException>_R
+                                                                       ->_R Sym (GHC.Types.N:IO[0]
+                                                                                     <GHC.IO.FilePath>_R))) -}
+c89f5c049ece4730160443269d0372d7
+  getLibDir1 ::
+    GHC.IO.Exception.IOException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.IO.Exception.IOException) ->
+                 {__scc {main@main:Paths_algo.getLibDir.\} True True} Paths_algo.getLibDir2) -}
+4f09a7091e50faad3d9af03998f2e52a
+  getLibDir2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s,
+                    {__scc {main@main:Paths_algo.libdir} True False} Paths_algo.getLibDir3 #)) -}
+45275a9b7f8e5e1bce0fb4d02d86b1d6
+  getLibDir3 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Paths_algo.libdir} False True} GHC.CString.unpackCString#
+                                                                    "/home/azevedo/code/haskell/algo/.stack-work/install/x86_64-linux/lts-7.12/8.0.1/lib/x86_64-linux-ghc-8.0.1/algo-0.1.0.2"#) -}
+a2af36e927b3e766687f05081eadbd5b
+  getLibDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1 Paths_algo.getLibDir5) -}
+67a8ad71168558c037b4cb44b23de8bf
+  getLibDir5 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Paths_algo.getLibDir} False True} GHC.CString.unpackCString#
+                                                                       "algo_libdir"#) -}
+18d74d825a285277e6a5a69cbf291b5c
+  getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Unfolding: ({__scc {main@main:Paths_algo.getLibexecDir} True True} Paths_algo.catchIO
+                                                                          @ GHC.Base.String
+                                                                          Paths_algo.getLibexecDir4
+                                                                            `cast`
+                                                                          (Sym (GHC.Types.N:IO[0]
+                                                                                    <GHC.Base.String>_R))
+                                                                          Paths_algo.getLibexecDir1
+                                                                            `cast`
+                                                                          (<GHC.IO.Exception.IOException>_R
+                                                                           ->_R Sym (GHC.Types.N:IO[0]
+                                                                                         <GHC.IO.FilePath>_R))) -}
+99241373c469809e5007bdf520eacb4c
+  getLibexecDir1 ::
+    GHC.IO.Exception.IOException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.IO.Exception.IOException) ->
+                 {__scc {main@main:Paths_algo.getLibexecDir.\} True True} Paths_algo.getLibexecDir2) -}
+73ba1d3e0002bc30b70624e16789dd52
+  getLibexecDir2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s,
+                    {__scc {main@main:Paths_algo.libexecdir} True False} Paths_algo.getLibexecDir3 #)) -}
+5a7ddd7f3aae55f98d06cc4651576801
+  getLibexecDir3 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Paths_algo.libexecdir} False True} GHC.CString.unpackCString#
+                                                                        "/home/azevedo/code/haskell/algo/.stack-work/install/x86_64-linux/lts-7.12/8.0.1/libexec"#) -}
+ccce9c4e297fb0e640c8ac1821c230cb
+  getLibexecDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_algo.getLibexecDir5) -}
+03a0f7b70d0f5652313aba8de2fc7023
+  getLibexecDir5 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Paths_algo.getLibexecDir} False True} GHC.CString.unpackCString#
+                                                                           "algo_libexecdir"#) -}
+b50eb7cb54b61c5b03572e497b5146a4
+  getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Unfolding: ({__scc {main@main:Paths_algo.getSysconfDir} True True} Paths_algo.catchIO
+                                                                          @ GHC.Base.String
+                                                                          Paths_algo.getSysconfDir4
+                                                                            `cast`
+                                                                          (Sym (GHC.Types.N:IO[0]
+                                                                                    <GHC.Base.String>_R))
+                                                                          Paths_algo.getSysconfDir1
+                                                                            `cast`
+                                                                          (<GHC.IO.Exception.IOException>_R
+                                                                           ->_R Sym (GHC.Types.N:IO[0]
+                                                                                         <GHC.IO.FilePath>_R))) -}
+0721dfb472d56a636d765d293bfe9921
+  getSysconfDir1 ::
+    GHC.IO.Exception.IOException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.IO.Exception.IOException) ->
+                 {__scc {main@main:Paths_algo.getSysconfDir.\} True True} Paths_algo.getSysconfDir2) -}
+db1c5935d9d7a712f35c37a19f395011
+  getSysconfDir2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s,
+                    {__scc {main@main:Paths_algo.sysconfdir} True False} Paths_algo.getSysconfDir3 #)) -}
+060b2dd14571e3a03b2c2a2c7cd9b1e1
+  getSysconfDir3 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Paths_algo.sysconfdir} False True} GHC.CString.unpackCString#
+                                                                        "/home/azevedo/code/haskell/algo/.stack-work/install/x86_64-linux/lts-7.12/8.0.1/etc"#) -}
+0a7aeef1dfc3aa0ebae6e1fc405a9541
+  getSysconfDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_algo.getSysconfDir5) -}
+089f40efd36f42fcc67cd211b080fa30
+  getSysconfDir5 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Paths_algo.getSysconfDir} False True} GHC.CString.unpackCString#
+                                                                           "algo_sysconfdir"#) -}
+0630318290fb4741a858556fd33d48eb
+  version :: Data.Version.Version
+  {- Unfolding: ({__scc {main@main:Paths_algo.version} True False} Data.Version.Version
+                                                                     Paths_algo.version1
+                                                                     (GHC.Types.[]
+                                                                        @ GHC.Base.String)) -}
+659f6dbba5e238ebd6d1daa7600d0bae
+  version1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_algo.version6
+                   Paths_algo.version2) -}
+fb363011c4c488a60382c8dadb924c41
+  version2 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_algo.version7
+                   Paths_algo.version3) -}
+a19969f01ea9d2bce891a5a2abf4f1bf
+  version3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_algo.version6
+                   Paths_algo.version4) -}
+1abadd4017a120390e8e753ed007c021
+  version4 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_algo.version5
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+2c4373777bfde901cb2fdb5fd281cbef
+  version5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+6cdcad07eabbc140439ad75363f3745f
+  version6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+8f6b90cd7d4f44d53d808d0286576a1e
+  version7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,58 @@
+Configuring dimensional-1.0.1.3...
+Building dimensional-1.0.1.3...
+Preprocessing library dimensional-1.0.1.3...
+[ 1 of 16] Compiling Numeric.Units.Dimensional.Variants ( src/Numeric/Units/Dimensional/Variants.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Variants.o )
+[ 2 of 16] Compiling Numeric.Units.Dimensional.UnitNames.InterchangeNames ( src/Numeric/Units/Dimensional/UnitNames/InterchangeNames.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/UnitNames/InterchangeNames.o )
+[ 3 of 16] Compiling Numeric.Units.Dimensional.Dimensions.TermLevel ( src/Numeric/Units/Dimensional/Dimensions/TermLevel.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Dimensions/TermLevel.o )
+[ 4 of 16] Compiling Numeric.Units.Dimensional.Dimensions.TypeLevel ( src/Numeric/Units/Dimensional/Dimensions/TypeLevel.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Dimensions/TypeLevel.o )
+[ 5 of 16] Compiling Numeric.Units.Dimensional.UnitNames.Internal ( src/Numeric/Units/Dimensional/UnitNames/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/UnitNames/Internal.o )
+[ 6 of 16] Compiling Numeric.Units.Dimensional.UnitNames ( src/Numeric/Units/Dimensional/UnitNames.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/UnitNames.o )
+[ 7 of 16] Compiling Numeric.Units.Dimensional.Dimensions ( src/Numeric/Units/Dimensional/Dimensions.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Dimensions.o )
+[ 8 of 16] Compiling Numeric.Units.Dimensional.Internal ( src/Numeric/Units/Dimensional/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Internal.o )
+
+src/Numeric/Units/Dimensional/Internal.hs:208:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: KnownDimension d
+    • In the type signature for:
+           showIn :: (KnownDimension d, Show a, Fractional a) =>
+                     Unit m d a -> Quantity d a -> String
+
+src/Numeric/Units/Dimensional/Internal.hs:212:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: KnownDimension d
+    • In the instance declaration for ‘Show (Unit m d a)’
+[ 9 of 16] Compiling Numeric.Units.Dimensional.Coercion ( src/Numeric/Units/Dimensional/Coercion.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Coercion.o )
+[10 of 16] Compiling Numeric.Units.Dimensional ( src/Numeric/Units/Dimensional.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional.o )
+[11 of 16] Compiling Numeric.Units.Dimensional.Quantities ( src/Numeric/Units/Dimensional/Quantities.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Quantities.o )
+[12 of 16] Compiling Numeric.Units.Dimensional.SIUnits ( src/Numeric/Units/Dimensional/SIUnits.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/SIUnits.o )
+[13 of 16] Compiling Numeric.Units.Dimensional.Prelude ( src/Numeric/Units/Dimensional/Prelude.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Prelude.o )
+[14 of 16] Compiling Numeric.Units.Dimensional.NonSI ( src/Numeric/Units/Dimensional/NonSI.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/NonSI.o )
+[15 of 16] Compiling Numeric.Units.Dimensional.Dynamic ( src/Numeric/Units/Dimensional/Dynamic.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Dynamic.o )
+[16 of 16] Compiling Numeric.Units.Dimensional.Functor ( src/Numeric/Units/Dimensional/Functor.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Functor.o )
+[ 1 of 16] Compiling Numeric.Units.Dimensional.Variants ( src/Numeric/Units/Dimensional/Variants.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Variants.p_o )
+[ 2 of 16] Compiling Numeric.Units.Dimensional.UnitNames.InterchangeNames ( src/Numeric/Units/Dimensional/UnitNames/InterchangeNames.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/UnitNames/InterchangeNames.p_o )
+[ 3 of 16] Compiling Numeric.Units.Dimensional.Dimensions.TermLevel ( src/Numeric/Units/Dimensional/Dimensions/TermLevel.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Dimensions/TermLevel.p_o )
+[ 4 of 16] Compiling Numeric.Units.Dimensional.Dimensions.TypeLevel ( src/Numeric/Units/Dimensional/Dimensions/TypeLevel.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Dimensions/TypeLevel.p_o )
+[ 5 of 16] Compiling Numeric.Units.Dimensional.UnitNames.Internal ( src/Numeric/Units/Dimensional/UnitNames/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/UnitNames/Internal.p_o )
+[ 6 of 16] Compiling Numeric.Units.Dimensional.UnitNames ( src/Numeric/Units/Dimensional/UnitNames.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/UnitNames.p_o )
+[ 7 of 16] Compiling Numeric.Units.Dimensional.Dimensions ( src/Numeric/Units/Dimensional/Dimensions.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Dimensions.p_o )
+[ 8 of 16] Compiling Numeric.Units.Dimensional.Internal ( src/Numeric/Units/Dimensional/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Internal.p_o )
+
+src/Numeric/Units/Dimensional/Internal.hs:208:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: KnownDimension d
+    • In the type signature for:
+           showIn :: (KnownDimension d, Show a, Fractional a) =>
+                     Unit m d a -> Quantity d a -> String
+
+src/Numeric/Units/Dimensional/Internal.hs:212:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: KnownDimension d
+    • In the instance declaration for ‘Show (Unit m d a)’
+[ 9 of 16] Compiling Numeric.Units.Dimensional.Coercion ( src/Numeric/Units/Dimensional/Coercion.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Coercion.p_o )
+[10 of 16] Compiling Numeric.Units.Dimensional ( src/Numeric/Units/Dimensional.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional.p_o )
+[11 of 16] Compiling Numeric.Units.Dimensional.Quantities ( src/Numeric/Units/Dimensional/Quantities.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Quantities.p_o )
+[12 of 16] Compiling Numeric.Units.Dimensional.SIUnits ( src/Numeric/Units/Dimensional/SIUnits.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/SIUnits.p_o )
+[13 of 16] Compiling Numeric.Units.Dimensional.Prelude ( src/Numeric/Units/Dimensional/Prelude.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Prelude.p_o )
+[14 of 16] Compiling Numeric.Units.Dimensional.NonSI ( src/Numeric/Units/Dimensional/NonSI.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/NonSI.p_o )
+[15 of 16] Compiling Numeric.Units.Dimensional.Dynamic ( src/Numeric/Units/Dimensional/Dynamic.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Dynamic.p_o )
+[16 of 16] Compiling Numeric.Units.Dimensional.Functor ( src/Numeric/Units/Dimensional/Functor.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Numeric/Units/Dimensional/Functor.p_o )
+Installing library in
+/home/azevedo/.stack/snapshots/x86_64-linux/lts-7.12/8.0.1/lib/x86_64-linux-ghc-8.0.1/dimensional-1.0.1.3-6MnL6zsXz7mpGeQqGlO2q
+Registering dimensional-1.0.1.3...

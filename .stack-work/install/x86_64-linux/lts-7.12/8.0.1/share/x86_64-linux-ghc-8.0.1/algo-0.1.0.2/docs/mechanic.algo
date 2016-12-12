@@ -1,0 +1,6 @@
+F=m*a
+E=1/2*m*v²
+v=ds/dt
+a=dv/ds
+p=m*v
+v=v0+a*t

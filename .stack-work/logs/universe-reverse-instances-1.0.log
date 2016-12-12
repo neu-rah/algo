@@ -1,0 +1,56 @@
+Configuring universe-reverse-instances-1.0...
+Building universe-reverse-instances-1.0...
+Preprocessing library universe-reverse-instances-1.0...
+[1 of 5] Compiling Data.Universe.Instances.Traversable ( Data/Universe/Instances/Traversable.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Traversable.o )
+
+Data/Universe/Instances/Traversable.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in six further locations.
+    Please use spaces instead.
+[2 of 5] Compiling Data.Universe.Instances.Show ( Data/Universe/Instances/Show.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Show.o )
+
+Data/Universe/Instances/Show.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in four further locations.
+    Please use spaces instead.
+[3 of 5] Compiling Data.Universe.Instances.Read ( Data/Universe/Instances/Read.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Read.o )
+
+Data/Universe/Instances/Read.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in four further locations.
+    Please use spaces instead.
+[4 of 5] Compiling Data.Universe.Instances.Eq ( Data/Universe/Instances/Eq.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Eq.o )
+
+Data/Universe/Instances/Eq.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in four further locations.
+    Please use spaces instead.
+[5 of 5] Compiling Data.Universe.Instances.Ord ( Data/Universe/Instances/Ord.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Ord.o )
+
+Data/Universe/Instances/Ord.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in five further locations.
+    Please use spaces instead.
+[1 of 5] Compiling Data.Universe.Instances.Traversable ( Data/Universe/Instances/Traversable.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Traversable.p_o )
+
+Data/Universe/Instances/Traversable.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in six further locations.
+    Please use spaces instead.
+[2 of 5] Compiling Data.Universe.Instances.Show ( Data/Universe/Instances/Show.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Show.p_o )
+
+Data/Universe/Instances/Show.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in four further locations.
+    Please use spaces instead.
+[3 of 5] Compiling Data.Universe.Instances.Read ( Data/Universe/Instances/Read.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Read.p_o )
+
+Data/Universe/Instances/Read.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in four further locations.
+    Please use spaces instead.
+[4 of 5] Compiling Data.Universe.Instances.Eq ( Data/Universe/Instances/Eq.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Eq.p_o )
+
+Data/Universe/Instances/Eq.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in four further locations.
+    Please use spaces instead.
+[5 of 5] Compiling Data.Universe.Instances.Ord ( Data/Universe/Instances/Ord.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Universe/Instances/Ord.p_o )
+
+Data/Universe/Instances/Ord.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in five further locations.
+    Please use spaces instead.
+Installing library in
+/home/azevedo/.stack/snapshots/x86_64-linux/lts-7.12/8.0.1/lib/x86_64-linux-ghc-8.0.1/universe-reverse-instances-1.0-6rRjknOcBXkF2xShQQsEFN
+Registering universe-reverse-instances-1.0...

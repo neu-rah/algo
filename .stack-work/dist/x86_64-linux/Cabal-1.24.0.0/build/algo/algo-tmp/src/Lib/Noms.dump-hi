@@ -1,0 +1,1318 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-11 23:33:28.789163 UTC
+
+interface main@main:Lib.Noms [hpc] 8001
+  interface hash: 2fd3bfa6c541c13a325eaf648fd48a22
+  ABI hash: 2d56e88a289ad37b00090ddb7a06fc81
+  export-list hash: 8a9b0085f320a4deb44ddea66e85019e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 5e6f92cd6803ff9d165f079fd9a09418
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.Noms.AlgoNr{Lib.Noms.isInt}
+  Lib.Noms.Nr{Lib.Noms.NrRatio Lib.Noms.NrReal}
+module dependencies: Lib.Colors Lib.Debug
+package dependencies: base-4.9.0.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Ratio bd7ae7e84fadf68e9483b9d3f1445f8c
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Float 469226b1bc53433e95d0167dec5d0312
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  Lib.Debug f2397c47469cac64d3eb5a6b4cb67ba7
+  exports: e68806ff5497d096232692f266395170
+import  -/  numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal 1a55b0320066e0e2ba4dc64187eb0074
+76f85e5aad6ac69d7608bf6adc63808a
+  $fAlgoNrNr :: Lib.Noms.AlgoNr Lib.Noms.Nr
+  DFunId
+  {- Arity: 1, Strictness: <S,1*U>, Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Lib.Noms.$fAlgoNrNr_$cisInt
+                  `cast`
+                (Sym (Lib.Noms.N:AlgoNr[0] <Lib.Noms.Nr>_N)) -}
+e945689a8a45d3dfb7f0cfd878f8a56d
+  $fAlgoNrNr1 :: Data.Number.CReal.CReal
+  {- Unfolding: ({__scc {main@main:Lib.Noms.isInt} False True} case Data.Number.CReal.$w$cfromInteger
+                                                                      Lib.Noms.$fAlgoNrNr2 of ww { Unit# ww1 ->
+                                                               Data.Number.CReal.CR ww1 }) -}
+f6ee51ce88c6018eac4de6676bf9ea2f
+  $fAlgoNrNr2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+6d519525bbc13943c70b01e42d603bf8
+  $fAlgoNrNr3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+78734d17a73a7c66f68c3a44f5e66f5f
+  $fAlgoNrNr_$cisInt :: Lib.Noms.Nr -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.isInt} True True} case ds of wild {
+                                                                Lib.Noms.NrRatio o
+                                                                -> case o of wild1 { GHC.Real.:% ds1 y ->
+                                                                   case GHC.Integer.Type.eqInteger#
+                                                                          y
+                                                                          Lib.Noms.$fAlgoNrNr3 of wild2 { DEFAULT ->
+                                                                   GHC.Prim.tagToEnum#
+                                                                     @ GHC.Types.Bool
+                                                                     wild2 } }
+                                                                Lib.Noms.NrReal o
+                                                                -> let {
+                                                                     x :: Data.Number.CReal.CReal
+                                                                     = {__scc {main@main:Lib.Noms.isInt.(...)} True False} case o of ww { Data.Number.CReal.CR ww1 ->
+                                                                                                                           case {__scc {main@main:Lib.Noms.isInt.(...)} False True} Data.Number.CReal.$w$cproperFraction
+                                                                                                                                                                                      @ GHC.Integer.Type.Integer
+                                                                                                                                                                                      GHC.Real.$fIntegralInteger
+                                                                                                                                                                                      ww1 of ww2 { (#,#) ww3 ww4 ->
+                                                                                                                           case ww4 of ww7 { Data.Number.CReal.CR ww8 ->
+                                                                                                                           {__scc {main@main:Lib.Noms.isInt.f} True False} Data.Number.CReal.CR
+                                                                                                                                                                             ww8 } } }
+                                                                   } in
+                                                                   {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.==} True True} case {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.==.(...)} True True} Data.Number.CReal.$fEnumCReal_$c-
+                                                                                                                                                                                                                                                                                            x
+                                                                                                                                                                                                                                                                                            Lib.Noms.$fAlgoNrNr1 of ww { Data.Number.CReal.CR ww1 ->
+                                                                                                                                                                         case GHC.Integer.Type.eqInteger#
+                                                                                                                                                                                (({__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.==.s'} True True} ww1)
+                                                                                                                                                                                   Data.Number.CReal.$fEqCReal1)
+                                                                                                                                                                                Data.Number.CReal.$fEnumCReal1 of wild1 { DEFAULT ->
+                                                                                                                                                                         GHC.Prim.tagToEnum#
+                                                                                                                                                                           @ GHC.Types.Bool
+                                                                                                                                                                           wild1 } } }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fEqNr :: GHC.Classes.Eq Lib.Noms.Nr
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Noms.Nr Lib.Noms.$fEqNr_$c== Lib.Noms.$fEqNr_$c/= -}
+16ba174e12f4b9baf02734a198b8a408
+  $fEqNr_$c/= :: Lib.Noms.Nr -> Lib.Noms.Nr -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Lib.Noms.Nr) (y :: Lib.Noms.Nr) ->
+                 GHC.Classes.not (Lib.Noms.$fEqNr_$c== x y)) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fEqNr_$c== :: Lib.Noms.Nr -> Lib.Noms.Nr -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Lib.Noms.Nr) (ds1 :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.==} True True} case ds of wild {
+                                                             Lib.Noms.NrRatio a
+                                                             -> case ds1 of wild1 {
+                                                                  Lib.Noms.NrRatio b
+                                                                  -> case a of ww { GHC.Real.:% ww1 ww2 ->
+                                                                     case b of ww3 { GHC.Real.:% ww4 ww5 ->
+                                                                     case GHC.Integer.Type.eqInteger#
+                                                                            ww1
+                                                                            ww4 of wild2 { DEFAULT ->
+                                                                     case GHC.Prim.tagToEnum#
+                                                                            @ GHC.Types.Bool
+                                                                            wild2 of wild3 {
+                                                                       GHC.Types.False
+                                                                       -> GHC.Types.False
+                                                                       GHC.Types.True
+                                                                       -> case GHC.Integer.Type.eqInteger#
+                                                                                 ww2
+                                                                                 ww5 of wild4 { DEFAULT ->
+                                                                          GHC.Prim.tagToEnum#
+                                                                            @ GHC.Types.Bool
+                                                                            wild4 } } } } }
+                                                                  Lib.Noms.NrReal b
+                                                                  -> let {
+                                                                       x :: Data.Number.CReal.CReal
+                                                                       = case Data.Number.CReal.$w$cfromRational
+                                                                                a of ww { Unit# ww1 ->
+                                                                         Data.Number.CReal.CR ww1 }
+                                                                     } in
+                                                                     {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.==} True True} case {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.==.(...)} True True} Data.Number.CReal.$fEnumCReal_$c-
+                                                                                                                                                                                                                                                                                              x
+                                                                                                                                                                                                                                                                                              b of ww { Data.Number.CReal.CR ww1 ->
+                                                                                                                                                                           case GHC.Integer.Type.eqInteger#
+                                                                                                                                                                                  (({__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.==.s'} True True} ww1)
+                                                                                                                                                                                     Data.Number.CReal.$fEqCReal1)
+                                                                                                                                                                                  Data.Number.CReal.$fEnumCReal1 of wild2 { DEFAULT ->
+                                                                                                                                                                           GHC.Prim.tagToEnum#
+                                                                                                                                                                             @ GHC.Types.Bool
+                                                                                                                                                                             wild2 } } }
+                                                             Lib.Noms.NrReal a
+                                                             -> case ds1 of wild1 {
+                                                                  Lib.Noms.NrRatio b
+                                                                  -> let {
+                                                                       y1 :: Data.Number.CReal.CReal
+                                                                       = case Data.Number.CReal.$w$cfromRational
+                                                                                b of ww { Unit# ww1 ->
+                                                                         Data.Number.CReal.CR ww1 }
+                                                                     } in
+                                                                     {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.==} True True} case {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.==.(...)} True True} Data.Number.CReal.$fEnumCReal_$c-
+                                                                                                                                                                                                                                                                                              a
+                                                                                                                                                                                                                                                                                              y1 of ww { Data.Number.CReal.CR ww1 ->
+                                                                                                                                                                           case GHC.Integer.Type.eqInteger#
+                                                                                                                                                                                  (({__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.==.s'} True True} ww1)
+                                                                                                                                                                                     Data.Number.CReal.$fEqCReal1)
+                                                                                                                                                                                  Data.Number.CReal.$fEnumCReal1 of wild2 { DEFAULT ->
+                                                                                                                                                                           GHC.Prim.tagToEnum#
+                                                                                                                                                                             @ GHC.Types.Bool
+                                                                                                                                                                             wild2 } }
+                                                                  Lib.Noms.NrReal b
+                                                                  -> Data.Number.CReal.$fEqCReal_$c==
+                                                                       a
+                                                                       b } }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr :: GHC.Float.Floating Lib.Noms.Nr
+  DFunId
+  {- Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Noms.Nr
+                  Lib.Noms.$fFractionalNr
+                  Lib.Noms.$fFloatingNr_$cpi
+                  Lib.Noms.$fFloatingNr_$cexp
+                  Lib.Noms.$fFloatingNr_$clog
+                  Lib.Noms.$fFloatingNr_$csqrt
+                  Lib.Noms.$fFloatingNr_$c**
+                  Lib.Noms.$fFloatingNr_$clogBase
+                  Lib.Noms.$fFloatingNr_$csin
+                  Lib.Noms.$fFloatingNr_$ccos
+                  Lib.Noms.$fFloatingNr_$ctan
+                  Lib.Noms.$fFloatingNr_$casin
+                  Lib.Noms.$fFloatingNr_$cacos
+                  Lib.Noms.$fFloatingNr_$catan
+                  Lib.Noms.$fFloatingNr_$csinh
+                  Lib.Noms.$fFloatingNr_$ccosh
+                  Lib.Noms.$fFloatingNr_$ctanh
+                  Lib.Noms.$fFloatingNr_$casinh
+                  Lib.Noms.$fFloatingNr_$cacosh
+                  Lib.Noms.$fFloatingNr_$catanh
+                  Lib.Noms.$fFloatingNr_$clog1p
+                  Lib.Noms.$fFloatingNr_$cexpm1
+                  Lib.Noms.$fFloatingNr_$clog1pexp
+                  Lib.Noms.$fFloatingNr_$clog1mexp -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$c* :: Lib.Noms.Nr -> Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Lib.Noms.Nr) (ds1 :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.*} True True} case ds of wild {
+                                                            Lib.Noms.NrRatio a
+                                                            -> case ds1 of wild1 {
+                                                                 Lib.Noms.NrRatio b
+                                                                 -> Lib.Noms.NrRatio
+                                                                      (GHC.Real.$fFractionalRatio_$s$c*
+                                                                         a
+                                                                         b)
+                                                                 Lib.Noms.NrReal b
+                                                                 -> Lib.Noms.NrReal
+                                                                      (case Data.Number.CReal.$w$cfromRational
+                                                                              a of ww { Unit# ww1 ->
+                                                                       case b of ww2 { Data.Number.CReal.CR ww3 ->
+                                                                       case Data.Number.CReal.$w$c*
+                                                                              ww1
+                                                                              ww3 of ww4 { Unit# ww5 ->
+                                                                       Data.Number.CReal.CR
+                                                                         ww5 } } }) }
+                                                            Lib.Noms.NrReal a
+                                                            -> case ds1 of wild1 {
+                                                                 Lib.Noms.NrRatio b
+                                                                 -> Lib.Noms.NrReal
+                                                                      (case a of ww { Data.Number.CReal.CR ww1 ->
+                                                                       case Data.Number.CReal.$w$cfromRational
+                                                                              b of ww2 { Unit# ww3 ->
+                                                                       case Data.Number.CReal.$w$c*
+                                                                              ww1
+                                                                              ww3 of ww4 { Unit# ww5 ->
+                                                                       Data.Number.CReal.CR
+                                                                         ww5 } } })
+                                                                 Lib.Noms.NrReal b
+                                                                 -> Lib.Noms.NrReal
+                                                                      (Data.Number.CReal.$fFloatingCReal_$c*
+                                                                         a
+                                                                         b) } }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$c** :: Lib.Noms.Nr -> Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (eta :: Lib.Noms.Nr) (eta1 :: Lib.Noms.Nr) ->
+                 Lib.Noms.$fFloatingNr_$cexp
+                   (Lib.Noms.$fFloatingNr_$c*
+                      (Lib.Noms.$fFloatingNr_$clog eta)
+                      eta1)) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$c+ :: Lib.Noms.Nr -> Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Lib.Noms.Nr) (ds1 :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.+} True True} case ds of wild {
+                                                            Lib.Noms.NrRatio a
+                                                            -> case ds1 of wild1 {
+                                                                 Lib.Noms.NrRatio b
+                                                                 -> Lib.Noms.NrRatio
+                                                                      (GHC.Real.$fEnumRatio_$s$c+
+                                                                         a
+                                                                         b)
+                                                                 Lib.Noms.NrReal b
+                                                                 -> Lib.Noms.NrReal
+                                                                      (case Data.Number.CReal.$w$cfromRational
+                                                                              a of ww { Unit# ww1 ->
+                                                                       case b of ww2 { Data.Number.CReal.CR ww3 ->
+                                                                       case Data.Number.CReal.$w$c+
+                                                                              ww1
+                                                                              ww3 of ww4 { Unit# ww5 ->
+                                                                       Data.Number.CReal.CR
+                                                                         ww5 } } }) }
+                                                            Lib.Noms.NrReal a
+                                                            -> case ds1 of wild1 {
+                                                                 Lib.Noms.NrRatio b
+                                                                 -> Lib.Noms.NrReal
+                                                                      (case a of ww { Data.Number.CReal.CR ww1 ->
+                                                                       case Data.Number.CReal.$w$cfromRational
+                                                                              b of ww2 { Unit# ww3 ->
+                                                                       case Data.Number.CReal.$w$c+
+                                                                              ww1
+                                                                              ww3 of ww4 { Unit# ww5 ->
+                                                                       Data.Number.CReal.CR
+                                                                         ww5 } } })
+                                                                 Lib.Noms.NrReal b
+                                                                 -> Lib.Noms.NrReal
+                                                                      (Data.Number.CReal.$fEnumCReal_$c+
+                                                                         a
+                                                                         b) } }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$c/ :: Lib.Noms.Nr -> Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Lib.Noms.Nr) (ds1 :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms./} True True} case ds of wild {
+                                                            Lib.Noms.NrRatio a
+                                                            -> case ds1 of wild1 {
+                                                                 Lib.Noms.NrRatio b
+                                                                 -> Lib.Noms.NrRatio
+                                                                      (GHC.Real.$fFractionalRatio_$s$c/
+                                                                         a
+                                                                         b)
+                                                                 Lib.Noms.NrReal b
+                                                                 -> Lib.Noms.NrReal
+                                                                      (case Data.Number.CReal.$w$cfromRational
+                                                                              a of ww { Unit# ww1 ->
+                                                                       case b of ww2 { Data.Number.CReal.CR ww3 ->
+                                                                       case Data.Number.CReal.$w$crecip
+                                                                              ww3 of ww4 { Unit# ww5 ->
+                                                                       case Data.Number.CReal.$w$c*
+                                                                              ww1
+                                                                              ww5 of ww6 { Unit# ww7 ->
+                                                                       Data.Number.CReal.CR
+                                                                         ww7 } } } }) }
+                                                            Lib.Noms.NrReal a
+                                                            -> case ds1 of wild1 {
+                                                                 Lib.Noms.NrRatio b
+                                                                 -> Lib.Noms.NrReal
+                                                                      (case a of ww { Data.Number.CReal.CR ww1 ->
+                                                                       case Data.Number.CReal.$w$cfromRational
+                                                                              b of ww2 { Unit# ww3 ->
+                                                                       case Data.Number.CReal.$w$crecip
+                                                                              ww3 of ww4 { Unit# ww5 ->
+                                                                       case Data.Number.CReal.$w$c*
+                                                                              ww1
+                                                                              ww5 of ww6 { Unit# ww7 ->
+                                                                       Data.Number.CReal.CR
+                                                                         ww7 } } } })
+                                                                 Lib.Noms.NrReal b
+                                                                 -> Lib.Noms.NrReal
+                                                                      (Data.Number.CReal.$fFloatingCReal_$c/
+                                                                         a
+                                                                         b) } }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$cacos :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.acos} True False} case w of wild {
+                                                                Lib.Noms.NrRatio n
+                                                                -> Lib.Noms.NrReal
+                                                                     ({__scc {main@main:Lib.Noms.acos} False True} case Data.Number.CReal.$w$cfromRational
+                                                                                                                          n of ww { Unit# ww1 ->
+                                                                                                                   case Data.Number.CReal.$w$cacos
+                                                                                                                          ww1 of ww2 { Unit# ww3 ->
+                                                                                                                   Data.Number.CReal.CR
+                                                                                                                     ww3 } })
+                                                                Lib.Noms.NrReal n
+                                                                -> Lib.Noms.NrReal
+                                                                     ({__scc {main@main:Lib.Noms.acos} False True} Data.Number.CReal.$fFloatingCReal_$cacos
+                                                                                                                     n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$cacosh :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.acosh} True False} case w of wild {
+                                                                 Lib.Noms.NrRatio n
+                                                                 -> Lib.Noms.NrReal
+                                                                      ({__scc {main@main:Lib.Noms.acosh} False True} case Data.Number.CReal.$w$cfromRational
+                                                                                                                            n of ww { Unit# ww1 ->
+                                                                                                                     case Data.Number.CReal.$w$cacosh
+                                                                                                                            ww1 of ww2 { Unit# ww3 ->
+                                                                                                                     Data.Number.CReal.CR
+                                                                                                                       ww3 } })
+                                                                 Lib.Noms.NrReal n
+                                                                 -> Lib.Noms.NrReal
+                                                                      ({__scc {main@main:Lib.Noms.acosh} False True} Data.Number.CReal.$fFloatingCReal_$cacosh
+                                                                                                                       n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$casin :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.asin} True False} case w of wild {
+                                                                Lib.Noms.NrRatio n
+                                                                -> Lib.Noms.NrReal
+                                                                     ({__scc {main@main:Lib.Noms.asin} False True} case Data.Number.CReal.$w$cfromRational
+                                                                                                                          n of ww { Unit# ww1 ->
+                                                                                                                   case Data.Number.CReal.$w$casin
+                                                                                                                          ww1 of ww2 { Unit# ww3 ->
+                                                                                                                   Data.Number.CReal.CR
+                                                                                                                     ww3 } })
+                                                                Lib.Noms.NrReal n
+                                                                -> Lib.Noms.NrReal
+                                                                     ({__scc {main@main:Lib.Noms.asin} False True} Data.Number.CReal.$fFloatingCReal_$casin
+                                                                                                                     n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$casinh :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.asinh} True False} case w of wild {
+                                                                 Lib.Noms.NrRatio n
+                                                                 -> Lib.Noms.NrReal
+                                                                      ({__scc {main@main:Lib.Noms.asinh} False True} case Data.Number.CReal.$w$cfromRational
+                                                                                                                            n of ww { Unit# ww1 ->
+                                                                                                                     case Data.Number.CReal.$w$casinh
+                                                                                                                            ww1 of ww2 { Unit# ww3 ->
+                                                                                                                     Data.Number.CReal.CR
+                                                                                                                       ww3 } })
+                                                                 Lib.Noms.NrReal n
+                                                                 -> Lib.Noms.NrReal
+                                                                      ({__scc {main@main:Lib.Noms.asinh} False True} Data.Number.CReal.$fFloatingCReal_$casinh
+                                                                                                                       n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$catan :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.atan} True False} case w of wild {
+                                                                Lib.Noms.NrRatio n
+                                                                -> Lib.Noms.NrReal
+                                                                     ({__scc {main@main:Lib.Noms.atan} False True} case Data.Number.CReal.$w$cfromRational
+                                                                                                                          n of ww { Unit# ww1 ->
+                                                                                                                   case Data.Number.CReal.$w$catan
+                                                                                                                          ww1 of ww2 { Unit# ww3 ->
+                                                                                                                   Data.Number.CReal.CR
+                                                                                                                     ww3 } })
+                                                                Lib.Noms.NrReal n
+                                                                -> Lib.Noms.NrReal
+                                                                     ({__scc {main@main:Lib.Noms.atan} False True} Data.Number.CReal.$fFloatingCReal_$catan
+                                                                                                                     n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$catanh :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.atanh} True False} case w of wild {
+                                                                 Lib.Noms.NrRatio n
+                                                                 -> Lib.Noms.NrReal
+                                                                      ({__scc {main@main:Lib.Noms.atanh} False True} case Data.Number.CReal.$w$cfromRational
+                                                                                                                            n of ww { Unit# ww1 ->
+                                                                                                                     case Data.Number.CReal.$w$catanh
+                                                                                                                            ww1 of ww2 { Unit# ww3 ->
+                                                                                                                     Data.Number.CReal.CR
+                                                                                                                       ww3 } })
+                                                                 Lib.Noms.NrReal n
+                                                                 -> Lib.Noms.NrReal
+                                                                      ({__scc {main@main:Lib.Noms.atanh} False True} Data.Number.CReal.$fFloatingCReal_$catanh
+                                                                                                                       n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$ccos :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.cos} True False} case w of wild {
+                                                               Lib.Noms.NrRatio n
+                                                               -> Lib.Noms.NrReal
+                                                                    ({__scc {main@main:Lib.Noms.cos} False True} case Data.Number.CReal.$w$cfromRational
+                                                                                                                        n of ww { Unit# ww1 ->
+                                                                                                                 case Data.Number.CReal.$w$ccos
+                                                                                                                        ww1 of ww2 { Unit# ww3 ->
+                                                                                                                 Data.Number.CReal.CR
+                                                                                                                   ww3 } })
+                                                               Lib.Noms.NrReal n
+                                                               -> Lib.Noms.NrReal
+                                                                    ({__scc {main@main:Lib.Noms.cos} False True} Data.Number.CReal.$fFloatingCReal_$ccos
+                                                                                                                   n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$ccosh :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.cosh} True False} case w of wild {
+                                                                Lib.Noms.NrRatio n
+                                                                -> Lib.Noms.NrReal
+                                                                     ({__scc {main@main:Lib.Noms.cosh} False True} case Data.Number.CReal.$w$ccosh
+                                                                                                                          (Data.Number.CReal.$fFloatingCReal_$cfromRational
+                                                                                                                             n) of ww { Unit# ww1 ->
+                                                                                                                   Data.Number.CReal.CR
+                                                                                                                     ww1 })
+                                                                Lib.Noms.NrReal n
+                                                                -> Lib.Noms.NrReal
+                                                                     ({__scc {main@main:Lib.Noms.cosh} False True} Data.Number.CReal.$fFloatingCReal_$ccosh
+                                                                                                                     n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$cexp :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.exp} True False} case w of wild {
+                                                               Lib.Noms.NrRatio n
+                                                               -> Lib.Noms.NrReal
+                                                                    ({__scc {main@main:Lib.Noms.exp} False True} Data.Number.CReal.$fFloatingCReal_$cexp
+                                                                                                                   (Data.Number.CReal.$fFloatingCReal_$cfromRational
+                                                                                                                      n))
+                                                               Lib.Noms.NrReal n
+                                                               -> Lib.Noms.NrReal
+                                                                    ({__scc {main@main:Lib.Noms.exp} False True} Data.Number.CReal.$fFloatingCReal_$cexp
+                                                                                                                   n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$cexpm1 :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: Lib.Noms.Nr) ->
+                 Lib.Noms.$fFloatingNr_$c+
+                   (Lib.Noms.$fFloatingNr_$cexp eta)
+                   (Lib.Noms.$fFloatingNr_$cnegate
+                      (Lib.Noms.$fFloatingNr_$cfromInteger 1))) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$cfromInteger ::
+    GHC.Integer.Type.Integer -> Lib.Noms.Nr
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U>m1,
+     Unfolding: InlineRule (1, True, False)
+                (\ (i :: GHC.Integer.Type.Integer) ->
+                 {__scc {main@main:Lib.Noms.fromInteger} True False} Lib.Noms.NrRatio
+                                                                       ({__scc {main@main:Lib.Noms.fromInteger} False True} GHC.Real.$fFractionalRatio_$ctoRational
+                                                                                                                              i)) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$cfromRational :: GHC.Real.Rational -> Lib.Noms.Nr
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m1,
+     Unfolding: InlineRule (1, True, True)
+                (\ (r :: GHC.Real.Rational) ->
+                 {__scc {main@main:Lib.Noms.fromRational} True False} Lib.Noms.NrRatio
+                                                                        r) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$clog :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.log} True False} case w of wild {
+                                                               Lib.Noms.NrRatio n
+                                                               -> Lib.Noms.NrReal
+                                                                    ({__scc {main@main:Lib.Noms.log} False True} case Data.Number.CReal.$w$cfromRational
+                                                                                                                        n of ww { Unit# ww1 ->
+                                                                                                                 case Data.Number.CReal.$w$clog
+                                                                                                                        ww1 of ww2 { Unit# ww3 ->
+                                                                                                                 Data.Number.CReal.CR
+                                                                                                                   ww3 } })
+                                                               Lib.Noms.NrReal n
+                                                               -> Lib.Noms.NrReal
+                                                                    ({__scc {main@main:Lib.Noms.log} False True} Data.Number.CReal.$fFloatingCReal_$clog
+                                                                                                                   n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$clog1mexp :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: Lib.Noms.Nr) ->
+                 Lib.Noms.$fFloatingNr_$clog
+                   (Lib.Noms.$fFloatingNr_$c+
+                      (Lib.Noms.$fFloatingNr_$cfromInteger 1)
+                      (Lib.Noms.$fFloatingNr_$cnegate
+                         (Lib.Noms.$fFloatingNr_$cexp eta)))) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$clog1p :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: Lib.Noms.Nr) ->
+                 Lib.Noms.$fFloatingNr_$clog
+                   (Lib.Noms.$fFloatingNr_$c+
+                      (Lib.Noms.$fFloatingNr_$cfromInteger 1)
+                      eta)) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$clog1pexp :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (x :: Lib.Noms.Nr) ->
+                 Lib.Noms.$fFloatingNr_$clog
+                   (Lib.Noms.$fFloatingNr_$c+
+                      (Lib.Noms.$fFloatingNr_$cfromInteger 1)
+                      (Lib.Noms.$fFloatingNr_$cexp x))) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$clogBase :: Lib.Noms.Nr -> Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (eta :: Lib.Noms.Nr) (eta1 :: Lib.Noms.Nr) ->
+                 Lib.Noms.$fFloatingNr_$c/
+                   (Lib.Noms.$fFloatingNr_$clog eta1)
+                   (Lib.Noms.$fFloatingNr_$clog eta)) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$cnegate :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.negate} True True} case ds of wild {
+                                                                 Lib.Noms.NrRatio n
+                                                                 -> Lib.Noms.NrRatio
+                                                                      (GHC.Real.$fFractionalRatio_$s$cnegate
+                                                                         n)
+                                                                 Lib.Noms.NrReal n
+                                                                 -> Lib.Noms.NrReal
+                                                                      (Data.Number.CReal.$fEnumCReal_$cnegate
+                                                                         n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$cpi :: Lib.Noms.Nr
+  {- Unfolding: ({__scc {main@main:Lib.Noms.pi} True False} Lib.Noms.NrReal
+                                                              Data.Number.CReal.$fFloatingCReal_$cpi) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$csin :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.sin} True False} case w of wild {
+                                                               Lib.Noms.NrRatio n
+                                                               -> Lib.Noms.NrReal
+                                                                    ({__scc {main@main:Lib.Noms.sin} False True} case Data.Number.CReal.$w$cfromRational
+                                                                                                                        n of ww { Unit# ww1 ->
+                                                                                                                 case Data.Number.CReal.$w$csin
+                                                                                                                        ww1 of ww2 { Unit# ww3 ->
+                                                                                                                 Data.Number.CReal.CR
+                                                                                                                   ww3 } })
+                                                               Lib.Noms.NrReal n
+                                                               -> Lib.Noms.NrReal
+                                                                    ({__scc {main@main:Lib.Noms.sin} False True} Data.Number.CReal.$fFloatingCReal_$csin
+                                                                                                                   n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$csinh :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.sinh} True False} case w of wild {
+                                                                Lib.Noms.NrRatio n
+                                                                -> Lib.Noms.NrReal
+                                                                     ({__scc {main@main:Lib.Noms.sinh} False True} case Data.Number.CReal.$w$csinh
+                                                                                                                          (Data.Number.CReal.$fFloatingCReal_$cfromRational
+                                                                                                                             n) of ww { Unit# ww1 ->
+                                                                                                                   Data.Number.CReal.CR
+                                                                                                                     ww1 })
+                                                                Lib.Noms.NrReal n
+                                                                -> Lib.Noms.NrReal
+                                                                     ({__scc {main@main:Lib.Noms.sinh} False True} Data.Number.CReal.$fFloatingCReal_$csinh
+                                                                                                                     n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$csqrt :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: Lib.Noms.Nr) ->
+                 Lib.Noms.$fFloatingNr_$cexp
+                   (Lib.Noms.$fFloatingNr_$c*
+                      (Lib.Noms.$fFloatingNr_$clog eta)
+                      (Lib.Noms.$fFloatingNr_$cfromRational
+                         (GHC.Real.:% @ GHC.Integer.Type.Integer 1 2)))) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$ctan :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: Lib.Noms.Nr) ->
+                 Lib.Noms.$fFloatingNr_$c/
+                   (Lib.Noms.$fFloatingNr_$csin eta)
+                   (Lib.Noms.$fFloatingNr_$ccos eta)) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFloatingNr_$ctanh :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: Lib.Noms.Nr) ->
+                 Lib.Noms.$fFloatingNr_$c/
+                   (Lib.Noms.$fFloatingNr_$csinh eta)
+                   (Lib.Noms.$fFloatingNr_$ccosh eta)) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFractionalNr :: GHC.Real.Fractional Lib.Noms.Nr
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Noms.Nr
+                  Lib.Noms.$fNumNr
+                  Lib.Noms.$fFloatingNr_$c/
+                  Lib.Noms.$fFractionalNr_$crecip
+                  Lib.Noms.$fFloatingNr_$cfromRational -}
+16ba174e12f4b9baf02734a198b8a408
+  $fFractionalNr_$crecip :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: Lib.Noms.Nr) ->
+                 Lib.Noms.$fFloatingNr_$c/
+                   (Lib.Noms.$fFloatingNr_$cfromInteger 1)
+                   eta) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fNumNr :: GHC.Num.Num Lib.Noms.Nr
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Noms.Nr
+                  Lib.Noms.$fFloatingNr_$c+
+                  Lib.Noms.$fNumNr_$c-
+                  Lib.Noms.$fFloatingNr_$c*
+                  Lib.Noms.$fFloatingNr_$cnegate
+                  Lib.Noms.$fNumNr_$cabs
+                  Lib.Noms.$fNumNr_$csignum
+                  Lib.Noms.$fFloatingNr_$cfromInteger -}
+16ba174e12f4b9baf02734a198b8a408
+  $fNumNr_$c- :: Lib.Noms.Nr -> Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Lib.Noms.Nr) (y :: Lib.Noms.Nr) ->
+                 Lib.Noms.$fFloatingNr_$c+ x (Lib.Noms.$fFloatingNr_$cnegate y)) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fNumNr_$cabs :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.abs} True True} case ds of wild {
+                                                              Lib.Noms.NrRatio n
+                                                              -> Lib.Noms.NrRatio
+                                                                   (GHC.Real.$fFractionalRatio_$s$cabs
+                                                                      n)
+                                                              Lib.Noms.NrReal n
+                                                              -> Lib.Noms.NrReal
+                                                                   (Data.Number.CReal.$fNumCReal_$cabs
+                                                                      n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fNumNr_$csignum :: Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.signum} True True} case ds of wild {
+                                                                 Lib.Noms.NrRatio n
+                                                                 -> Lib.Noms.NrRatio
+                                                                      (GHC.Real.$fFractionalRatio_$s$csignum
+                                                                         n)
+                                                                 Lib.Noms.NrReal n
+                                                                 -> Lib.Noms.NrReal
+                                                                      (Data.Number.CReal.$fNumCReal_$csignum
+                                                                         n) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fOrdNr :: GHC.Classes.Ord Lib.Noms.Nr
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Noms.Nr
+                  Lib.Noms.$fEqNr
+                  Lib.Noms.$fOrdNr_$ccompare
+                  Lib.Noms.$fOrdNr_$c<
+                  Lib.Noms.$fOrdNr_$c<=
+                  Lib.Noms.$fOrdNr_$c>
+                  Lib.Noms.$fOrdNr_$c>=
+                  Lib.Noms.$fOrdNr_$cmax
+                  Lib.Noms.$fOrdNr_$cmin -}
+16ba174e12f4b9baf02734a198b8a408
+  $fOrdNr_$c< :: Lib.Noms.Nr -> Lib.Noms.Nr -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Lib.Noms.Nr) (y :: Lib.Noms.Nr) ->
+                 case Lib.Noms.$fEqNr_$c== x y of wild {
+                   GHC.Types.False -> Lib.Noms.$fOrdNr_$c<= x y
+                   GHC.Types.True -> GHC.Types.False }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fOrdNr_$c<= :: Lib.Noms.Nr -> Lib.Noms.Nr -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Lib.Noms.Nr) (ds1 :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.<=} True True} case ds of wild {
+                                                             Lib.Noms.NrRatio a
+                                                             -> case ds1 of wild1 {
+                                                                  Lib.Noms.NrRatio b
+                                                                  -> GHC.Real.$fEnumRatio_$s$c<= a b
+                                                                  Lib.Noms.NrReal b
+                                                                  -> let {
+                                                                       x :: Data.Number.CReal.CReal
+                                                                       = case Data.Number.CReal.$w$cfromRational
+                                                                                a of ww { Unit# ww1 ->
+                                                                         Data.Number.CReal.CR ww1 }
+                                                                     } in
+                                                                     {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.<=} True True} case {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.<=.(...)} True True} Data.Number.CReal.$fEnumCReal_$c-
+                                                                                                                                                                                                                                                                                              x
+                                                                                                                                                                                                                                                                                              b of ww { Data.Number.CReal.CR ww1 ->
+                                                                                                                                                                           case GHC.Integer.Type.leInteger#
+                                                                                                                                                                                  (({__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.<=.s'} True True} ww1)
+                                                                                                                                                                                     Data.Number.CReal.$fEnumCReal2)
+                                                                                                                                                                                  Data.Number.CReal.$fEnumCReal1 of wild2 { DEFAULT ->
+                                                                                                                                                                           GHC.Prim.tagToEnum#
+                                                                                                                                                                             @ GHC.Types.Bool
+                                                                                                                                                                             wild2 } } }
+                                                             Lib.Noms.NrReal a
+                                                             -> case ds1 of wild1 {
+                                                                  Lib.Noms.NrRatio b
+                                                                  -> let {
+                                                                       y1 :: Data.Number.CReal.CReal
+                                                                       = case Data.Number.CReal.$w$cfromRational
+                                                                                b of ww { Unit# ww1 ->
+                                                                         Data.Number.CReal.CR ww1 }
+                                                                     } in
+                                                                     {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.<=} True True} case {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.<=.(...)} True True} Data.Number.CReal.$fEnumCReal_$c-
+                                                                                                                                                                                                                                                                                              a
+                                                                                                                                                                                                                                                                                              y1 of ww { Data.Number.CReal.CR ww1 ->
+                                                                                                                                                                           case GHC.Integer.Type.leInteger#
+                                                                                                                                                                                  (({__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.<=.s'} True True} ww1)
+                                                                                                                                                                                     Data.Number.CReal.$fEnumCReal2)
+                                                                                                                                                                                  Data.Number.CReal.$fEnumCReal1 of wild2 { DEFAULT ->
+                                                                                                                                                                           GHC.Prim.tagToEnum#
+                                                                                                                                                                             @ GHC.Types.Bool
+                                                                                                                                                                             wild2 } }
+                                                                  Lib.Noms.NrReal b
+                                                                  -> Data.Number.CReal.$fEnumCReal_$c<=
+                                                                       a
+                                                                       b } }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fOrdNr_$c> :: Lib.Noms.Nr -> Lib.Noms.Nr -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (x :: Lib.Noms.Nr) (y :: Lib.Noms.Nr) ->
+                 case Lib.Noms.$fEqNr_$c== x y of wild {
+                   GHC.Types.False
+                   -> case Lib.Noms.$fOrdNr_$c<= x y of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False }
+                   GHC.Types.True -> GHC.Types.False }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fOrdNr_$c>= :: Lib.Noms.Nr -> Lib.Noms.Nr -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (x :: Lib.Noms.Nr) (y :: Lib.Noms.Nr) ->
+                 case Lib.Noms.$fEqNr_$c== x y of wild {
+                   GHC.Types.False
+                   -> case Lib.Noms.$fOrdNr_$c<= x y of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False }
+                   GHC.Types.True -> GHC.Types.True }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fOrdNr_$ccompare ::
+    Lib.Noms.Nr -> Lib.Noms.Nr -> GHC.Types.Ordering
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (eta :: Lib.Noms.Nr) (eta1 :: Lib.Noms.Nr) ->
+                 case Lib.Noms.$fEqNr_$c== eta eta1 of wild {
+                   GHC.Types.False
+                   -> case Lib.Noms.$fOrdNr_$c<= eta eta1 of wild1 {
+                        GHC.Types.False -> GHC.Types.GT GHC.Types.True -> GHC.Types.LT }
+                   GHC.Types.True -> GHC.Types.EQ }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fOrdNr_$cmax :: Lib.Noms.Nr -> Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Lib.Noms.Nr) (y :: Lib.Noms.Nr) ->
+                 case Lib.Noms.$fOrdNr_$c<= x y of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fOrdNr_$cmin :: Lib.Noms.Nr -> Lib.Noms.Nr -> Lib.Noms.Nr
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Lib.Noms.Nr) (y :: Lib.Noms.Nr) ->
+                 case Lib.Noms.$fOrdNr_$c<= x y of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fRealFracNr :: GHC.Real.RealFrac Lib.Noms.Nr
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Noms.Nr
+                  Lib.Noms.$fRealNr
+                  Lib.Noms.$fFractionalNr
+                  Lib.Noms.$fRealFracNr_$cproperFraction
+                  Lib.Noms.$fRealFracNr_$ctruncate
+                  Lib.Noms.$fRealFracNr_$cround
+                  Lib.Noms.$fRealFracNr_$cceiling
+                  Lib.Noms.$fRealFracNr_$cfloor -}
+cdfb43cd89101164df3fb15a91e255b5
+  $fRealFracNr1 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   Lib.Noms.$fAlgoNrNr2
+                   GHC.Real.$fEnumRatio1) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fRealFracNr_$cceiling :: GHC.Real.Integral b => Lib.Noms.Nr -> b
+  {- Arity: 2,
+     Strictness: <L,U(U(U(U,U,U,U,U,U,U),U,U),A,A,A,A,A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ b
+                   (eta :: GHC.Real.Integral b)
+                   (eta1 :: Lib.Noms.Nr) ->
+                 let {
+                   $j2 :: b -> Lib.Noms.Nr -> b {- Arity: 2 -}
+                   = \ (ww :: b)[OneShot] (ww1 :: Lib.Noms.Nr)[OneShot] ->
+                     case Lib.Noms.$fEqNr_$c== ww1 Lib.Noms.$fRealFracNr_y of wild {
+                       GHC.Types.False
+                       -> case Lib.Noms.$fOrdNr_$c<=
+                                 ww1
+                                 Lib.Noms.$fRealFracNr_y of wild1 {
+                            GHC.Types.False
+                            -> let {
+                                 $dReal1 :: GHC.Real.Real b = GHC.Real.$p1Integral @ b eta
+                               } in
+                               let {
+                                 $dNum :: GHC.Num.Num b = GHC.Real.$p1Real @ b $dReal1
+                               } in
+                               GHC.Num.+
+                                 @ b
+                                 $dNum
+                                 ww
+                                 (GHC.Num.fromInteger @ b $dNum Lib.Noms.$fAlgoNrNr3)
+                            GHC.Types.True -> ww }
+                       GHC.Types.True -> ww }
+                 } in
+                 {__scc {main@main:Lib.Noms.fromInteger} True False} {__scc {main@main:Lib.Noms.properFraction} True False} case eta1 of wild {
+                                                                                                                              Lib.Noms.NrRatio n
+                                                                                                                              -> case n of ww { GHC.Real.:% ww1 ww2 ->
+                                                                                                                                 case {__scc {main@main:Lib.Noms.properFraction} False True} GHC.Real.$w$s$cproperFraction
+                                                                                                                                                                                               @ b
+                                                                                                                                                                                               eta
+                                                                                                                                                                                               ww1
+                                                                                                                                                                                               ww2 of ww3 { (#,#) ww4 ww5 ->
+                                                                                                                                 case {__scc {main@main:Lib.Noms.properFraction} False True} {__scc {main@main:Lib.Noms.properFraction.\} True False} (ww4,
+                                                                                                                                                                                                                                                       Lib.Noms.NrRatio
+                                                                                                                                                                                                                                                         ww5) of ww7 { (,) ww8 ww9 ->
+                                                                                                                                 $j2
+                                                                                                                                   ww8
+                                                                                                                                   ww9 } } }
+                                                                                                                              Lib.Noms.NrReal n
+                                                                                                                              -> case n of ww { Data.Number.CReal.CR ww1 ->
+                                                                                                                                 case {__scc {main@main:Lib.Noms.properFraction} False True} Data.Number.CReal.$w$cproperFraction
+                                                                                                                                                                                               @ b
+                                                                                                                                                                                               eta
+                                                                                                                                                                                               ww1 of ww2 { (#,#) ww3 ww4 ->
+                                                                                                                                 case {__scc {main@main:Lib.Noms.properFraction} False True} {__scc {main@main:Lib.Noms.properFraction.\} True False} (ww3,
+                                                                                                                                                                                                                                                       Lib.Noms.NrReal
+                                                                                                                                                                                                                                                         ww4) of ww7 { (,) ww8 ww9 ->
+                                                                                                                                 $j2
+                                                                                                                                   ww8
+                                                                                                                                   ww9 } } } }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fRealFracNr_$cfloor :: GHC.Real.Integral b => Lib.Noms.Nr -> b
+  {- Arity: 2,
+     Strictness: <L,U(U(U(U,U,U,U,U,U,U),U,U),A,A,A,A,A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ b
+                   (eta :: GHC.Real.Integral b)
+                   (eta1 :: Lib.Noms.Nr) ->
+                 let {
+                   $j2 :: b -> Lib.Noms.Nr -> b {- Arity: 2 -}
+                   = \ (ww :: b)[OneShot] (ww1 :: Lib.Noms.Nr)[OneShot] ->
+                     case Lib.Noms.$fEqNr_$c== ww1 Lib.Noms.$fRealFracNr_y of wild {
+                       GHC.Types.False
+                       -> case Lib.Noms.$fOrdNr_$c<=
+                                 ww1
+                                 Lib.Noms.$fRealFracNr_y of wild1 {
+                            GHC.Types.False -> ww
+                            GHC.Types.True
+                            -> let {
+                                 $dReal1 :: GHC.Real.Real b = GHC.Real.$p1Integral @ b eta
+                               } in
+                               let {
+                                 $dNum :: GHC.Num.Num b = GHC.Real.$p1Real @ b $dReal1
+                               } in
+                               GHC.Num.-
+                                 @ b
+                                 $dNum
+                                 ww
+                                 (GHC.Num.fromInteger @ b $dNum Lib.Noms.$fAlgoNrNr3) }
+                       GHC.Types.True -> ww }
+                 } in
+                 {__scc {main@main:Lib.Noms.fromInteger} True False} {__scc {main@main:Lib.Noms.properFraction} True False} case eta1 of wild {
+                                                                                                                              Lib.Noms.NrRatio n
+                                                                                                                              -> case n of ww { GHC.Real.:% ww1 ww2 ->
+                                                                                                                                 case {__scc {main@main:Lib.Noms.properFraction} False True} GHC.Real.$w$s$cproperFraction
+                                                                                                                                                                                               @ b
+                                                                                                                                                                                               eta
+                                                                                                                                                                                               ww1
+                                                                                                                                                                                               ww2 of ww3 { (#,#) ww4 ww5 ->
+                                                                                                                                 case {__scc {main@main:Lib.Noms.properFraction} False True} {__scc {main@main:Lib.Noms.properFraction.\} True False} (ww4,
+                                                                                                                                                                                                                                                       Lib.Noms.NrRatio
+                                                                                                                                                                                                                                                         ww5) of ww7 { (,) ww8 ww9 ->
+                                                                                                                                 $j2
+                                                                                                                                   ww8
+                                                                                                                                   ww9 } } }
+                                                                                                                              Lib.Noms.NrReal n
+                                                                                                                              -> case n of ww { Data.Number.CReal.CR ww1 ->
+                                                                                                                                 case {__scc {main@main:Lib.Noms.properFraction} False True} Data.Number.CReal.$w$cproperFraction
+                                                                                                                                                                                               @ b
+                                                                                                                                                                                               eta
+                                                                                                                                                                                               ww1 of ww2 { (#,#) ww3 ww4 ->
+                                                                                                                                 case {__scc {main@main:Lib.Noms.properFraction} False True} {__scc {main@main:Lib.Noms.properFraction.\} True False} (ww3,
+                                                                                                                                                                                                                                                       Lib.Noms.NrReal
+                                                                                                                                                                                                                                                         ww4) of ww7 { (,) ww8 ww9 ->
+                                                                                                                                 $j2
+                                                                                                                                   ww8
+                                                                                                                                   ww9 } } } }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fRealFracNr_$cproperFraction ::
+    GHC.Real.Integral b => Lib.Noms.Nr -> (b, Lib.Noms.Nr)
+  {- Arity: 2,
+     Strictness: <L,1*U(1*U(U(U,U,U,U,U,U,U),U,U),A,A,A,A,A,A,A,A)><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b (w :: GHC.Real.Integral b) (w1 :: Lib.Noms.Nr) ->
+                 case Lib.Noms.$w$cproperFraction @ b w w1 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fRealFracNr_$cround :: GHC.Real.Integral b => Lib.Noms.Nr -> b
+  {- Arity: 2,
+     Strictness: <L,U(U(U(U,U,U,U,U,U,U),U,U),A,A,C(C1(U)),A,A,A,A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b ($dIntegral :: GHC.Real.Integral b) (ds :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.round} True True} case ds of wild {
+                                                                Lib.Noms.NrRatio n
+                                                                -> GHC.Real.$fRealFracRatio_$s$cround
+                                                                     @ b
+                                                                     $dIntegral
+                                                                     n
+                                                                Lib.Noms.NrReal n
+                                                                -> Data.Number.CReal.$fRealFracCReal_$cround
+                                                                     @ b
+                                                                     $dIntegral
+                                                                     n }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fRealFracNr_$ctruncate :: GHC.Real.Integral b => Lib.Noms.Nr -> b
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ b ($dIntegral :: GHC.Real.Integral b) (x :: Lib.Noms.Nr) ->
+                 case Lib.Noms.$fRealFracNr_$cproperFraction
+                        @ b
+                        $dIntegral
+                        x of wild { (,) m ds ->
+                 m }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fRealFracNr_y :: Lib.Noms.Nr
+  {- HasNoCafRefs,
+     Unfolding: (Lib.Noms.NrRatio Lib.Noms.$fRealFracNr1) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fRealNr :: GHC.Real.Real Lib.Noms.Nr
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Noms.Nr
+                  Lib.Noms.$fNumNr
+                  Lib.Noms.$fOrdNr
+                  Lib.Noms.$fRealNr_$ctoRational -}
+16ba174e12f4b9baf02734a198b8a408
+  $fRealNr_$ctoRational :: Lib.Noms.Nr -> GHC.Real.Rational
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.toRational} True True} case ds of wild {
+                                                                     Lib.Noms.NrRatio r -> r
+                                                                     Lib.Noms.NrReal r
+                                                                     -> {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.toRational} True False} Data.Number.CReal.$fRealCReal1 }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fShowNr :: GHC.Show.Show Lib.Noms.Nr
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Noms.Nr
+                  Lib.Noms.$fShowNr_$cshowsPrec
+                  Lib.Noms.$fShowNr_$cshow
+                  Lib.Noms.$fShowNr_$cshowList -}
+16ba174e12f4b9baf02734a198b8a408
+  $fShowNr1 :: Lib.Noms.Nr -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.showList} False True} Lib.Noms.$w$cshowsPrec
+                                                                    0#
+                                                                    w) -}
+0a5feaffa6f96740d42a442141991f5a
+  $fShowNr2 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Noms.showsPrec} False True} GHC.CString.unpackCString#
+                                                                     "NrReal "#) -}
+23cb7d0f03e0144691411dd2d5796f4d
+  $fShowNr3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+19271653caf8681f8b5c498be0cde82f
+  $fShowNr4 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:Lib.Noms.showsPrec} False True} GHC.CString.unpackCString#
+                                                                     "NrRatio "#) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fShowNr_$cshow :: Lib.Noms.Nr -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Lib.Noms.Nr) ->
+                 ({__scc {main@main:Lib.Noms.showsPrec} True True} case x of wild {
+                                                                     Lib.Noms.NrRatio b1
+                                                                     -> \ (x1 :: GHC.Base.String)[OneShot] ->
+                                                                        GHC.Base.++
+                                                                          @ GHC.Types.Char
+                                                                          Lib.Noms.$fShowNr4
+                                                                          (case b1 of ww2 { GHC.Real.:% ww3 ww4 ->
+                                                                           case GHC.Real.$w$s$cshowsPrec
+                                                                                  11#
+                                                                                  ww3
+                                                                                  ww4
+                                                                                  x1 of ww5 { (#,#) ww6 ww7 ->
+                                                                           GHC.Types.:
+                                                                             @ GHC.Types.Char
+                                                                             ww6
+                                                                             ww7 } })
+                                                                     Lib.Noms.NrReal b1
+                                                                     -> \ (x1 :: GHC.Base.String)[OneShot] ->
+                                                                        GHC.Base.++
+                                                                          @ GHC.Types.Char
+                                                                          Lib.Noms.$fShowNr2
+                                                                          (case b1 of ww { Data.Number.CReal.CR ww1 ->
+                                                                           ({__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.showsPrec} True True} {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.showsPrec.xs} True False} case Data.Number.CReal.digits of ww2 { GHC.Types.I# ww3 ->
+                                                                                                                                                                                                                                                                                                          case {__scc {numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal.showsPrec.xs} False True} Data.Number.CReal.$wshowCReal
+                                                                                                                                                                                                                                                                                                                                                                                                                                  ww3
+                                                                                                                                                                                                                                                                                                                                                                                                                                  ww1 of wild1 {
+                                                                                                                                                                                                                                                                                                            []
+                                                                                                                                                                                                                                                                                                            -> case GHC.List.badHead
+                                                                                                                                                                                                                                                                                                               ret_ty (GHC.Base.String
+                                                                                                                                                                                                                                                                                                                       -> [GHC.Types.Char])
+                                                                                                                                                                                                                                                                                                               of {}
+                                                                                                                                                                                                                                                                                                            : x2 ds2
+                                                                                                                                                                                                                                                                                                            -> case x2 of wild2 { GHC.Types.C# x3 ->
+                                                                                                                                                                                                                                                                                                               case x3 of wild3 {
+                                                                                                                                                                                                                                                                                                                 DEFAULT
+                                                                                                                                                                                                                                                                                                                 -> GHC.Base.++
+                                                                                                                                                                                                                                                                                                                      @ GHC.Types.Char
+                                                                                                                                                                                                                                                                                                                      wild1
+                                                                                                                                                                                                                                                                                                                 '-'#
+                                                                                                                                                                                                                                                                                                                 -> \ (x4 :: GHC.Base.String)[OneShot] ->
+                                                                                                                                                                                                                                                                                                                    GHC.Types.:
+                                                                                                                                                                                                                                                                                                                      @ GHC.Types.Char
+                                                                                                                                                                                                                                                                                                                      GHC.Show.shows9
+                                                                                                                                                                                                                                                                                                                      (GHC.Base.++
+                                                                                                                                                                                                                                                                                                                         @ GHC.Types.Char
+                                                                                                                                                                                                                                                                                                                         wild1
+                                                                                                                                                                                                                                                                                                                         (GHC.Types.:
+                                                                                                                                                                                                                                                                                                                            @ GHC.Types.Char
+                                                                                                                                                                                                                                                                                                                            GHC.Show.shows6
+                                                                                                                                                                                                                                                                                                                            x4)) } } } })
+                                                                             x1 }) })
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fShowNr_$cshowList :: [Lib.Noms.Nr] -> GHC.Show.ShowS
+  {- Unfolding: ({__scc {main@main:Lib.Noms.showList} True True} GHC.Show.showList__
+                                                                   @ Lib.Noms.Nr
+                                                                   Lib.Noms.$fShowNr1) -}
+16ba174e12f4b9baf02734a198b8a408
+  $fShowNr_$cshowsPrec ::
+    GHC.Types.Int -> Lib.Noms.Nr -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Lib.Noms.Nr) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Lib.Noms.$w$cshowsPrec ww1 w1 }) -}
+f64fb16000dede6a48d586723f206486
+  $tc'C:AlgoNr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1619694146199347324##
+                   13936859328882085795##
+                   Lib.Noms.$trModule
+                   Lib.Noms.$tc'C:AlgoNr1) -}
+a98ca1cdb5efdbfa9a27920923e6d166
+  $tc'C:AlgoNr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:AlgoNr"#) -}
+3bcd1f3dfbb46f9a33b91edd3ae38a35
+  $tc'NrRatio :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14456443014173246872##
+                   15379255313497376217##
+                   Lib.Noms.$trModule
+                   Lib.Noms.$tc'NrRatio1) -}
+9bb6283034603660b4fb80fc971fca6d
+  $tc'NrRatio1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'NrRatio"#) -}
+c98e696746175ec5913c6a7e2c8b5fee
+  $tc'NrReal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10722611091929106622##
+                   2346141384524885172##
+                   Lib.Noms.$trModule
+                   Lib.Noms.$tc'NrReal1) -}
+268b01c087fa8c616d41de0701c27e22
+  $tc'NrReal1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'NrReal"#) -}
+57168478a70fe7bd3d31b6510aaa5688
+  $tcAlgoNr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12047135046733985344##
+                   345503488843735349##
+                   Lib.Noms.$trModule
+                   Lib.Noms.$tcAlgoNr1) -}
+823babcb28297e59198e3e9e82a0e8e5
+  $tcAlgoNr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "AlgoNr"#) -}
+19eb0a1add6384ce2b74f9314375a067
+  $tcNr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8424899504198124597##
+                   8549547409062042150##
+                   Lib.Noms.$trModule
+                   Lib.Noms.$tcNr1) -}
+fbc536ab16dc79d13f0e522021845841
+  $tcNr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Nr"#) -}
+dd88af237d1548630b6d9a46e25ec81f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Lib.Noms.$trModule2
+                   Lib.Noms.$trModule1) -}
+7d97b3b208af99237209d8b42e0119c9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib.Noms"#) -}
+26a6884f747684453ef4cb4f1283974a
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+16ba174e12f4b9baf02734a198b8a408
+  $w$cproperFraction ::
+    GHC.Real.Integral b => Lib.Noms.Nr -> (# b, Lib.Noms.Nr #)
+  {- Arity: 2,
+     Strictness: <L,1*U(1*U(U(U,U,U,U,U,U,U),U,U),A,A,A,A,A,A,A,A)><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ b (w :: GHC.Real.Integral b) (w1 :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.properFraction} True False} case w1 of wild {
+                                                                          Lib.Noms.NrRatio n
+                                                                          -> case n of ww { GHC.Real.:% ww1 ww2 ->
+                                                                             case {__scc {main@main:Lib.Noms.properFraction} False True} GHC.Real.$w$s$cproperFraction
+                                                                                                                                           @ b
+                                                                                                                                           w
+                                                                                                                                           ww1
+                                                                                                                                           ww2 of ww3 { (#,#) ww4 ww5 ->
+                                                                             case {__scc {main@main:Lib.Noms.properFraction} False True} {__scc {main@main:Lib.Noms.properFraction.\} True False} (ww4,
+                                                                                                                                                                                                   Lib.Noms.NrRatio
+                                                                                                                                                                                                     ww5) of ww7 { (,) ww8 ww9 ->
+                                                                             (# ww8, ww9 #) } } }
+                                                                          Lib.Noms.NrReal n
+                                                                          -> case n of ww { Data.Number.CReal.CR ww1 ->
+                                                                             case {__scc {main@main:Lib.Noms.properFraction} False True} Data.Number.CReal.$w$cproperFraction
+                                                                                                                                           @ b
+                                                                                                                                           w
+                                                                                                                                           ww1 of ww2 { (#,#) ww3 ww4 ->
+                                                                             case {__scc {main@main:Lib.Noms.properFraction} False True} {__scc {main@main:Lib.Noms.properFraction.\} True False} (ww3,
+                                                                                                                                                                                                   Lib.Noms.NrReal
+                                                                                                                                                                                                     ww4) of ww7 { (,) ww8 ww9 ->
+                                                                             (# ww8,
+                                                                                ww9 #) } } } }) -}
+16ba174e12f4b9baf02734a198b8a408
+  $w$cshowsPrec :: GHC.Prim.Int# -> Lib.Noms.Nr -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (w :: Lib.Noms.Nr) ->
+                 {__scc {main@main:Lib.Noms.showsPrec} True True} case w of wild {
+                                                                    Lib.Noms.NrRatio b1
+                                                                    -> case GHC.Prim.tagToEnum#
+                                                                              @ GHC.Types.Bool
+                                                                              (GHC.Prim.>=#
+                                                                                 ww
+                                                                                 11#) of wild1 {
+                                                                         GHC.Types.False
+                                                                         -> \ (x :: GHC.Base.String) ->
+                                                                            GHC.Base.++
+                                                                              @ GHC.Types.Char
+                                                                              Lib.Noms.$fShowNr4
+                                                                              (case b1 of ww2 { GHC.Real.:% ww3 ww4 ->
+                                                                               case GHC.Real.$w$s$cshowsPrec
+                                                                                      11#
+                                                                                      ww3
+                                                                                      ww4
+                                                                                      x of ww5 { (#,#) ww6 ww7 ->
+                                                                               GHC.Types.:
+                                                                                 @ GHC.Types.Char
+                                                                                 ww6
+                                                                                 ww7 } })
+                                                                         GHC.Types.True
+                                                                         -> \ (x :: GHC.Base.String) ->
+                                                                            GHC.Types.:
+                                                                              @ GHC.Types.Char
+                                                                              GHC.Show.shows9
+                                                                              (GHC.Base.++
+                                                                                 @ GHC.Types.Char
+                                                                                 Lib.Noms.$fShowNr4
+                                                                                 (case b1 of ww2 { GHC.Real.:% ww3 ww4 ->
+                                                                                  case GHC.Real.$w$s$cshowsPrec
+                                                                                         11#
+                                                                                         ww3
+                                                                                         ww4
+                                                                                         (GHC.Types.:
+                                                                                            @ GHC.Types.Char
+                                                                                            GHC.Show.shows6
+                                                                                            x) of ww5 { (#,#) ww6 ww7 ->
+                                                                                  GHC.Types.:
+                                                                                    @ GHC.Types.Char
+                                                                                    ww6
+                                                                                    ww7 } })) }
+                                                                    Lib.Noms.NrReal b1
+                                                                    -> let {
+                                                                         g :: GHC.Base.String
+                                                                              -> GHC.Base.String
+                                                                         = case b1 of ww1 { Data.Number.CReal.CR ww2 ->
+                                                                           Data.Number.CReal.$w$cshowsPrec
+                                                                             Lib.Noms.$fShowNr3
+                                                                             ww2 }
+                                                                       } in
+                                                                       case GHC.Prim.tagToEnum#
+                                                                              @ GHC.Types.Bool
+                                                                              (GHC.Prim.>=#
+                                                                                 ww
+                                                                                 11#) of wild1 {
+                                                                         GHC.Types.False
+                                                                         -> \ (x :: GHC.Base.String) ->
+                                                                            GHC.Base.++
+                                                                              @ GHC.Types.Char
+                                                                              Lib.Noms.$fShowNr2
+                                                                              (g x)
+                                                                         GHC.Types.True
+                                                                         -> \ (x :: GHC.Base.String) ->
+                                                                            GHC.Types.:
+                                                                              @ GHC.Types.Char
+                                                                              GHC.Show.shows9
+                                                                              (GHC.Base.++
+                                                                                 @ GHC.Types.Char
+                                                                                 Lib.Noms.$fShowNr2
+                                                                                 (g (GHC.Types.:
+                                                                                       @ GHC.Types.Char
+                                                                                       GHC.Show.shows6
+                                                                                       x))) } }) -}
+76f85e5aad6ac69d7608bf6adc63808a
+  class AlgoNr a where
+    isInt :: a -> GHC.Types.Bool
+    {-# MINIMAL isInt #-}
+16ba174e12f4b9baf02734a198b8a408
+  data Nr
+    = NrRatio GHC.Real.Rational | NrReal Data.Number.CReal.CReal
+instance Lib.Noms.AlgoNr [Lib.Noms.Nr] = Lib.Noms.$fAlgoNrNr
+instance GHC.Classes.Eq [Lib.Noms.Nr] = Lib.Noms.$fEqNr
+instance GHC.Float.Floating [Lib.Noms.Nr] = Lib.Noms.$fFloatingNr
+instance GHC.Real.Fractional [Lib.Noms.Nr]
+  = Lib.Noms.$fFractionalNr
+instance GHC.Num.Num [Lib.Noms.Nr] = Lib.Noms.$fNumNr
+instance GHC.Classes.Ord [Lib.Noms.Nr] = Lib.Noms.$fOrdNr
+instance GHC.Real.RealFrac [Lib.Noms.Nr] = Lib.Noms.$fRealFracNr
+instance GHC.Real.Real [Lib.Noms.Nr] = Lib.Noms.$fRealNr
+instance GHC.Show.Show [Lib.Noms.Nr] = Lib.Noms.$fShowNr
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,1107 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-12 00:14:27.946173 UTC
+
+interface main@main:AlgAux [hpc] 8001
+  interface hash: e037f353100a416a0b19e61399745160
+  ABI hash: 11857fb5eafb79b4e497e9d216a2ba5d
+  export-list hash: a5bbe99cfa73a20385453c450cf73119
+  orphan hash: 121555c9b1f87b1af4ac611f1ff8a68c
+  flag hash: c25c71772aae7ac07670edcd14020fd8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  AlgAux.<+
+  AlgAux.<++
+  AlgAux.<++|
+  AlgAux.__repVars
+  AlgAux._getFuncVar
+  AlgAux._repVars
+  AlgAux._sameFunc
+  AlgAux.algRebuild
+  AlgAux.append
+  AlgAux.appendList
+  AlgAux.conclusion
+  AlgAux.conclusionStep
+  AlgAux.degree
+  AlgAux.degrees
+  AlgAux.dist
+  AlgAux.getDegrees
+  AlgAux.getVar
+  AlgAux.getVarList
+  AlgAux.hasNeighbor
+  AlgAux.isAlgOp
+  AlgAux.isFunc
+  AlgAux.isNeighbor
+  AlgAux.opDegree
+  AlgAux.plex
+  AlgAux.plexOn
+  AlgAux.rebuild
+  AlgAux.rebuildOp
+  AlgAux.repVars
+  AlgAux.resolPrec
+  AlgAux.sameFunc
+  AlgAux.setOp
+  AlgAux.setOps
+  AlgAux.sortOnDegree
+module dependencies: AlgData AlgShow Context [boot] Evid [boot]
+                     Lib.Colors Lib.Debug Lib.Noms Utils
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-ordlist-0.4.7.0@data-ordlist-0.4.7.0-KWzW5aSYDm3KUQkWjneBW4
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj
+                      primes-0.2.1.0@primes-0.2.1.0-K0eIDQpwpli2u6M20VlfZn
+                      regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH
+                      regex-compat-0.95.1@regex-compat-0.95.1-JPDhOGKcrkD8S1t3VsLLUt
+                      regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         main@main:AlgShow main@main:AlgShow
+         regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH:Text.Regex.Base.Context
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.String
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.0.0:Control.Applicative 7728b33d6969dce59e89474349eb1397
+import  -/  base-4.9.0.0:Control.Exception.Base 4e2b16a4aa23317e444a61cce8fedc63
+import  -/  base-4.9.0.0:Control.Monad 7767aebfd53f0b584cef2fe66ad3986c
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.Functor 6fc476505db88d678632a4a838125f13
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:Data.Maybe 5f2ba364cbe65c060bc5436bc0b9d049
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
+import  -/  base-4.9.0.0:Data.Tuple acb0ed10307ed88df6c81b8589f4de16
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Enum fdf7ac3e1b0be0a4a37257601bddad14
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 24b19ef74cea78e4c18332bed9f0491d
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 1e8d61dcc59a1a983b27bab6fd6bdcaf
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  AlgData 307fffe4f0712a2d16396958905f20d6
+  exports: 429708355c7b5468a518bfa47675e12b
+  Algo 4d637072ad901205bf793a262f526c33
+  Arithmetic d28cb4f05730c4d197cef3d21a232744
+  Bool 67f527cfffcc3ad2fd344285e61c737a
+  Ctx 4d637072ad901205bf793a262f526c33
+  DerivedFunc 50d2bf1cc2a319fbc93fd46322560471
+  Div 775b00476d70cc8a25f3cca491cc087c
+  Document 300b94279054e268cbaddbf88cd55282
+  Equals 9500932a4069a75b430a3a44c9f0f2e7
+  Equation 551a1d9fee8c2cb8da0f9aaca286e438
+  Equiv bcbca3b57cace3058342528cd8f68537
+  Exp e6844369b86b13f0dedad0ecd6de9184
+  Func 464633904860f7b8d151038b299768e1
+  Geometric 4add4bc249ad1778779f77be6b48a32e
+  Identity 22255c417d22acd67f4bd8a171b8c890
+  Implic 18c8a8ece3f5a0292f53fe1c3ea73ae8
+  InvFunc a7eaef33d523c34ba66619488a5717e6
+  Lit 11c3a155764287bafe570d1de382257a
+  Neighbor d3872eb91e1fc48b3f5f63cf95ee82a5
+  Nom 95d978c8cc5eb26be29a90158f860ad8
+  Op 15ebbb24b6785911f3ab55036df6fa5d
+  Ops 4d4ded7a73ed5a4c8b83cf0bae613d27
+  Quant d2fc267388e95b11912599d611536fcb
+  Resol 8effdfb668f5cb607c4bd51445f565fb
+  Root c769dc3e9496719f922608bf2389ae38
+  Scale 892e8e2f08266ea7522518f1720cec69
+  Set a6ae8efb481222e569393086741f0e5f
+  Simpl c2dd23a8d56a67aeb71c59f26e43b05d
+  Und ae1870307e7dc3a94128d7dfda7cf0f8
+  Unit 54a8ab43ab3314954f3f50907655fbd2
+  arithmeticOps 5e5c0442dd8bc0a468f2bf0ba42670e0
+  distOver f85e0fcc72ac3a02b5e921eef8d6f34c
+  prior 2a8a7c59b2ca4821612561d2d4131eae
+  signalOps 231ba5fad8cfa8cf1e8dc4995e49c6e8
+import  -/  AlgShow fcfeb78e77c98c4f4ab51d6062a0e40d
+  exports: 5fdcc8d88371b431351310f3bb37bf3d
+import  -/  Context f6190b9cd6ad367e5453b805d11417ed
+  exports: 08975d12c672df93942f03f66593c095
+  useCtx cab09dfe1296d7bc1ee72962d8dec28d
+import  -/  Evid 07bb919c4ac626010ea4a83335e0fa6f
+  exports: 856b997029394c8658fb16d5e75d4d68
+import  -/  Lib.Colors 661ee66eb71335da3fd90f984f3e9e14
+  exports: dd28f8f849d9531d0a7956c1d1cf94af
+import  -/  Lib.Debug c5ad911a598d38e4e2cba45a09de710b
+  exports: e68806ff5497d096232692f266395170
+  D_ANY 8e65c7fcd431375d5184c87f41f469b9
+  ← 1be09bfd6d4e400c5809b6c36a0fe02b
+import  -/  Utils e3ec9e04ed6635229273d876ecf1c4f6
+  exports: edc5a96c02c5468ab823d3bed5331cb6
+  #> 58b8e1358c534cd698b1556cfbb95273
+  ? 69fb246831506ec99bb14b5161c9b2e0
+  getOp 20e4e90d60d9c0f7aaf3549675e6310d
+  literals b692d27f2ce06b9e3e12238f389bd76c
+  membersOf 5e4f26caffa4dc04d7b305bdbbd4f01e
+  ok 3861b4d7f0d7b7d312a010526a83efc5
+4bc250015b3e6957ffdfd935a94d3892
+  $sconcat :: [[a]] -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a (xs :: [[a]]) ->
+                 GHC.Base.build
+                   @ a
+                   (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ [a]
+                      @ b
+                      (\ (x :: [a]) (y :: b)[OneShot] -> GHC.Base.foldr @ a @ b c y x)
+                      n
+                      xs)) -}
+0e45e735686068626f7af07e8bf0b446
+  $sfromList ::
+    [(AlgData.Algo, a)] -> Data.Map.Base.Map AlgData.Algo a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(AlgData.Algo, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ AlgData.Algo @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Base.Bin
+                             @ AlgData.Algo
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                             (Data.Map.Base.Tip @ AlgData.Algo @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case AlgData.$fOrdAlgo_$ccompare kx ky of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                AlgAux.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ AlgData.Algo
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a))
+                                  wild2 }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                AlgAux.$wpoly_go10
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ AlgData.Algo
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a)
+                                     (Data.Map.Base.Tip @ AlgData.Algo @ a))
+                                  wild2 } } } } } }) -}
+0e1da2c4f616cf9403d6917f887808d8
+  $sfromList1 ::
+    Data.Map.Base.Map AlgData.Algo a1
+    -> [(AlgData.Algo, a1)] -> Data.Map.Base.Map AlgData.Algo a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+4b5761c942cf8ab37e77fff01a589338
+  $sinsert_$sgo10 ::
+    AlgData.Algo
+    -> a1
+    -> Data.Map.Base.Map AlgData.Algo a1
+    -> Data.Map.Base.Map AlgData.Algo a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+6b65874b3be5f0f4d216c46b23611436
+  $slookup1 ::
+    AlgData.Algo
+    -> Data.Map.Base.Map AlgData.Algo a -> GHC.Base.Maybe a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+0c0ed726a75bbd0a2c17c99a79522ecc
+  $ssort :: [AlgData.Algo] -> [AlgData.Algo]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: [AlgData.Algo]) ->
+                 Data.OldList.sortBy
+                   @ AlgData.Algo
+                   AlgData.$fOrdAlgo_$ccompare
+                   eta) -}
+c25277785bfe227b4689b7bead355ff4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   AlgAux.$trModule2
+                   AlgAux.$trModule1) -}
+0368a7a4be156bc737500c412fcecff0
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "AlgAux"#) -}
+006b1176a4c9080590be4f3b2450772c
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+8e69f68554b20196fe553280b59f50d4
+  $wplexOn :: AlgData.Algo -> AlgData.Algo -> GHC.Prim.Int#
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+2449faa7b9be3202f30de0cd96d5f359
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map AlgData.Algo a
+    -> [(AlgData.Algo, a)]
+    -> Data.Map.Base.Map AlgData.Algo a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+74ac64e61861c5e35547bffdfaf82e5b
+  (<+) ::
+    GHC.Base.Maybe AlgData.Algo
+    -> GHC.Base.Maybe AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgAux.<+} True False} \ (m1 :: GHC.Base.Maybe
+                                                                     AlgData.Algo)
+                                                            (m2 :: GHC.Base.Maybe AlgData.Algo) ->
+                                                          {__scc {main@main:AlgAux.<+} False True} case m1 of wild {
+                                                                                                     GHC.Base.Nothing
+                                                                                                     -> GHC.Base.Nothing
+                                                                                                          @ AlgData.Algo
+                                                                                                     GHC.Base.Just x
+                                                                                                     -> case m2 of wild1 {
+                                                                                                          GHC.Base.Nothing
+                                                                                                          -> GHC.Base.Nothing
+                                                                                                               @ AlgData.Algo
+                                                                                                          GHC.Base.Just x1
+                                                                                                          -> GHC.Base.Just
+                                                                                                               @ AlgData.Algo
+                                                                                                               (AlgAux.append
+                                                                                                                  x
+                                                                                                                  x1) } }) -}
+534f72f56d609f9fe0dabafdeacfea6c
+  (<++) ::
+    GHC.Base.Maybe AlgData.Algo
+    -> GHC.Base.Maybe [AlgData.Algo] -> GHC.Base.Maybe AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgAux.<++} True False} \ (m1 :: GHC.Base.Maybe
+                                                                      AlgData.Algo)
+                                                             (m2 :: GHC.Base.Maybe
+                                                                      [AlgData.Algo]) ->
+                                                           {__scc {main@main:AlgAux.<++} False True} case m1 of wild {
+                                                                                                       GHC.Base.Nothing
+                                                                                                       -> GHC.Base.Nothing
+                                                                                                            @ AlgData.Algo
+                                                                                                       GHC.Base.Just x
+                                                                                                       -> case m2 of wild1 {
+                                                                                                            GHC.Base.Nothing
+                                                                                                            -> GHC.Base.Nothing
+                                                                                                                 @ AlgData.Algo
+                                                                                                            GHC.Base.Just x1
+                                                                                                            -> GHC.Base.Just
+                                                                                                                 @ AlgData.Algo
+                                                                                                                 (AlgAux.appendList
+                                                                                                                    x
+                                                                                                                    x1) } }) -}
+2925b650ba59254b8c753d7bf130cc90
+  (<++|) ::
+    GHC.Base.Maybe AlgData.Algo
+    -> [AlgData.Algo] -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (o :: GHC.Base.Maybe AlgData.Algo) (m :: [AlgData.Algo]) ->
+                 {__scc {main@main:AlgAux.<++|} True True} case o of wild {
+                                                             GHC.Base.Nothing
+                                                             -> GHC.Base.Nothing @ AlgData.Algo
+                                                             GHC.Base.Just x
+                                                             -> GHC.Base.Just
+                                                                  @ AlgData.Algo
+                                                                  (AlgAux.appendList x m) }) -}
+ec8a8717e91299e199994aac6b90fbcb
+  __repVars ::
+    AlgData.Ctx -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (vars :: AlgData.Ctx) (e :: AlgData.Algo) ->
+                 {__scc {main@main:AlgAux.__repVars} True True} case {__scc {main@main:AlgAux.__repVars.v} True True} AlgAux.getVar
+                                                                                                                        e
+                                                                                                                        vars of wild {
+                                                                  GHC.Base.Nothing
+                                                                  -> GHC.Base.Nothing @ AlgData.Algo
+                                                                  GHC.Base.Just x
+                                                                  -> {__scc {main@main:AlgAux.isNeighbor} True False} case x of wild1 {
+                                                                                                                        DEFAULT
+                                                                                                                        -> wild
+                                                                                                                        AlgData.Neighbor ds ds1
+                                                                                                                        -> GHC.Base.Nothing
+                                                                                                                             @ AlgData.Algo } }) -}
+316cde3f2f1285fb78fd64593f1c5e58
+  _getFuncVar ::
+    AlgData.Algo
+    -> Data.Map.Base.Map AlgData.Algo AlgData.Algo
+    -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: AlgData.Algo)
+                   (vars :: Data.Map.Base.Map AlgData.Algo AlgData.Algo) ->
+                 {__scc {main@main:AlgAux._getFuncVar} True True} case ds of wild {
+                                                                    DEFAULT -> AlgAux._getFuncVar2
+                                                                    AlgData.Op op ds1
+                                                                    -> case ds1 of wild1 {
+                                                                         [] -> AlgAux._getFuncVar2
+                                                                         : n p
+                                                                         -> case {__scc {main@main:AlgAux._getFuncVar.funcs} True True} Data.Map.Base.toAscList1
+                                                                                                                                          @ AlgData.Algo
+                                                                                                                                          @ AlgData.Algo
+                                                                                                                                          (GHC.Types.[]
+                                                                                                                                             @ (AlgData.Algo,
+                                                                                                                                                AlgData.Algo))
+                                                                                                                                          (Data.Map.Base.filterWithKey
+                                                                                                                                             @ AlgData.Algo
+                                                                                                                                             @ AlgData.Algo
+                                                                                                                                             (\ (k :: AlgData.Algo)
+                                                                                                                                                (ds2 :: AlgData.Algo)[OneShot] ->
+                                                                                                                                              {__scc {main@main:AlgAux._getFuncVar.funcs.\} True True} case k of wild2 {
+                                                                                                                                                                                                         DEFAULT
+                                                                                                                                                                                                         -> GHC.Types.False
+                                                                                                                                                                                                         AlgData.Op op' ds3
+                                                                                                                                                                                                         -> case ds3 of wild3 {
+                                                                                                                                                                                                              []
+                                                                                                                                                                                                              -> GHC.Types.False
+                                                                                                                                                                                                              : n' ds4
+                                                                                                                                                                                                              -> {__scc {main@main:AlgData.==} True False} case {__scc {main@main:AlgData.==} False True} GHC.Prim.tagToEnum#
+                                                                                                                                                                                                                                                                                                            @ GHC.Types.Bool
+                                                                                                                                                                                                                                                                                                            (GHC.Prim.==#
+                                                                                                                                                                                                                                                                                                               (GHC.Prim.dataToTag#
+                                                                                                                                                                                                                                                                                                                  @ AlgData.Ops
+                                                                                                                                                                                                                                                                                                                  op)
+                                                                                                                                                                                                                                                                                                               (GHC.Prim.dataToTag#
+                                                                                                                                                                                                                                                                                                                  @ AlgData.Ops
+                                                                                                                                                                                                                                                                                                                  op')) of wild4 {
+                                                                                                                                                                                                                                                             GHC.Types.False
+                                                                                                                                                                                                                                                             -> GHC.Types.False
+                                                                                                                                                                                                                                                             GHC.Types.True
+                                                                                                                                                                                                                                                             -> AlgData.$fEqAlgSets_$c==2
+                                                                                                                                                                                                                                                                  n
+                                                                                                                                                                                                                                                                  n' } } })
+                                                                                                                                             vars) of wild2 {
+                                                                              []
+                                                                              -> GHC.Base.Nothing
+                                                                                   @ AlgData.Algo
+                                                                              : ds2 ds3
+                                                                              -> let {
+                                                                                   ds4 :: ([AlgData.Algo],
+                                                                                           AlgData.Algo)
+                                                                                   = {__scc {main@main:AlgAux._getFuncVar.(...)} True False} case ds2 of wild3 { (,) ds5 def ->
+                                                                                                                                             case ds5 of wild4 {
+                                                                                                                                               DEFAULT
+                                                                                                                                               -> AlgAux._getFuncVar1
+                                                                                                                                               AlgData.Op ds6 ds7
+                                                                                                                                               -> case ds7 of wild5 {
+                                                                                                                                                    []
+                                                                                                                                                    -> AlgAux._getFuncVar1
+                                                                                                                                                    : ds8 p'
+                                                                                                                                                    -> (p',
+                                                                                                                                                        def) } } }
+                                                                                 } in
+                                                                                 Context.useCtx
+                                                                                   (let {
+                                                                                      p' :: [AlgData.Algo]
+                                                                                      = {__scc {main@main:AlgAux._getFuncVar.p'} True True} case ds4 of ds5 { (,) p'1 def ->
+                                                                                                                                            p'1 }
+                                                                                    } in
+                                                                                    {__scc {main@main:AlgAux._getFuncVar.ps} True True} AlgAux.$sfromList
+                                                                                                                                          @ AlgData.Algo
+                                                                                                                                          (GHC.List.zip
+                                                                                                                                             @ AlgData.Algo
+                                                                                                                                             @ AlgData.Algo
+                                                                                                                                             p'
+                                                                                                                                             p))
+                                                                                   ({__scc {main@main:AlgAux._getFuncVar.def} True True} case ds4 of ds5 { (,) p' def ->
+                                                                                                                                         def }) } } }) -}
+bf59818707396c8c2954708b2cc4fe16
+  _getFuncVar1 :: ([AlgData.Algo], AlgData.Algo)
+  {- Strictness: x -}
+c308cf985ccad996316f27592a55c5ee
+  _getFuncVar2 :: GHC.Base.Maybe AlgData.Algo
+  {- Strictness: x -}
+8fe9943e2a681886b4fc3ea49edf484f
+  _repVars ::
+    AlgData.Ctx -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,U><S,1*U> -}
+b341b3a581c5ee9e893289825a645e49
+  _sameFunc :: AlgData.Algo -> AlgData.Algo -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: AlgData.Algo) (ds1 :: AlgData.Algo) ->
+                 {__scc {main@main:AlgAux._sameFunc} True True} case ds of wild {
+                                                                  DEFAULT -> AlgAux._sameFunc2
+                                                                  AlgData.Op ds2 ds3
+                                                                  -> case ds3 of wild1 {
+                                                                       [] -> AlgAux._sameFunc2
+                                                                       : na ds4
+                                                                       -> case ds1 of wild2 {
+                                                                            DEFAULT
+                                                                            -> AlgAux._sameFunc2
+                                                                            AlgData.Op ds5 ds6
+                                                                            -> case ds6 of wild3 {
+                                                                                 []
+                                                                                 -> AlgAux._sameFunc2
+                                                                                 : nb ds7
+                                                                                 -> Lib.Debug.$w←
+                                                                                      @ GHC.Types.Bool
+                                                                                      GHC.Show.$fShowBool
+                                                                                      Lib.Debug.D_ANY
+                                                                                      (GHC.CString.unpackAppendCString#
+                                                                                         "_sameFunc "#
+                                                                                         (GHC.Base.++
+                                                                                            @ GHC.Types.Char
+                                                                                            (AlgShow.$fShowAlgSets_$cshow1
+                                                                                               na)
+                                                                                            (GHC.CString.unpackAppendCString#
+                                                                                               "=="#
+                                                                                               (GHC.Base.++
+                                                                                                  @ GHC.Types.Char
+                                                                                                  (AlgShow.$fShowAlgSets_$cshow1
+                                                                                                     nb)
+                                                                                                  AlgAux._sameFunc1))))
+                                                                                      (AlgData.$fEqAlgSets_$c==2
+                                                                                         na
+                                                                                         nb) } } } }) -}
+8ae9982adee925016e5c5fd1008c942c
+  _sameFunc1 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgAux._sameFunc} False True} GHC.CString.unpackCString#
+                                                                   "="#) -}
+94e758061353c25ed6d2cec052d1bc9f
+  _sameFunc2 :: GHC.Types.Bool
+  {- Strictness: x -}
+808c3f56acb9610937b91ddc50fd898c
+  algRebuild ::
+    [GHC.Base.Maybe AlgData.Algo] -> [AlgData.Algo] -> [AlgData.Algo]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (ma :: [GHC.Base.Maybe AlgData.Algo]) (a :: [AlgData.Algo]) ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ [(GHC.Base.Maybe AlgData.Algo, AlgData.Algo)]
+                   @ [AlgData.Algo]
+                   (GHC.Base.map
+                      @ (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)
+                      @ AlgData.Algo
+                      (\ (ds :: (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)) ->
+                       case ds of wild { (,) a1 b ->
+                       case Data.Maybe.isJust @ AlgData.Algo a1 of wild1 {
+                         GHC.Types.False -> b
+                         GHC.Types.True -> Data.Maybe.fromJust @ AlgData.Algo a1 } }))
+                   (GHC.Base.build
+                      @ (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)
+                      (\ @ b1
+                         (c :: (GHC.Base.Maybe AlgData.Algo, AlgData.Algo)
+                               -> b1 -> b1)[OneShot]
+                         (n :: b1)[OneShot] ->
+                       GHC.List.foldr2
+                         @ (GHC.Base.Maybe AlgData.Algo)
+                         @ AlgData.Algo
+                         @ b1
+                         (GHC.List.zipFB
+                            @ (GHC.Base.Maybe AlgData.Algo)
+                            @ AlgData.Algo
+                            @ b1
+                            @ b1
+                            c)
+                         n
+                         ma
+                         a))) -}
+200344b05057c820cb219c30247f0d75
+  append :: AlgData.Algo -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><L,U>m6,
+     Unfolding: InlineRule (2, True, False)
+                (\ (o :: AlgData.Algo) (e :: AlgData.Algo) ->
+                 {__scc {main@main:AlgAux.append} True True} case o of wild {
+                                                               DEFAULT -> AlgAux.append1
+                                                               AlgData.Op op m
+                                                               -> AlgData.Op
+                                                                    op
+                                                                    (GHC.Base.augment
+                                                                       @ AlgData.Algo
+                                                                       (\ @ b
+                                                                          (c :: AlgData.Algo
+                                                                                -> b -> b)[OneShot]
+                                                                          (n :: b)[OneShot] ->
+                                                                        GHC.Base.foldr
+                                                                          @ AlgData.Algo
+                                                                          @ b
+                                                                          c
+                                                                          n
+                                                                          m)
+                                                                       (GHC.Types.:
+                                                                          @ AlgData.Algo
+                                                                          e
+                                                                          (GHC.Types.[]
+                                                                             @ AlgData.Algo))) }) -}
+5fa278bf512c5817319008f3dcf15f88
+  append1 :: AlgData.Algo
+  {- Strictness: x -}
+3bcf172ae79e0ddafafd6718c441518c
+  appendList :: AlgData.Algo -> [AlgData.Algo] -> AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>m6,
+     Unfolding: InlineRule (2, True, False)
+                (\ (o :: AlgData.Algo) (e :: [AlgData.Algo]) ->
+                 {__scc {main@main:AlgAux.appendList} True True} case o of wild {
+                                                                   DEFAULT -> AlgAux.appendList1
+                                                                   AlgData.Op op m
+                                                                   -> AlgData.Op
+                                                                        op
+                                                                        (GHC.Base.augment
+                                                                           @ AlgData.Algo
+                                                                           (\ @ b
+                                                                              (c :: AlgData.Algo
+                                                                                    -> b
+                                                                                    -> b)[OneShot]
+                                                                              (n :: b)[OneShot] ->
+                                                                            GHC.Base.foldr
+                                                                              @ AlgData.Algo
+                                                                              @ b
+                                                                              c
+                                                                              n
+                                                                              m)
+                                                                           e) }) -}
+f1dcb678192144a29998c8e7b93b9a8d
+  appendList1 :: AlgData.Algo
+  {- Strictness: x -}
+f9ca210ae6862448cf2e6b369282b471
+  conclusion :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <S,1*U> -}
+981dc8f651d76815017f077b3e3d6117
+  conclusionStep :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: AlgData.Algo) ->
+                 {__scc {main@main:AlgAux.conclusionStep} True True} case ds of wild {
+                                                                       DEFAULT -> wild
+                                                                       AlgData.Op ds1 m
+                                                                       -> case ds1 of wild1 {
+                                                                            DEFAULT -> wild
+                                                                            AlgData.Simpl
+                                                                            -> GHC.List.last
+                                                                                 @ AlgData.Algo
+                                                                                 m
+                                                                            AlgData.Resol
+                                                                            -> GHC.List.last
+                                                                                 @ AlgData.Algo
+                                                                                 m } }) -}
+a59d1ec3baccfc447c8bd0cb8bf679e7
+  degree :: AlgData.Algo -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,U>, Inline: INLINE (sat-args=2),
+     Unfolding(loop-breaker): InlineRule (2, False, False)
+                              (\ (i :: AlgData.Algo) (ds :: AlgData.Algo) ->
+                               let {
+                                 fail3 :: GHC.Prim.Void# -> AlgData.Algo {- Arity: 1 -}
+                                 = \ (ds1 :: GHC.Prim.Void#)[OneShot] ->
+                                   GHC.Base.$
+                                     @ 'GHC.Types.PtrRepLifted
+                                     @ [AlgData.Algo]
+                                     @ AlgData.Algo
+                                     (GHC.List.head @ AlgData.Algo)
+                                     (GHC.Base.$
+                                        @ 'GHC.Types.PtrRepLifted
+                                        @ [AlgData.Algo]
+                                        @ [AlgData.Algo]
+                                        (GHC.List.reverse @ AlgData.Algo)
+                                        (GHC.Base.$
+                                           @ 'GHC.Types.PtrRepLifted
+                                           @ [AlgData.Algo]
+                                           @ [AlgData.Algo]
+                                           AlgAux.$ssort
+                                           (AlgAux.degrees i ds)))
+                               } in
+                               case ds of wild {
+                                 DEFAULT -> fail3 GHC.Prim.void#
+                                 AlgData.Op ds1 m
+                                 -> case ds1 of wild1 {
+                                      DEFAULT -> fail3 GHC.Prim.void#
+                                      AlgData.Resol
+                                      -> AlgAux.degree i (GHC.List.last @ AlgData.Algo m) } }) -}
+a43e9a320f17b61ce0328bb2855cf6f2
+  degrees :: AlgData.Algo -> AlgData.Algo -> [AlgData.Algo]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+b6a1ee433a1a431b139b140aa4fec332
+  dist :: AlgData.Ops -> AlgData.Ops -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (a :: AlgData.Ops) (b :: AlgData.Ops) ->
+                 let {
+                   fail3 :: GHC.Prim.Void# -> GHC.Types.Bool {- Arity: 1 -}
+                   = \ (ds2 :: GHC.Prim.Void#)[OneShot] -> GHC.Types.False
+                 } in
+                 case AlgData.prior a of wild {
+                   DEFAULT -> fail3 GHC.Prim.void#
+                   AlgData.Arithmetic
+                   -> case AlgData.prior b of wild1 {
+                        DEFAULT -> fail3 GHC.Prim.void#
+                        AlgData.Logic -> GHC.Types.True
+                        AlgData.Lists -> GHC.Types.True }
+                   AlgData.Geometric
+                   -> case AlgData.prior b of wild1 {
+                        DEFAULT -> fail3 GHC.Prim.void#
+                        AlgData.Arithmetic -> GHC.Types.True
+                        AlgData.Lists -> GHC.Types.True }
+                   AlgData.Exponential
+                   -> case AlgData.prior b of wild1 {
+                        DEFAULT -> fail3 GHC.Prim.void#
+                        AlgData.Geometric -> GHC.Types.True
+                        AlgData.Lists -> GHC.Types.True } }) -}
+f3f4df9e84bf84027278971aa1132876
+  getDegrees :: AlgData.Algo -> [(AlgData.Algo, AlgData.Algo)]
+  {- Arity: 1, Strictness: <S,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (e :: AlgData.Algo) ->
+                 let {
+                   lits :: [AlgData.Algo] = Utils.literals e
+                 } in
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ [(AlgData.Algo, [AlgData.Algo])]
+                   @ [(AlgData.Algo, AlgData.Algo)]
+                   (GHC.Base.map
+                      @ (AlgData.Algo, [AlgData.Algo])
+                      @ (AlgData.Algo, AlgData.Algo)
+                      (\ (ds :: (AlgData.Algo, [AlgData.Algo])) ->
+                       case ds of wild { (,) a b ->
+                       (a,
+                        GHC.Base.$
+                          @ 'GHC.Types.PtrRepLifted
+                          @ [AlgData.Algo]
+                          @ AlgData.Algo
+                          (GHC.List.head @ AlgData.Algo)
+                          (GHC.Base.$
+                             @ 'GHC.Types.PtrRepLifted
+                             @ [AlgData.Algo]
+                             @ [AlgData.Algo]
+                             (GHC.List.reverse @ AlgData.Algo)
+                             (AlgAux.$ssort b))) }))
+                   (GHC.Base.$
+                      @ 'GHC.Types.PtrRepLifted
+                      @ [[AlgData.Algo]]
+                      @ [(AlgData.Algo, [AlgData.Algo])]
+                      (GHC.List.zip @ AlgData.Algo @ [AlgData.Algo] lits)
+                      (GHC.Base.build
+                         @ [AlgData.Algo]
+                         (\ @ b1
+                            (c :: [AlgData.Algo] -> b1 -> b1)[OneShot]
+                            (n :: b1)[OneShot] ->
+                          GHC.Base.foldr
+                            @ AlgData.Algo
+                            @ b1
+                            (GHC.Base.mapFB
+                               @ [AlgData.Algo]
+                               @ b1
+                               @ AlgData.Algo
+                               c
+                               (\ (ds :: AlgData.Algo) -> AlgAux.degrees ds e))
+                            n
+                            lits)))) -}
+fe12a76de2612cf5630ad76477402a9e
+  getVar ::
+    AlgData.Algo -> AlgData.Ctx -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (expr :: AlgData.Algo) (vars :: AlgData.Ctx) ->
+                 {__scc {main@main:AlgAux.getVar} True True} case AlgAux.$slookup1
+                                                                    @ AlgData.Algo
+                                                                    expr
+                                                                    vars of wild {
+                                                               GHC.Base.Nothing
+                                                               -> GHC.Base.Nothing @ AlgData.Algo
+                                                               GHC.Base.Just ds
+                                                               -> case ds of wild1 {
+                                                                    DEFAULT -> wild
+                                                                    AlgData.Op ds1 ds2
+                                                                    -> case ds1 of wild2 {
+                                                                         DEFAULT -> wild
+                                                                         AlgData.Set
+                                                                         -> case ds2 of wild3 {
+                                                                              [] -> wild
+                                                                              : n ds3
+                                                                              -> case ds3 of wild4 {
+                                                                                   []
+                                                                                   -> GHC.Base.Just
+                                                                                        @ AlgData.Algo
+                                                                                        n
+                                                                                   : ipv ipv1
+                                                                                   -> wild } } }
+                                                                    AlgData.Neighbor ds1 n
+                                                                    -> case ds1 of wild2 {
+                                                                         DEFAULT -> wild
+                                                                         AlgData.Equals
+                                                                         -> GHC.Base.Just
+                                                                              @ AlgData.Algo
+                                                                              n } } }) -}
+b1a3c06542d8a1ffa4d8c8346fefffb1
+  getVarList ::
+    [AlgData.Algo]
+    -> AlgData.Ctx -> Data.Map.Base.Map AlgData.Algo AlgData.Algo
+  {- Arity: 2, Strictness: <S,U><L,U>,
+     Unfolding: (\ (vl :: [AlgData.Algo]) (vars :: AlgData.Ctx) ->
+                 {__scc {main@main:AlgAux.getVarList} True True} AlgAux.$sfromList
+                                                                   @ AlgData.Algo
+                                                                   (GHC.List.zip
+                                                                      @ AlgData.Algo
+                                                                      @ AlgData.Algo
+                                                                      vl
+                                                                      (letrec {
+                                                                         go7 :: [AlgData.Algo]
+                                                                                -> [AlgData.Algo]
+                                                                                -> [AlgData.Algo]
+                                                                           {- Arity: 2,
+                                                                              Strictness: <S,1*U><L,1*U> -}
+                                                                         = \ (ds :: [AlgData.Algo])
+                                                                             (eta :: [AlgData.Algo]) ->
+                                                                           case ds of wild {
+                                                                             []
+                                                                             -> GHC.Types.[]
+                                                                                  @ AlgData.Algo
+                                                                             : y ys
+                                                                             -> case eta of wild1 {
+                                                                                  []
+                                                                                  -> GHC.Types.[]
+                                                                                       @ AlgData.Algo
+                                                                                  : y1 ys1
+                                                                                  -> GHC.Types.:
+                                                                                       @ AlgData.Algo
+                                                                                       (case AlgAux.getVar
+                                                                                               y
+                                                                                               vars of wild2 {
+                                                                                          GHC.Base.Nothing
+                                                                                          -> y1
+                                                                                          GHC.Base.Just ipv
+                                                                                          -> ipv })
+                                                                                       (go7
+                                                                                          ys
+                                                                                          ys1) } }
+                                                                       } in
+                                                                       go7
+                                                                         vl
+                                                                         AlgAux.getVarList_xs))) -}
+0aced8e19bf8e5bd179597a2f3ea5618
+  getVarList_xs :: [AlgData.Algo]
+  {- HasNoCafRefs -}
+0b135267f812dbf217da7b258e96f041
+  hasNeighbor :: AlgData.Algo -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: AlgData.Algo) ->
+                 {__scc {main@main:AlgAux.hasNeighbor} True True} case ds of wild {
+                                                                    DEFAULT -> GHC.Types.False
+                                                                    AlgData.Op op m
+                                                                    -> (AlgAux.hasNeighbor_go m)
+                                                                         `cast`
+                                                                       (Data.Monoid.N:Any[0])
+                                                                    AlgData.Neighbor ds1 ds2
+                                                                    -> GHC.Types.True }) -}
+f0c148a8d01fb6ae073ccfb273a8fbd4
+  hasNeighbor_go :: [AlgData.Algo] -> Data.Monoid.Any
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+c3271a3df1a3ac156cf7f50781a9ce5a
+  isAlgOp :: AlgData.Algo -> GHC.Types.Bool
+  {- Unfolding: ({__scc {main@main:AlgAux.isAlgOp} True False} \ (x :: AlgData.Algo) ->
+                                                               {__scc {main@main:AlgAux.isAlgOp} False True} {__scc {main@main:Utils.getOp} True False} case x of wild {
+                                                                                                                                                          DEFAULT
+                                                                                                                                                          -> GHC.Types.False
+                                                                                                                                                          AlgData.Op op ds1
+                                                                                                                                                          -> GHC.Types.True }) -}
+36f68c673ef2a1a09c229871e1eb3a8f
+  isFunc :: AlgData.Algo -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: AlgData.Algo) ->
+                 {__scc {main@main:AlgAux.isFunc} True True} case ds of wild {
+                                                               DEFAULT -> GHC.Types.False
+                                                               AlgData.Op ds1 ds2
+                                                               -> case ds1 of wild1 {
+                                                                    DEFAULT -> GHC.Types.False
+                                                                    AlgData.Func -> GHC.Types.True
+                                                                    AlgData.InvFunc
+                                                                    -> GHC.Types.True
+                                                                    AlgData.DerivedFunc
+                                                                    -> GHC.Types.True } }) -}
+b08cbc711693e3bd96a1ad59995e7885
+  isNeighbor :: AlgData.Algo -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: AlgData.Algo) ->
+                 {__scc {main@main:AlgAux.isNeighbor} True True} case ds of wild {
+                                                                   DEFAULT -> GHC.Types.False
+                                                                   AlgData.Neighbor ds1 ds2
+                                                                   -> GHC.Types.True }) -}
+7fcb14183b0c49f389f61db95b6555db
+  opDegree :: AlgData.Algo -> AlgData.Algo -> [AlgData.Algo]
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (i :: AlgData.Algo) (ds :: AlgData.Algo) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> GHC.Err.undefined
+                        @ 'GHC.Types.PtrRepLifted
+                        @ [AlgData.Algo]
+                        AlgAux.opDegree1
+                   AlgData.Op ds1 m
+                   -> GHC.Base.$
+                        @ 'GHC.Types.PtrRepLifted
+                        @ [[AlgData.Algo]]
+                        @ [AlgData.Algo]
+                        (AlgAux.$sconcat @ AlgData.Algo)
+                        (GHC.Base.build
+                           @ [AlgData.Algo]
+                           (\ @ b1
+                              (c :: [AlgData.Algo] -> b1 -> b1)[OneShot]
+                              (n :: b1)[OneShot] ->
+                            GHC.Base.foldr
+                              @ AlgData.Algo
+                              @ b1
+                              (GHC.Base.mapFB
+                                 @ [AlgData.Algo]
+                                 @ b1
+                                 @ AlgData.Algo
+                                 c
+                                 (AlgAux.degrees i))
+                              n
+                              m)) }) -}
+afe136974aa941a38e3ce181d15bd75c
+  opDegree1 :: GHC.Stack.Types.HasCallStack
+  {- Strictness: m2,
+     Unfolding: InlineRule (0, True, True)
+                AlgAux.opDegree2
+                  `cast`
+                (Sym (GHC.Classes.N:IP[0]
+                          <"callStack">_N <GHC.Stack.Types.CallStack>_N)) -}
+41da1211ec7e79af8d7d844b918d0afc
+  opDegree10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "undefined"#) -}
+8aa62f414db04be99856606aa3b14047
+  opDegree2 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   AlgAux.opDegree10
+                   AlgAux.opDegree3
+                   GHC.Stack.Types.EmptyCallStack) -}
+148a0f8fd5f0584362016c0f45f3fa09
+  opDegree3 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   AlgAux.opDegree9
+                   AlgAux.opDegree8
+                   AlgAux.opDegree7
+                   AlgAux.opDegree6
+                   AlgAux.opDegree5
+                   AlgAux.opDegree6
+                   AlgAux.opDegree4) -}
+100805414092201fe62ec16673dc0dd5
+  opDegree4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 23#) -}
+00ae732afcf36abcce6c504816f41d84
+  opDegree5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 14#) -}
+343fe43bf52eb91316c6fe42a810ccaf
+  opDegree6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 154#) -}
+5c59a55abf9619c6d3d734306e952222
+  opDegree7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "src/AlgAux.hs"#) -}
+17bc3890857b98113c40d526420e9ebe
+  opDegree8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "AlgAux"#) -}
+b596fde119945e5935019436c73e45b2
+  opDegree9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "main"#) -}
+495a2b2a68969a340d4b001e6b96b602
+  plex :: AlgData.Algo -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U> -}
+ca985bce692c9512a7bf3c42eb8f0f89
+  plexOn :: AlgData.Algo -> AlgData.Algo -> GHC.Types.Int
+  {- Arity: 2, Strictness: <L,U><S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: AlgData.Algo) (w1 :: AlgData.Algo) ->
+                 case AlgAux.$wplexOn w w1 of ww { DEFAULT -> GHC.Types.I# ww }) -}
+68c8e7921c08b0005008c267fd2f2452
+  rebuild ::
+    (AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+    -> AlgData.Algo -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: (\ (f :: AlgData.Algo -> GHC.Base.Maybe AlgData.Algo)
+                   (o :: AlgData.Algo) ->
+                 {__scc {main@main:AlgAux.rebuild} True True} case o of wild {
+                                                                DEFAULT -> AlgAux.rebuild1
+                                                                AlgData.Op op m
+                                                                -> let {
+                                                                     o1 :: [GHC.Base.Maybe
+                                                                              AlgData.Algo]
+                                                                     = GHC.Base.map
+                                                                         @ AlgData.Algo
+                                                                         @ (GHC.Base.Maybe
+                                                                              AlgData.Algo)
+                                                                         f
+                                                                         m
+                                                                   } in
+                                                                   {__scc {main@main:AlgAux.rebuildOp} True True} case {__scc {main@main:AlgAux.rebuildOp.f} True True} GHC.List.filter
+                                                                                                                                                                          @ (GHC.Base.Maybe
+                                                                                                                                                                               AlgData.Algo)
+                                                                                                                                                                          (Data.Maybe.isJust
+                                                                                                                                                                             @ AlgData.Algo)
+                                                                                                                                                                          o1 of wild1 {
+                                                                                                                    []
+                                                                                                                    -> GHC.Base.Nothing
+                                                                                                                         @ AlgData.Algo
+                                                                                                                    : ds1 ds2
+                                                                                                                    -> GHC.Base.Just
+                                                                                                                         @ AlgData.Algo
+                                                                                                                         (AlgData.Op
+                                                                                                                            op
+                                                                                                                            (AlgAux.algRebuild
+                                                                                                                               o1
+                                                                                                                               m)) } }) -}
+ff8adfd961b8589a8a44eb7e3ed76ac1
+  rebuild1 :: GHC.Base.Maybe AlgData.Algo
+  {- Strictness: x -}
+90631f2bd9b4574defe86c512ccfa4f2
+  rebuildOp ::
+    AlgData.Algo
+    -> [GHC.Base.Maybe AlgData.Algo] -> GHC.Base.Maybe AlgData.Algo
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (ds :: AlgData.Algo)
+                   (o :: [GHC.Base.Maybe AlgData.Algo]) ->
+                 {__scc {main@main:AlgAux.rebuildOp} True True} case ds of wild {
+                                                                  DEFAULT -> AlgAux.rebuildOp1
+                                                                  AlgData.Op op m
+                                                                  -> case {__scc {main@main:AlgAux.rebuildOp.f} True True} GHC.List.filter
+                                                                                                                             @ (GHC.Base.Maybe
+                                                                                                                                  AlgData.Algo)
+                                                                                                                             (Data.Maybe.isJust
+                                                                                                                                @ AlgData.Algo)
+                                                                                                                             o of wild1 {
+                                                                       []
+                                                                       -> GHC.Base.Nothing
+                                                                            @ AlgData.Algo
+                                                                       : ds1 ds2
+                                                                       -> GHC.Base.Just
+                                                                            @ AlgData.Algo
+                                                                            (AlgData.Op
+                                                                               op
+                                                                               (AlgAux.algRebuild
+                                                                                  o
+                                                                                  m)) } }) -}
+73781277ba1246bdea3fce92e8209af5
+  rebuildOp1 :: GHC.Base.Maybe AlgData.Algo
+  {- Strictness: x -}
+b03047de44748ffa5694b823b9fe07fd
+  repVars :: AlgData.Ctx -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (vars :: AlgData.Ctx) (e :: AlgData.Algo) ->
+                 {__scc {main@main:AlgAux.repVars} True True} case AlgAux._repVars
+                                                                     vars
+                                                                     e of wild {
+                                                                GHC.Base.Nothing -> e
+                                                                GHC.Base.Just ipv -> ipv }) -}
+83e7051ce724b9221854f8af3a38b6aa
+  resolPrec :: AlgData.Ops -> AlgData.Ops -> AlgData.Ops
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: AlgData.Ops) (ds1 :: AlgData.Ops) ->
+                 {__scc {main@main:AlgAux.resolPrec} True True} case ds of wild {
+                                                                  DEFAULT -> AlgData.Implic
+                                                                  AlgData.Equiv
+                                                                  -> case ds1 of wild1 {
+                                                                       DEFAULT -> AlgData.Implic
+                                                                       AlgData.Equiv
+                                                                       -> AlgData.Equiv } }) -}
+d688024d1498570412e3c6d4ddafcacf
+  sameFunc :: AlgData.Algo -> AlgData.Algo -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ (a :: AlgData.Algo) (b :: AlgData.Algo) ->
+                 {__scc {main@main:AlgAux.sameFunc} True True} case a of wild {
+                                                                 DEFAULT -> GHC.Types.False
+                                                                 AlgData.Op ds ds1
+                                                                 -> case ds of wild1 {
+                                                                      DEFAULT -> GHC.Types.False
+                                                                      AlgData.Func
+                                                                      -> case b of wild2 {
+                                                                           DEFAULT
+                                                                           -> GHC.Types.False
+                                                                           AlgData.Op ds2 ds3
+                                                                           -> case ds2 of wild3 {
+                                                                                DEFAULT
+                                                                                -> GHC.Types.False
+                                                                                AlgData.Func
+                                                                                -> AlgAux._sameFunc
+                                                                                     wild
+                                                                                     wild2
+                                                                                AlgData.InvFunc
+                                                                                -> AlgAux._sameFunc
+                                                                                     wild
+                                                                                     wild2 } }
+                                                                      AlgData.InvFunc
+                                                                      -> case b of wild2 {
+                                                                           DEFAULT
+                                                                           -> GHC.Types.False
+                                                                           AlgData.Op ds2 ds3
+                                                                           -> case ds2 of wild3 {
+                                                                                DEFAULT
+                                                                                -> GHC.Types.False
+                                                                                AlgData.Func
+                                                                                -> AlgAux._sameFunc
+                                                                                     wild
+                                                                                     wild2
+                                                                                AlgData.InvFunc
+                                                                                -> AlgAux._sameFunc
+                                                                                     wild
+                                                                                     wild2 } } } }) -}
+e625e3e6487736e20ea1c7c46801c0e8
+  setOp :: AlgData.Ops -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U>m6,
+     Unfolding: InlineRule (2, True, False)
+                (\ (op :: AlgData.Ops) (ds :: AlgData.Algo) ->
+                 {__scc {main@main:AlgAux.setOp} True True} case ds of wild {
+                                                              DEFAULT -> AlgAux.setOp1
+                                                              AlgData.Op ds1 m
+                                                              -> AlgData.Op op m }) -}
+060ea29c22077715ffaed2c3988665f2
+  setOp1 :: AlgData.Algo
+  {- Strictness: x -}
+91bd14bc0f034e7a19b8170623cab70a
+  setOps :: t1 -> t -> a
+  {- Arity: 2, Strictness: <B,A><B,A>x,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a @ t @ t1 (ds :: t1) (ds1 :: t) ->
+                 ({__scc {main@main:AlgAux.setOps} True False} AlgAux.setOps1)
+                   @ a) -}
+b05f34844c277fe8ed855f2e83f4b0f6
+  setOps1 :: a
+  {- Strictness: x -}
+4b7999d1d8f36e94237e309b90afae55
+  sortOnDegree :: AlgData.Algo -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+"SPEC/AlgAux concat @ [] _" [ALWAYS] forall @ a
+                                            ($dFoldable :: Data.Foldable.Foldable [])
+  Data.Foldable.concat @ [] @ a $dFoldable = AlgAux.$sconcat @ a
+"SPEC/AlgAux fromList @ Algo _" [ALWAYS] forall @ a
+                                                ($dOrd :: GHC.Classes.Ord AlgData.Algo)
+  Data.Map.Base.fromList @ AlgData.Algo @ a $dOrd
+  = AlgAux.$sfromList @ a
+"SPEC/AlgAux sort @ Algo" [ALWAYS] forall ($dOrd :: GHC.Classes.Ord
+                                                      AlgData.Algo)
+  Data.OldList.sort @ AlgData.Algo $dOrd = AlgAux.$ssort
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

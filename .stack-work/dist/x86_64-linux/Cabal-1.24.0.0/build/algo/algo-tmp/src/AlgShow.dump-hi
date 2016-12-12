@@ -1,0 +1,1402 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-12 00:14:25.854404 UTC
+
+interface main@main:AlgShow [orphan module] [hpc] 8001
+  interface hash: 600208ce5a6737b6f635bf1c1b24cc5b
+  ABI hash: fcfeb78e77c98c4f4ab51d6062a0e40d
+  export-list hash: 5fdcc8d88371b431351310f3bb37bf3d
+  orphan hash: 01f6f67842a45e7964fa4d809caac0ae
+  flag hash: e6829fda7f2ea1e7a13a24d30776ffcd
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  AlgShow.decPlaces
+  AlgShow.delims
+  AlgShow.dimColor
+  AlgShow.entityColor
+  AlgShow.info
+  AlgShow.litColor
+  AlgShow.numColor
+  AlgShow.opColor
+  AlgShow.prettyFraction
+  AlgShow.prettyFractionInt
+  AlgShow.resolColor
+  AlgShow.showFloat
+  AlgShow.showOp
+  AlgShow.showRatio
+  AlgShow.toRatio
+  AlgShow.unitColor
+  AlgShow.wordColor
+module dependencies: AlgData Lib.Colors Lib.Debug Lib.Noms Utils
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-ordlist-0.4.7.0@data-ordlist-0.4.7.0-KWzW5aSYDm3KUQkWjneBW4
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj
+                      primes-0.2.1.0@primes-0.2.1.0-K0eIDQpwpli2u6M20VlfZn
+                      regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH
+                      regex-compat-0.95.1@regex-compat-0.95.1-JPDhOGKcrkD8S1t3VsLLUt
+                      regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         main@main:AlgShow
+         regex-base-0.93.2@regex-base-0.93.2-4lnOy3Rb1yfISFVEXVfJuH:Text.Regex.Base.Context
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2@regex-posix-0.95.2-Fy6xYMm8dnjHHt23b8RdmR:Text.Regex.Posix.String
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.0.0:Control.Applicative 7728b33d6969dce59e89474349eb1397
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:Data.Maybe 5f2ba364cbe65c060bc5436bc0b9d049
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
+import  -/  base-4.9.0.0:Data.Ratio bd7ae7e84fadf68e9483b9d3f1445f8c
+import  -/  base-4.9.0.0:Data.Tuple acb0ed10307ed88df6c81b8589f4de16
+import  -/  base-4.9.0.0:Data.Unique a6b8a9996ed8cef1a5afff4a4e49bd9e
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 24b19ef74cea78e4c18332bed9f0491d
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 1e8d61dcc59a1a983b27bab6fd6bdcaf
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  AlgData 307fffe4f0712a2d16396958905f20d6
+  exports: 429708355c7b5468a518bfa47675e12b
+  ACos c92c08f06d2623d6ed26aabc138aac58
+  ACosH 738a87791955f3427b7c3c1ded1fdea3
+  ASin 513971455a602109256984b6e20f0912
+  ASinH 93c23b8240960c30f5fc46d50b845407
+  ATg b3d7d9203d53546bf6e3c9df26a86766
+  ATgH ab65b3e31412d5771a575be66735aa44
+  AlgSet c279f8ccf2534d6117c5ff3f5836fb90
+  AlgSets 4d637072ad901205bf793a262f526c33
+  Algo 4d637072ad901205bf793a262f526c33
+  And 5d24d8c844bd2a97c85e63b7abcbb24f
+  Bool 67f527cfffcc3ad2fd344285e61c737a
+  Cos 18ba88194b5d85c2be5c56bc379730c9
+  CosH 12083f4e1494703a71de68f35d949064
+  DerivedFunc 50d2bf1cc2a319fbc93fd46322560471
+  Dim 46bb4e21fb3a209e2abaaf7a8f792310
+  Dimension 3cf9446167083b0f98c1ce079583fab0
+  Dimension 4d637072ad901205bf793a262f526c33
+  Div 775b00476d70cc8a25f3cca491cc087c
+  Document 300b94279054e268cbaddbf88cd55282
+  ElementOf fcc71430e74c3899ad99c3301ba98051
+  Ellipsis 7fe5995c2eeca68984dc2412317220d4
+  Equals 9500932a4069a75b430a3a44c9f0f2e7
+  Equation 551a1d9fee8c2cb8da0f9aaca286e438
+  Equiv bcbca3b57cace3058342528cd8f68537
+  Exp e6844369b86b13f0dedad0ecd6de9184
+  Floor b793e78fac6a98cf0909d2a13675d4b5
+  Func 464633904860f7b8d151038b299768e1
+  Greater 4512db64871fd047ef64dd8534debcb9
+  GreaterOrEqual a01ee902550a2703354b1a97ab6a3b2e
+  Implic 18c8a8ece3f5a0292f53fe1c3ea73ae8
+  Index 5786e751a668fc11e3204e9faf0dcd1c
+  Infinit 9666a84f86ee6e9cdb8e02658a597d56
+  Infinitesimal 8d523f656bf7ac41e9b2294be7a254b5
+  Intersect 1bd339fb9bda5755a1a75cc848589700
+  InvFunc a7eaef33d523c34ba66619488a5717e6
+  InvRelates ccf838349a32cba1b61699a121848fb8
+  LSeq 160840952524eec7d42bf7ffa4af2749
+  Less c36695b59b4e48329b7124d1706fa572
+  LessOrEqual dbdbaf734cfe4774f93497dc5d2af134
+  List a491851cc569fc9864b8c7e1b6f6d617
+  Lit 11c3a155764287bafe570d1de382257a
+  Log 4658a810e53021bb8194eae2310bf5d3
+  MetricSystem 5eeb9755d14391ee496511e40b214f9f
+  MetricSystem 4d637072ad901205bf793a262f526c33
+  Mul 2f35706afddb4d148a595d106eedb7e6
+  Neg 67362d85eaf7d8ee80f48cd9dd9d09b9
+  Neighbor d3872eb91e1fc48b3f5f63cf95ee82a5
+  Nom 95d978c8cc5eb26be29a90158f860ad8
+  Not d514c1aff93cd4d9396adffc6fc5ad26
+  NotElementOf 04db0c303219c1a17b294cd68fb48dde
+  NotEqual 60d0afbeee1e2fdbb3638c5c45b39a68
+  Numeric 34a12d3a4a552068d786a20a441a5a0c
+  Op 15ebbb24b6785911f3ab55036df6fa5d
+  Ops 4d4ded7a73ed5a4c8b83cf0bae613d27
+  Or 202d2d148971979f168ac1edee2eb873
+  Params f043d598866a816d6d2bad93df3e2d5e
+  Pos b08290a384a9fff859e51e6e96d36be9
+  PosOrNeg b3f0c68bd9c71c66fe74c52951484dab
+  Pref 5bdc838a1ea7f62e685a4ad812e98018
+  Punctuation 1c9e37e1c8217bd64ed668d863f1947d
+  Quant d2fc267388e95b11912599d611536fcb
+  RSeq d1284f427445d6987dbb7247bb4176d5
+  Range 8e438ad81c1a17806c0c52a93fe011d8
+  RangeWing 2115629cd83e25a0656a9efbb024a9bc
+  RangeWing 4d637072ad901205bf793a262f526c33
+  Relates 2c99c68533c337380850ff06d2103e36
+  Resol 8effdfb668f5cb607c4bd51445f565fb
+  Root c769dc3e9496719f922608bf2389ae38
+  Scale 892e8e2f08266ea7522518f1720cec69
+  Scale 4d637072ad901205bf793a262f526c33
+  Sentence a6f8cb43a9ff4b05aac8fe8177bf8f38
+  Set a6ae8efb481222e569393086741f0e5f
+  SetExpr 3b2dff8429ec38b7490ffad48bfe57ce
+  Sets ad18523b421d9287ca0aae16bff820d8
+  Simpl c2dd23a8d56a67aeb71c59f26e43b05d
+  Sin 53e0b5529ca31b04cdab0e88f8a4b3af
+  SinH 415f0f40f03634c54ad11498318336be
+  Solver dc83428aed2f7d736f985c9617836580
+  Sub aaf2da6bfff58a4523858f58c32df4b3
+  SuchThat 655c0f92ad2a71ee3007923c84b1d621
+  Sum d5f11b74783ac2a16ec6db1a10fe0ff0
+  System dff1e0e43983d65f96ab9b0cc376b202
+  Tg 8c23ca59badd42ccf12db8a147f995d6
+  Und ae1870307e7dc3a94128d7dfda7cf0f8
+  Union 5234cda473491e1abeb9830deb516287
+  Unit 54a8ab43ab3314954f3f50907655fbd2
+  envOps 52a8b98c311db02eab7f0afa3c359e00
+  equatOps 24149df67c5148a043074cf3bc329ffd
+  exprOps df5f2cd5059e49f6f212562d25cb4d78
+  logicOps 4b3a784d6a53216a44782ed61826c751
+  prior 2a8a7c59b2ca4821612561d2d4131eae
+  signalOps 231ba5fad8cfa8cf1e8dc4995e49c6e8
+import  -/  Lib.Colors 661ee66eb71335da3fd90f984f3e9e14
+  exports: dd28f8f849d9531d0a7956c1d1cf94af
+  blueColor 7d58be26bcf70b60c9f7d54adc53b927
+  boldStyle 3a53a0a749e01f6278d4c34c4c514b0f
+  greenColor ada30f228e7b0c1a3b01b2b574e659ff
+  nColor 4bd84a1dc203c67fed29a061b7b43901
+  redColor 2b8a185942907075284787817c41c834
+  whiteColor 1fdf52c92feeb9bfd30b8e8649771342
+  yellowColor 2dfa4b9b5d05942d68367304a6092ef6
+import  -/  Lib.Debug c5ad911a598d38e4e2cba45a09de710b
+  exports: e68806ff5497d096232692f266395170
+import  -/  Lib.Noms 2d56e88a289ad37b00090ddb7a06fc81
+  exports: 8a9b0085f320a4deb44ddea66e85019e
+  NrRatio c5c6d48e6611c93db826c6f43b36a153
+  NrReal 05af66b1a6c879b20489fc53a8f8da62
+  isInt b755498408d70426cefe2bce45d5797c
+import  -/  Utils e3ec9e04ed6635229273d876ecf1c4f6
+  exports: edc5a96c02c5468ab823d3bed5331cb6
+  #= c726cdd588c1bab42d70cffbda697ac7
+  clrColors 1e849194bf10eb4b3b959002107dc837
+  ok 3861b4d7f0d7b7d312a010526a83efc5
+  specialChars f8b3b49883ceccabbc5f41944b0edb4c
+import  -/  numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj:Data.Number.CReal 1a55b0320066e0e2ba4dc64187eb0074
+import  -/  primes-0.2.1.0@primes-0.2.1.0-K0eIDQpwpli2u6M20VlfZn:Data.Numbers.Primes ebd49bfb3ce008e9301a59df8ce02c37
+addDependentFile "/home/azevedo/.stack/programs/x86_64-linux/ghc-8.0.1/lib/ghc-8.0.1/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+689275d49275d26ef5e3a49acbc3a422
+  $fShowAlgSets :: GHC.Show.Show AlgData.AlgSets
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.AlgSets
+                  AlgShow.$fShowAlgSets_$cshowsPrec
+                  AlgShow.$fShowAlgSets_$cshow
+                  AlgShow.$fShowAlgSets_$cshowList -}
+aed127cc5f41d1a97c56a5683e097fc0
+  $fShowAlgSets1 ::
+    AlgData.AlgSets -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x :: AlgData.AlgSets)
+                   (s4 :: GHC.Base.String)[OneShot] ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (AlgShow.$fShowAlgSets_$cshow x)
+                   s4) -}
+521fc82b453775786df3dae279514f54
+  $fShowAlgSets2 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.show} False True} GHC.CString.unpackCString#
+                                                               "["#) -}
+248a3b116f0ccac03a4c2c9eb239b8ac
+  $fShowAlgSets3 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.show} False True} GHC.CString.unpackCString#
+                                                               "]"#) -}
+fcdc795a4d5594c69145b2aca7652907
+  $fShowAlgSets4 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.show} False True} GHC.Base.++
+                                                               @ GHC.Types.Char
+                                                               AlgShow.$fShowAlgSets3
+                                                               Lib.Colors.nColor) -}
+b13c22cf3f625f1dcabd5c5a2b24982c
+  $fShowAlgSets5 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.show} False True} GHC.Base.++
+                                                               @ GHC.Types.Char
+                                                               AlgShow.$fShowAlgSets2
+                                                               Lib.Colors.nColor) -}
+84632d00ec220fd5a640dc43ed78ecce
+  $fShowAlgSets6 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.show} False True} GHC.Base.++
+                                                               @ GHC.Types.Char
+                                                               AlgShow.opColor
+                                                               AlgShow.$fShowAlgSets7) -}
+cbdbe560b4948f3ec9c812dd2621c117
+  $fShowAlgSets7 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.show} False True} GHC.CString.unpackAppendCString#
+                                                               "}"#
+                                                               Lib.Colors.nColor) -}
+68ba01455fd409f1d8b40370747bb55b
+  $fShowAlgSets_$cshow :: AlgData.AlgSets -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds2 :: AlgData.AlgSets) ->
+                 {__scc {main@main:AlgShow.show} True True} case ds2 of wild {
+                                                              AlgData.AlgSet ds3 toString ds4 ds5
+                                                              -> toString wild
+                                                              AlgData.SetExpr expr dom
+                                                              -> GHC.Base.++
+                                                                   @ GHC.Types.Char
+                                                                   AlgShow.opColor
+                                                                   (GHC.CString.unpackAppendCString#
+                                                                      "{"#
+                                                                      (GHC.Base.++
+                                                                         @ GHC.Types.Char
+                                                                         (AlgShow.$fShowAlgSets_$cshow1
+                                                                            expr)
+                                                                         (GHC.Base.++
+                                                                            @ GHC.Types.Char
+                                                                            AlgShow.opColor
+                                                                            (GHC.CString.unpackAppendCString#
+                                                                               ":"#
+                                                                               (GHC.Base.++
+                                                                                  @ GHC.Types.Char
+                                                                                  (AlgShow.$fShowAlgSets_$cshow1
+                                                                                     dom)
+                                                                                  AlgShow.$fShowAlgSets6)))))
+                                                              AlgData.Range ds3 ds4
+                                                              -> case ds3 of wild1 { AlgData.RangeWing li l ->
+                                                                 case ds4 of wild2 { AlgData.RangeWing ri r ->
+                                                                 GHC.Base.++
+                                                                   @ GHC.Types.Char
+                                                                   AlgShow.opColor
+                                                                   (let {
+                                                                      n :: [GHC.Types.Char]
+                                                                      = GHC.Base.++
+                                                                          @ GHC.Types.Char
+                                                                          (AlgShow.$fShowAlgSets_$cshow1
+                                                                             l)
+                                                                          (GHC.Base.++
+                                                                             @ GHC.Types.Char
+                                                                             AlgShow.opColor
+                                                                             (GHC.CString.unpackAppendCString#
+                                                                                ";"#
+                                                                                (GHC.Base.++
+                                                                                   @ GHC.Types.Char
+                                                                                   (AlgShow.$fShowAlgSets_$cshow1
+                                                                                      r)
+                                                                                   (GHC.Base.++
+                                                                                      @ GHC.Types.Char
+                                                                                      AlgShow.opColor
+                                                                                      (case ri of wild3 {
+                                                                                         GHC.Types.False
+                                                                                         -> AlgShow.$fShowAlgSets5
+                                                                                         GHC.Types.True
+                                                                                         -> AlgShow.$fShowAlgSets4 })))))
+                                                                    } in
+                                                                    case li of wild3 {
+                                                                      GHC.Types.False
+                                                                      -> GHC.Base.++
+                                                                           @ GHC.Types.Char
+                                                                           AlgShow.$fShowAlgSets3
+                                                                           n
+                                                                      GHC.Types.True
+                                                                      -> GHC.Base.++
+                                                                           @ GHC.Types.Char
+                                                                           AlgShow.$fShowAlgSets2
+                                                                           n }) } }
+                                                              AlgData.RSeq o
+                                                              -> AlgShow.$fShowAlgSets_$cshow1 o
+                                                              AlgData.LSeq o
+                                                              -> AlgShow.$fShowAlgSets_$cshow1
+                                                                   o }) -}
+630de0bb219e37d5cf9820f75d1f4fdb
+  $fShowAlgSets_$cshow1 :: AlgData.Algo -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U> -}
+3f90681475a48b4b44c55014b4a14463
+  $fShowAlgSets_$cshowList :: [AlgData.AlgSets] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [AlgData.AlgSets]) (s4 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ AlgData.AlgSets
+                   AlgShow.$fShowAlgSets1
+                   ls
+                   s4) -}
+ecc6b56bca925fe9e19bf99e84f62ce5
+  $fShowAlgSets_$cshowsPrec ::
+    GHC.Types.Int -> AlgData.AlgSets -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds2 :: GHC.Types.Int)
+                   (x :: AlgData.AlgSets)
+                   (s4 :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (AlgShow.$fShowAlgSets_$cshow x))
+                   s4) -}
+9fa4f57033ff00c96ce1e34e5a113c95
+  $fShowAlgo :: GHC.Show.Show AlgData.Algo
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.Algo
+                  AlgShow.$fShowAlgo_$cshowsPrec
+                  AlgShow.$fShowAlgSets_$cshow1
+                  AlgShow.$fShowAlgo_$cshowList -}
+7669f9229c50e8520252fa7c2cae0a1e
+  $fShowAlgo1 :: AlgData.Algo -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x :: AlgData.Algo)
+                   (s4 :: GHC.Base.String)[OneShot] ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (AlgShow.$fShowAlgSets_$cshow1 x)
+                   s4) -}
+44f07542567cb2c6a40ae44e127f699d
+  $fShowAlgo_$cshowList :: [AlgData.Algo] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [AlgData.Algo]) (s4 :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ AlgData.Algo AlgShow.$fShowAlgo1 ls s4) -}
+14269eb8d2e75d37012fc9dd72b3b1b5
+  $fShowAlgo_$cshowsPrec ::
+    GHC.Types.Int -> AlgData.Algo -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds2 :: GHC.Types.Int)
+                   (x :: AlgData.Algo)
+                   (s4 :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (AlgShow.$fShowAlgSets_$cshow1 x))
+                   s4) -}
+6500c431de6af0a936188a8cf675b047
+  $fShowDimension :: GHC.Show.Show AlgData.Dimension
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.Dimension
+                  AlgShow.$fShowDimension_$s$dmshowsPrec
+                  AlgShow.$fShowDimension_$cshow
+                  AlgShow.$fShowDimension_$cshowList -}
+03637add2aa8f6ec94daa7a937bba55a
+  $fShowDimension1 :: AlgData.Dimension -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLSLLLL),1*U(A,A,1*U,A,A,A,A)><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: AlgData.Dimension) (s4 :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      ({__scc {main@main:AlgShow.show} True True} case x of wild { AlgData.Dimension ds2 desig e ds3 ds4 ds5 ds6 ->
+                                                                  e }))
+                   s4) -}
+404af583f70bb60157ce216ae99066b6
+  $fShowDimension_$cshow :: AlgData.Dimension -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLL),1*U(A,A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds2 :: AlgData.Dimension) ->
+                 {__scc {main@main:AlgShow.show} True True} case ds2 of wild { AlgData.Dimension ds3 desig e ds4 ds5 ds6 ds7 ->
+                                                            e }) -}
+3a5da16c8a09c83dad894c7850da6e44
+  $fShowDimension_$cshowList :: [AlgData.Dimension] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [AlgData.Dimension])
+                   (s4 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ AlgData.Dimension
+                   AlgShow.$fShowDimension1
+                   ls
+                   s4) -}
+90857fa64a99b8b65d188892154eae37
+  $fShowDimension_$s$dmshowsPrec ::
+    GHC.Types.Int -> AlgData.Dimension -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S(LLSLLLL),1*U(A,A,1*U,A,A,A,A)><L,1*U>,
+     Unfolding: InlineRule (-1, True, False)
+                (\ (ds2 :: GHC.Types.Int)
+                   (x :: AlgData.Dimension)
+                   (s4 :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (AlgShow.$fShowDimension_$cshow x))
+                   s4) -}
+9b5630f18c6afeac2314e31c455f17a0
+  $fShowMetricSystem :: GHC.Show.Show AlgData.MetricSystem
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.MetricSystem
+                  AlgShow.$fShowMetricSystem_$cshowsPrec
+                  AlgShow.$fShowMetricSystem_$cshow
+                  AlgShow.$fShowMetricSystem_$cshowList -}
+3cfada76ff07c44d2836692238a37472
+  $fShowMetricSystem_$cshow ::
+    AlgData.MetricSystem -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: AlgData.MetricSystem) ->
+                 case w of ww { AlgData.MetricSystem ww1 ww2 ->
+                 AlgShow.$w$cshow ww1 ww2 }) -}
+bb369c28e3f8ac45fecb0d0d451c2b73
+  $fShowMetricSystem_$cshowList ::
+    [AlgData.MetricSystem] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [AlgData.MetricSystem]) (s4 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ AlgData.MetricSystem
+                   (AlgShow.$fShowMetricSystem_$cshowsPrec GHC.Show.shows22)
+                   ls
+                   s4) -}
+60c9a3a92291d9dea1718ad7737b05c0
+  $fShowMetricSystem_$cshowsPrec ::
+    GHC.Types.Int -> AlgData.MetricSystem -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S(SL),1*U(1*U,1*U)><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: AlgData.MetricSystem)
+                   (w2 :: GHC.Base.String) ->
+                 case w1 of ww { AlgData.MetricSystem ww1 ww2 ->
+                 AlgShow.$w$cshowsPrec ww1 ww2 w2 }) -}
+c9fa04deaa5267da57a68986399e69d9
+  $fShowRangeWing :: GHC.Show.Show AlgData.RangeWing
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.RangeWing
+                  AlgShow.$fShowRangeWing_$cshowsPrec
+                  AlgShow.$fShowRangeWing_$cshow
+                  AlgShow.$fShowRangeWing_$cshowList -}
+41d89510648f88041d0d86167aa625cf
+  $fShowRangeWing1 ::
+    AlgData.RangeWing -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x :: AlgData.RangeWing)
+                   (s4 :: GHC.Base.String)[OneShot] ->
+                 case x of ww { AlgData.RangeWing ww1 ww2 ->
+                 GHC.Base.++ @ GHC.Types.Char (AlgShow.$w$cshow1 ww1 ww2) s4 }) -}
+7cd503af1aa2e2e12164396285730f5c
+  $fShowRangeWing_$cshow :: AlgData.RangeWing -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SL),1*U(1*U,1*U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: AlgData.RangeWing) ->
+                 case w of ww { AlgData.RangeWing ww1 ww2 ->
+                 AlgShow.$w$cshow1 ww1 ww2 }) -}
+a3d7ef5cedbd4a18e86e389a823f4182
+  $fShowRangeWing_$cshowList :: [AlgData.RangeWing] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [AlgData.RangeWing])
+                   (s4 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ AlgData.RangeWing
+                   AlgShow.$fShowRangeWing1
+                   ls
+                   s4) -}
+4517e625e11f158cc8f60d5f318dec4b
+  $fShowRangeWing_$cshowsPrec ::
+    GHC.Types.Int -> AlgData.RangeWing -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S(SL),1*U(1*U,1*U)><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds2 :: GHC.Types.Int)
+                   (x :: AlgData.RangeWing)
+                   (s4 :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (AlgShow.$fShowRangeWing_$cshow x))
+                   s4) -}
+dfabc9f04a6c4eeedb1f2cec99059d01
+  $fShowScale :: GHC.Show.Show AlgData.Scale
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.Scale
+                  AlgShow.$fShowScale_$s$dmshowsPrec
+                  AlgShow.$fShowScale_$cshow
+                  AlgShow.$fShowScale_$cshowList -}
+45a8dc963972d8748ff0d3c84c210176
+  $fShowScale1 :: AlgData.Scale -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LSLLLL),1*U(A,1*U,A,A,A,A)><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: AlgData.Scale) (s4 :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      ({__scc {main@main:AlgShow.show} True True} case x of wild { AlgData.Scale ds2 u ds3 ds4 ds5 ds6 ->
+                                                                  u }))
+                   s4) -}
+8aeecd320292a1d15d404949fb39765c
+  $fShowScale_$cshow :: AlgData.Scale -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLL),1*U(A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds2 :: AlgData.Scale) ->
+                 {__scc {main@main:AlgShow.show} True True} case ds2 of wild { AlgData.Scale ds3 u ds4 ds5 ds6 ds7 ->
+                                                            u }) -}
+c5404363306eaea25e59e9b9add3c3d0
+  $fShowScale_$cshowList :: [AlgData.Scale] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [AlgData.Scale]) (s4 :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ AlgData.Scale AlgShow.$fShowScale1 ls s4) -}
+a17de0fe0eb5fbfa1c1d29004954410b
+  $fShowScale_$s$dmshowsPrec ::
+    GHC.Types.Int -> AlgData.Scale -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S(LSLLLL),1*U(A,1*U,A,A,A,A)><L,1*U>,
+     Unfolding: InlineRule (-1, True, False)
+                (\ (ds2 :: GHC.Types.Int)
+                   (x :: AlgData.Scale)
+                   (s4 :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (AlgShow.$fShowScale_$cshow x))
+                   s4) -}
+506174cf3e4a31f32f5be666d0f75eb4
+  $fxShowAlgo :: GHC.Show.Show AlgData.Algo
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) AlgShow.$fShowAlgo -}
+8716df51cd231773035bf47580280c49
+  $s$dmshowList1 ::
+    AlgData.MetricSystem -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (w :: AlgData.MetricSystem)
+                   (w1 :: GHC.Base.String)[OneShot] ->
+                 case w of ww { AlgData.MetricSystem ww1 ww2 ->
+                 AlgShow.$w$cshowsPrec ww1 ww2 w1 }) -}
+ecfe0290c21e414a7d66e4e1f7ee30ae
+  $s^ ::
+    Data.Number.CReal.CReal -> GHC.Types.Int -> Data.Number.CReal.CReal
+  {- Arity: 2, Strictness: <L,U(U)><S(S),1*U(U)>, Inline: [1],
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: Data.Number.CReal.CReal) (eta1 :: GHC.Types.Int) ->
+                 case eta1 of wild { GHC.Types.I# x ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# x 0#) of wild1 {
+                   GHC.Types.False
+                   -> case x of wild2 {
+                        DEFAULT -> AlgShow.$s^_f eta wild 0# -> AlgShow.$s^2 }
+                   GHC.Types.True -> AlgShow.$s^1 } }) -}
+e31c82407d25aad1042c96c79ef77fa6
+  $s^1 :: Data.Number.CReal.CReal
+  {- Strictness: x -}
+c2d0677462dab0578997d40452e185e4
+  $s^2 :: Data.Number.CReal.CReal
+  {- Unfolding: (case Data.Number.CReal.$w$cfromInteger
+                        AlgShow.$s^3 of ww { Unit# ww1 ->
+                 Data.Number.CReal.CR ww1 }) -}
+572c629c14dfce01cd6c297cf21859b1
+  $s^3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+8d010b53cf536d7eec9747b5305f47aa
+  $s^_f ::
+    Data.Number.CReal.CReal -> GHC.Types.Int -> Data.Number.CReal.CReal
+  {- Arity: 2, Strictness: <S,U(U)><S(S),1*U(U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.Number.CReal.CReal) (w1 :: GHC.Types.Int) ->
+                 case w of ww { Data.Number.CReal.CR ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 ->
+                 case AlgShow.$wf ww1 ww3 of ww4 { Unit# ww5 ->
+                 Data.Number.CReal.CR ww5 } } }) -}
+384f8be166f1d560cf56047bd8df2a40
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   AlgShow.$trModule2
+                   AlgShow.$trModule1) -}
+d7d0e37c971fbd92809f43227c76c8d7
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "AlgShow"#) -}
+edf660a4805b8df1573aaed01cc24dcb
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+5374688d4a7808271fdf10e32e557b8c
+  $w$cshow ::
+    GHC.Base.String -> [AlgData.Dimension] -> GHC.Base.String
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: [AlgData.Dimension]) ->
+                 {__scc {main@main:AlgShow.show} True True} GHC.Base.++
+                                                              @ GHC.Types.Char
+                                                              ww
+                                                              (GHC.CString.unpackAppendCString#
+                                                                 "\n"#
+                                                                 (GHC.Show.showList__
+                                                                    @ AlgData.Dimension
+                                                                    AlgShow.$fShowDimension1
+                                                                    ww1
+                                                                    (GHC.Types.[]
+                                                                       @ GHC.Types.Char)))) -}
+8df3d6a5061dd3dcd835b5623eec483b
+  $w$cshow1 :: GHC.Types.Bool -> AlgData.Algo -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Types.Bool) (ww1 :: AlgData.Algo) ->
+                 {__scc {main@main:AlgShow.show} True True} let {
+                                                              n :: [GHC.Types.Char]
+                                                              = GHC.CString.unpackAppendCString#
+                                                                  " "#
+                                                                  (AlgShow.$fShowAlgSets_$cshow1
+                                                                     ww1)
+                                                            } in
+                                                            case ww of wild {
+                                                              GHC.Types.False
+                                                              -> GHC.Base.++
+                                                                   @ GHC.Types.Char
+                                                                   GHC.Show.shows21
+                                                                   n
+                                                              GHC.Types.True
+                                                              -> GHC.Base.++
+                                                                   @ GHC.Types.Char
+                                                                   GHC.Show.shows20
+                                                                   n }) -}
+c3069ff84c3a7a98c331ef78421d854d
+  $w$cshowsPrec ::
+    GHC.Base.String
+    -> [AlgData.Dimension] -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: [AlgData.Dimension])
+                   (w :: GHC.Base.String) ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   ({__scc {main@main:AlgShow.show} True True} GHC.Base.++
+                                                                 @ GHC.Types.Char
+                                                                 ww
+                                                                 (GHC.CString.unpackAppendCString#
+                                                                    "\n"#
+                                                                    (GHC.Show.showList__
+                                                                       @ AlgData.Dimension
+                                                                       AlgShow.$fShowDimension1
+                                                                       ww1
+                                                                       (GHC.Types.[]
+                                                                          @ GHC.Types.Char))))
+                   w) -}
+669cb06729ce84ce756b28b4992f6df0
+  $wf ::
+    (GHC.Types.Int -> GHC.Integer.Type.Integer)
+    -> GHC.Prim.Int# -> (# GHC.Types.Int -> GHC.Integer.Type.Integer #)
+  {- Arity: 2, Strictness: <L,U><S,U>, Inline: [0] -}
+eec7b9bef86af4a47ac61820adf26f0b
+  $wshowRatio ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0] -}
+faee2800cedd3055438ef3dd9826781a
+  decPlaces :: GHC.Types.Int
+  {- Unfolding: ({__scc {main@main:AlgShow.decPlaces} True False} GHC.Types.I#
+                                                                    3#) -}
+5650bdac6638116afa26c47e51f83590
+  delims ::
+    AlgData.Ops
+    -> ([GHC.Types.Char], [GHC.Types.Char], [GHC.Types.Char])
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: AlgData.Ops) ->
+                 {__scc {main@main:AlgShow.delims} True False} case w of wild {
+                                                                 DEFAULT
+                                                                 -> (AlgShow.delims54,
+                                                                     {__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackAppendCString#
+                                                                                                                     " "#
+                                                                                                                     (GHC.Base.++
+                                                                                                                        @ GHC.Types.Char
+                                                                                                                        (({__scc {main@main:AlgData.showsPrec} True True} case wild of wild1 {
+                                                                                                                                                                            AlgData.Identity
+                                                                                                                                                                            -> AlgData.$fShowOps122
+                                                                                                                                                                            AlgData.Fact
+                                                                                                                                                                            -> AlgData.$fShowOps86
+                                                                                                                                                                            AlgData.Sgn
+                                                                                                                                                                            -> AlgData.$fShowOps84
+                                                                                                                                                                            AlgData.Abs
+                                                                                                                                                                            -> AlgData.$fShowOps82
+                                                                                                                                                                            AlgData.Round
+                                                                                                                                                                            -> AlgData.$fShowOps78
+                                                                                                                                                                            AlgData.Func
+                                                                                                                                                                            -> AlgData.$fShowOps54
+                                                                                                                                                                            AlgData.InvFunc
+                                                                                                                                                                            -> AlgData.$fShowOps52
+                                                                                                                                                                            AlgData.DerivedFunc
+                                                                                                                                                                            -> AlgData.$fShowOps50
+                                                                                                                                                                            AlgData.Contains
+                                                                                                                                                                            -> AlgData.$fShowOps46
+                                                                                                                                                                            AlgData.Contained
+                                                                                                                                                                            -> AlgData.$fShowOps44
+                                                                                                                                                                            AlgData.Disjunct
+                                                                                                                                                                            -> AlgData.$fShowOps38 })
+                                                                                                                           (GHC.Types.[]
+                                                                                                                              @ GHC.Types.Char))
+                                                                                                                        (GHC.CString.unpackCString#
+                                                                                                                           " "#)),
+                                                                     AlgShow.delims53)
+                                                                 AlgData.Sentence
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims52,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.SuchThat
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims51,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Set
+                                                                 -> (AlgShow.delims50,
+                                                                     AlgShow.delims49,
+                                                                     AlgShow.delims48)
+                                                                 AlgData.List
+                                                                 -> (AlgShow.delims52,
+                                                                     AlgShow.delims49,
+                                                                     AlgShow.delims52)
+                                                                 AlgData.Not
+                                                                 -> (AlgShow.delims47,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Or
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims46,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.And
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims45,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Neg
+                                                                 -> (AlgShow.delims44,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Pos
+                                                                 -> (AlgShow.delims43,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.PosOrNeg
+                                                                 -> (AlgShow.delims42,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Sum
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims43,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Sub
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims44,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Mul
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims41,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Div
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims40,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Exp
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims39,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Root
+                                                                 -> (AlgShow.delims38,
+                                                                     AlgShow.delims49,
+                                                                     AlgShow.delims53)
+                                                                 AlgData.Log
+                                                                 -> (AlgShow.delims37,
+                                                                     AlgShow.delims49,
+                                                                     AlgShow.delims53)
+                                                                 AlgData.Floor
+                                                                 -> (AlgShow.delims36,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims35)
+                                                                 AlgData.Sin
+                                                                 -> (AlgShow.delims34,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Cos
+                                                                 -> (AlgShow.delims33,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.ASin
+                                                                 -> (AlgShow.delims32,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.ACos
+                                                                 -> (AlgShow.delims31,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Tg
+                                                                 -> (AlgShow.delims30,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.ATg
+                                                                 -> (AlgShow.delims29,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.SinH
+                                                                 -> (AlgShow.delims28,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.CosH
+                                                                 -> (AlgShow.delims27,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.ASinH
+                                                                 -> (AlgShow.delims26,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.ATgH
+                                                                 -> (AlgShow.delims25,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.ACosH
+                                                                 -> (AlgShow.delims24,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Index
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims23,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Union
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims22,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Intersect
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims21,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Equation
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Simpl
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Resol
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims52,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.ElementOf
+                                                                 -> (AlgShow.delims20,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.NotElementOf
+                                                                 -> (AlgShow.delims19,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Equals
+                                                                 -> (AlgShow.delims18,
+                                                                     AlgShow.delims51,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Greater
+                                                                 -> (AlgShow.delims17,
+                                                                     AlgShow.delims51,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Less
+                                                                 -> (AlgShow.delims16,
+                                                                     AlgShow.delims51,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.GreaterOrEqual
+                                                                 -> (AlgShow.delims15,
+                                                                     AlgShow.delims51,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.LessOrEqual
+                                                                 -> (AlgShow.delims14,
+                                                                     AlgShow.delims51,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.NotEqual
+                                                                 -> (AlgShow.delims13,
+                                                                     AlgShow.delims51,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Relates
+                                                                 -> (AlgShow.delims12,
+                                                                     AlgShow.delims51,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.InvRelates
+                                                                 -> (AlgShow.delims11,
+                                                                     AlgShow.delims51,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Equiv
+                                                                 -> (AlgShow.delims8,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.Implic
+                                                                 -> (AlgShow.delims5,
+                                                                     GHC.Types.[] @ GHC.Types.Char,
+                                                                     GHC.Types.[] @ GHC.Types.Char)
+                                                                 AlgData.System
+                                                                 -> (AlgShow.delims4,
+                                                                     AlgShow.delims3,
+                                                                     AlgShow.delims2)
+                                                                 AlgData.Document
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims1,
+                                                                     AlgShow.delims1)
+                                                                 AlgData.Params
+                                                                 -> (GHC.Types.[] @ GHC.Types.Char,
+                                                                     AlgShow.delims49,
+                                                                     GHC.Types.[]
+                                                                       @ GHC.Types.Char) }) -}
+7353b0a595ae201f4ddf6e1cbc033422
+  delims1 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "\n"#) -}
+77a14f44c4eeb52bf31065a2ccd62307
+  delims10 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} {__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                                                               "\\226\\135\\148 "#) -}
+319bf36d1613924a20222c53599d986c
+  delims11 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 "\\226\\135\\188 "#) -}
+97289e89b5dc29a4437c70c5180bf462
+  delims12 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 "\\226\\134\\148 "#) -}
+de7e95d2c3fe649c3eccc94173e27627
+  delims13 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 "\\226\\137\\160"#) -}
+722a2f4d8c0c2293e04dfa018d8912a5
+  delims14 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 "\\226\\137\\164"#) -}
+36ae16bd37e7bd13f330590910e5738d
+  delims15 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 "\\226\\137\\165"#) -}
+04c9da025d7e742d9dac42bbc3038628
+  delims16 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "<"#) -}
+11e62fd5a05ff12851d9fef4778edcd7
+  delims17 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 ">"#) -}
+cc6ff03f1bf4df70cc99995fbadcf66d
+  delims18 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "="#) -}
+c8e9e295dac663072e21490dc800dcd8
+  delims19 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 " \\226\\136\\137 "#) -}
+54b8ca77e4b2c9e7d9451c0f4bf51274
+  delims2 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "\n\
+                                                                 \\n"#) -}
+4f74f8fdbc21895f987e4e82aacee4eb
+  delims20 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 " \\226\\136\\136 "#) -}
+85317159b14791d6aabb10dc20873899
+  delims21 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 " \\226\\136\\169 "#) -}
+3b4dc45c2b8394f6e2024d7593b93b8e
+  delims22 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 " \\226\\136\\170 "#) -}
+2e3908b95fc2665a4f5dd9595b20ef26
+  delims23 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "@"#) -}
+952ee765a2af46d679e417113644664e
+  delims24 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "acosh "#) -}
+0152e1669232d5d698e9c9a22e61094d
+  delims25 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "atgh "#) -}
+5ee89b5953918517a9fc7ea21c220968
+  delims26 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "asinh "#) -}
+5401d30ac6b8baf146500e7f21bb3f12
+  delims27 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "cosh "#) -}
+3f09553b45d1e7c295642182882d3a93
+  delims28 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "sinh "#) -}
+ec8d17993c631f751e4f48c603b7b4bf
+  delims29 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "atg "#) -}
+263b99ba4a2059b0439996b51d5bdc4c
+  delims3 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "\n\
+                                                                 \\t|"#) -}
+9061ace9ea6c77f68499f7acc08d780d
+  delims30 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "tg "#) -}
+b876db450cfc264ea122208300183031
+  delims31 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "acos "#) -}
+11c1c66ecfb9ad9732f07bf7f401c346
+  delims32 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "asin "#) -}
+498c9b114538b15710b1f0775636b14e
+  delims33 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "cos "#) -}
+6740f44f7351358d32ea8e3a2baacdcd
+  delims34 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "sin "#) -}
+8afe451445f1e0f7dcd6e853e941ee9a
+  delims35 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 "\\226\\140\\139"#) -}
+b1a4a5efb9b24bbf46d66fe804a781e4
+  delims36 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 "\\226\\140\\138"#) -}
+b955fc2613cf065e47e0e1b8a46e8409
+  delims37 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "log("#) -}
+5090471551c05918b0137c5a058fdab1
+  delims38 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "root("#) -}
+d82e4ab31cf20284b0ea4f613ffff4b0
+  delims39 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "^"#) -}
+775a0bd02c5919dce75ecb296ba7e83e
+  delims4 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "\t|"#) -}
+79303a75ceade91dc86c7fc8793bc707
+  delims40 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "/"#) -}
+b5837960af531cd33450141ef91711ed
+  delims41 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 "\\194\\183"#) -}
+35fbcc397b8fcfdded0d0d10e73b4e30
+  delims42 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 "\\194\\177"#) -}
+ca71247e105958523ed20e5fa62dd4ad
+  delims43 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "+"#) -}
+0b133e493b25bb7662aa4423e8afa1ac
+  delims44 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "-"#) -}
+997d8241d4c3048de261ceeee4609829
+  delims45 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 " \\226\\136\\167 "#) -}
+5ca11c6396f49df65f3b70838867260b
+  delims46 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                 " \\226\\136\\168 "#) -}
+0881b234dc0f257f23769c2022ba96a0
+  delims47 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "~"#) -}
+8a597c1346d363e585d53158ef8a5651
+  delims48 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "}"#) -}
+e785d73de8677185c0d0f325d02215ef
+  delims49 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 ","#) -}
+ca73b9287f3427c0e18e972445247fcc
+  delims5 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.Base.++
+                                                                 @ GHC.Types.Char
+                                                                 AlgShow.resolColor
+                                                                 AlgShow.delims6) -}
+a03a5f577371fe1d9f2df72dabcc61ae
+  delims50 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "{"#) -}
+14f9af21c682aaa9a09c2c09ed394a00
+  delims51 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 ":"#) -}
+c2a2811a570e652c530f228ffc0aae59
+  delims52 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 " "#) -}
+eae54fb81af0a26339fe6eb1dc239d60
+  delims53 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 ")"#) -}
+233c21bc681e81f04f592a7236698107
+  delims54 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCString#
+                                                                 "("#) -}
+47770fc1abad0f74841efb8322c24368
+  delims6 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.Base.++
+                                                                 @ GHC.Types.Char
+                                                                 AlgShow.delims7
+                                                                 Lib.Colors.nColor) -}
+fbccaad8b11937590f48cd97f69d7cf3
+  delims7 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} {__scc {main@main:AlgShow.delims} False True} GHC.CString.unpackCStringUtf8#
+                                                                                                               "\\226\\135\\146 "#) -}
+568a7ea7c9a869197632b2725aaa264f
+  delims8 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.Base.++
+                                                                 @ GHC.Types.Char
+                                                                 AlgShow.resolColor
+                                                                 AlgShow.delims9) -}
+75ea965be3dc5f2d3f3eb1d15850d2b5
+  delims9 :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.delims} False True} GHC.Base.++
+                                                                 @ GHC.Types.Char
+                                                                 AlgShow.delims10
+                                                                 Lib.Colors.nColor) -}
+c00ddb66adb391583a5ef0c668ea8f52
+  dimColor :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.dimColor} True True} GHC.Base.++
+                                                                  @ GHC.Types.Char
+                                                                  Lib.Colors.boldStyle
+                                                                  Lib.Colors.yellowColor) -}
+4367bb17f1eff9cd7487ed05a4fb35a4
+  entityColor :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.entityColor} True True} GHC.Base.++
+                                                                     @ GHC.Types.Char
+                                                                     Lib.Colors.redColor
+                                                                     Lib.Colors.boldStyle) -}
+cb6503d8925fe1baad5f0b25fc306f50
+  info :: AlgData.Algo -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+0240954440f21d8f7a82c4c9f89abfdc
+  litColor :: GHC.Base.String
+  {- Unfolding: ({__scc {main@main:AlgShow.litColor} True False} Lib.Colors.blueColor) -}
+4932b4e1debb0405beaf4333125c7412
+  numColor :: GHC.Base.String
+  {- Unfolding: ({__scc {main@main:AlgShow.numColor} True False} Lib.Colors.greenColor) -}
+9244ca6b9c39a1fdba3897614dc3fd8d
+  opColor :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.opColor} True False} Lib.Colors.whiteColor) -}
+f5a248a6b9153b9937ac7d29135c6e27
+  prettyFraction :: Data.Number.CReal.CReal
+  {- Unfolding: ({__scc {main@main:AlgShow.prettyFraction} True True} AlgShow.$s^
+                                                                        AlgShow.prettyFraction2
+                                                                        AlgShow.prettyFraction1) -}
+09eeb9ae973e654a125bcdb5cd00249a
+  prettyFraction1 :: GHC.Types.Int
+  {- Unfolding: ({__scc {main@main:AlgShow.prettyFraction} False True} case AlgShow.decPlaces of wild { GHC.Types.I# x ->
+                                                                       GHC.Types.I#
+                                                                         (GHC.Prim.-# x 1#) }) -}
+15dc2869fbbb16f64bf5f3edc5b57ec0
+  prettyFraction2 :: Data.Number.CReal.CReal
+  {- Unfolding: ({__scc {main@main:AlgShow.prettyFraction} False True} case Data.Number.CReal.$w$cfromInteger
+                                                                              AlgShow.prettyFraction3 of ww { Unit# ww1 ->
+                                                                       Data.Number.CReal.CR
+                                                                         ww1 }) -}
+d46919486f4aab02a53c6abde6aae954
+  prettyFraction3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (10) -}
+bd5838c4ac6a309f04989808d19eee8a
+  prettyFractionInt :: GHC.Integer.Type.Integer
+  {- Unfolding: ({__scc {main@main:AlgShow.prettyFractionInt} True True} Data.Number.CReal.$fRealFracCReal_$cfloor
+                                                                           @ GHC.Integer.Type.Integer
+                                                                           GHC.Real.$fIntegralInteger
+                                                                           AlgShow.prettyFraction) -}
+a5b6de656281c8a0f93d0e7d20099b90
+  resolColor :: GHC.Base.String
+  {- Unfolding: ({__scc {main@main:AlgShow.resolColor} True False} Lib.Colors.yellowColor) -}
+51b5b0acf8971aa14022c7f2fe22424d
+  showFloat :: Lib.Noms.Nr -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds2 :: Lib.Noms.Nr) ->
+                 {__scc {main@main:AlgShow.showFloat} True True} case ds2 of wild {
+                                                                   Lib.Noms.NrRatio n
+                                                                   -> GHC.Base.++
+                                                                        @ GHC.Types.Char
+                                                                        AlgShow.numColor
+                                                                        (case AlgShow.decPlaces of ww { GHC.Types.I# ww1 ->
+                                                                         case Data.Number.CReal.$w$cfromRational
+                                                                                n of ww2 { Unit# ww3 ->
+                                                                         GHC.Base.++
+                                                                           @ GHC.Types.Char
+                                                                           (Data.Number.CReal.$wshowCReal
+                                                                              ww1
+                                                                              ww3)
+                                                                           Lib.Colors.nColor } })
+                                                                   Lib.Noms.NrReal n
+                                                                   -> GHC.Base.++
+                                                                        @ GHC.Types.Char
+                                                                        AlgShow.numColor
+                                                                        (case AlgShow.decPlaces of ww { GHC.Types.I# ww1 ->
+                                                                         case n of ww2 { Data.Number.CReal.CR ww3 ->
+                                                                         GHC.Base.++
+                                                                           @ GHC.Types.Char
+                                                                           (Data.Number.CReal.$wshowCReal
+                                                                              ww1
+                                                                              ww3)
+                                                                           Lib.Colors.nColor } }) }) -}
+1ef38e28d04b287194ecaf3b5d77276e
+  showOp :: AlgData.Algo -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+8856c4adac28307b83f43144e70fe161
+  showRatio ::
+    GHC.Real.Ratio GHC.Integer.Type.Integer -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S(SS),1*U(U,U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Real.Ratio GHC.Integer.Type.Integer) ->
+                 case w of ww { GHC.Real.:% ww1 ww2 ->
+                 AlgShow.$wshowRatio ww1 ww2 }) -}
+0853a7a1cec538fd403669c9d5fc7498
+  toRatio ::
+    Data.Number.CReal.CReal -> GHC.Base.Maybe GHC.Real.Rational
+  {- Arity: 1, Strictness: <L,U(C(U))>,
+     Unfolding: (\ (n :: Data.Number.CReal.CReal) ->
+                 {__scc {main@main:AlgShow.toRatio} True True} {__scc {main@main:AlgShow.toRatio.p} True False} case Lib.Noms.$fAlgoNrNr_$cisInt
+                                                                                                                       (Lib.Noms.NrReal
+                                                                                                                          ({__scc {main@main:AlgShow.toRatio.p} False True} Data.Number.CReal.$fFloatingCReal_$c*
+                                                                                                                                                                              n
+                                                                                                                                                                              AlgShow.prettyFraction)) of wild {
+                                                                                                                  GHC.Types.False
+                                                                                                                  -> GHC.Base.Nothing
+                                                                                                                       @ GHC.Real.Rational
+                                                                                                                  GHC.Types.True
+                                                                                                                  -> GHC.Base.Just
+                                                                                                                       @ (GHC.Real.Ratio
+                                                                                                                            GHC.Integer.Type.Integer)
+                                                                                                                       (case GHC.Real.$w$sreduce
+                                                                                                                               (GHC.Integer.Type.timesInteger
+                                                                                                                                  (Data.Number.CReal.$fRealFracCReal_$cfloor
+                                                                                                                                     @ GHC.Integer.Type.Integer
+                                                                                                                                     GHC.Real.$fIntegralInteger
+                                                                                                                                     (case n of ww { Data.Number.CReal.CR ww1 ->
+                                                                                                                                      case AlgShow.prettyFraction of ww2 { Data.Number.CReal.CR ww3 ->
+                                                                                                                                      case Data.Number.CReal.$w$c*
+                                                                                                                                             ww1
+                                                                                                                                             ww3 of ww4 { Unit# ww5 ->
+                                                                                                                                      Data.Number.CReal.CR
+                                                                                                                                        ww5 } } }))
+                                                                                                                                  AlgShow.toRatio2)
+                                                                                                                               AlgShow.toRatio1 of ww { (#,#) ww1 ww2 ->
+                                                                                                                        GHC.Real.:%
+                                                                                                                          @ GHC.Integer.Type.Integer
+                                                                                                                          ww1
+                                                                                                                          ww2 }) }) -}
+e718608b3bc92771e06eb9276763f9c0
+  toRatio1 :: GHC.Integer.Type.Integer
+  {- Unfolding: ({__scc {main@main:AlgShow.toRatio} False True} GHC.Integer.Type.absInteger
+                                                                  AlgShow.prettyFractionInt) -}
+b123fb463c04c547262bf6c0f4f47a83
+  toRatio2 :: GHC.Integer.Type.Integer
+  {- Unfolding: ({__scc {main@main:AlgShow.toRatio} False True} GHC.Integer.Type.signumInteger
+                                                                  AlgShow.prettyFractionInt) -}
+2d5d8ba62963aaed5ede5a88427a6de2
+  unitColor :: GHC.Base.String
+  {- Unfolding: ({__scc {main@main:AlgShow.unitColor} True False} Lib.Colors.redColor) -}
+1d6abc0df1dddcbb9b1011b836b543cb
+  wordColor :: [GHC.Types.Char]
+  {- Unfolding: ({__scc {main@main:AlgShow.wordColor} True False} Lib.Colors.whiteColor) -}
+instance GHC.Show.Show [AlgData.AlgSets] = AlgShow.$fShowAlgSets
+instance GHC.Show.Show [AlgData.Algo] = AlgShow.$fShowAlgo
+instance GHC.Show.Show [AlgData.Dimension]
+  = AlgShow.$fShowDimension
+instance GHC.Show.Show [AlgData.MetricSystem]
+  = AlgShow.$fShowMetricSystem
+instance GHC.Show.Show [AlgData.RangeWing]
+  = AlgShow.$fShowRangeWing
+instance GHC.Show.Show [AlgData.Scale] = AlgShow.$fShowScale
+"SPEC/AlgShow $dmshowsPrec @ Dimension" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                     AlgData.Dimension)
+  GHC.Show.$dmshowsPrec @ AlgData.Dimension $dShow
+  = AlgShow.$fShowDimension_$s$dmshowsPrec
+"SPEC/AlgShow $dmshowsPrec @ Scale" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                 AlgData.Scale)
+  GHC.Show.$dmshowsPrec @ AlgData.Scale $dShow
+  = AlgShow.$fShowScale_$s$dmshowsPrec
+"SPEC/AlgShow ^ @ CReal @ Int" [1] forall ($dNum :: GHC.Num.Num
+                                                      Data.Number.CReal.CReal)
+                                          ($dIntegral :: GHC.Real.Integral GHC.Types.Int)
+  GHC.Real.^ @ Data.Number.CReal.CReal
+             @ GHC.Types.Int
+             $dNum
+             $dIntegral
+  = AlgShow.$s^
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

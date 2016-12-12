@@ -1,0 +1,159 @@
+	Mon Dec 12 00:59 2016 Time and Allocation Profiling Report  (Final)
+
+	   algo +RTS -p -RTS
+
+	total time  =        0.00 secs   (0 ticks @ 1000 us, 1 processor)
+	total alloc =      84,632 bytes  (excludes profiling overheads)
+
+COST CENTRE     MODULE            %time %alloc
+
+MAIN            MAIN                0.0   27.2
+CAF             GHC.Event.Thread    0.0    1.5
+CAF             GHC.IO.Handle.FD    0.0   40.8
+CAF             GHC.IO.Encoding     0.0    3.4
+showOp.wss      AlgShow             0.0    6.0
+main            Main                0.0   12.7
+__applyRule.rep Rules               0.0    1.3
+
+
+                                                                       individual      inherited
+COST CENTRE                  MODULE                no.      entries  %time %alloc   %time %alloc
+
+MAIN                         MAIN                  3396          0    0.0   27.2     0.0  100.0
+ main                        Main                  6793          0    0.0   11.9     0.0   11.9
+ CAF:main1                   Main                  6500          0    0.0    0.0     0.0    0.0
+  main                       Main                  6792          1    0.0    0.0     0.0    0.0
+ CAF:main2                   Main                  6499          0    0.0    0.0     0.0    7.7
+  main                       Main                  6794          0    0.0    0.4     0.0    7.7
+   show                      AlgShow               6864          3    0.0    1.0     0.0    7.3
+    showOp                   AlgShow               6865          1    0.0    0.2     0.0    6.3
+     showOp.c                AlgShow               6892          1    0.0    0.0     0.0    0.0
+     showOp.s                AlgShow               6887          1    0.0    0.0     0.0    0.0
+     showOp.(...)            AlgShow               6877          1    0.0    0.0     0.0    0.0
+      delims                 AlgShow               6878          1    0.0    0.0     0.0    0.0
+     showOp.o                AlgShow               6876          1    0.0    0.0     0.0    0.0
+     showOp.wss              AlgShow               6874          1    0.0    6.0     0.0    6.0
+      showOp.showSub         AlgShow               6881          2    0.0    0.0     0.0    0.0
+     ==                      AlgData               6873         10    0.0    0.0     0.0    0.0
+     showOp.color            AlgShow               6866          1    0.0    0.0     0.0    0.0
+      ==                     AlgData               6868          3    0.0    0.0     0.0    0.0
+ CAF:main3                   Main                  6498          0    0.0    0.0     0.0    3.2
+  main                       Main                  6795          0    0.0    0.0     0.0    3.2
+   applyRule                 Rules                 6796          1    0.0    0.1     0.0    3.2
+    ←                        Lib.Debug             6862          1    0.0    0.0     0.0    0.0
+     ==                      Lib.Debug             6863          1    0.0    0.0     0.0    0.0
+    strictEq                 AlgData               6849          1    0.0    0.0     0.0    0.0
+     ==                      AlgData               6861          1    0.0    0.0     0.0    0.0
+    applyRule.chk            Rules                 6800          1    0.0    0.1     0.0    3.1
+     _applyRule              Rules                 6803          1    0.0    0.0     0.0    3.0
+      _applyRule.chk         Rules                 6804          1    0.0    0.0     0.0    3.0
+       __applyRule           Rules                 6805          1    0.0    0.1     0.0    3.0
+        ←                    Lib.Debug             6847          1    0.0    0.0     0.0    0.0
+         ==                  Lib.Debug             6848          1    0.0    0.0     0.0    0.0
+        __applyRule.rep      Rules                 6809          1    0.0    1.3     0.0    2.3
+         ←                   Lib.Debug             6844          1    0.0    0.0     0.0    0.0
+          ==                 Lib.Debug             6845          1    0.0    0.0     0.0    0.0
+         _chkRule            Rules                 6815          1    0.0    0.2     0.0    1.0
+          trySeq             Rules                 6821          1    0.0    0.0     0.0    0.3
+           _chkRule.\        Rules                 6822          1    0.0    0.0     0.0    0.3
+            ls_chkRule       Rules                 6823          3    0.0    0.1     0.0    0.3
+             ==              AlgData               6842          1    0.0    0.0     0.0    0.0
+             ls_chkRule.var  Rules                 6832          2    0.0    0.0     0.0    0.0
+              compare        AlgData               6841          1    0.0    0.0     0.0    0.0
+             _chkRule'       Rules                 6825          1    0.0    0.0     0.0    0.2
+              _chkRule'.proc Rules                 6828          1    0.0    0.1     0.0    0.2
+               ==            AlgData               6835          1    0.0    0.0     0.0    0.0
+               compare       AlgData               6833          1    0.0    0.0     0.0    0.0
+               neutral       AlgData               6831          3    0.0    0.0     0.0    0.0
+               ←             Lib.Debug             6829          1    0.0    0.0     0.0    0.0
+                ==           Lib.Debug             6830          1    0.0    0.0     0.0    0.0
+              /=             AlgData               6826          1    0.0    0.0     0.0    0.0
+               ==            AlgData               6827          1    0.0    0.0     0.0    0.0
+          _grouping          Rules                 6820          1    0.0    0.3     0.0    0.5
+           _grouping.\       Rules                 6824          1    0.0    0.1     0.0    0.2
+            quant            AlgData               6836          1    0.0    0.1     0.0    0.1
+             ==              AlgData               6838         16    0.0    0.0     0.0    0.0
+          canComut           AlgData               6818          1    0.0    0.0     0.0    0.0
+           ==                AlgData               6819          4    0.0    0.0     0.0    0.0
+          ←                  Lib.Debug             6816          1    0.0    0.0     0.0    0.0
+           ==                Lib.Debug             6817          1    0.0    0.0     0.0    0.0
+         canComut            AlgData               6812          1    0.0    0.0     0.0    0.0
+          ==                 AlgData               6814          4    0.0    0.0     0.0    0.0
+         dInfo               Lib.Debug             6810          1    0.0    0.0     0.0    0.0
+          ==                 Lib.Debug             6811          1    0.0    0.0     0.0    0.0
+        __applyRule.proc     Rules                 6808          1    0.0    0.1     0.0    0.7
+         __applyRule.proc.\  Rules                 6846          1    0.0    0.0     0.0    0.6
+          repVars            AlgAux                6850          1    0.0    0.0     0.0    0.6
+           _repVars          AlgAux                6851          3    0.0    0.0     0.0    0.6
+            rebuild          AlgAux                6856          1    0.0    0.2     0.0    0.6
+             rebuildOp       AlgAux                6857          1    0.0    0.3     0.0    0.4
+              rebuildOp.f    AlgAux                6858          1    0.0    0.1     0.0    0.1
+            __repVars        AlgAux                6852          3    0.0    0.0     0.0    0.0
+             isNeighbor      AlgAux                6860          1    0.0    0.0     0.0    0.0
+             __repVars.v     AlgAux                6853          3    0.0    0.0     0.0    0.0
+              getVar         AlgAux                6854          3    0.0    0.0     0.0    0.0
+               compare       AlgData               6855          3    0.0    0.0     0.0    0.0
+        dInfo                Lib.Debug             6806          1    0.0    0.0     0.0    0.0
+         ==                  Lib.Debug             6807          1    0.0    0.0     0.0    0.0
+     ←                       Lib.Debug             6801          1    0.0    0.0     0.0    0.0
+      ==                     Lib.Debug             6802          1    0.0    0.0     0.0    0.0
+    dInfo                    Lib.Debug             6797          1    0.0    0.0     0.0    0.0
+     ==                      Lib.Debug             6799          1    0.0    0.0     0.0    0.0
+ CAF:main13                  Main                  6497          0    0.0    0.0     0.0    0.1
+  main                       Main                  6859          0    0.0    0.1     0.0    0.1
+ CAF:main15                  Main                  6496          0    0.0    0.0     0.0    0.0
+  main                       Main                  6882          0    0.0    0.0     0.0    0.0
+   fromInteger               Lib.Noms              6883          1    0.0    0.0     0.0    0.0
+ CAF:main22                  Main                  6495          0    0.0    0.0     0.0    0.1
+  main                       Main                  6834          0    0.0    0.1     0.0    0.1
+ CAF:main27                  Main                  6494          0    0.0    0.0     0.0    0.1
+  main                       Main                  6843          0    0.0    0.1     0.0    0.1
+ CAF:signalOps               AlgData               6488          0    0.0    0.0     0.0    0.0
+  signalOps                  AlgData               6867          1    0.0    0.0     0.0    0.0
+ CAF:binaryOps               AlgData               6487          0    0.0    0.0     0.0    0.0
+  binaryOps                  AlgData               6839          1    0.0    0.0     0.0    0.0
+ CAF:exprOps                 AlgData               6476          0    0.0    0.0     0.0    0.0
+  exprOps                    AlgData               6872          1    0.0    0.0     0.0    0.0
+ CAF:partialOps              AlgData               6473          0    0.0    0.0     0.0    0.0
+  partialOps                 AlgData               6840          1    0.0    0.0     0.0    0.0
+ CAF:unaryOps                AlgData               6472          0    0.0    0.0     0.0    0.0
+  unaryOps                   AlgData               6837          1    0.0    0.0     0.0    0.0
+ CAF:comutOps                AlgData               6359          0    0.0    0.0     0.0    0.0
+  comutOps                   AlgData               6813          1    0.0    0.0     0.0    0.0
+ CAF:delims41                AlgShow               6258          0    0.0    0.0     0.0    0.2
+  delims                     AlgShow               6888          0    0.0    0.2     0.0    0.2
+ CAF:opColor                 AlgShow               6202          0    0.0    0.0     0.0    0.0
+  opColor                    AlgShow               6869          1    0.0    0.0     0.0    0.0
+ CAF:litColor                AlgShow               6201          0    0.0    0.0     0.0    0.0
+  litColor                   AlgShow               6889          1    0.0    0.0     0.0    0.0
+ CAF:numColor                AlgShow               6200          0    0.0    0.0     0.0    0.0
+  numColor                   AlgShow               6884          1    0.0    0.0     0.0    0.0
+ CAF:debugSections           Lib.Debug             5193          0    0.0    0.0     0.0    0.0
+  debugSections              Lib.Debug             6798          1    0.0    0.0     0.0    0.0
+ CAF:whiteColor              Lib.Colors            5155          0    0.0    0.0     0.0    0.2
+  whiteColor                 Lib.Colors            6870          1    0.0    0.2     0.0    0.2
+ CAF:whiteColor1             Lib.Colors            5154          0    0.0    0.0     0.0    0.3
+  whiteColor                 Lib.Colors            6875          0    0.0    0.3     0.0    0.3
+ CAF:blueColor               Lib.Colors            5153          0    0.0    0.0     0.0    0.2
+  blueColor                  Lib.Colors            6890          1    0.0    0.2     0.0    0.2
+ CAF:blueColor1              Lib.Colors            5152          0    0.0    0.0     0.0    0.3
+  blueColor                  Lib.Colors            6891          0    0.0    0.3     0.0    0.3
+ CAF:greenColor              Lib.Colors            5149          0    0.0    0.0     0.0    0.2
+  greenColor                 Lib.Colors            6885          1    0.0    0.2     0.0    0.2
+ CAF:greenColor1             Lib.Colors            5148          0    0.0    0.0     0.0    0.3
+  greenColor                 Lib.Colors            6886          0    0.0    0.3     0.0    0.3
+ CAF:nColor                  Lib.Colors            5145          0    0.0    0.0     0.0    0.2
+  nColor                     Lib.Colors            6879          1    0.0    0.2     0.0    0.2
+ CAF:nColor1                 Lib.Colors            5144          0    0.0    0.0     0.0    0.2
+  nColor                     Lib.Colors            6880          0    0.0    0.2     0.0    0.2
+ CAF:ansiEsc                 Lib.Colors            5143          0    0.0    0.0     0.0    0.2
+  ansiEsc                    Lib.Colors            6871          1    0.0    0.2     0.0    0.2
+ CAF                         GHC.IO.Encoding       3454          0    0.0    3.4     0.0    3.4
+ CAF                         GHC.IO.Handle.FD      3451          0    0.0   40.8     0.0   40.8
+ CAF                         GHC.IO.Handle.Text    3450          0    0.0    0.1     0.0    0.1
+ CAF                         GHC.Show              3445          0    0.0    0.4     0.0    0.4
+ CAF                         GHC.Event.Thread      3441          0    0.0    1.5     0.0    1.5
+ CAF                         GHC.IO.Encoding.Iconv 3429          0    0.0    0.3     0.0    0.3
+ CAF                         GHC.Conc.Signal       3418          0    0.0    0.8     0.0    0.8
+ CAF                         GHC.Event.Poll        3409          0    0.0    0.1     0.0    0.1
+ CAF                         GHC.Event.EPoll       3408          0    0.0    0.1     0.0    0.1

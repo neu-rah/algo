@@ -1,3 +1,18 @@
+{-
+Analize continued expression notation and produce steps of it
+stp "1,2,..."
+stp "1+1/(1+...)"
+
+produce an infinit list of steped expressions
+iterate (stp=<<) (Just e6)
+
+produce expansion results to infinite resolution -- not optimized!!! this is very slow
+map ((\a->continued a 1 1··>[calc])=<<) $iterate (stp=<<) (Just e6)
+
+optimized infinit list of aproximations (only for calculable expressions, not sequences)
+[(useCtx (Map.fromList [(Ellipsis,1::Algo)]) o)··>[calc]|(Just(o,_))<-contSteps e0]
+
+-}
 module Continued where
 
 import AlgData
@@ -51,9 +66,11 @@ dif a b=termCalc$Op Sub [b,a]
 add a b=localCalc$Op Sum [_cln a,_cln b]
 cpa a b=a
 
+-- this is the main Functions
+-- ex: continued e0 5 1
 continued o n t
   -- | n==0=Just o
-  | cs#>0=h *> delta cpa r r Ellipsis t
+  | cs#>0=h *> delta cpa r r 1 t
   | otherwise=Nothing
   where
     cs=drop n $ contSteps o

@@ -126,8 +126,9 @@ instance Eq Algo where
   (==) Pref Pref = True
   (==) (Sets a) (Sets b) = a==b
   (==) (Numeric a) (Numeric b)=a==b
-  (==) Infinit Infinit=True -- just at low lever for the sake of program logic
-  (==) Ellipsis Ellipsis=True -- just at low lever for the sake of program logic
+  (==) Infinit Infinit=True -- just at low level for the sake of program logic
+  (==) Infinitesimal Infinitesimal=True
+  (==) Ellipsis Ellipsis=True -- just at low level for the sake of program logic
 
   (==) (Neighbor n1 v1) (Neighbor n2 v2) = n1==n2 && v1==v2
   (==) (Neighbor Equals v) (Op o [m]) = (Equals==o && v==m) || v==m

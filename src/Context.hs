@@ -33,11 +33,14 @@ insertVar k v m = Map.insert k ((D_CTX,"insert new variable "++show k++"("++show
 --check if expression is an assignment, always an (in)equation
 -- valid l-value and some checks on legal r-values
 -- circular definitions are not allowed
-isAssign (Op Equation (k@(Lit _):v@(Op op (_:[])):[]))=not$elem op [ElementOf,NotElementOf] || has (==k) v
-isAssign (Op Equation (k@(Op Func (_:args)):v@(Op op (_:_)):[]))=not$elem op [ElementOf,NotElementOf] || has (==k) v || (null $ intersect args (literals v))
-isAssign ((Op Equation (k@(Op InvFunc (_:args)):v@(Op op (_:_)):[])))=not$elem op [ElementOf,NotElementOf] || has (==k) v || (null $ intersect args (literals v))
-isAssign (Op Equation ((Dim _):(Op op (_:[])):[]))=not$elem op [ElementOf,NotElementOf]
-isAssign _ = False
+isAssign e@(Op Equation (_:(Op op _):_))
+  | op == Equals = isAssign' e
+  | otherwise = False
+isAssign' (Op Equation (k@(Lit _):v@(Op op (_:[])):[]))=not$elem op [ElementOf,NotElementOf] || has (==k) v
+isAssign' (Op Equation (k@(Op Func (_:args)):v@(Op op (_:_)):[]))=not$elem op [ElementOf,NotElementOf] || has (==k) v || (null $ intersect args (literals v))
+isAssign' ((Op Equation (k@(Op InvFunc (_:args)):v@(Op op (_:_)):[])))=not$elem op [ElementOf,NotElementOf] || has (==k) v || (null $ intersect args (literals v))
+isAssign' (Op Equation ((Dim _):(Op op (_:[])):[]))=not$elem op [ElementOf,NotElementOf]
+isAssign' _ = False
 
 ------------------------------------------------------------------------
 -- replace all definitions withj context conclusions

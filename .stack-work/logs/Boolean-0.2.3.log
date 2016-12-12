@@ -1,0 +1,22 @@
+Configuring Boolean-0.2.3...
+Building Boolean-0.2.3...
+Preprocessing library Boolean-0.2.3...
+[1 of 3] Compiling Data.Boolean     ( src/Data/Boolean.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Boolean.o )
+[2 of 3] Compiling Data.Boolean.Overload ( src/Data/Boolean/Overload.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Boolean/Overload.o )
+[3 of 3] Compiling Data.Boolean.Numbers ( src/Data/Boolean/Numbers.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Boolean/Numbers.o )
+
+src/Data/Boolean/Numbers.hs:159:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: IfB a
+    • In the type signature for:
+           evenB :: (IfB a, EqB a, IntegralB a) => a -> BooleanOf a
+[1 of 3] Compiling Data.Boolean     ( src/Data/Boolean.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Boolean.p_o )
+[2 of 3] Compiling Data.Boolean.Overload ( src/Data/Boolean/Overload.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Boolean/Overload.p_o )
+[3 of 3] Compiling Data.Boolean.Numbers ( src/Data/Boolean/Numbers.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Data/Boolean/Numbers.p_o )
+
+src/Data/Boolean/Numbers.hs:159:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: IfB a
+    • In the type signature for:
+           evenB :: (IfB a, EqB a, IntegralB a) => a -> BooleanOf a
+Installing library in
+/home/azevedo/.stack/snapshots/x86_64-linux/lts-7.12/8.0.1/lib/x86_64-linux-ghc-8.0.1/Boolean-0.2.3-JYotQglXhtoJXpADNau8XH
+Registering Boolean-0.2.3...

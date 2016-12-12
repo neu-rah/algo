@@ -1,0 +1,792 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-11 23:33:39.831718 UTC
+
+interface main@main:AlgNum [orphan module] [hpc] 8001
+  interface hash: 9aab9e848609733ac1cff52ab65af76c
+  ABI hash: 5b7c5de40c42f77585a696c96b38c922
+  export-list hash: b4484b02a40b185650dc3e00f3ff55dd
+  orphan hash: 485f35b3f740b9a605127a4d36077503
+  flag hash: c25c71772aae7ac07670edcd14020fd8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+module dependencies: AlgData AlgParser [boot] Lib.Colors Lib.Debug
+                     Lib.Noms
+package dependencies: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      numbers-3000.2.0.1@numbers-3000.2.0.1-GZv4pBF6nzTGjhJL1d2zUj
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         main@main:AlgParser
+family instance modules: Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH:Data.Boolean
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  Boolean-0.2.3@Boolean-0.2.3-JYotQglXhtoJXpADNau8XH:Data.Boolean 558444199c442cf6d0c6f1dd2eb29854
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.Float 469226b1bc53433e95d0167dec5d0312
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  AlgData 307fffe4f0712a2d16396958905f20d6
+  exports: 429708355c7b5468a518bfa47675e12b
+  ACos c92c08f06d2623d6ed26aabc138aac58
+  ACosH 738a87791955f3427b7c3c1ded1fdea3
+  ASin 513971455a602109256984b6e20f0912
+  ASinH 93c23b8240960c30f5fc46d50b845407
+  ATg b3d7d9203d53546bf6e3c9df26a86766
+  ATgH ab65b3e31412d5771a575be66735aa44
+  Abs 0438a939bf9e19bf1f96700aa8c058a3
+  Algo 4d637072ad901205bf793a262f526c33
+  And 5d24d8c844bd2a97c85e63b7abcbb24f
+  Bool 67f527cfffcc3ad2fd344285e61c737a
+  Cos 18ba88194b5d85c2be5c56bc379730c9
+  CosH 12083f4e1494703a71de68f35d949064
+  Div 775b00476d70cc8a25f3cca491cc087c
+  Exp e6844369b86b13f0dedad0ecd6de9184
+  Log 4658a810e53021bb8194eae2310bf5d3
+  Mul 2f35706afddb4d148a595d106eedb7e6
+  Neg 67362d85eaf7d8ee80f48cd9dd9d09b9
+  Nom 95d978c8cc5eb26be29a90158f860ad8
+  Not d514c1aff93cd4d9396adffc6fc5ad26
+  Op 15ebbb24b6785911f3ab55036df6fa5d
+  Or 202d2d148971979f168ac1edee2eb873
+  Sgn fbb11a3ab2b3a0a044a9206205555766
+  Sin 53e0b5529ca31b04cdab0e88f8a4b3af
+  SinH 415f0f40f03634c54ad11498318336be
+  Sum d5f11b74783ac2a16ec6db1a10fe0ff0
+import  -/  AlgParser c02e4e4f350682f9a553f4b3347a7414
+  exports: f37e11642a7a395c3b71999cf618e8cc
+import  -/  Lib.Debug f2397c47469cac64d3eb5a6b4cb67ba7
+  exports: e68806ff5497d096232692f266395170
+import  -/  Lib.Noms 2d56e88a289ad37b00090ddb7a06fc81
+  exports: 8a9b0085f320a4deb44ddea66e85019e
+  NrRatio c5c6d48e6611c93db826c6f43b36a153
+  NrReal 05af66b1a6c879b20489fc53a8f8da62
+1ee56e78967c3622d3d98c8f3b076234
+  $fBooleanAlgo :: Data.Boolean.Boolean AlgData.Algo
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.Algo
+                  AlgNum.$fBooleanAlgo_$ctrue
+                  AlgNum.$fBooleanAlgo_$cfalse
+                  AlgNum.$fBooleanAlgo_$cnotB
+                  AlgNum.$fBooleanAlgo_$c&&*
+                  AlgNum.$fBooleanAlgo_$c||* -}
+15ceeeb3dce6259b6df14fa60f1ffb89
+  $fBooleanAlgo_$c&&* :: AlgData.Algo -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m6,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: AlgData.Algo) (b :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.&&*} True False} AlgData.Op
+                                                             AlgData.And
+                                                             (GHC.Types.:
+                                                                @ AlgData.Algo
+                                                                a
+                                                                (GHC.Types.:
+                                                                   @ AlgData.Algo
+                                                                   b
+                                                                   (GHC.Types.[]
+                                                                      @ AlgData.Algo)))) -}
+cef04097f09660e8dd93ac008dfffabc
+  $fBooleanAlgo_$cfalse :: AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgNum.false} True False} AlgData.Bool
+                                                               GHC.Types.False) -}
+cadf31969fe442e4877f69f86ad98f24
+  $fBooleanAlgo_$cnotB :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (b :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.notB} True False} AlgData.Op
+                                                              AlgData.Not
+                                                              (GHC.Types.:
+                                                                 @ AlgData.Algo
+                                                                 b
+                                                                 (GHC.Types.[] @ AlgData.Algo))) -}
+603dc63a1c8d28e24d2d3a032d72bde0
+  $fBooleanAlgo_$ctrue :: AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgNum.true} True False} AlgData.Bool
+                                                              GHC.Types.True) -}
+8bb7f0ad35d021bec8bc5d8481de57b4
+  $fBooleanAlgo_$c||* :: AlgData.Algo -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m6,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: AlgData.Algo) (b :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.||*} True False} AlgData.Op
+                                                             AlgData.Or
+                                                             (GHC.Types.:
+                                                                @ AlgData.Algo
+                                                                a
+                                                                (GHC.Types.:
+                                                                   @ AlgData.Algo
+                                                                   b
+                                                                   (GHC.Types.[]
+                                                                      @ AlgData.Algo)))) -}
+a34572b7332123d23a434b8c916c25f5
+  $fFloatingAlgo :: GHC.Float.Floating AlgData.Algo
+  DFunId
+  {- Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.Algo
+                  AlgNum.$fFractionalAlgo
+                  AlgNum.$fFloatingAlgo_$cpi
+                  AlgNum.$fFloatingAlgo_$cexp
+                  AlgNum.$fFloatingAlgo_$clog
+                  AlgNum.$fFloatingAlgo_$csqrt
+                  AlgNum.$fFloatingAlgo_$c**
+                  AlgNum.$fFloatingAlgo_$clogBase
+                  AlgNum.$fFloatingAlgo_$csin
+                  AlgNum.$fFloatingAlgo_$ccos
+                  AlgNum.$fFloatingAlgo_$ctan
+                  AlgNum.$fFloatingAlgo_$casin
+                  AlgNum.$fFloatingAlgo_$cacos
+                  AlgNum.$fFloatingAlgo_$catan
+                  AlgNum.$fFloatingAlgo_$csinh
+                  AlgNum.$fFloatingAlgo_$ccosh
+                  AlgNum.$fFloatingAlgo_$ctanh
+                  AlgNum.$fFloatingAlgo_$casinh
+                  AlgNum.$fFloatingAlgo_$cacosh
+                  AlgNum.$fFloatingAlgo_$catanh
+                  AlgNum.$fFloatingAlgo_$clog1p
+                  AlgNum.$fFloatingAlgo_$cexpm1
+                  AlgNum.$fFloatingAlgo_$clog1pexp
+                  AlgNum.$fFloatingAlgo_$clog1mexp -}
+904a4ed0f1cd19756654602440b72580
+  $fFloatingAlgo1 :: AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgNum.exp} False True} AlgNum.$fFloatingAlgo_$cfromInteger
+                                                             AlgNum.$fFloatingAlgo2) -}
+61cbbf696d193e182576e816483061b8
+  $fFloatingAlgo2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+4e12be6fa87fdd2f3e08540fb438e5a9
+  $fFloatingAlgo3 :: AlgData.Algo
+  {- Strictness: m3,
+     Unfolding: (AlgData.Nom AlgNum.$fFloatingAlgo4) -}
+6373e7eb947c9e6bb35b84de7230dfea
+  $fFloatingAlgo4 :: Lib.Noms.Nr
+  {- Unfolding: ({__scc {main@main:AlgNum.recip} False True} {__scc {main@main:Lib.Noms.fromInteger} True False} Lib.Noms.NrRatio
+                                                                                                                   AlgNum.$fFloatingAlgo5) -}
+e49b13fd67a5111f9ca448a17ef4cc10
+  $fFloatingAlgo5 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   AlgNum.$fFloatingAlgo6
+                   GHC.Real.$fEnumRatio1) -}
+591f486f68f07f4ac1a26b970ffb3084
+  $fFloatingAlgo6 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+ced7eda1bb995c40701f56cfd75f0d2d
+  $fFloatingAlgo7 :: Lib.Noms.Nr
+  {- Strictness: m2,
+     Unfolding: (Lib.Noms.NrReal
+                   Data.Number.CReal.$fFloatingCReal_$cpi) -}
+353bfca14a7519771567a335adf5b841
+  $fFloatingAlgo_$c* :: AlgData.Algo -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m6,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: AlgData.Algo) (b :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.*} True False} AlgData.Op
+                                                           AlgData.Mul
+                                                           (GHC.Types.:
+                                                              @ AlgData.Algo
+                                                              a
+                                                              (GHC.Types.:
+                                                                 @ AlgData.Algo
+                                                                 b
+                                                                 (GHC.Types.[] @ AlgData.Algo)))) -}
+f940ff30328f47da50c41b5a10517b8d
+  $fFloatingAlgo_$c** :: AlgData.Algo -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (eta :: AlgData.Algo) (eta1 :: AlgData.Algo) ->
+                 AlgNum.$fFloatingAlgo_$cexp
+                   (AlgNum.$fFloatingAlgo_$c*
+                      (AlgNum.$fFloatingAlgo_$clog eta)
+                      eta1)) -}
+bbbcb1fc231b46acf5b919234b975515
+  $fFloatingAlgo_$c+ :: AlgData.Algo -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m6,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: AlgData.Algo) (b :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.+} True False} AlgData.Op
+                                                           AlgData.Sum
+                                                           (GHC.Types.:
+                                                              @ AlgData.Algo
+                                                              a
+                                                              (GHC.Types.:
+                                                                 @ AlgData.Algo
+                                                                 b
+                                                                 (GHC.Types.[] @ AlgData.Algo)))) -}
+8db630db22a871ae461ab52a78253678
+  $fFloatingAlgo_$cacos :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.acos} True False} AlgData.Op
+                                                              AlgData.ACos
+                                                              (GHC.Types.:
+                                                                 @ AlgData.Algo
+                                                                 a
+                                                                 (GHC.Types.[] @ AlgData.Algo))) -}
+a32ecef765dbbd317ccd7f1bf1205569
+  $fFloatingAlgo_$cacosh :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.acosh} True False} AlgData.Op
+                                                               AlgData.ACosH
+                                                               (GHC.Types.:
+                                                                  @ AlgData.Algo
+                                                                  a
+                                                                  (GHC.Types.[] @ AlgData.Algo))) -}
+d3a35371e0b74b0aac6eba2f150a5278
+  $fFloatingAlgo_$casin :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.asin} True False} AlgData.Op
+                                                              AlgData.ASin
+                                                              (GHC.Types.:
+                                                                 @ AlgData.Algo
+                                                                 a
+                                                                 (GHC.Types.[] @ AlgData.Algo))) -}
+26301106d8ff49841480290653446f63
+  $fFloatingAlgo_$casinh :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.asinh} True False} AlgData.Op
+                                                               AlgData.ASinH
+                                                               (GHC.Types.:
+                                                                  @ AlgData.Algo
+                                                                  a
+                                                                  (GHC.Types.[] @ AlgData.Algo))) -}
+6c5be5e7ec52a6252d480c23cf5e299f
+  $fFloatingAlgo_$catan :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.atan} True False} AlgData.Op
+                                                              AlgData.ATg
+                                                              (GHC.Types.:
+                                                                 @ AlgData.Algo
+                                                                 a
+                                                                 (GHC.Types.[] @ AlgData.Algo))) -}
+008e8ef4f222dccd81123abfc6105ab5
+  $fFloatingAlgo_$catanh :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.atanh} True False} AlgData.Op
+                                                               AlgData.ATgH
+                                                               (GHC.Types.:
+                                                                  @ AlgData.Algo
+                                                                  a
+                                                                  (GHC.Types.[] @ AlgData.Algo))) -}
+a6f3063f46ea244ee9364ed1e0147827
+  $fFloatingAlgo_$ccos :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.cos} True False} AlgData.Op
+                                                             AlgData.Cos
+                                                             (GHC.Types.:
+                                                                @ AlgData.Algo
+                                                                a
+                                                                (GHC.Types.[] @ AlgData.Algo))) -}
+e465c88422aa689d068d82c8b2ffb32f
+  $fFloatingAlgo_$ccosh :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.cosh} True False} AlgData.Op
+                                                              AlgData.CosH
+                                                              (GHC.Types.:
+                                                                 @ AlgData.Algo
+                                                                 a
+                                                                 (GHC.Types.[] @ AlgData.Algo))) -}
+aad6c91ce163a2c3de182f4495974a62
+  $fFloatingAlgo_$cexp :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.exp} True False} AlgData.Op
+                                                             AlgData.Exp
+                                                             (GHC.Types.:
+                                                                @ AlgData.Algo
+                                                                a
+                                                                (GHC.Types.:
+                                                                   @ AlgData.Algo
+                                                                   AlgNum.$fFloatingAlgo1
+                                                                   (GHC.Types.[]
+                                                                      @ AlgData.Algo)))) -}
+3747669637428b57116bbfcfc85d5f65
+  $fFloatingAlgo_$cexpm1 :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: AlgData.Algo) ->
+                 AlgNum.$fFloatingAlgo_$c+
+                   (AlgNum.$fFloatingAlgo_$cexp eta)
+                   (AlgNum.$fFloatingAlgo_$cnegate
+                      (AlgNum.$fFloatingAlgo_$cfromInteger 1))) -}
+efbdadeba56c757256a9f2f320d83107
+  $fFloatingAlgo_$cfromInteger ::
+    GHC.Integer.Type.Integer -> AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgNum.fromInteger} True False} \ (x :: GHC.Integer.Type.Integer) ->
+                                                                   AlgData.Nom
+                                                                     ({__scc {main@main:AlgNum.fromInteger} False True} Lib.Noms.$fFloatingNr_$cfromInteger
+                                                                                                                          x)) -}
+3011db906c95e639f409df146291ce14
+  $fFloatingAlgo_$cfromRational :: GHC.Real.Rational -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m3,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: GHC.Real.Rational) ->
+                 {__scc {main@main:AlgNum.fromRational} True False} AlgData.Nom
+                                                                      (Lib.Noms.NrRatio a)) -}
+3064d65396990af1efe057f6be53d266
+  $fFloatingAlgo_$clog :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.log} True False} AlgData.Op
+                                                             AlgData.Log
+                                                             (GHC.Types.:
+                                                                @ AlgData.Algo
+                                                                a
+                                                                (GHC.Types.[] @ AlgData.Algo))) -}
+71a72e4b1d695d8dc9d31409ee1d5c55
+  $fFloatingAlgo_$clog1mexp :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: AlgData.Algo) ->
+                 AlgNum.$fFloatingAlgo_$clog
+                   (AlgNum.$fFloatingAlgo_$c+
+                      (AlgNum.$fFloatingAlgo_$cfromInteger 1)
+                      (AlgNum.$fFloatingAlgo_$cnegate
+                         (AlgNum.$fFloatingAlgo_$cexp eta)))) -}
+e901e23fa53e4659a2de78b6797e53d0
+  $fFloatingAlgo_$clog1p :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: AlgData.Algo) ->
+                 AlgNum.$fFloatingAlgo_$clog
+                   (AlgNum.$fFloatingAlgo_$c+
+                      (AlgNum.$fFloatingAlgo_$cfromInteger 1)
+                      eta)) -}
+f90a6808f803ee59593dc17b6617b968
+  $fFloatingAlgo_$clog1pexp :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (x :: AlgData.Algo) ->
+                 AlgNum.$fFloatingAlgo_$clog
+                   (AlgNum.$fFloatingAlgo_$c+
+                      (AlgNum.$fFloatingAlgo_$cfromInteger 1)
+                      (AlgNum.$fFloatingAlgo_$cexp x))) -}
+dbde3a614d3d91d1aba0858a95d7ff5d
+  $fFloatingAlgo_$clogBase ::
+    AlgData.Algo -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (eta :: AlgData.Algo) (eta1 :: AlgData.Algo) ->
+                 AlgNum.$fFloatingAlgo_$c*
+                   (AlgNum.$fFloatingAlgo_$clog eta1)
+                   (AlgNum.$fFloatingAlgo_$crecip
+                      (AlgNum.$fFloatingAlgo_$clog eta))) -}
+80048de5ec49f0cdcb3127c7955980d6
+  $fFloatingAlgo_$cnegate :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.negate} True False} AlgData.Op
+                                                                AlgData.Neg
+                                                                (GHC.Types.:
+                                                                   @ AlgData.Algo
+                                                                   a
+                                                                   (GHC.Types.[]
+                                                                      @ AlgData.Algo))) -}
+0d220da6399b7b8f8f97b34e1719dc6f
+  $fFloatingAlgo_$cpi :: AlgData.Algo
+  {- Unfolding: ({__scc {main@main:AlgNum.pi} True False} AlgData.Nom
+                                                            AlgNum.$fFloatingAlgo7) -}
+5c1c6ca40dc105803c88a965c3a8f55c
+  $fFloatingAlgo_$crecip :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.recip} True False} AlgData.Op
+                                                               AlgData.Div
+                                                               (GHC.Types.:
+                                                                  @ AlgData.Algo
+                                                                  AlgNum.$fFloatingAlgo3
+                                                                  (GHC.Types.:
+                                                                     @ AlgData.Algo
+                                                                     a
+                                                                     (GHC.Types.[]
+                                                                        @ AlgData.Algo)))) -}
+4805021751ea60c8ec75214fc2e55262
+  $fFloatingAlgo_$csin :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.sin} True False} AlgData.Op
+                                                             AlgData.Sin
+                                                             (GHC.Types.:
+                                                                @ AlgData.Algo
+                                                                a
+                                                                (GHC.Types.[] @ AlgData.Algo))) -}
+7eecdcd107275af7d548c9e0e5b1673c
+  $fFloatingAlgo_$csinh :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.sinh} True False} AlgData.Op
+                                                              AlgData.SinH
+                                                              (GHC.Types.:
+                                                                 @ AlgData.Algo
+                                                                 a
+                                                                 (GHC.Types.[] @ AlgData.Algo))) -}
+f56f30f33ad0e25f70d4b1f5ede9c735
+  $fFloatingAlgo_$csqrt :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: AlgData.Algo) ->
+                 AlgNum.$fFloatingAlgo_$cexp
+                   (AlgNum.$fFloatingAlgo_$c*
+                      (AlgNum.$fFloatingAlgo_$clog eta)
+                      (AlgNum.$fFloatingAlgo_$cfromRational
+                         (GHC.Real.:% @ GHC.Integer.Type.Integer 1 2)))) -}
+175e51147ed6723281884471853865e2
+  $fFloatingAlgo_$ctan :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: AlgData.Algo) ->
+                 AlgNum.$fFloatingAlgo_$c*
+                   (AlgNum.$fFloatingAlgo_$csin eta)
+                   (AlgNum.$fFloatingAlgo_$crecip
+                      (AlgNum.$fFloatingAlgo_$ccos eta))) -}
+fcceb37004e2fcab5b9bf248cec92e7c
+  $fFloatingAlgo_$ctanh :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (eta :: AlgData.Algo) ->
+                 AlgNum.$fFloatingAlgo_$c*
+                   (AlgNum.$fFloatingAlgo_$csinh eta)
+                   (AlgNum.$fFloatingAlgo_$crecip
+                      (AlgNum.$fFloatingAlgo_$ccosh eta))) -}
+a550b29fd7831d9ce157894a6ee67258
+  $fFractionalAlgo :: GHC.Real.Fractional AlgData.Algo
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.Algo
+                  AlgNum.$fNumAlgo
+                  AlgNum.$fFractionalAlgo_$c/
+                  AlgNum.$fFloatingAlgo_$crecip
+                  AlgNum.$fFloatingAlgo_$cfromRational -}
+48ad5a6686dfb5ba4bf3fee11114abf4
+  $fFractionalAlgo_$c/ ::
+    AlgData.Algo -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (eta :: AlgData.Algo) (eta1 :: AlgData.Algo) ->
+                 AlgNum.$fFloatingAlgo_$c*
+                   eta
+                   (AlgNum.$fFloatingAlgo_$crecip eta1)) -}
+4b300f9fb0334922cb03b7dacaf3ad5e
+  $fNumAlgo :: GHC.Num.Num AlgData.Algo
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.Algo
+                  AlgNum.$fFloatingAlgo_$c+
+                  AlgNum.$fNumAlgo_$c-
+                  AlgNum.$fFloatingAlgo_$c*
+                  AlgNum.$fFloatingAlgo_$cnegate
+                  AlgNum.$fNumAlgo_$cabs
+                  AlgNum.$fNumAlgo_$csignum
+                  AlgNum.$fFloatingAlgo_$cfromInteger -}
+b33311b2c475296b42580ceed30eea2a
+  $fNumAlgo_$c- :: AlgData.Algo -> AlgData.Algo -> AlgData.Algo
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: AlgData.Algo) (y :: AlgData.Algo) ->
+                 AlgNum.$fFloatingAlgo_$c+ x (AlgNum.$fFloatingAlgo_$cnegate y)) -}
+f1b0ca99a6790c0931e2518c132c76f5
+  $fNumAlgo_$cabs :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.abs} True False} AlgData.Op
+                                                             AlgData.Abs
+                                                             (GHC.Types.:
+                                                                @ AlgData.Algo
+                                                                a
+                                                                (GHC.Types.[] @ AlgData.Algo))) -}
+5cf1fae2257a260d33a00aeee35c4e0d
+  $fNumAlgo_$csignum :: AlgData.Algo -> AlgData.Algo
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m6,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.signum} True False} AlgData.Op
+                                                                AlgData.Sgn
+                                                                (GHC.Types.:
+                                                                   @ AlgData.Algo
+                                                                   a
+                                                                   (GHC.Types.[]
+                                                                      @ AlgData.Algo))) -}
+0d9e27cf29875e94f81fca9c4ac420a7
+  $fRealAlgo :: GHC.Real.Real AlgData.Algo
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.Algo
+                  AlgNum.$fNumAlgo
+                  AlgData.$fOrdAlgo
+                  AlgNum.$fRealAlgo_$ctoRational -}
+e6743c089f57f9ccb1263a974f2c5a4b
+  $fRealAlgo1 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- Strictness: x -}
+98a80415967cd215a3f30eec02ee30f6
+  $fRealAlgo_$ctoRational :: AlgData.Algo -> GHC.Real.Rational
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.toRational} True True} case ds of wild {
+                                                                   DEFAULT -> AlgNum.$fRealAlgo1
+                                                                   AlgData.Nom r
+                                                                   -> Lib.Noms.$fRealNr_$ctoRational
+                                                                        r }) -}
+911dc9ef064e277ef48ded4e959d1420
+  $fRealFracAlgo :: GHC.Real.RealFrac AlgData.Algo
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ AlgData.Algo
+                  AlgNum.$fRealAlgo
+                  AlgNum.$fFractionalAlgo
+                  AlgNum.$fRealFracAlgo_$cproperFraction
+                  AlgNum.$fRealFracAlgo_$ctruncate
+                  AlgNum.$fRealFracAlgo_$cround
+                  AlgNum.$fRealFracAlgo_$cceiling
+                  AlgNum.$fRealFracAlgo_$cfloor -}
+414369b0d86097aead2840c7c579615b
+  $fRealFracAlgo1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+77e0bbb534a7a5e2d9d43925064b8f3e
+  $fRealFracAlgo2 :: AlgData.Algo
+  {- Unfolding: (AlgNum.$fFloatingAlgo_$cfromInteger
+                   AlgNum.$fRealFracAlgo1) -}
+6db1708f0bc54816d97c71cd62e7d241
+  $fRealFracAlgo3 :: b
+  {- Strictness: x -}
+5651a04c67fd6fb7384eea66825e8717
+  $fRealFracAlgo_$cceiling ::
+    GHC.Real.Integral b => AlgData.Algo -> b
+  {- Arity: 2,
+     Strictness: <L,U(U(U(U,U,U,U,U,U,U),U,U),A,A,A,A,A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ b
+                   (eta :: GHC.Real.Integral b)
+                   (eta1 :: AlgData.Algo) ->
+                 let {
+                   $j :: b -> AlgData.Algo -> b
+                     {- Arity: 2, Strictness: <L,U><S,1*U> -}
+                   = \ (n :: b)[OneShot] (r :: AlgData.Algo)[OneShot] ->
+                     case AlgData.$fOrdAlgo_$ccompare r AlgNum.$fRealFracAlgo2 of wild {
+                       DEFAULT -> n
+                       GHC.Types.GT
+                       -> let {
+                            $dReal1 :: GHC.Real.Real b = GHC.Real.$p1Integral @ b eta
+                          } in
+                          let {
+                            $dNum :: GHC.Num.Num b = GHC.Real.$p1Real @ b $dReal1
+                          } in
+                          GHC.Num.+
+                            @ b
+                            $dNum
+                            n
+                            (GHC.Num.fromInteger @ b $dNum AlgNum.$fFloatingAlgo6) }
+                 } in
+                 {__scc {main@main:AlgNum.properFraction} True False} case eta1 of wild {
+                                                                        DEFAULT
+                                                                        -> $j
+                                                                             (let {
+                                                                                $dNum :: GHC.Real.Real
+                                                                                           b
+                                                                                = GHC.Real.$p1Integral
+                                                                                    @ b
+                                                                                    eta
+                                                                              } in
+                                                                              let {
+                                                                                $dNum1 :: GHC.Num.Num
+                                                                                            b
+                                                                                = GHC.Real.$p1Real
+                                                                                    @ b
+                                                                                    $dNum
+                                                                              } in
+                                                                              {__scc {main@main:AlgNum.properFraction} False True} GHC.Num.fromInteger
+                                                                                                                                     @ b
+                                                                                                                                     $dNum1
+                                                                                                                                     AlgNum.$fRealFracAlgo1)
+                                                                             wild
+                                                                        AlgData.Nom n
+                                                                        -> case {__scc {main@main:AlgNum.properFraction} False True} Lib.Noms.$fRealFracNr_$cproperFraction
+                                                                                                                                       @ b
+                                                                                                                                       eta
+                                                                                                                                       n of wild1 { (,) p q ->
+                                                                           case {__scc {main@main:AlgNum.properFraction} False True} {__scc {main@main:AlgNum.properFraction.\} True False} (p,
+                                                                                                                                                                                             AlgData.Nom
+                                                                                                                                                                                               q) of wild2 { (,) n1 r ->
+                                                                           $j n1 r } } }) -}
+93c9dd1ed7ef6276172549e53062be22
+  $fRealFracAlgo_$cfloor :: GHC.Real.Integral b => AlgData.Algo -> b
+  {- Arity: 2,
+     Strictness: <L,U(U(U(U,U,U,U,U,U,U),U,U),A,A,A,A,A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ b
+                   (eta :: GHC.Real.Integral b)
+                   (eta1 :: AlgData.Algo) ->
+                 let {
+                   $j :: b -> AlgData.Algo -> b
+                     {- Arity: 2, Strictness: <L,U><S,1*U> -}
+                   = \ (n :: b)[OneShot] (r :: AlgData.Algo)[OneShot] ->
+                     case AlgData.$fOrdAlgo_$ccompare r AlgNum.$fRealFracAlgo2 of wild {
+                       DEFAULT -> n
+                       GHC.Types.LT
+                       -> let {
+                            $dReal1 :: GHC.Real.Real b = GHC.Real.$p1Integral @ b eta
+                          } in
+                          let {
+                            $dNum :: GHC.Num.Num b = GHC.Real.$p1Real @ b $dReal1
+                          } in
+                          GHC.Num.-
+                            @ b
+                            $dNum
+                            n
+                            (GHC.Num.fromInteger @ b $dNum AlgNum.$fFloatingAlgo6) }
+                 } in
+                 {__scc {main@main:AlgNum.properFraction} True False} case eta1 of wild {
+                                                                        DEFAULT
+                                                                        -> $j
+                                                                             (let {
+                                                                                $dNum :: GHC.Real.Real
+                                                                                           b
+                                                                                = GHC.Real.$p1Integral
+                                                                                    @ b
+                                                                                    eta
+                                                                              } in
+                                                                              let {
+                                                                                $dNum1 :: GHC.Num.Num
+                                                                                            b
+                                                                                = GHC.Real.$p1Real
+                                                                                    @ b
+                                                                                    $dNum
+                                                                              } in
+                                                                              {__scc {main@main:AlgNum.properFraction} False True} GHC.Num.fromInteger
+                                                                                                                                     @ b
+                                                                                                                                     $dNum1
+                                                                                                                                     AlgNum.$fRealFracAlgo1)
+                                                                             wild
+                                                                        AlgData.Nom n
+                                                                        -> case {__scc {main@main:AlgNum.properFraction} False True} Lib.Noms.$fRealFracNr_$cproperFraction
+                                                                                                                                       @ b
+                                                                                                                                       eta
+                                                                                                                                       n of wild1 { (,) p q ->
+                                                                           case {__scc {main@main:AlgNum.properFraction} False True} {__scc {main@main:AlgNum.properFraction.\} True False} (p,
+                                                                                                                                                                                             AlgData.Nom
+                                                                                                                                                                                               q) of wild2 { (,) n1 r ->
+                                                                           $j n1 r } } }) -}
+bb786121a0b831f38f580d9913b3602c
+  $fRealFracAlgo_$cproperFraction ::
+    GHC.Real.Integral b => AlgData.Algo -> (b, AlgData.Algo)
+  {- Arity: 2,
+     Strictness: <L,U(U(U(U,U,U,U,U,U,U),U,U),A,A,A,A,A,A,A,A)><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b (w :: GHC.Real.Integral b) (w1 :: AlgData.Algo) ->
+                 let {
+                   $dNum :: GHC.Real.Real b = GHC.Real.$p1Integral @ b w
+                 } in
+                 let {
+                   $dNum1 :: GHC.Num.Num b = GHC.Real.$p1Real @ b $dNum
+                 } in
+                 {__scc {main@main:AlgNum.properFraction} True False} case w1 of wild {
+                                                                        DEFAULT
+                                                                        -> ({__scc {main@main:AlgNum.properFraction} False True} GHC.Num.fromInteger
+                                                                                                                                   @ b
+                                                                                                                                   $dNum1
+                                                                                                                                   AlgNum.$fRealFracAlgo1,
+                                                                            wild)
+                                                                        AlgData.Nom n
+                                                                        -> case {__scc {main@main:AlgNum.properFraction} False True} Lib.Noms.$w$cproperFraction
+                                                                                                                                       @ b
+                                                                                                                                       w
+                                                                                                                                       n of ww { (#,#) ww1 ww2 ->
+                                                                           {__scc {main@main:AlgNum.properFraction} False True} {__scc {main@main:AlgNum.properFraction.\} True False} (ww1,
+                                                                                                                                                                                        AlgData.Nom
+                                                                                                                                                                                          ww2) } }) -}
+29d8fc8f676fb4cabcb9d454a25e3696
+  $fRealFracAlgo_$cround :: GHC.Real.Integral b => AlgData.Algo -> b
+  {- Arity: 2,
+     Strictness: <L,U(U(U(U,U,U,U,U,U,U),U,U),A,A,C(C1(U)),A,A,A,A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ b ($dIntegral :: GHC.Real.Integral b) (ds :: AlgData.Algo) ->
+                 {__scc {main@main:AlgNum.round} True True} case ds of wild {
+                                                              DEFAULT -> AlgNum.$fRealFracAlgo3 @ b
+                                                              AlgData.Nom n
+                                                              -> Lib.Noms.$fRealFracNr_$cround
+                                                                   @ b
+                                                                   $dIntegral
+                                                                   n }) -}
+6314f0d8c22843e26b5b5a3b9645305d
+  $fRealFracAlgo_$ctruncate ::
+    GHC.Real.Integral b => AlgData.Algo -> b
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ b ($dIntegral :: GHC.Real.Integral b) (x :: AlgData.Algo) ->
+                 case AlgNum.$fRealFracAlgo_$cproperFraction
+                        @ b
+                        $dIntegral
+                        x of wild { (,) m ds ->
+                 m }) -}
+fd383a31b71791f704bc4259a7d657a6
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   AlgNum.$trModule2
+                   AlgNum.$trModule1) -}
+af19dac4c0f8783d82338c8c7419ff68
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "AlgNum"#) -}
+992e241a214b825924caea3571a36619
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+instance Data.Boolean.Boolean [AlgData.Algo] = AlgNum.$fBooleanAlgo
+instance GHC.Float.Floating [AlgData.Algo] = AlgNum.$fFloatingAlgo
+instance GHC.Real.Fractional [AlgData.Algo]
+  = AlgNum.$fFractionalAlgo
+instance GHC.Num.Num [AlgData.Algo] = AlgNum.$fNumAlgo
+instance GHC.Real.Real [AlgData.Algo] = AlgNum.$fRealAlgo
+instance GHC.Real.RealFrac [AlgData.Algo] = AlgNum.$fRealFracAlgo
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
