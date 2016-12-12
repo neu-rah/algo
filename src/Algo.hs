@@ -82,12 +82,14 @@ docMain=do
   -- let bookdefs=getAssigns
   repl books Und
 
-main
+testMain
   =putStrLn
   $show
   $ applyRule emptyCtx (Op Sum [Lit "a",Lit "a"]) (Op Equation [Op Sum [Lit "a",Lit "a"],Op Equals [Op Mul [Nom 2,Lit "a"]]]) False
   -- $ applyRule emptyCtx "a+a" "a+a=2a" False
   -- $solve "2+2"
+
+main=docMain
 
 --prompt=redColor++"λ"++whiteColor++">"++nColor
 prompt=boldStyle++redColor++"α"++whiteColor++"·>"++noStyle++nColor
