@@ -1,8 +1,8 @@
-#Algo - Algebra Objects
+# Algo - Algebra Objects
 
 Computer Algebra Experiments
 
-##includes:
+## includes:
 **Rules system** - transform algebra expressions by transformation description also in algebra expression
   (programmable calculation with algebra language)
 
@@ -18,7 +18,7 @@ Computer Algebra Experiments
 
 **verify** - verifies the result (not for simple numeric calc)
 
-##samples
+## samples
     R=E/I ⇔ I=E/R
 
     a=x ∧ a=1 ⇔ 1=x ∧ a=1 ⇔ x=1 ∧ a=1
