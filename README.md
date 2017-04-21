@@ -2,6 +2,16 @@
 
 Computer Algebra Experiments
 
+This project was both and experiment with computational algebra and my first haskel project.
+So, its NOT a good place for seeking knowleage of either.
+
+However i can resume what I've learned with the algebra part errors or missconceptions as:
+
+- Operators should have been grouped ( + - )( * / )(^ log root)
+that would have made the rules system much more simple and generic
+
+- functions sould have been the base of operator and maybe they should use currying
+
 ## includes:
 **Rules system** - transform algebra expressions by transformation description also in algebra expression
   (programmable calculation with algebra language)
